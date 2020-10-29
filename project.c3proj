@@ -27,7 +27,8 @@
 	"objectTypes": {
 		"items": [
 			"Start",
-			"Text"
+			"Text",
+			"TestImage"
 		],
 		"subfolders": []
 	},
