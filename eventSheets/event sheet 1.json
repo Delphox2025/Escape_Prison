@@ -1,5 +1,179 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "TextBox and chating interactions/ IN TESTING STAGE RIGHTNOW"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 567246480675911,
+					"parameters": {
+						"object": "Cell_Bed"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Text_Box",
+					"sid": 493604260407603,
+					"disabled": true,
+					"parameters": {
+						"object": "Text_Button",
+						"layer": "1",
+						"image-point": "2"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Bed",
+					"sid": 478784025666943,
+					"parameters": {
+						"object": "Cell_Text_Box",
+						"layer": "1",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Text_Box",
+					"sid": 238058785496537,
+					"parameters": {
+						"object": "Cell_BedText_1",
+						"layer": "2",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 103663689789146,
+					"parameters": {
+						"seconds": "5.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cell_Text_Box",
+					"sid": 536033663506667
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cell_BedText_1",
+					"sid": 227083354685410
+				}
+			],
+			"sid": 478791940949034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 438245980960061,
+					"parameters": {
+						"object": "Cell_Sink"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Sink",
+					"sid": 700722349430549,
+					"parameters": {
+						"object": "Cell_Text_Box",
+						"layer": "1",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Text_Box",
+					"sid": 159249256457368,
+					"parameters": {
+						"object": "CellSink_Text_1",
+						"layer": "2",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 800321881051393,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CellSink_Text_1",
+					"sid": 923731665728566
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Text_Box",
+					"sid": 102521024407344,
+					"parameters": {
+						"object": "CellSink_Text_2",
+						"layer": "2",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 313500708306600,
+					"parameters": {
+						"seconds": "5.5"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cell_Text_Box",
+					"sid": 512085327637645
+				},
+				{
+					"id": "destroy",
+					"objectClass": "CellSink_Text_2",
+					"sid": 337391581706673
+				}
+			],
+			"sid": 815907900499632
+		},
+		{
+			"eventType": "comment",
+			"text": "Not working just yet. Suppoused to makie the button appear so you can click out the text. Button spawn is above "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Text_Button",
+					"sid": 276569682685840
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Cell_Text_Box",
+					"sid": 439159523592731
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cell_BedText_1",
+					"sid": 731149186528987
+				}
+			],
+			"sid": 262598679333703
+		}
+	],
 	"sid": 161931613315162
 }

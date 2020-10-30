@@ -16,8 +16,112 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "shadowlight",
+			"name": "Shadow light",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Video",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Text",
 			"name": "Text",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "screen",
+			"name": "Screen",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "hardlight",
+			"name": "Hard light",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -26,9 +130,31 @@
 	"uniqueId": "lstqym19x5l",
 	"objectTypes": {
 		"items": [
-			"Start",
-			"Text",
-			"TestImage"
+			"TitleScreen",
+			"Audio",
+			"Touch",
+			"Mouse",
+			"Music_Bat",
+			"Music_BAr",
+			"Button",
+			"FlashBox",
+			"ShadowLight",
+			"FlashAnimation",
+			"Cell_Door",
+			"Cell_Walls",
+			"Cell_Bed",
+			"Cell_KnightStand",
+			"Cell_Sink",
+			"Cell_Window",
+			"Cell_Window2",
+			"Cell_MainDoor",
+			"Joe_Player",
+			"Video",
+			"Cell_Text_Box",
+			"Cell_BedText_1",
+			"Text_Button",
+			"CellSink_Text_1",
+			"CellSink_Text_2"
 		],
 		"subfolders": []
 	},
@@ -40,13 +166,16 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"StartPage",
+			"RoomOne",
+			"Layout 3"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"StartPage_"
 		],
 		"subfolders": []
 	},
@@ -60,7 +189,13 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Jazz Sneaking Suspense - Gaming Background Music (HD).mp3",
+					"type": "audio/mpeg",
+					"sid": 744243372850514
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
@@ -192,7 +327,7 @@
 		"enhancedAccelerationPrecision": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 1710,
+	"viewportHeight": 960,
 	"firstLayout": null
 }

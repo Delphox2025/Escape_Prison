@@ -1,0 +1,67 @@
+{
+	"name": "StartPage_",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "Just makes the music start for the Start Screen"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Music_Bat",
+					"sid": 810503833191695,
+					"parameters": {
+						"object": "Music_BAr"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 892746358008099,
+					"parameters": {
+						"audio-file": "Jazz Sneaking Suspense - Gaming Background Music (HD)",
+						"loop": "looping",
+						"volume": "-15",
+						"tag-optional": "\"Groovy\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Music_BAr",
+					"sid": 410083832170962
+				}
+			],
+			"sid": 521790508769555
+		},
+		{
+			"eventType": "comment",
+			"text": "Goes to the main room"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 632367817654661
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 763467175577958,
+					"parameters": {
+						"layout": "RoomOne"
+					}
+				}
+			],
+			"sid": 865909851991746
+		}
+	],
+	"sid": 242281940055724
+}

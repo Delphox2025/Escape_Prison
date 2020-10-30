@@ -1,0 +1,69 @@
+{
+	"name": "Cell_Text_Box",
+	"plugin-id": "Sprite",
+	"sid": 185697396322020,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 441,
+						"height": 166,
+						"originX": 0.4943310657596372,
+						"originY": 0.5602409638554217,
+						"originalSource": "C:\\Users\\D\\Downloads\\unnamed.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4448686,
+						"collisionPoly": {
+							"points": [
+								0.03401360544217689,
+								0.07228915662650602,
+								0.489795918367347,
+								0.08433734939759036,
+								0.9591836734693877,
+								0.07228915662650602,
+								0.9569160997732424,
+								0.5903614457831323,
+								0.963718820861678,
+								0.9216867469879519,
+								0.4920634920634921,
+								0.9096385542168676,
+								0.031746031746031744,
+								0.9036144578313253,
+								0.031746031746031744,
+								0.5602409638554217
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TextSpot",
+								"x": 0.05442176870748299,
+								"y": 0.19879518072289157
+							},
+							{
+								"name": "TextButton",
+								"x": 0.891156462585034,
+								"y": 0.8433734939759037
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 603205432249009,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

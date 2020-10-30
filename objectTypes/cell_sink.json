@@ -1,0 +1,44 @@
+{
+	"name": "Cell_Sink",
+	"plugin-id": "Sprite",
+	"sid": 508911265172032,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5020944,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "TextSpot",
+								"x": 3.804,
+								"y": 0.524
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 221466663067040,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
