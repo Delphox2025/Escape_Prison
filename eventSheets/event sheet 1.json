@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "comment",
-			"text": "TextBox and chating interactions/ IN TESTING STAGE RIGHTNOW"
+			"text": "TextBox and chating interactions | * Added a Press E to interact feature * / IN TESTING STAGE RIGHTNOW"
 		},
 		{
 			"eventType": "block",
@@ -11,28 +11,48 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Joe_Player",
-					"sid": 567246480675911,
+					"sid": 722227136208714,
 					"parameters": {
-						"object": "Cell_Bed"
+						"object": "BEd_HitBox"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "Cell_Text_Box",
-					"sid": 493604260407603,
-					"disabled": true,
+					"objectClass": "Cell_Bed",
+					"sid": 120925401419112,
 					"parameters": {
-						"object": "Text_Button",
+						"object": "PressE_Text",
 						"layer": "1",
-						"image-point": "2"
+						"image-point": "1"
 					}
+				}
+			],
+			"sid": 478791940949034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 711356477187004,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PressE_Text",
+					"sid": 422111938542872
 				},
 				{
 					"id": "spawn-another-object",
 					"objectClass": "Cell_Bed",
-					"sid": 478784025666943,
+					"sid": 621984970347314,
 					"parameters": {
 						"object": "Cell_Text_Box",
 						"layer": "1",
@@ -42,7 +62,7 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "Cell_Text_Box",
-					"sid": 238058785496537,
+					"sid": 577234751360409,
 					"parameters": {
 						"object": "Cell_BedText_1",
 						"layer": "2",
@@ -52,7 +72,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 103663689789146,
+					"sid": 717628386296866,
 					"parameters": {
 						"seconds": "5.5"
 					}
@@ -60,15 +80,15 @@
 				{
 					"id": "destroy",
 					"objectClass": "Cell_Text_Box",
-					"sid": 536033663506667
+					"sid": 473583712946782
 				},
 				{
 					"id": "destroy",
 					"objectClass": "Cell_BedText_1",
-					"sid": 227083354685410
+					"sid": 797326727648828
 				}
 			],
-			"sid": 478791940949034
+			"sid": 214279865854224
 		},
 		{
 			"eventType": "block",

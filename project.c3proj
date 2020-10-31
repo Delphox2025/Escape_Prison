@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -167,7 +175,13 @@
 			"Enemy_View",
 			"Joe_Player2",
 			"Enemy2",
-			"Enemy_View2"
+			"Enemy_View2",
+			"Sprite",
+			"Elevator",
+			"ElevatorButtons",
+			"Keyboard",
+			"BEd_HitBox",
+			"PressE_Text"
 		],
 		"subfolders": []
 	},
@@ -181,7 +195,8 @@
 		"items": [
 			"StartPage",
 			"RoomOne",
-			"Layout 3"
+			"Layout 3",
+			"Elevator_TestStage"
 		],
 		"subfolders": []
 	},
@@ -307,22 +322,22 @@
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
-			0,
-			0,
-			0,
+			0.011764705882352941,
+			0.011764705882352941,
+			0.011764705882352941,
 			0
 		],
 		"splashColor": [
-			1,
-			1,
-			1,
+			0,
+			0,
+			0,
 			0
 		],
-		"useThemeColor": false,
+		"useThemeColor": true,
 		"themeColor": [
-			1,
-			1,
-			1,
+			0.011764705882352941,
+			0.011764705882352941,
+			0.011764705882352941,
 			0
 		],
 		"useHighDpi": true,

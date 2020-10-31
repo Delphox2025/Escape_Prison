@@ -1,0 +1,57 @@
+{
+	"name": "ElevatorButtons",
+	"plugin-id": "Sprite",
+	"sid": 312283568033385,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 275,
+						"height": 102,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_TitleScreeens\\Assests\\ElevatorButtons.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9008525,
+						"collisionPoly": {
+							"points": [
+								0.0036363636363636364,
+								0.00980392156862745,
+								0.5,
+								0.00980392156862745,
+								0.9927272727272727,
+								0.00980392156862745,
+								0.9927272727272727,
+								0.5,
+								0.9927272727272727,
+								0.9803921568627451,
+								0.5,
+								0.9803921568627451,
+								0.0036363636363636364,
+								0.9803921568627451,
+								0.0036363636363636364,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 893621797186158,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
