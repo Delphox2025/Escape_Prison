@@ -1,0 +1,60 @@
+{
+	"name": "Enemy_View2",
+	"plugin-id": "Sprite",
+	"sid": 408512259145799,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.544,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5205583,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 460726319632821,
+				"name": "Not_Alerted",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.544,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3046128,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 335252839801994,
+				"name": "Alerted",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -111,6 +111,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "screen",
 			"name": "Screen",
@@ -154,7 +162,12 @@
 			"Cell_BedText_1",
 			"Text_Button",
 			"CellSink_Text_1",
-			"CellSink_Text_2"
+			"CellSink_Text_2",
+			"Enemy",
+			"Enemy_View",
+			"Joe_Player2",
+			"Enemy2",
+			"Enemy_View2"
 		],
 		"subfolders": []
 	},

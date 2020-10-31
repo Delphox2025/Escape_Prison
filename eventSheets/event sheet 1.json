@@ -173,6 +173,214 @@
 				}
 			],
 			"sid": 262598679333703
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy Player Detection",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set Enemy_View position to enemy."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 823696557196961
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Enemy_View",
+							"sid": 565328694152432,
+							"parameters": {
+								"object": "Enemy",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 511787305742303
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is overlapping with Enemy_View, it turns red."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Joe_Player2",
+							"sid": 879263975808537,
+							"parameters": {
+								"object": "Enemy_View"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View",
+							"sid": 366055600726132,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 176257715172560,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 802019903869522
+						}
+					],
+					"sid": 761474505640305
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is not overlapping with Enemy_View, it turns gray."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 315905056758631
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View",
+							"sid": 127410654839581,
+							"parameters": {
+								"animation": "\"Not_Alerted\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 343916477110439
+				},
+				{
+					"eventType": "comment",
+					"text": "Enemy looking back and forth."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 631428393884457,
+							"parameters": {
+								"interval-seconds": "5.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy",
+							"sid": 795948703678192,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View",
+							"sid": 474493317409228,
+							"parameters": {
+								"state": "flipped"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 358127562088931,
+							"parameters": {
+								"seconds": "5.0"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy",
+							"sid": 751819580061900,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View",
+							"sid": 431000154702082,
+							"parameters": {
+								"state": "not-flipped"
+							}
+						}
+					],
+					"sid": 975988106806141,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 964735481051189,
+									"parameters": {
+										"count": "20"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 566111836732793
+						}
+					]
+				}
+			],
+			"sid": 135743725083796
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-period",
+					"objectClass": "Enemy",
+					"sid": 648735025835855,
+					"behaviorType": "Sine",
+					"parameters": {
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Enemy",
+					"sid": 950986179828315,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 862196213267602,
+			"disabled": true
 		}
 	],
 	"sid": 161931613315162
