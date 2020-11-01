@@ -1,19 +1,14 @@
 {
-	"name": "Enemy2",
+	"name": "Test_Wall",
 	"plugin-id": "Sprite",
-	"sid": 872211481436380,
+	"sid": 164352996971537,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Pathfinding",
-			"name": "Pathfinding",
-			"sid": 344129970584370
-		},
-		{
-			"behaviorId": "Flash",
-			"name": "Flash",
-			"sid": 465814208970675
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 189854005785160
 		}
 	],
 	"effectTypes": [],
@@ -29,24 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6230200,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 121736,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 427295202817877,
+				"sid": 988814467038516,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

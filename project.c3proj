@@ -192,7 +192,8 @@
 			"PressE_Text",
 			"DestText",
 			"Sink_HitBox",
-			"Path_Arrow"
+			"Path_Arrow",
+			"Test_Wall"
 		],
 		"subfolders": []
 	},

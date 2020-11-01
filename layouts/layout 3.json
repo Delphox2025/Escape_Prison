@@ -131,8 +131,8 @@
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": 250,
-								"acceleration": 600,
+								"max-speed": 400,
+								"acceleration": 1000,
 								"deceleration": 500,
 								"directions": "dir-8",
 								"set-angle": "smooth",
@@ -142,12 +142,12 @@
 						}
 					},
 					"world": {
-						"x": 678,
-						"y": 629,
-						"width": 233.95339100005785,
-						"height": 206.6882090961687,
-						"originX": 0.5138376383763837,
-						"originY": 0.5739371534195934,
+						"x": 617.1271194880371,
+						"y": 576.1690057063701,
+						"width": 117.36999440117486,
+						"height": 103.69156796876769,
+						"originX": 0.522140221402214,
+						"originY": 0.5129390018484289,
 						"color": [
 							1,
 							1,
@@ -183,6 +183,9 @@
 								"diagonals": true,
 								"enabled": true
 							}
+						},
+						"Flash": {
+							"properties": {}
 						}
 					},
 					"world": {
@@ -221,6 +224,42 @@
 						"height": 64.59769681546265,
 						"originX": 0.5873015873015873,
 						"originY": 0.5101214574898786,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Test_Wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 986,
+						"y": 638.5,
+						"width": 54,
+						"height": 245,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -768,6 +768,108 @@
 						}
 					],
 					"sid": 976982601675413
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Enemy2",
+							"sid": 422118205865363,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Enemy2",
+							"sid": 493085941555844,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 394916402034606,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 660103521296036,
+									"parameters": {
+										"count": "Enemy2.Pathfinding.NodeCount"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 180152769662244,
+									"parameters": {
+										"object-to-create": "Path_Arrow",
+										"layer": "1",
+										"x": "Enemy2.Pathfinding.NodeXAt(loopindex)",
+										"y": "Enemy2.Pathfinding.NodeYAt(loopindex)"
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "Path_Arrow",
+									"sid": 257598279976181,
+									"parameters": {
+										"width": "50",
+										"height": "50"
+									}
+								}
+							],
+							"sid": 832160668470959
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "Enemy2",
+							"sid": 688218684674896,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "Enemy2",
+							"sid": 551538863273819,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						}
+					],
+					"sid": 990326030641163
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Enemy2",
+							"sid": 883363542693613,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Path_Arrow",
+							"sid": 349027190335710
+						}
+					],
+					"sid": 431279382814245
 				}
 			],
 			"sid": 918631472402178
