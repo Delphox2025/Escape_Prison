@@ -2,34 +2,28 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
-			"eventType": "comment",
-			"text": "TextBox and chating interactions | * Added a Press E to interact feature * / IN TESTING STAGE RIGHTNOW"
+			"eventType": "variable",
+			"name": "DialougeFinished",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 232070919909521
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 722227136208714,
-					"parameters": {
-						"object": "BEd_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Bed",
-					"sid": 120925401419112,
-					"parameters": {
-						"object": "PressE_Text",
-						"layer": "1",
-						"image-point": "1"
-					}
-				}
-			],
-			"sid": 478791940949034
+			"eventType": "variable",
+			"name": "Dialouge",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 332708564033165
+		},
+		{
+			"eventType": "comment",
+			"text": "TextBox and chating interactions | * Added a Press E to interact feature * / IN TESTING STAGE RIGHTNOW"
 		},
 		{
 			"eventType": "block",
@@ -41,168 +35,493 @@
 					"parameters": {
 						"key": 69
 					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "PressE_Text",
-					"sid": 422111938542872
 				},
 				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Bed",
-					"sid": 621984970347314,
-					"parameters": {
-						"object": "Cell_Text_Box",
-						"layer": "1",
-						"image-point": "1"
-					}
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Text_Box",
-					"sid": 577234751360409,
-					"parameters": {
-						"object": "Cell_BedText_1",
-						"layer": "2",
-						"image-point": "1"
-					}
-				},
-				{
-					"id": "wait",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 717628386296866,
+					"sid": 458319627132083,
 					"parameters": {
-						"seconds": "5.5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Cell_Text_Box",
-					"sid": 473583712946782
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Cell_BedText_1",
-					"sid": 797326727648828
-				}
-			],
-			"sid": 214279865854224
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 438245980960061,
-					"parameters": {
-						"object": "Cell_Sink"
+						"variable": "Dialouge",
+						"comparison": 0,
+						"value": "0"
 					}
 				}
 			],
-			"actions": [
+			"actions": [],
+			"sid": 214279865854224,
+			"children": [
 				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Sink",
-					"sid": 700722349430549,
-					"parameters": {
-						"object": "Cell_Text_Box",
-						"layer": "1",
-						"image-point": "1"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Joe_Player",
+							"sid": 931360791535379,
+							"parameters": {
+								"object": "BEd_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 516656979018177,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 687215547749847,
+							"parameters": {
+								"variable": "Dialouge",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 324243505375804,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 169094311904431,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 560355975898714,
+							"parameters": {
+								"variable": "Dialouge",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 594464037459412
 				},
 				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Text_Box",
-					"sid": 159249256457368,
-					"parameters": {
-						"object": "CellSink_Text_1",
-						"layer": "2",
-						"image-point": "1"
-					}
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Text_Box",
-					"sid": 283209168286955,
-					"parameters": {
-						"object": "NextButton",
-						"layer": "2",
-						"image-point": "2"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 800321881051393,
-					"parameters": {
-						"seconds": "3.5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "CellSink_Text_1",
-					"sid": 923731665728566
-				},
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Cell_Text_Box",
-					"sid": 102521024407344,
-					"parameters": {
-						"object": "CellSink_Text_2",
-						"layer": "2",
-						"image-point": "1"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 313500708306600,
-					"parameters": {
-						"seconds": "5.5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Cell_Text_Box",
-					"sid": 512085327637645
-				},
-				{
-					"id": "destroy",
-					"objectClass": "CellSink_Text_2",
-					"sid": 337391581706673
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Joe_Player",
+							"sid": 868158163475374,
+							"parameters": {
+								"object": "Sink_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 192100100097992,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 515466082620916,
+							"parameters": {
+								"variable": "Dialouge",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 916442526765721,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 619117613675833,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 886820137531325,
+							"parameters": {
+								"variable": "Dialouge",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 784807530528183
 				}
-			],
-			"sid": 815907900499632
+			]
 		},
 		{
 			"eventType": "comment",
-			"text": "Not working just yet. Suppoused to makie the button appear so you can click out the text. Button spawn is above "
+			"text": "This just makes the text go from left to right   "
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "NextButton",
-					"sid": 276569682685840
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 511097982696719,
+					"parameters": {
+						"variable": "Dialouge",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 274274068363424,
+					"parameters": {
+						"interval-seconds": "0.02"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "Cell_Text_Box",
-					"sid": 439159523592731
-				},
-				{
-					"id": "destroy",
-					"objectClass": "Cell_BedText_1",
-					"sid": 731149186528987
+					"id": "set-text",
+					"objectClass": "DestText",
+					"sid": 779009525611509,
+					"parameters": {
+						"text": "left(Cell_BedText_1.Text, len(DestText.Text) + 1)"
+					}
 				}
 			],
-			"sid": 262598679333703
+			"sid": 827953046344707
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 440983531613248,
+					"parameters": {
+						"variable": "Dialouge",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 188604583336031,
+					"parameters": {
+						"interval-seconds": "0.02"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "DestText",
+					"sid": 278475664946456,
+					"parameters": {
+						"text": "left(CellSink_Text_1.Text, len(DestText.Text) + 1)"
+					}
+				}
+			],
+			"sid": 588294889151487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 414217139785735,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 205599741860019,
+					"parameters": {
+						"variable": "Dialouge",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 698019349839856,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 178493494268723,
+							"parameters": {
+								"first-value": "DestText.Text",
+								"comparison": 1,
+								"second-value": "Cell_BedText_1.Text"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DestText",
+							"sid": 203203989647503,
+							"parameters": {
+								"text": "Cell_BedText_1.Text"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 618888205340312,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 111895092445181,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 457444101935785
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 285110850871329,
+							"parameters": {
+								"first-value": "DestText.Text",
+								"comparison": 0,
+								"second-value": "Cell_BedText_1.Text"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 992082657729831,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 957778095559650,
+							"parameters": {
+								"variable": "Dialouge",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 594248802275399,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DestText",
+							"sid": 147551633688159,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 897926052759277
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 879750722467309,
+							"parameters": {
+								"first-value": "DestText.Text",
+								"comparison": 0,
+								"second-value": "Cell_BedText_1.Text"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 477514084112617,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 545121224825681
+				},
+				{
+					"eventType": "comment",
+					"text": "For Sink"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 821629772411900,
+							"parameters": {
+								"first-value": "DestText.Text",
+								"comparison": 1,
+								"second-value": "CellSink_Text_1.Text"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DestText",
+							"sid": 542926792355897,
+							"parameters": {
+								"text": "CellSink_Text_1.Text"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 208641263021835,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 861086315867561,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 124303761143107
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 622220770343591,
+							"parameters": {
+								"first-value": "DestText.Text",
+								"comparison": 0,
+								"second-value": "CellSink_Text_1.Text"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 135360832365637,
+							"parameters": {
+								"variable": "DialougeFinished",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 215602417488903,
+							"parameters": {
+								"variable": "Dialouge",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 527903154082020,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DestText",
+							"sid": 139521732888126,
+							"parameters": {
+								"text": "\"\""
+							}
+						}
+					],
+					"sid": 602687287233450
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 392166116960688,
+					"parameters": {
+						"first-value": "DestText.Text",
+						"comparison": 0,
+						"second-value": "CellSink_Text_1.Text"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 620815848217994,
+					"parameters": {
+						"variable": "DialougeFinished",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 284333258928704
 		},
 		{
 			"eventType": "group",

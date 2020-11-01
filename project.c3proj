@@ -181,7 +181,9 @@
 			"ElevatorButtons",
 			"Keyboard",
 			"BEd_HitBox",
-			"PressE_Text"
+			"PressE_Text",
+			"DestText",
+			"Sink_HitBox"
 		],
 		"subfolders": []
 	},

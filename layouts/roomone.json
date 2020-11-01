@@ -754,41 +754,12 @@
 						}
 					},
 					"world": {
-						"x": 821,
-						"y": 489.94128445903516,
-						"width": 233.95339100005785,
-						"height": 206.6882090961687,
-						"originX": 0.5138376383763837,
-						"originY": 0.5739371534195934,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Cell_Text_Box",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 35,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 62,
-						"y": -167,
-						"width": 441,
-						"height": 166,
-						"originX": 0.4943310657596372,
-						"originY": 0.5602409638554217,
+						"x": 783.0540575790434,
+						"y": 455.24310053444583,
+						"width": 67.67385753480414,
+						"height": 63.80202010260372,
+						"originX": 0.49925925925925924,
+						"originY": 0.4853963838664812,
 						"color": [
 							1,
 							1,
@@ -1054,6 +1025,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Sink_HitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 49,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 290,
+						"y": 836.5,
+						"width": 161,
+						"height": 161,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 895826624222798,
@@ -1074,6 +1074,106 @@
 			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "DialougeBox",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Cell_Text_Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 849,
+						"y": 823,
+						"width": 441,
+						"height": 166,
+						"originX": 0.4943310657596372,
+						"originY": 0.5602409638554217,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DestText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Copperplate Gothic",
+						"size": 15,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 48,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 653,
+						"y": 753,
+						"width": 396,
+						"height": 325,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 789991201096295,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,
