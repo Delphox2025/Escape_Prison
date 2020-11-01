@@ -11,14 +11,26 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.544,
-						"originY": 1,
-						"originalSource": "",
+						"width": 1609,
+						"height": 1555,
+						"originX": 0.5003107520198882,
+						"originY": 0.9987138263665595,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Enemy_Detection.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6377726,
+						"imageSpriteId": 2412917,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.500310752019888,
+								0,
+								1,
+								0,
+								0.5,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
@@ -34,19 +46,31 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.544,
-						"originY": 1,
-						"originalSource": "",
+						"width": 1609,
+						"height": 1555,
+						"originX": 0.5003107520198882,
+						"originY": 0.9987138263665595,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Enemy_Detection.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4969345,
+						"imageSpriteId": 9114716,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.500310752019888,
+								0,
+								1,
+								0,
+								0.5,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 132811261795248,
+				"sid": 161701612824713,
 				"name": "Alerted",
 				"isLooping": false,
 				"isPingPong": false,

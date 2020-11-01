@@ -46,12 +46,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 429,
-						"y": 144,
-						"width": 199.44924166313595,
-						"height": 298.4492416631359,
-						"originX": 0.544,
-						"originY": 1,
+						"x": 432,
+						"y": 178,
+						"width": 171.8031491835705,
+						"height": 293.37510259032223,
+						"originX": 0.5003107520198882,
+						"originY": 0.9987138263665595,
 						"color": [
 							1,
 							1,
@@ -101,8 +101,8 @@
 						}
 					},
 					"world": {
-						"x": 1047,
-						"y": 148,
+						"x": 1210,
+						"y": 106,
 						"width": 118.033893437436,
 						"height": 118.033893437436,
 						"originX": 0.5,
@@ -173,12 +173,12 @@
 						"Pathfinding": {
 							"properties": {
 								"cell-size": 30,
-								"cell-border": -1,
+								"cell-border": 100,
 								"obstacles": "solids",
 								"max-speed": 200,
 								"acceleration": 1000,
 								"deceleration": 2000,
-								"rotate-speed": 135,
+								"rotate-speed": 300,
 								"rotate-object": true,
 								"diagonals": true,
 								"enabled": true
@@ -254,10 +254,46 @@
 						}
 					},
 					"world": {
-						"x": 986,
-						"y": 638.5,
+						"x": 1151,
+						"y": 605,
 						"width": 54,
-						"height": 245,
+						"height": 358,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Test_Wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 53,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 816,
+						"y": 609,
+						"width": 54,
+						"height": 358,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
