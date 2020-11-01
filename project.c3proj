@@ -127,6 +127,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "screen",
 			"name": "Screen",
@@ -183,7 +191,8 @@
 			"BEd_HitBox",
 			"PressE_Text",
 			"DestText",
-			"Sink_HitBox"
+			"Sink_HitBox",
+			"Path_Arrow"
 		],
 		"subfolders": []
 	},

@@ -730,6 +730,47 @@
 			],
 			"sid": 862196213267602,
 			"disabled": true
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy Pathfinding",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 969607542953455,
+							"parameters": {
+								"interval-seconds": "0.4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Enemy2",
+							"sid": 671391319376197,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "Joe_Player2.X",
+								"y": "Joe_Player2.Y"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Path_Arrow",
+							"sid": 556452982419750
+						}
+					],
+					"sid": 976982601675413
+				}
+			],
+			"sid": 918631472402178
 		}
 	],
 	"sid": 161931613315162
