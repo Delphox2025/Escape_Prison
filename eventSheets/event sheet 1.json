@@ -124,6 +124,16 @@
 					}
 				},
 				{
+					"id": "spawn-another-object",
+					"objectClass": "Cell_Text_Box",
+					"sid": 283209168286955,
+					"parameters": {
+						"object": "NextButton",
+						"layer": "2",
+						"image-point": "2"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 800321881051393,
@@ -176,7 +186,7 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "Text_Button",
+					"objectClass": "NextButton",
 					"sid": 276569682685840
 				}
 			],
