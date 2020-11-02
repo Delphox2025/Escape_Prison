@@ -80,6 +80,22 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -112,16 +128,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
+			"id": "bound",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -179,10 +187,7 @@
 			"NextButton",
 			"CellSink_Text_1",
 			"CellSink_Text_2",
-			"Enemy_TestRoom_1",
-			"Enemy_View",
 			"Joe_Player2",
-			"Enemy2",
 			"Enemy_View2",
 			"Sprite",
 			"Elevator",
@@ -194,10 +199,24 @@
 			"Sink_HitBox",
 			"Path_Arrow",
 			"Test_Wall",
-			"Enemy2_TestRoom_1",
-			"Enemy_View3"
+			"Enemy_TestRoom_2",
+			"Enemy_TestRoom_3",
+			"Enemy_View4",
+			"EnemyFlip_Trigger",
+			"EnemyFlip_Trigger2"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Enemy_TestRoom_1",
+					"Enemy_View",
+					"Enemy_View3",
+					"Enemy2_TestRoom_1"
+				],
+				"subfolders": [],
+				"name": "Test Enemy Room_1 Objects"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -211,7 +230,8 @@
 			"RoomOne",
 			"Test Enemy Room_1",
 			"Elevator_TestStage",
-			"Test Enemy Room_2"
+			"Test Enemy Room_2",
+			"Test Enemy Room_3"
 		],
 		"subfolders": []
 	},

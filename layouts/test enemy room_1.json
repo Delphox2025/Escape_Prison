@@ -135,9 +135,14 @@
 								"acceleration": 1000,
 								"deceleration": 500,
 								"directions": "dir-8",
-								"set-angle": "smooth",
+								"set-angle": "no",
 								"default-controls": true,
 								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
 							}
 						}
 					},
@@ -159,7 +164,7 @@
 					}
 				},
 				{
-					"type": "Enemy2",
+					"type": "Enemy_TestRoom_2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -186,6 +191,11 @@
 						},
 						"Flash": {
 							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
 						}
 					},
 					"world": {

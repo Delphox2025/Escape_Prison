@@ -1,21 +1,10 @@
 {
-	"name": "Enemy2",
+	"name": "EnemyFlip_Trigger",
 	"plugin-id": "Sprite",
-	"sid": 872211481436380,
+	"sid": 905574705046863,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Pathfinding",
-			"name": "Pathfinding",
-			"sid": 344129970584370
-		},
-		{
-			"behaviorId": "Flash",
-			"name": "Flash",
-			"sid": 465814208970675
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -29,24 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6230200,
-						"collisionPoly": {
-							"points": [
-								1,
-								1,
-								0,
-								1,
-								0,
-								0,
-								1,
-								0
-							]
-						},
+						"imageSpriteId": 1303225,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 427295202817877,
+				"sid": 336735159283872,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

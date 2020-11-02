@@ -878,7 +878,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Enemy Pathfinding",
+			"title": "Test EnemyRoom_2: Enemy Pathfinding",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -897,7 +897,7 @@
 					"actions": [
 						{
 							"id": "find-path",
-							"objectClass": "Enemy2",
+							"objectClass": "Enemy_TestRoom_2",
 							"sid": 671391319376197,
 							"behaviorType": "Pathfinding",
 							"parameters": {
@@ -918,7 +918,7 @@
 					"conditions": [
 						{
 							"id": "on-path-found",
-							"objectClass": "Enemy2",
+							"objectClass": "Enemy_TestRoom_2",
 							"sid": 422118205865363,
 							"behaviorType": "Pathfinding"
 						}
@@ -926,7 +926,7 @@
 					"actions": [
 						{
 							"id": "move-along-path",
-							"objectClass": "Enemy2",
+							"objectClass": "Enemy_TestRoom_2",
 							"sid": 493085941555844,
 							"behaviorType": "Pathfinding"
 						}
@@ -941,7 +941,7 @@
 									"objectClass": "System",
 									"sid": 660103521296036,
 									"parameters": {
-										"count": "Enemy2.Pathfinding.NodeCount"
+										"count": "Enemy_TestRoom_2.Pathfinding.NodeCount"
 									}
 								}
 							],
@@ -953,8 +953,8 @@
 									"parameters": {
 										"object-to-create": "Path_Arrow",
 										"layer": "1",
-										"x": "Enemy2.Pathfinding.NodeXAt(loopindex)",
-										"y": "Enemy2.Pathfinding.NodeYAt(loopindex)"
+										"x": "Enemy_TestRoom_2.Pathfinding.NodeXAt(loopindex)",
+										"y": "Enemy_TestRoom_2.Pathfinding.NodeYAt(loopindex)"
 									}
 								},
 								{
@@ -976,7 +976,7 @@
 					"conditions": [
 						{
 							"id": "on-failed-to-find-path",
-							"objectClass": "Enemy2",
+							"objectClass": "Enemy_TestRoom_2",
 							"sid": 688218684674896,
 							"behaviorType": "Pathfinding"
 						}
@@ -984,7 +984,7 @@
 					"actions": [
 						{
 							"id": "flash",
-							"objectClass": "Enemy2",
+							"objectClass": "Enemy_TestRoom_2",
 							"sid": 551538863273819,
 							"behaviorType": "Flash",
 							"parameters": {
@@ -1001,7 +1001,7 @@
 					"conditions": [
 						{
 							"id": "on-arrived",
-							"objectClass": "Enemy2",
+							"objectClass": "Enemy_TestRoom_2",
 							"sid": 883363542693613,
 							"behaviorType": "Pathfinding"
 						}
@@ -1017,6 +1017,271 @@
 				}
 			],
 			"sid": 918631472402178
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Test EnemyRoom_3: Set enemy movement Direction",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set Enemy_View4 position to enemy."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 613353580635496
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Enemy_View4",
+							"sid": 915425539218710,
+							"parameters": {
+								"object": "Enemy_TestRoom_3",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 992123714043040
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is overlapping with Enemy_View4, it turns red."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Joe_Player2",
+							"sid": 351287989028144,
+							"parameters": {
+								"object": "Enemy_View4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 578975967914735,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player2",
+							"sid": 102781544231274,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View4",
+							"sid": 369644221991258,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 313865136763023,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 967135032090093
+						}
+					],
+					"sid": 863450058523562
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is not overlapping with Enemy_View4, it turns gray."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 998219343364756
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View4",
+							"sid": 793556077159348,
+							"parameters": {
+								"animation": "\"Not_Alerted\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 722427740358897
+				},
+				{
+					"eventType": "comment",
+					"text": "Enemy_TestRoom_3 looking back and forth."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 344582833971446,
+							"parameters": {
+								"interval-seconds": "3.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 175746466046824,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View4",
+							"sid": 791861443771177,
+							"parameters": {
+								"state": "flipped"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 560896476756630,
+							"parameters": {
+								"seconds": "3.0"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 640784632564264,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View4",
+							"sid": 255105313966463,
+							"parameters": {
+								"state": "not-flipped"
+							}
+						}
+					],
+					"sid": 528347909628332,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 583729162767999,
+									"parameters": {
+										"count": "20"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 480376477843529,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 591466066418888,
+							"parameters": {
+								"object": "EnemyFlip_Trigger2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 551163621960024,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View4",
+							"sid": 425642143920115,
+							"parameters": {
+								"state": "flipped"
+							}
+						}
+					],
+					"sid": 933735702259607
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 820904982654096,
+							"parameters": {
+								"object": "EnemyFlip_Trigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 438231315791170,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View4",
+							"sid": 181736359607613,
+							"parameters": {
+								"state": "not-flipped"
+							}
+						}
+					],
+					"sid": 776413648630846
+				}
+			],
+			"sid": 679732794819616
 		}
 	],
 	"sid": 161931613315162
