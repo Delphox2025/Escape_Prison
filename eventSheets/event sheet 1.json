@@ -526,7 +526,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Enemy Player Detection",
+			"title": "Test EnemyRoom_1: Enemy Player Detection",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -549,7 +549,7 @@
 							"objectClass": "Enemy_View",
 							"sid": 565328694152432,
 							"parameters": {
-								"object": "Enemy",
+								"object": "Enemy_TestRoom_1",
 								"image-point-optional": "0"
 							}
 						}
@@ -626,7 +626,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Enemy looking back and forth."
+					"text": "Enemy_TestRoom_1 looking back and forth."
 				},
 				{
 					"eventType": "block",
@@ -634,16 +634,16 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 631428393884457,
+							"sid": 241578574648678,
 							"parameters": {
-								"interval-seconds": "5.0"
+								"interval-seconds": "3.0"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-mirrored",
-							"objectClass": "Enemy",
+							"objectClass": "Enemy_TestRoom_1",
 							"sid": 795948703678192,
 							"parameters": {
 								"state": "mirrored"
@@ -660,14 +660,14 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 358127562088931,
+							"sid": 470250231849607,
 							"parameters": {
-								"seconds": "5.0"
+								"seconds": "3.0"
 							}
 						},
 						{
 							"id": "set-mirrored",
-							"objectClass": "Enemy",
+							"objectClass": "Enemy_TestRoom_1",
 							"sid": 751819580061900,
 							"parameters": {
 								"state": "not-mirrored"
@@ -700,36 +700,180 @@
 							"sid": 566111836732793
 						}
 					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Set Enemy_View3 position to enemy."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 156273910268841
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Enemy_View3",
+							"sid": 196342777590543,
+							"parameters": {
+								"object": "Enemy2_TestRoom_1",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 839808289793175
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is overlapping with Enemy_View3, it turns red."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Joe_Player2",
+							"sid": 186982583463158,
+							"parameters": {
+								"object": "Enemy_View3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View3",
+							"sid": 510242283312833,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 336177310550891,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 175181742567029
+						}
+					],
+					"sid": 459685087625843
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is not overlapping with Enemy_View3, it turns gray."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 937876877713604
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View3",
+							"sid": 602719367955467,
+							"parameters": {
+								"animation": "\"Not_Alerted\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 475060778888803
+				},
+				{
+					"eventType": "comment",
+					"text": "Enemy2_TestRoom_1 looking back and forth."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 942962886370986,
+							"parameters": {
+								"interval-seconds": "2.5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy2_TestRoom_1",
+							"sid": 756136261894330,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View3",
+							"sid": 174125887935578,
+							"parameters": {
+								"state": "flipped"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 808718377512570,
+							"parameters": {
+								"seconds": "2.5"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_TestRoom_1",
+							"sid": 446557650500511,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_View3",
+							"sid": 211159397546530,
+							"parameters": {
+								"state": "not-flipped"
+							}
+						}
+					],
+					"sid": 798261347977407,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 931373012377175,
+									"parameters": {
+										"count": "20"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 568933779668518
+						}
+					]
 				}
 			],
 			"sid": 135743725083796
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-period",
-					"objectClass": "Enemy",
-					"sid": 648735025835855,
-					"behaviorType": "Sine",
-					"parameters": {
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-mirrored",
-					"objectClass": "Enemy",
-					"sid": 950986179828315,
-					"parameters": {
-						"state": "mirrored"
-					}
-				}
-			],
-			"sid": 862196213267602,
-			"disabled": true
 		},
 		{
 			"eventType": "group",

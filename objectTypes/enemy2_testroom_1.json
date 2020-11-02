@@ -1,19 +1,19 @@
 {
-	"name": "Enemy",
+	"name": "Enemy2_TestRoom_1",
 	"plugin-id": "Sprite",
-	"sid": 469349717272049,
+	"sid": 311608010241023,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Sin",
 			"name": "Sine",
-			"sid": 771645485226804
+			"sid": 100343642519371
 		},
 		{
 			"behaviorId": "EightDir",
 			"name": "8Direction",
-			"sid": 876394007866400
+			"sid": 412905410185664
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +29,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 466492,
+						"imageSpriteId": 8629793,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 345299496468651,
+				"sid": 794875263859531,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

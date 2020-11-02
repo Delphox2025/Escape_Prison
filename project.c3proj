@@ -179,7 +179,7 @@
 			"NextButton",
 			"CellSink_Text_1",
 			"CellSink_Text_2",
-			"Enemy",
+			"Enemy_TestRoom_1",
 			"Enemy_View",
 			"Joe_Player2",
 			"Enemy2",
@@ -193,7 +193,9 @@
 			"DestText",
 			"Sink_HitBox",
 			"Path_Arrow",
-			"Test_Wall"
+			"Test_Wall",
+			"Enemy2_TestRoom_1",
+			"Enemy_View3"
 		],
 		"subfolders": []
 	},
@@ -207,8 +209,9 @@
 		"items": [
 			"StartPage",
 			"RoomOne",
-			"Layout 3",
-			"Elevator_TestStage"
+			"Test Enemy Room_1",
+			"Elevator_TestStage",
+			"Test Enemy Room_2"
 		],
 		"subfolders": []
 	},
