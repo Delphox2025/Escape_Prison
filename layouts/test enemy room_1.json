@@ -72,7 +72,9 @@
 						"live-preview": false
 					},
 					"uid": 39,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"LR": false
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -107,52 +109,6 @@
 						"height": 60.025564,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Joe_Player2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 400,
-								"acceleration": 1000,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						}
-					},
-					"world": {
-						"x": 182,
-						"y": 139,
-						"width": 117.36999440117486,
-						"height": 103.69156796876769,
-						"originX": 0.522140221402214,
-						"originY": 0.5129390018484289,
 						"color": [
 							1,
 							1,
@@ -787,7 +743,9 @@
 						"live-preview": false
 					},
 					"uid": 64,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"LR": false
+					},
 					"behaviors": {
 						"Sine": {
 							"properties": {
@@ -822,6 +780,52 @@
 						"height": 60.025564,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Joe_Player2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 400,
+								"acceleration": 1000,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "no",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 182,
+						"y": 139,
+						"width": 117.36999440117486,
+						"height": 103.69156796876769,
+						"originX": 0.522140221402214,
+						"originY": 0.5129390018484289,
 						"color": [
 							1,
 							1,

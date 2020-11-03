@@ -956,6 +956,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player2",
+							"sid": 454475521456678,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "Enemy_View",
 							"sid": 366055600726132,
@@ -976,6 +985,15 @@
 							"id": "restart-layout",
 							"objectClass": "System",
 							"sid": 802019903869522
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Enemy_TestRoom_1",
+							"sid": 464558899131517,
+							"parameters": {
+								"instance-variable": "LR",
+								"value": "false"
+							}
 						}
 					],
 					"sid": 761474505640305
@@ -1008,7 +1026,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Enemy_TestRoom_1 looking back and forth."
+					"text": "ENEMY_TESTROOM_1 LOOKING BACK AND FORTH."
 				},
 				{
 					"eventType": "block",
@@ -1016,56 +1034,89 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 241578574648678,
+							"sid": 625144615833914,
 							"parameters": {
-								"interval-seconds": "3.0"
+								"interval-seconds": "1.0"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-mirrored",
+							"id": "toggle-boolean-instvar",
 							"objectClass": "Enemy_TestRoom_1",
-							"sid": 795948703678192,
+							"sid": 881818822050862,
 							"parameters": {
-								"state": "mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_View",
-							"sid": 474493317409228,
-							"parameters": {
-								"state": "flipped"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 470250231849607,
-							"parameters": {
-								"seconds": "3.0"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_TestRoom_1",
-							"sid": 751819580061900,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_View",
-							"sid": 431000154702082,
-							"parameters": {
-								"state": "not-flipped"
+								"instance-variable": "LR"
 							}
 						}
 					],
 					"sid": 975988106806141,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemy_TestRoom_1",
+									"sid": 115236224203360,
+									"parameters": {
+										"instance-variable": "LR"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_TestRoom_1",
+									"sid": 933591789886119,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_View",
+									"sid": 710985443269654,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 915131371187444
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemy_TestRoom_1",
+									"sid": 385056603545364,
+									"parameters": {
+										"instance-variable": "LR"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_TestRoom_1",
+									"sid": 191408179213738,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_View",
+									"sid": 578713547409923,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 390176758291374
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -1127,6 +1178,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player2",
+							"sid": 369792582042328,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
 							"id": "set-animation",
 							"objectClass": "Enemy_View3",
 							"sid": 510242283312833,
@@ -1179,7 +1239,7 @@
 				},
 				{
 					"eventType": "comment",
-					"text": "Enemy2_TestRoom_1 looking back and forth."
+					"text": "ENEMY2_TESTROOM_1 LOOKING BACK AND FORTH."
 				},
 				{
 					"eventType": "block",
@@ -1187,56 +1247,89 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 942962886370986,
+							"sid": 328121090468116,
 							"parameters": {
-								"interval-seconds": "2.5"
+								"interval-seconds": "2.0"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-mirrored",
+							"id": "toggle-boolean-instvar",
 							"objectClass": "Enemy2_TestRoom_1",
-							"sid": 756136261894330,
+							"sid": 776403919983361,
 							"parameters": {
-								"state": "mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_View3",
-							"sid": 174125887935578,
-							"parameters": {
-								"state": "flipped"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 808718377512570,
-							"parameters": {
-								"seconds": "2.5"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_TestRoom_1",
-							"sid": 446557650500511,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_View3",
-							"sid": 211159397546530,
-							"parameters": {
-								"state": "not-flipped"
+								"instance-variable": "LR"
 							}
 						}
 					],
 					"sid": 798261347977407,
 					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemy2_TestRoom_1",
+									"sid": 989522760039811,
+									"parameters": {
+										"instance-variable": "LR"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy2_TestRoom_1",
+									"sid": 130404473291619,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_View3",
+									"sid": 999088561645335,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 756422296908770
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-boolean-instance-variable-set",
+									"objectClass": "Enemy2_TestRoom_1",
+									"sid": 372304158745996,
+									"parameters": {
+										"instance-variable": "LR"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy2_TestRoom_1",
+									"sid": 821136175786856,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_View3",
+									"sid": 889790821856217,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 183765228324514
+						},
 						{
 							"eventType": "block",
 							"conditions": [
