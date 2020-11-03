@@ -3,7 +3,14 @@
 	"plugin-id": "Text",
 	"sid": 774504720301827,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "SinkText_1",
+			"type": "number",
+			"desc": "",
+			"sid": 732436367453753
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": []
 }

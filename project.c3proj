@@ -186,7 +186,6 @@
 			"Cell_BedText_1",
 			"NextButton",
 			"CellSink_Text_1",
-			"CellSink_Text_2",
 			"Joe_Player2",
 			"Enemy_View2",
 			"Sprite",
@@ -203,7 +202,9 @@
 			"Enemy_TestRoom_3",
 			"Enemy_View4",
 			"EnemyFlip_Trigger",
-			"EnemyFlip_Trigger2"
+			"EnemyFlip_Trigger2",
+			"CellWindow_Text_1",
+			"WindowHitBox"
 		],
 		"subfolders": [
 			{
