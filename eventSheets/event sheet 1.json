@@ -906,6 +906,30 @@
 			]
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 964007524103982,
+					"parameters": {
+						"object": "NextLevel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 520111080284670,
+					"parameters": {
+						"layout": "Test Enemy Room_1"
+					}
+				}
+			],
+			"sid": 191677835829270
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Test EnemyRoom_1: Enemy Player Detection",
@@ -947,8 +971,8 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player2",
-							"sid": 879263975808537,
+							"objectClass": "Joe_Player3",
+							"sid": 809607154202290,
 							"parameters": {
 								"object": "Enemy_View"
 							}
@@ -957,8 +981,8 @@
 					"actions": [
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player2",
-							"sid": 454475521456678,
+							"objectClass": "Joe_Player3",
+							"sid": 169521009643666,
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "0"
@@ -1169,8 +1193,8 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player2",
-							"sid": 186982583463158,
+							"objectClass": "Joe_Player3",
+							"sid": 883775240196037,
 							"parameters": {
 								"object": "Enemy_View3"
 							}
@@ -1179,8 +1203,8 @@
 					"actions": [
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player2",
-							"sid": 369792582042328,
+							"objectClass": "Joe_Player3",
+							"sid": 934721620097775,
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "0"
@@ -1373,11 +1397,11 @@
 						{
 							"id": "find-path",
 							"objectClass": "Enemy_TestRoom_2",
-							"sid": 671391319376197,
+							"sid": 523493593721927,
 							"behaviorType": "Pathfinding",
 							"parameters": {
-								"x": "Joe_Player2.X",
-								"y": "Joe_Player2.Y"
+								"x": "Joe_Player3.X",
+								"y": "Joe_Player3.Y"
 							}
 						},
 						{
@@ -1535,8 +1559,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player2",
-							"sid": 351287989028144,
+							"objectClass": "Joe_Player3",
+							"sid": 369516432386971,
 							"parameters": {
 								"object": "Enemy_View4"
 							}
@@ -1554,8 +1578,8 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player2",
-							"sid": 102781544231274,
+							"objectClass": "Joe_Player3",
+							"sid": 586936777056344,
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "0"
@@ -1757,6 +1781,78 @@
 				}
 			],
 			"sid": 679732794819616
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player3",
+					"sid": 771990196947678,
+					"parameters": {
+						"object": "NextLevel2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 947057708464858,
+					"parameters": {
+						"layout": "Test Enemy Room_2"
+					}
+				}
+			],
+			"sid": 937167000982632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player3",
+					"sid": 737809191584037,
+					"parameters": {
+						"object": "NextLevel3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 888532077598572,
+					"parameters": {
+						"layout": "Test Enemy Room_3"
+					}
+				}
+			],
+			"sid": 470072870103724
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player3",
+					"sid": 800084396806411,
+					"parameters": {
+						"object": "NextLevel4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 110348503197743,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 318703039602966
 		}
 	],
 	"sid": 161931613315162

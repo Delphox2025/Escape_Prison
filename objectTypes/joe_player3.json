@@ -1,0 +1,63 @@
+{
+	"name": "Joe_Player3",
+	"plugin-id": "Sprite",
+	"sid": 845207256900620,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 112759304857113
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 675,
+						"height": 719,
+						"originX": 0.49925925925925924,
+						"originY": 0.4853963838664812,
+						"originalSource": "C:\\Users\\D\\Desktop\\Animememe\\307.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3763945,
+						"collisionPoly": {
+							"points": [
+								0.11901234567901232,
+								0,
+								0.7402469135802471,
+								0.006954102920723227,
+								1,
+								0,
+								1,
+								0.5076495132127955,
+								1,
+								0.8988178025034771,
+								0.7402469135802471,
+								1,
+								0.228641975308642,
+								0.9301112656467314,
+								0,
+								0.5076495132127955
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 831411145471681,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

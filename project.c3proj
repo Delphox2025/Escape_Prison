@@ -204,7 +204,12 @@
 			"EnemyFlip_Trigger",
 			"EnemyFlip_Trigger2",
 			"CellWindow_Text_1",
-			"WindowHitBox"
+			"WindowHitBox",
+			"NextLevel",
+			"Joe_Player3",
+			"NextLevel2",
+			"NextLevel3",
+			"NextLevel4"
 		],
 		"subfolders": [
 			{
@@ -393,5 +398,5 @@
 	},
 	"viewportWidth": 1710,
 	"viewportHeight": 960,
-	"firstLayout": null
+	"firstLayout": "StartPage"
 }

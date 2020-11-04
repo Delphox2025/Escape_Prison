@@ -791,7 +791,7 @@
 					}
 				},
 				{
-					"type": "Joe_Player2",
+					"type": "Joe_Player3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -799,33 +799,28 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 41,
+					"uid": 95,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": 400,
-								"acceleration": 1000,
+								"max-speed": 250,
+								"acceleration": 700,
 								"deceleration": 500,
 								"directions": "dir-8",
-								"set-angle": "no",
+								"set-angle": "smooth",
 								"default-controls": true,
 								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
 							}
 						}
 					},
 					"world": {
-						"x": 182,
-						"y": 139,
-						"width": 117.36999440117486,
-						"height": 103.69156796876769,
-						"originX": 0.522140221402214,
-						"originY": 0.5129390018484289,
+						"x": 143,
+						"y": 269,
+						"width": 67.67385753480414,
+						"height": 63.80202010260372,
+						"originX": 0.49925925925925924,
+						"originY": 0.4853963838664812,
 						"color": [
 							1,
 							1,
@@ -833,6 +828,35 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NextLevel2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1691,
+						"y": 871,
+						"width": 241,
+						"height": 41,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
