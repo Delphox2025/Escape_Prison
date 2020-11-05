@@ -944,6 +944,7 @@
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 525050040410482,
+					"disabled": true,
 					"parameters": {
 						"layout": "Elevator_TestStage"
 					}
@@ -952,7 +953,6 @@
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 137142324744618,
-					"disabled": true,
 					"parameters": {
 						"layout": "Test Enemy Room_1"
 					}
@@ -1886,6 +1886,10 @@
 			"sid": 318703039602966
 		},
 		{
+			"eventType": "comment",
+			"text": ""
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1908,7 +1912,8 @@
 					}
 				}
 			],
-			"sid": 200356218094239
+			"sid": 200356218094239,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -1917,6 +1922,7 @@
 					"id": "is-overlapping-another-object",
 					"objectClass": "Joe_Player",
 					"sid": 185902140292607,
+					"disabled": true,
 					"parameters": {
 						"object": "BEd_HitBox"
 					},
@@ -1934,7 +1940,88 @@
 					}
 				}
 			],
-			"sid": 280736675371017
+			"sid": 280736675371017,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 120758392060147,
+					"parameters": {
+						"object": "Sink_HitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 291008102067663,
+					"parameters": {
+						"layer": "\"PressEsign\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 268089290332351,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 295174329314480,
+					"parameters": {
+						"object": "Sink_HitBox"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 184452720880564,
+					"parameters": {
+						"layer": "\"PressEsign\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 371329231759342,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 580224925314134,
+					"parameters": {
+						"object": "BEd_HitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "BEd_HitBox",
+					"sid": 378981227015383,
+					"parameters": {
+						"object": "PressE_Text",
+						"layer": "\"PressEsign\"",
+						"image-point": "1"
+					}
+				}
+			],
+			"sid": 185006459426760,
+			"disabled": true
 		}
 	],
 	"sid": 161931613315162
