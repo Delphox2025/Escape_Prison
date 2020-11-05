@@ -1001,48 +1001,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "PressE_Text",
-					"properties": {
-						"text": "Press E",
-						"enable-bbcode": true,
-						"font": "Copperplate Gothic",
-						"size": 24,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 47,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1505,
-						"y": 784,
-						"width": 424,
-						"height": 164,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 895826624222798,
@@ -1086,10 +1044,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 849,
-						"y": 823,
-						"width": 441,
-						"height": 166,
+						"x": 855,
+						"y": 802,
+						"width": 548.3499014842907,
+						"height": 206.408352939665,
 						"originX": 0.4943310657596372,
 						"originY": 0.5602409638554217,
 						"color": [
@@ -1128,10 +1086,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 653,
-						"y": 753,
-						"width": 396,
-						"height": 325,
+						"x": 623,
+						"y": 717,
+						"width": 477,
+						"height": 343,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1325,6 +1283,48 @@
 							1
 						],
 						"angle": 4.702506202170741,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PressE_Text",
+					"properties": {
+						"text": "Press E",
+						"enable-bbcode": true,
+						"font": "Copperplate Gothic",
+						"size": 24,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 47,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1505,
+						"y": 784,
+						"width": 424,
+						"height": 164,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

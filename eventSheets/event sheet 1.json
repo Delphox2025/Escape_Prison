@@ -77,6 +77,79 @@
 		},
 		{
 			"eventType": "comment",
+			"text": "Helps the Press E layer able to work! And makes player arrow REad to show he can read something "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 966581969747820,
+					"parameters": {
+						"object": "BEd_HitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 495154666154028,
+					"parameters": {
+						"layer": "\"PressEsign\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Joe_Player",
+					"sid": 614838706829323,
+					"parameters": {
+						"animation": "\"Read\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 906827097135478
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 617512522746274,
+					"parameters": {
+						"object": "BEd_HitBox"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 590128439997863,
+					"parameters": {
+						"layer": "\"PressEsign\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Joe_Player",
+					"sid": 842745555193745,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 826843676523491
+		},
+		{
+			"eventType": "comment",
 			"text": "TextBox and chating interactions | * Added a Press E to interact feature * / IN TESTING STAGE RIGHTNOW"
 		},
 		{
@@ -117,6 +190,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player",
+							"sid": 567534527986274,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -298,6 +380,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player",
+							"sid": 350743920586005,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 448029946959256,
@@ -397,6 +488,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player",
+							"sid": 676246181016405,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -577,6 +677,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player",
+							"sid": 870117656251951,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
@@ -1888,140 +1997,6 @@
 		{
 			"eventType": "comment",
 			"text": ""
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 306377040658143,
-					"parameters": {
-						"object": "BEd_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 486617252625692,
-					"parameters": {
-						"layer": "\"PressEsign\"",
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 200356218094239,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 185902140292607,
-					"disabled": true,
-					"parameters": {
-						"object": "BEd_HitBox"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 908196119996980,
-					"parameters": {
-						"layer": "\"PressEsign\"",
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 280736675371017,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 120758392060147,
-					"parameters": {
-						"object": "Sink_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 291008102067663,
-					"parameters": {
-						"layer": "\"PressEsign\"",
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 268089290332351,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 295174329314480,
-					"parameters": {
-						"object": "Sink_HitBox"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 184452720880564,
-					"parameters": {
-						"layer": "\"PressEsign\"",
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 371329231759342,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 580224925314134,
-					"parameters": {
-						"object": "BEd_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "BEd_HitBox",
-					"sid": 378981227015383,
-					"parameters": {
-						"object": "PressE_Text",
-						"layer": "\"PressEsign\"",
-						"image-point": "1"
-					}
-				}
-			],
-			"sid": 185006459426760,
-			"disabled": true
 		}
 	],
 	"sid": 161931613315162
