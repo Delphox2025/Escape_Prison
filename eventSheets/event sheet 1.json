@@ -710,6 +710,14 @@
 								"variable": "WindowDialouge",
 								"value": "1"
 							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NextLevel",
+							"sid": 894731009124530,
+							"parameters": {
+								"collisions": "enabled"
+							}
 						}
 					],
 					"sid": 259611763601375
