@@ -46,6 +46,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Press E ",
+								"x": 0.4962962962962963,
+								"y": -0.09596662030598054
+							}
+						],
 						"duration": 1
 					}
 				],

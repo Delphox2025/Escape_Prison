@@ -66,6 +66,16 @@
 			"sid": 804511908500893
 		},
 		{
+			"eventType": "variable",
+			"name": "PressE",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 274372595674645
+		},
+		{
 			"eventType": "comment",
 			"text": "TextBox and chating interactions | * Added a Press E to interact feature * / IN TESTING STAGE RIGHTNOW"
 		},
@@ -1874,6 +1884,57 @@
 				}
 			],
 			"sid": 318703039602966
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 306377040658143,
+					"parameters": {
+						"object": "BEd_HitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 486617252625692,
+					"parameters": {
+						"layer": "\"PressEsign\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 200356218094239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 185902140292607,
+					"parameters": {
+						"object": "BEd_HitBox"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 908196119996980,
+					"parameters": {
+						"layer": "\"PressEsign\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 280736675371017
 		}
 	],
 	"sid": 161931613315162
