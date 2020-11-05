@@ -906,6 +906,10 @@
 			]
 		},
 		{
+			"eventType": "comment",
+			"text": "Changed it so it can go to the Elevator,so i can see what that looks like in transitions from lvl to lvl "
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -921,7 +925,16 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 520111080284670,
+					"sid": 525050040410482,
+					"parameters": {
+						"layout": "Elevator_TestStage"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 137142324744618,
+					"disabled": true,
 					"parameters": {
 						"layout": "Test Enemy Room_1"
 					}

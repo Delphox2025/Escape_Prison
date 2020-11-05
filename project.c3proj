@@ -136,8 +136,32 @@
 		},
 		{
 			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -209,7 +233,12 @@
 			"Joe_Player3",
 			"NextLevel2",
 			"NextLevel3",
-			"NextLevel4"
+			"NextLevel4",
+			"Elevator_BlockSpawn",
+			"Elevator_LoadingBlocks",
+			"ElevatorBlock_target",
+			"Elevator_LoadingBlocks2",
+			"Elevator_AnimationPlayer"
 		],
 		"subfolders": [
 			{
@@ -244,7 +273,8 @@
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"StartPage_"
+			"StartPage_",
+			"Elevator Sheet"
 		],
 		"subfolders": []
 	},
