@@ -238,7 +238,11 @@
 			"Elevator_LoadingBlocks",
 			"ElevatorBlock_target",
 			"Elevator_LoadingBlocks2",
-			"Elevator_AnimationPlayer"
+			"Elevator_AnimationPlayer",
+			"Test_Wall2",
+			"Test_Path",
+			"Enemy_TestRoom_4",
+			"Enemy_View5"
 		],
 		"subfolders": [
 			{
@@ -266,7 +270,8 @@
 			"Test Enemy Room_1",
 			"Elevator_TestStage",
 			"Test Enemy Room_2",
-			"Test Enemy Room_3"
+			"Test Enemy Room_3",
+			"Week 2 demo room"
 		],
 		"subfolders": []
 	},

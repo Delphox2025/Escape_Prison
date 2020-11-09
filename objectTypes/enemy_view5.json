@@ -1,0 +1,84 @@
+{
+	"name": "Enemy_View5",
+	"plugin-id": "Sprite",
+	"sid": 718560233624088,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1609,
+						"height": 1555,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Enemy_Detection.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5136345,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								1,
+								1,
+								0.500310752019888,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 115444488883699,
+				"name": "Not_Alerted",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1609,
+						"height": 1555,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Enemy_Detection.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2220247,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								1,
+								1,
+								0.500310752019888,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 870175144880696,
+				"name": "Alerted",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

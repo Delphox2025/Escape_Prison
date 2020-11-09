@@ -568,6 +568,16 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
 						}
 					},
 					"world": {

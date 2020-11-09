@@ -1869,6 +1869,32 @@
 					],
 					"actions": [
 						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 653112382177483,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 945438644643886,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 914942240307182,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
 							"id": "set-mirrored",
 							"objectClass": "Enemy_TestRoom_3",
 							"sid": 551163621960024,
@@ -1901,9 +1927,35 @@
 					],
 					"actions": [
 						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 687024651071342,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 954216872335127,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 279653084017400,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
 							"id": "set-mirrored",
 							"objectClass": "Enemy_TestRoom_3",
-							"sid": 438231315791170,
+							"sid": 813209202009487,
 							"parameters": {
 								"state": "not-mirrored"
 							}
