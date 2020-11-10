@@ -4,37 +4,7 @@
 		{
 			"name": "BG",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "Enemy_View5",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Not_Alerted",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 127,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2392,
-						"y": -280,
-						"width": 123.26977835923876,
-						"height": 210.4983758696219,
-						"originX": 0.5003107520198882,
-						"originY": 0.0012861736334405238,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 873373590780283,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -733,8 +703,8 @@
 						}
 					},
 					"world": {
-						"x": 1493,
-						"y": 542,
+						"x": 75,
+						"y": 190,
 						"width": 111.91049196929792,
 						"height": 105.50773545966862,
 						"originX": 0.49925925925925924,
@@ -857,8 +827,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2709,
-						"y": 204,
+						"x": 2108,
+						"y": -299,
 						"width": 31.452667140804927,
 						"height": 258.61081871328497,
 						"originX": 0.5,
@@ -874,31 +844,31 @@
 					}
 				},
 				{
-					"type": "EnemyFlip_Trigger",
+					"type": "Enemy_View5",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Not_Alerted",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 124,
+					"uid": 127,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 293,
-						"y": 204,
-						"width": 31.452667140804927,
-						"height": 258.61081871328497,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 2392,
+						"y": -280,
+						"width": 179.392282,
+						"height": 306.334484,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -944,7 +914,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 400,
+								"magnitude": 1200,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -969,7 +939,7 @@
 					}
 				},
 				{
-					"type": "Enemy_TestRoom_3",
+					"type": "EnemyFlip_Trigger3",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -979,49 +949,41 @@
 					},
 					"uid": 125,
 					"instanceVariables": {},
-					"behaviors": {
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": 70,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 300,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 6,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 1200,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 1433,
-						"y": -430,
-						"width": 139.48165812002821,
-						"height": 139.48165812002821,
+						"x": 2697,
+						"y": 196,
+						"width": 31.452667000000005,
+						"height": 258.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemyFlip_Trigger4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 124,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 306,
+						"y": 196,
+						"width": 31.452667000000005,
+						"height": 258.610819,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

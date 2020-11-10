@@ -242,7 +242,9 @@
 			"Test_Wall2",
 			"Test_Path",
 			"Enemy_TestRoom_4",
-			"Enemy_View5"
+			"Enemy_View5",
+			"EnemyFlip_Trigger3",
+			"EnemyFlip_Trigger4"
 		],
 		"subfolders": [
 			{
