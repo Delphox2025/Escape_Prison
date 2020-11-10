@@ -1050,6 +1050,17 @@
 			],
 			"actions": [
 				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 703778982592379,
+					"parameters": {
+						"audio-file": "270461__littlerobotsoundfactory__gate-open-00",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 525050040410482,
@@ -1062,9 +1073,24 @@
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 137142324744618,
+					"disabled": true,
 					"parameters": {
 						"layout": "Test Enemy Room_1"
 					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Cell_MainDoor",
+					"sid": 520591356948342,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "NextLevel",
+					"sid": 720350162259685
 				}
 			],
 			"sid": 191677835829270
@@ -1708,6 +1734,17 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 462382099725830,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-active",
 							"objectClass": "Enemy_TestRoom_3",
 							"sid": 578975967914735,
@@ -2097,6 +2134,17 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 905822892781832,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-active",
 							"objectClass": "Enemy_TestRoom_4",
 							"sid": 545527109131159,
@@ -2362,6 +2410,31 @@
 				}
 			],
 			"sid": 957881653875611
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cell_MainDoor",
+					"sid": 278695721100958,
+					"parameters": {
+						"object": "DoorStopTrigger"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "Cell_MainDoor",
+					"sid": 480645764679374,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				}
+			],
+			"sid": 768021386551164
 		}
 	],
 	"sid": 161931613315162
