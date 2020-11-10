@@ -32,14 +32,14 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
+						"width": 79,
+						"height": 91,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Basic_Cop.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7259744,
+						"imageSpriteId": 9449747,
 						"collisionPoly": {
 							"points": [
 								1,

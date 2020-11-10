@@ -786,7 +786,7 @@
 							"properties": {
 								"movement": "horizontal",
 								"wave": "sine",
-								"period": 6,
+								"period": 10,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
@@ -800,10 +800,10 @@
 					"world": {
 						"x": 1479,
 						"y": 1717,
-						"width": 139.48165812002821,
-						"height": 139.48165812002821,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 135.180311,
+						"height": 155.998079,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
 						"color": [
 							1,
 							1,
@@ -910,7 +910,7 @@
 							"properties": {
 								"movement": "horizontal",
 								"wave": "sine",
-								"period": 6,
+								"period": 10,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
