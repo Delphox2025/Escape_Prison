@@ -719,7 +719,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -727,12 +727,12 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 849,
-						"y": 76.5,
+						"x": 859,
+						"y": 115.66666666666666,
 						"width": 250,
-						"height": 153,
-						"originX": 0.5,
-						"originY": 0.5,
+						"height": 188.768,
+						"originX": 0.5428571428571428,
+						"originY": 0.6862745098039216,
 						"color": [
 							1,
 							1,
