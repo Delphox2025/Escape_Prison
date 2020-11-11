@@ -7,14 +7,14 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 100,
-		"height": 100,
+		"width": 32,
+		"height": 32,
 		"originX": 0.5,
 		"originY": 0.5,
-		"originalSource": "C:\\Users\\colom\\OneDrive\\Desktop\\Sprites\\Floor 3.png",
+		"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Concrete_Floor.png",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 8469197,
+		"imageSpriteId": 1131584,
 		"useCollisionPoly": true
 	}
 }

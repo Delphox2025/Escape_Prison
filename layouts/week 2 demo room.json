@@ -1978,7 +1978,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 2970.319154817873,
-						"y": 826,
+						"y": 764,
 						"width": 276.78959975376426,
 						"height": 22.86668064626243,
 						"originX": 0.5,
@@ -2006,8 +2006,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2970.319154817873,
-						"y": 1354,
+						"x": 2970.5868499144303,
+						"y": 1225.119725128354,
 						"width": 276.78959975376426,
 						"height": 22.86668064626243,
 						"originX": 0.5,
@@ -2019,6 +2019,93 @@
 							1
 						],
 						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NextLevel6",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 192,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2904.0234494858496,
+						"y": 1734.153006879186,
+						"width": 241,
+						"height": 41,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DoorStopTrigger2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 193,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2980,
+						"y": 1454,
+						"width": 29,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RestartGame",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 194,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3001.1459543120836,
+						"y": 1736,
+						"width": 34,
+						"height": 198,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -2149,14 +2236,35 @@
 					},
 					"uid": 191,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 5,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": -180,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 2971.073660520315,
-						"y": 1724.8788751049767,
-						"width": 175.55738759556743,
-						"height": 34.897865119318446,
-						"originX": 0.48717948717948717,
-						"originY": 0.5,
+						"x": 2980.897997546858,
+						"y": 1721.8236679129393,
+						"width": 175.6303263841276,
+						"height": 23.560248320920877,
+						"originX": 0.4749006861682918,
+						"originY": 0.6,
 						"color": [
 							1,
 							1,

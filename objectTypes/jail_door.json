@@ -4,21 +4,48 @@
 	"sid": 853839459356368,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 142585851214251
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 929351619459120
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 39,
-						"height": 8,
-						"originX": 0.48717948717948717,
-						"originY": 0.5,
-						"originalSource": "",
+						"width": 71,
+						"height": 25,
+						"originX": 0.4749006861682918,
+						"originY": 0.6,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Jail_Door (1).png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 918547,
+						"imageSpriteId": 7207545,
+						"collisionPoly": {
+							"points": [
+								0.014304577464788722,
+								0.959375,
+								0.0137544014084507,
+								0.04062499999999947,
+								0.47975352112676045,
+								0.041406249999999756,
+								0.9851452464788727,
+								0.04375000000000018,
+								0.9851452464788727,
+								0.9585937499999999,
+								0.48993177816901395,
+								0.95859375
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

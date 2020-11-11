@@ -265,7 +265,10 @@
 			"Camera",
 			"Key2",
 			"Music_BAr_Cell",
-			"Jail_Door"
+			"Jail_Door",
+			"NextLevel6",
+			"DoorStopTrigger2",
+			"RestartGame"
 		],
 		"subfolders": [
 			{

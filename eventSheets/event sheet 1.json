@@ -2557,79 +2557,182 @@
 						}
 					],
 					"sid": 551024078566556
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Cell_MainDoor",
+							"sid": 173938101912380,
+							"parameters": {
+								"object": "DoorStopTrigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Cell_MainDoor",
+							"sid": 810108665045689,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 253317392632095
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Joe_Player",
+							"sid": 318717834763544,
+							"parameters": {
+								"object": "NextLevel5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 899532053783717,
+							"parameters": {
+								"layout": "Week 2 demo room"
+							}
+						}
+					],
+					"sid": 656077739770103
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Joe_Player3",
+							"sid": 390707796833570,
+							"parameters": {
+								"object": "Key"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NextLevel6",
+							"sid": 214289499117838,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 517392140133635,
+							"parameters": {
+								"audio-file": "204862__sijam11__keys-5",
+								"loop": "not-looping",
+								"volume": "-1",
+								"tag-optional": "\"Key2\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key",
+							"sid": 517189086247834
+						}
+					],
+					"sid": 698366511180232
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Jail_Door",
+							"sid": 811030173887997,
+							"parameters": {
+								"object": "DoorStopTrigger2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Jail_Door",
+							"sid": 316459233805349,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 178985717979240
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Joe_Player3",
+							"sid": 723402650184390,
+							"parameters": {
+								"object": "NextLevel6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 414555649149789,
+							"parameters": {
+								"audio-file": "270461__littlerobotsoundfactory__gate-open-00",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 603676182054105,
+							"disabled": true,
+							"parameters": {
+								"layout": "Elevator_TestStage"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 718921259698399,
+							"disabled": true,
+							"parameters": {
+								"layout": "Test Enemy Room_1"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Jail_Door",
+							"sid": 197605098455728,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "NextLevel6",
+							"sid": 729522586966634
+						}
+					],
+					"sid": 693172469663940
 				}
 			],
 			"sid": 957881653875611
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Cell_MainDoor",
-					"sid": 278695721100958,
-					"parameters": {
-						"object": "DoorStopTrigger"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-active",
-					"objectClass": "Cell_MainDoor",
-					"sid": 480645764679374,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "inactive"
-					}
-				}
-			],
-			"sid": 768021386551164
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 839179800312061,
-					"parameters": {
-						"object": "NextLevel5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 592767490621453,
-					"parameters": {
-						"layout": "Week 2 demo room"
-					}
-				}
-			],
-			"sid": 611206153428367
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player3",
-					"sid": 956950728029543,
-					"parameters": {
-						"object": "Key"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Key",
-					"sid": 893955677287763
-				}
-			],
-			"sid": 489061881506226
 		},
 		{
 			"eventType": "comment",
@@ -2679,6 +2782,30 @@
 				}
 			],
 			"sid": 904404549516799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player3",
+					"sid": 595137701379999,
+					"parameters": {
+						"object": "RestartGame"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 433361562964368,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 446630727474836
 		}
 	],
 	"sid": 161931613315162
