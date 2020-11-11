@@ -136,16 +136,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "bound",
-			"name": "Bound to layout",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"id": "bound",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -261,7 +261,11 @@
 			"WindowHitBox2",
 			"BushRow",
 			"NextLevel5",
-			"Key"
+			"Key",
+			"Camera",
+			"Key2",
+			"Music_BAr_Cell",
+			"Jail_Door"
 		],
 		"subfolders": [
 			{
@@ -368,6 +372,11 @@
 					"name": "Edited_lluiset7__sirena-curta.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 541909886202948
+				},
+				{
+					"name": "204862__sijam11__keys-5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 141991560518129
 				}
 			],
 			"subfolders": []
@@ -511,7 +520,7 @@
 		"enhancedAccelerationPrecision": true,
 		"cordovaiOSScheme": "app"
 	},
-	"viewportWidth": 1710,
+	"viewportWidth": 1708,
 	"viewportHeight": 960,
 	"firstLayout": "StartPage"
 }

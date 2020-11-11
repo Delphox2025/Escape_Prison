@@ -787,6 +787,17 @@
 					],
 					"actions": [
 						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 724308779093047,
+							"parameters": {
+								"audio-file": "204862__sijam11__keys-5",
+								"loop": "not-looping",
+								"volume": "-1",
+								"tag-optional": "\"Key2\""
+							}
+						},
+						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 582801117025707,
@@ -837,6 +848,11 @@
 							"parameters": {
 								"collisions": "enabled"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key2",
+							"sid": 178079682812315
 						}
 					],
 					"sid": 259611763601375
@@ -2614,6 +2630,55 @@
 				}
 			],
 			"sid": 489061881506226
+		},
+		{
+			"eventType": "comment",
+			"text": "Music start and stop from lvl strt - roomone"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Music_Bat",
+					"sid": 121090012484167,
+					"parameters": {
+						"object": "Music_BAr_Cell"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 241821086028002,
+					"parameters": {
+						"tag": "\"Groovy\""
+					}
+				}
+			],
+			"sid": 458111757247334
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Music_Bat",
+					"sid": 236134142372643,
+					"parameters": {
+						"object": "Sink_HitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Music_Bat",
+					"sid": 595207365540971
+				}
+			],
+			"sid": 904404549516799
 		}
 	],
 	"sid": 161931613315162

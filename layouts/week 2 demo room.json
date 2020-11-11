@@ -1613,8 +1613,8 @@
 						}
 					},
 					"world": {
-						"x": 79,
-						"y": 190,
+						"x": 121,
+						"y": 194,
 						"width": 122.06708629964817,
 						"height": 124.43734132493952,
 						"originX": 0.4419938642398618,
@@ -1642,10 +1642,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1311,
-						"y": 1768,
-						"width": 73,
-						"height": 28,
+						"x": 1309.1522532817928,
+						"y": 1764.3511481180483,
+						"width": 78.71240076083714,
+						"height": 34.35361924792375,
 						"originX": 0.4657534246575342,
 						"originY": 0.5714285714285714,
 						"color": [
@@ -2135,6 +2135,35 @@
 							1
 						],
 						"angle": 0.8260520023450669,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Jail_Door",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 191,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2971.073660520315,
+						"y": 1724.8788751049767,
+						"width": 175.55738759556743,
+						"height": 34.897865119318446,
+						"originX": 0.48717948717948717,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
