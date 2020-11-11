@@ -136,16 +136,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"id": "bound",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "bound",
-			"name": "Bound to layout",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -268,7 +268,11 @@
 			"Jail_Door",
 			"NextLevel6",
 			"DoorStopTrigger2",
-			"RestartGame"
+			"RestartGame",
+			"CourtYard_Key_Text",
+			"Floor_",
+			"Floor_3",
+			"TitleScreen2"
 		],
 		"subfolders": [
 			{
@@ -380,6 +384,11 @@
 					"name": "204862__sijam11__keys-5.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 141991560518129
+				},
+				{
+					"name": "He'sEscappingOuttheback.mp3",
+					"type": "audio/mpeg",
+					"sid": 955192602904632
 				}
 			],
 			"subfolders": []

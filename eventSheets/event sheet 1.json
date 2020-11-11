@@ -76,6 +76,26 @@
 			"sid": 274372595674645
 		},
 		{
+			"eventType": "variable",
+			"name": "KeyDialougeFinished",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 154471784739890
+		},
+		{
+			"eventType": "variable",
+			"name": "KeyDialouge",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 403390966545929
+		},
+		{
 			"eventType": "comment",
 			"text": "Helps the Press E layer able to work! And makes player arrow REad to show he can read something "
 		},
@@ -2631,6 +2651,17 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
+							"sid": 552056415901490,
+							"parameters": {
+								"audio-file": "He'sEscappingOuttheback",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"AfterHim\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
 							"sid": 517392140133635,
 							"parameters": {
 								"audio-file": "204862__sijam11__keys-5",
@@ -2806,6 +2837,112 @@
 				}
 			],
 			"sid": 446630727474836
+		},
+		{
+			"eventType": "comment",
+			"text": "Gonna be used for the key in the Courtyard "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 647229005471393,
+					"parameters": {
+						"object": "Key"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 123129930299577,
+					"parameters": {
+						"variable": "KeyDialouge",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 337209151857711,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Joe_Player",
+							"sid": 889587772243561,
+							"parameters": {
+								"object": "Key"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player",
+							"sid": 371923813686360,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 285700142085576,
+							"parameters": {
+								"layer": "\"DialougeBox2\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 566129392491493,
+							"parameters": {
+								"variable": "KeyDialouge",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 434728690411772,
+							"parameters": {
+								"variable": "KeyDialougeFinished",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 585986341350272,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 270885332053902,
+							"parameters": {
+								"variable": "KeyDialouge",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 802496695430651,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "He's Escaping vcoice"
 		}
 	],
 	"sid": 161931613315162

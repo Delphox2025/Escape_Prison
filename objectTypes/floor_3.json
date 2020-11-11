@@ -1,0 +1,20 @@
+{
+	"name": "Floor_3",
+	"plugin-id": "TiledBg",
+	"sid": 662968889317163,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 100,
+		"height": 100,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\D\\Downloads\\Floor_3.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7246391,
+		"useCollisionPoly": true
+	}
+}
