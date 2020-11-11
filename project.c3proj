@@ -257,7 +257,9 @@
 			"PrisonWalls",
 			"PrisonFloor",
 			"Tree",
-			"Bush"
+			"Bush",
+			"WindowHitBox2",
+			"BushRow"
 		],
 		"subfolders": [
 			{

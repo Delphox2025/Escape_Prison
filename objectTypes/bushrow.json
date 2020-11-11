@@ -1,0 +1,26 @@
+{
+	"name": "BushRow",
+	"plugin-id": "TiledBg",
+	"sid": 886216444044053,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 287373441259472
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 150,
+		"height": 150,
+		"originX": 0.5849056603773585,
+		"originY": 0.6,
+		"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Bush.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9728509,
+		"useCollisionPoly": true
+	}
+}

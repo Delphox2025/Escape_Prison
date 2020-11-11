@@ -779,9 +779,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Joe_Player",
-							"sid": 239540270722585,
+							"sid": 762347882966812,
 							"parameters": {
-								"object": "WindowHitBox"
+								"object": "WindowHitBox2"
 							}
 						}
 					],
