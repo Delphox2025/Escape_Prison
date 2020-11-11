@@ -2593,6 +2593,27 @@
 				}
 			],
 			"sid": 611206153428367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player3",
+					"sid": 956950728029543,
+					"parameters": {
+						"object": "Key"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Key",
+					"sid": 893955677287763
+				}
+			],
+			"sid": 489061881506226
 		}
 	],
 	"sid": 161931613315162
