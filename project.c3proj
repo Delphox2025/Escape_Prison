@@ -255,7 +255,9 @@
 			"EnemyFlip_Trigger4",
 			"DoorStopTrigger",
 			"PrisonWalls",
-			"PrisonFloor"
+			"PrisonFloor",
+			"Tree",
+			"Bush"
 		],
 		"subfolders": [
 			{
