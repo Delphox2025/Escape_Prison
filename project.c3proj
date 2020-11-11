@@ -259,7 +259,8 @@
 			"Tree",
 			"Bush",
 			"WindowHitBox2",
-			"BushRow"
+			"BushRow",
+			"NextLevel5"
 		],
 		"subfolders": [
 			{

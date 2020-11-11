@@ -1788,6 +1788,73 @@
 					"sid": 863450058523562
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Joe_Player3",
+							"sid": 697944048330874,
+							"parameters": {
+								"object": "Enemy_TestRoom_3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 648769391524426,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_3",
+							"sid": 622733889727318,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player3",
+							"sid": 550265160006708,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View4",
+							"sid": 474997223656818,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 756332686389920,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 668347756386106
+						}
+					],
+					"sid": 105550566844163
+				},
+				{
 					"eventType": "comment",
 					"text": "When player is not overlapping with Enemy_View4, it turns gray."
 				},
@@ -2188,6 +2255,73 @@
 					"sid": 724374155454038
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Joe_Player3",
+							"sid": 115792069760562,
+							"parameters": {
+								"object": "Enemy_TestRoom_4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 437968590599926,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_TestRoom_4",
+							"sid": 217910376256037,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Joe_Player3",
+							"sid": 406954847460063,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_View5",
+							"sid": 724673797605143,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 807565192180840,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 447057364087649
+						}
+					],
+					"sid": 376714859239839
+				},
+				{
 					"eventType": "comment",
 					"text": "When player is not overlapping with Enemy_View4, it turns gray."
 				},
@@ -2435,6 +2569,30 @@
 				}
 			],
 			"sid": 768021386551164
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 839179800312061,
+					"parameters": {
+						"object": "NextLevel5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 592767490621453,
+					"parameters": {
+						"layout": "Week 2 demo room"
+					}
+				}
+			],
+			"sid": 611206153428367
 		}
 	],
 	"sid": 161931613315162
