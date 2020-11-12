@@ -272,7 +272,11 @@
 			"CourtYard_Key_Text",
 			"Floor_",
 			"Floor_3",
-			"TitleScreen2"
+			"TitleScreen2",
+			"TPtoSecurityRoom",
+			"OfficeDesk",
+			"FilingCabinet",
+			"Joe_Player4"
 		],
 		"subfolders": [
 			{
@@ -298,18 +302,18 @@
 			"StartPage",
 			"RoomOne",
 			"Test Enemy Room_1",
-			"Elevator_TestStage",
 			"Test Enemy Room_2",
 			"Test Enemy Room_3",
-			"Week 2 demo room"
+			"Week 2 demo room",
+			"HallWay",
+			"Security_Room"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"StartPage_",
-			"Elevator Sheet"
+			"StartPage_"
 		],
 		"subfolders": []
 	},

@@ -56,14 +56,7 @@
 					},
 					"uid": 17,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": -28,
 						"y": 938,
@@ -96,14 +89,7 @@
 					},
 					"uid": 133,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": -23,
 						"y": 938,
@@ -136,14 +122,7 @@
 					},
 					"uid": 134,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 1684,
 						"y": 962,
@@ -282,35 +261,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Key2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 188,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 27.44287582230965,
-						"y": 635.403713277874,
-						"width": 54.56698878289588,
-						"height": 22.545535387705502,
-						"originX": 0.4657534246575342,
-						"originY": 0.5714285714285714,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 3.117433270952459,
 						"zElevation": 0
 					}
 				},
@@ -1566,14 +1516,7 @@
 					},
 					"uid": 135,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": -1,
 						"y": 129,
@@ -1606,14 +1549,7 @@
 					},
 					"uid": 136,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 959,
 						"y": 129,
@@ -2128,7 +2064,7 @@
 				{
 					"type": "CellWindow_Text_1",
 					"properties": {
-						"text": "Wait...what...It's a Key, could this unlock the door? ",
+						"text": "How I miss the outside world already....... I should plan my escape  Bet I  can make a lock pick out of these loose window bars!",
 						"enable-bbcode": true,
 						"font": "Copperplate Gothic",
 						"size": 15,
@@ -2293,8 +2229,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 8.872427777447939,
-						"y": 795.1946502778933,
+						"x": 20,
+						"y": 841,
 						"width": 410.7616452148075,
 						"height": 86.86540359487599,
 						"originX": 0,

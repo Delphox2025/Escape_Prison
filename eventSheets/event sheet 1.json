@@ -1099,15 +1099,6 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 525050040410482,
-					"disabled": true,
-					"parameters": {
-						"layout": "Elevator_TestStage"
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
 					"sid": 137142324744618,
 					"disabled": true,
 					"parameters": {
@@ -2730,15 +2721,6 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 603676182054105,
-							"disabled": true,
-							"parameters": {
-								"layout": "Elevator_TestStage"
-							}
-						},
-						{
-							"id": "go-to-layout",
-							"objectClass": "System",
 							"sid": 718921259698399,
 							"disabled": true,
 							"parameters": {
@@ -2830,9 +2812,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 433361562964368,
+					"sid": 563205981567319,
 					"parameters": {
-						"layout": "StartPage"
+						"layout": "HallWay"
 					}
 				}
 			],
@@ -2840,7 +2822,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "Gonna be used for the key in the Courtyard "
+			"text": "Changes For Hallway and Security Room "
 		},
 		{
 			"eventType": "block",
@@ -2848,101 +2830,24 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Joe_Player",
-					"sid": 647229005471393,
+					"sid": 899685405869028,
 					"parameters": {
-						"object": "Key"
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 123129930299577,
-					"parameters": {
-						"variable": "KeyDialouge",
-						"comparison": 0,
-						"value": "0"
+						"object": "TPtoSecurityRoom"
 					}
 				}
 			],
-			"actions": [],
-			"sid": 337209151857711,
-			"disabled": true,
-			"children": [
+			"actions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player",
-							"sid": 889587772243561,
-							"parameters": {
-								"object": "Key"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Joe_Player",
-							"sid": 371923813686360,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 285700142085576,
-							"parameters": {
-								"layer": "\"DialougeBox2\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 566129392491493,
-							"parameters": {
-								"variable": "KeyDialouge",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 434728690411772,
-							"parameters": {
-								"variable": "KeyDialougeFinished",
-								"value": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 585986341350272,
-							"parameters": {
-								"seconds": "0.2"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 270885332053902,
-							"parameters": {
-								"variable": "KeyDialouge",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 802496695430651,
-					"disabled": true
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 525550582575076,
+					"parameters": {
+						"layout": "Security_Room"
+					}
 				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "He's Escaping vcoice"
+			],
+			"sid": 837639328263500,
+			"disabled": true
 		}
 	],
 	"sid": 161931613315162

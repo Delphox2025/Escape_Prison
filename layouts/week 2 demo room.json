@@ -713,14 +713,7 @@
 					},
 					"uid": 103,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 2999.9857242880576,
 						"y": 22.047751023938517,
@@ -753,14 +746,7 @@
 					},
 					"uid": 101,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 43.86077621796363,
 						"y": 285.6328047917606,
@@ -793,14 +779,7 @@
 					},
 					"uid": 105,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 43.63287986265653,
 						"y": -14.34616302272925,
@@ -833,14 +812,7 @@
 					},
 					"uid": 24,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": -0.0038373849969151053,
 						"y": -0.0876126213086863,
@@ -873,14 +845,7 @@
 					},
 					"uid": 162,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 2999.906009680873,
 						"y": 1810.4759985106348,
@@ -913,14 +878,7 @@
 					},
 					"uid": 104,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 0.05381631620366534,
 						"y": 1876.3022153168963,
