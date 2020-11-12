@@ -1,10 +1,98 @@
 {
-	"name": "Week 2 demo room",
+	"name": "CourtYard",
 	"layers": [
 		{
 			"name": "BG",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "Tree",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2184,
+						"y": 1242,
+						"width": 366.0731551896932,
+						"height": 326.4976789529696,
+						"originX": 0.5,
+						"originY": 0.5303030303030303,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tree",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 811,
+						"y": 969,
+						"width": 366.0731551896932,
+						"height": 326.4976789529696,
+						"originX": 0.5,
+						"originY": 0.5303030303030303,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.8260520023450669,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tree",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 16,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1986,
+						"y": 649,
+						"width": 366.0731551896932,
+						"height": 326.4976789529696,
+						"originX": 0.5,
+						"originY": 0.5303030303030303,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.8260520023450669,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 873373590780283,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -1541,7 +1629,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 1,
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -1817,7 +1905,14 @@
 					},
 					"uid": 182,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 13.149989548581516,
 						"y": 575.2785322044365,
@@ -1846,7 +1941,14 @@
 					},
 					"uid": 183,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 13.563559323478358,
 						"y": 1086.795550845652,
@@ -1875,7 +1977,14 @@
 					},
 					"uid": 184,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 13.563559323478344,
 						"y": 1614.7182203382608,
@@ -1904,7 +2013,14 @@
 					},
 					"uid": 185,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 2969.319154817873,
 						"y": 314,
@@ -1933,7 +2049,14 @@
 					},
 					"uid": 186,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 2970.319154817873,
 						"y": 764,
@@ -1962,7 +2085,14 @@
 					},
 					"uid": 187,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 2970.5868499144303,
 						"y": 1225.119725128354,
@@ -2039,7 +2169,7 @@
 					}
 				},
 				{
-					"type": "RestartGame",
+					"type": "NxtlvlHallway",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -2096,93 +2226,6 @@
 			"name": "UI",
 			"overriden": 0,
 			"instances": [
-				{
-					"type": "Tree",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 2184,
-						"y": 1242,
-						"width": 366.0731551896932,
-						"height": 326.4976789529696,
-						"originX": 0.5,
-						"originY": 0.5303030303030303,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tree",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 16,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1986,
-						"y": 649,
-						"width": 366.0731551896932,
-						"height": 326.4976789529696,
-						"originX": 0.5,
-						"originY": 0.5303030303030303,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.8260520023450669,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Tree",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 811,
-						"y": 969,
-						"width": 366.0731551896932,
-						"height": 326.4976789529696,
-						"originX": 0.5,
-						"originY": 0.5303030303030303,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.8260520023450669,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "Jail_Door",
 					"properties": {

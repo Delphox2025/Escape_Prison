@@ -3,1088 +3,7 @@
 	"events": [
 		{
 			"eventType": "comment",
-			"text": "These are like on/off Switches for the speccific dialouge they are tied too ( The name they have on them goes to there dialouge )"
-		},
-		{
-			"eventType": "variable",
-			"name": "DialougeFinished",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 232070919909521
-		},
-		{
-			"eventType": "variable",
-			"name": "Dialouge",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 332708564033165
-		},
-		{
-			"eventType": "variable",
-			"name": "SinkDioFinished",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 130342659439539
-		},
-		{
-			"eventType": "variable",
-			"name": "SinkDio",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 638931370688883
-		},
-		{
-			"eventType": "variable",
-			"name": "WindowDialougeFinished",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 150438055342513
-		},
-		{
-			"eventType": "variable",
-			"name": "WindowDialouge",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 804511908500893
-		},
-		{
-			"eventType": "variable",
-			"name": "PressE",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 274372595674645
-		},
-		{
-			"eventType": "variable",
-			"name": "KeyDialougeFinished",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 154471784739890
-		},
-		{
-			"eventType": "variable",
-			"name": "KeyDialouge",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 403390966545929
-		},
-		{
-			"eventType": "comment",
-			"text": "Helps the Press E layer able to work! And makes player arrow REad to show he can read something "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 966581969747820,
-					"parameters": {
-						"object": "BEd_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 495154666154028,
-					"parameters": {
-						"layer": "\"PressEsign\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Joe_Player",
-					"sid": 614838706829323,
-					"parameters": {
-						"animation": "\"Read\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 906827097135478,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 617512522746274,
-					"parameters": {
-						"object": "BEd_HitBox"
-					},
-					"isInverted": true
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 590128439997863,
-					"parameters": {
-						"layer": "\"PressEsign\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Joe_Player",
-					"sid": 842745555193745,
-					"parameters": {
-						"animation": "\"Animation 1\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 826843676523491,
-			"disabled": true
-		},
-		{
-			"eventType": "comment",
-			"text": "TextBox and chating interactions | * Added a Press E to interact feature * / IN TESTING STAGE RIGHTNOW"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 711356477187004,
-					"parameters": {
-						"key": 69
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 458319627132083,
-					"parameters": {
-						"variable": "Dialouge",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 214279865854224,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player",
-							"sid": 931360791535379,
-							"parameters": {
-								"object": "BEd_HitBox"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Joe_Player",
-							"sid": 567534527986274,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 516656979018177,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 687215547749847,
-							"parameters": {
-								"variable": "Dialouge",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 324243505375804,
-							"parameters": {
-								"variable": "DialougeFinished",
-								"value": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 169094311904431,
-							"parameters": {
-								"seconds": "0.2"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 560355975898714,
-							"parameters": {
-								"variable": "Dialouge",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 594464037459412,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "This just makes the text go from left to right   "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 299955350367840,
-					"parameters": {
-						"variable": "Dialouge",
-						"comparison": 0,
-						"value": "1"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 810042949255063,
-					"parameters": {
-						"interval-seconds": "0.02"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "DestText",
-					"sid": 812680291879753,
-					"parameters": {
-						"text": "left(Cell_BedText_1.Text, len(DestText.Text) + 1)"
-					}
-				}
-			],
-			"sid": 792655644387070,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 464073771814259,
-					"parameters": {
-						"key": 69
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 446398804531503,
-					"parameters": {
-						"variable": "Dialouge",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 877002919304162,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 681335972101238,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 1,
-								"second-value": "Cell_BedText_1.Text"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "DestText",
-							"sid": 814359859142434,
-							"parameters": {
-								"text": "Cell_BedText_1.Text"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 544296541503003,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 759934133109219,
-							"parameters": {
-								"variable": "DialougeFinished",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 554763178798480,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 978936724361067,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 0,
-								"second-value": "Cell_BedText_1.Text"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 934063673877056,
-							"parameters": {
-								"variable": "DialougeFinished",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Joe_Player",
-							"sid": 350743920586005,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "250"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 448029946959256,
-							"parameters": {
-								"variable": "Dialouge",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 359881045818151,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "DestText",
-							"sid": 378533008898038,
-							"parameters": {
-								"text": "\"\""
-							}
-						}
-					],
-					"sid": 451583384784198,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 695321396393105,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 0,
-								"second-value": "Cell_BedText_1.Text"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 697039837536925,
-							"parameters": {
-								"variable": "DialougeFinished",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 455770730080747,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "Test SinkDialouge | SUCCESS IT WORKED "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 655584324053573,
-					"parameters": {
-						"key": 69
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 321385750157404,
-					"parameters": {
-						"variable": "SinkDio",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 127848251600708,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player",
-							"sid": 364300500802356,
-							"parameters": {
-								"object": "Sink_HitBox"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Joe_Player",
-							"sid": 676246181016405,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 479455694957878,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 226858856770814,
-							"parameters": {
-								"variable": "SinkDio",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 199672284573137,
-							"parameters": {
-								"variable": "SinkDioFinished",
-								"value": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 401615286415176,
-							"parameters": {
-								"seconds": "0.2"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 784048903906515,
-							"parameters": {
-								"variable": "SinkDio",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 184174878432663,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "This just makes the text go from left to right   "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 385334049039139,
-					"parameters": {
-						"variable": "SinkDio",
-						"comparison": 0,
-						"value": "1"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 405774234697421,
-					"parameters": {
-						"interval-seconds": "0.02"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 649273612243867,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 718284940980641,
-					"parameters": {
-						"key": 69
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 137608591903431,
-					"parameters": {
-						"variable": "SinkDio",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 597303788398311,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 620642434261933,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 1,
-								"second-value": "CellSink_Text_1.Text"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "DestText",
-							"sid": 756613662486106,
-							"parameters": {
-								"text": "CellSink_Text_1.Text"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 553936011770901,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 667409438776852,
-							"parameters": {
-								"variable": "SinkDioFinished",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 678317713796600,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 608782527942280,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 0,
-								"second-value": "CellSink_Text_1.Text"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 903486778630090,
-							"parameters": {
-								"variable": "SinkDioFinished",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-max-speed",
-							"objectClass": "Joe_Player",
-							"sid": 870117656251951,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "250"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 235063077001459,
-							"parameters": {
-								"variable": "SinkDio",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 676615940697893,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "DestText",
-							"sid": 781383034554289,
-							"parameters": {
-								"text": "\"\""
-							}
-						}
-					],
-					"sid": 850103313601182,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 853398413855063,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 0,
-								"second-value": "CellSink_Text_1.Text"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 408837793949280,
-							"parameters": {
-								"variable": "SinkDioFinished",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 543726349950265,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "Test WindowDialouge | SUCCESS IT WORKED "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 905841128777529,
-					"parameters": {
-						"key": 69
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 870037360344850,
-					"parameters": {
-						"variable": "WindowDialouge",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 879731627796783,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player",
-							"sid": 762347882966812,
-							"parameters": {
-								"object": "WindowHitBox2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 724308779093047,
-							"parameters": {
-								"audio-file": "204862__sijam11__keys-5",
-								"loop": "not-looping",
-								"volume": "-1",
-								"tag-optional": "\"Key2\""
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 582801117025707,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 313522340612173,
-							"parameters": {
-								"variable": "WindowDialouge",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 111805094272909,
-							"parameters": {
-								"variable": "WindowDialougeFinished",
-								"value": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 312801209703229,
-							"parameters": {
-								"seconds": "0.2"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 286637067455104,
-							"parameters": {
-								"variable": "WindowDialouge",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "NextLevel",
-							"sid": 894731009124530,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Key2",
-							"sid": 178079682812315
-						}
-					],
-					"sid": 259611763601375,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "This just makes the text go from left to right   "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 634275625220167,
-					"parameters": {
-						"variable": "WindowDialouge",
-						"comparison": 0,
-						"value": "1"
-					}
-				},
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 691863840685214,
-					"parameters": {
-						"interval-seconds": "0.02"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "DestText",
-					"sid": 670690226316744,
-					"parameters": {
-						"text": "left(CellWindow_Text_1.Text, len(DestText.Text) + 1)"
-					}
-				}
-			],
-			"sid": 835093851904266,
-			"disabled": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 617981982009543,
-					"parameters": {
-						"key": 69
-					}
-				},
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 414787425624491,
-					"parameters": {
-						"variable": "WindowDialouge",
-						"comparison": 0,
-						"value": "1"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 764919093396708,
-			"disabled": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 877019158750436,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 1,
-								"second-value": "CellWindow_Text_1.Text"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "DestText",
-							"sid": 740078471318409,
-							"parameters": {
-								"text": "CellWindow_Text_1.Text"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 937612025736316,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 262435054217979,
-							"parameters": {
-								"variable": "WindowDialougeFinished",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 325195940834379,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 534808861659248,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 0,
-								"second-value": "CellWindow_Text_1.Text"
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 387397497485645,
-							"parameters": {
-								"variable": "WindowDialougeFinished",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 391070957423388,
-							"parameters": {
-								"variable": "WindowDialouge",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 807689463758165,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "DestText",
-							"sid": 148277980387661,
-							"parameters": {
-								"text": "\"\""
-							}
-						}
-					],
-					"sid": 620184191492159,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-two-values",
-							"objectClass": "System",
-							"sid": 275395885775153,
-							"parameters": {
-								"first-value": "DestText.Text",
-								"comparison": 0,
-								"second-value": "CellWindow_Text_1.Text"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 316433007343125,
-							"parameters": {
-								"variable": "WindowDialougeFinished",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 217685294729610,
-					"disabled": true
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "Changed it so it can go to the Elevator,so i can see what that looks like in transitions from lvl to lvl "
+			"text": "Cell MAin GAte Audio "
 		},
 		{
 			"eventType": "block",
@@ -2624,9 +1543,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 899532053783717,
+							"sid": 269625585153103,
 							"parameters": {
-								"layout": "Week 2 demo room"
+								"layout": "HallWay"
 							}
 						}
 					],
@@ -2811,6 +1730,10 @@
 			"sid": 904404549516799
 		},
 		{
+			"eventType": "comment",
+			"text": "CourtYArd to Hallway"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -2818,7 +1741,7 @@
 					"objectClass": "Joe_Player3",
 					"sid": 595137701379999,
 					"parameters": {
-						"object": "RestartGame"
+						"object": "NxtlvlHallway"
 					}
 				}
 			],
@@ -2826,7 +1749,7 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 563205981567319,
+					"sid": 242854081311375,
 					"parameters": {
 						"layout": "HallWay"
 					}
@@ -2843,8 +1766,8 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 899685405869028,
+					"objectClass": "Joe_Player4",
+					"sid": 984279579812598,
 					"parameters": {
 						"object": "TPtoSecurityRoom"
 					}
@@ -2860,8 +1783,11 @@
 					}
 				}
 			],
-			"sid": 837639328263500,
-			"disabled": true
+			"sid": 837639328263500
+		},
+		{
+			"eventType": "comment",
+			"text": "Going to be the new interactionSystem"
 		},
 		{
 			"eventType": "block",
@@ -2877,24 +1803,132 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 563802543565232,
+					"parameters": {
+						"layer": "3",
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "UIText",
-					"sid": 878829729896794,
+					"sid": 634698555033720,
 					"parameters": {
 						"text": "left(Cell_HitBox.Text, len(UIText.Text) + 1)"
 					}
 				},
 				{
+					"id": "set-max-speed",
+					"objectClass": "Joe_Player",
+					"sid": 676246181016405,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"max-speed": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 337457487607347,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Joe_Player",
+					"sid": 454771381843582,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"max-speed": "250"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 681574606256762,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 910861633403479,
+					"sid": 688391080985186,
 					"parameters": {
 						"layer": "3",
-						"visibility": "visible"
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "NextLevel",
+					"sid": 228300672359640,
+					"parameters": {
+						"collisions": "enabled"
 					}
 				}
 			],
 			"sid": 296857289505359
+		},
+		{
+			"eventType": "comment",
+			"text": "QuickLock pick in hand "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 547674281045554,
+					"parameters": {
+						"object": "WindowHitBox2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Joe_Player",
+					"sid": 240423292169261,
+					"parameters": {
+						"animation": "\"Read\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 321110840075884
+		},
+		{
+			"eventType": "comment",
+			"text": "Goes out to CourtYard From Hallway "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 819442448365789,
+					"parameters": {
+						"object": "TPtoCourtyard"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 432748848622076,
+					"parameters": {
+						"layout": "CourtYard"
+					}
+				}
+			],
+			"sid": 422823393042661
 		}
 	],
 	"sid": 161931613315162

@@ -15,6 +15,7 @@
 	"members": [
 		"BEd_HitBox",
 		"Sink_HitBox",
-		"WindowHitBox2"
+		"WindowHitBox2",
+		"WindowHitBox3"
 	]
 }

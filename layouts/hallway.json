@@ -148,7 +148,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 200,
+					"uid": 18,
 					"instanceVariables": {},
 					"behaviors": {
 						"8Direction": {
@@ -174,10 +174,10 @@
 						}
 					},
 					"world": {
-						"x": 162.99229523071094,
-						"y": 457.41768137739876,
-						"width": 119.86825702032812,
-						"height": 122.1958159650702,
+						"x": 140,
+						"y": 467,
+						"width": 109.8682570203281,
+						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
 						"originY": 0.5279093697821613,
 						"color": [
@@ -193,7 +193,7 @@
 			],
 			"sid": 272806540024065,
 			"effectTypes": [],
-			"isInitiallyVisible": false,
+			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,
@@ -233,7 +233,36 @@
 					"behaviors": {},
 					"world": {
 						"x": 1430,
-						"y": 187,
+						"y": 191,
+						"width": 104,
+						"height": 190,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoCourtyard",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 161,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 694.6830134553652,
+						"y": 190.3660269107301,
 						"width": 104,
 						"height": 190,
 						"originX": 0.5,

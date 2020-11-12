@@ -268,7 +268,7 @@
 			"Jail_Door",
 			"NextLevel6",
 			"DoorStopTrigger2",
-			"RestartGame",
+			"NxtlvlHallway",
 			"CourtYard_Key_Text",
 			"Floor_",
 			"Floor_3",
@@ -277,7 +277,10 @@
 			"OfficeDesk",
 			"FilingCabinet",
 			"Joe_Player4",
-			"UIText"
+			"UIText",
+			"WindowHitBox3",
+			"Lockpick",
+			"TPtoCourtyard"
 		],
 		"subfolders": [
 			{
@@ -296,7 +299,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Cell_HitBox"
+			"Cell_HitBox",
+			"Player"
 		],
 		"subfolders": []
 	},
@@ -307,7 +311,7 @@
 			"Test Enemy Room_1",
 			"Test Enemy Room_2",
 			"Test Enemy Room_3",
-			"Week 2 demo room",
+			"CourtYard",
 			"HallWay",
 			"Security_Room"
 		],
