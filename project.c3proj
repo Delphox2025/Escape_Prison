@@ -276,7 +276,8 @@
 			"TPtoSecurityRoom",
 			"OfficeDesk",
 			"FilingCabinet",
-			"Joe_Player4"
+			"Joe_Player4",
+			"UIText"
 		],
 		"subfolders": [
 			{
@@ -294,7 +295,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Cell_HitBox"
+		],
 		"subfolders": []
 	},
 	"layouts": {

@@ -1,0 +1,20 @@
+{
+	"name": "Cell_HitBox",
+	"plugin-id": "Sprite",
+	"sid": 420632914497784,
+	"instanceVariables": [
+		{
+			"name": "Text",
+			"type": "string",
+			"desc": "",
+			"sid": 130076404547937
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BEd_HitBox",
+		"Sink_HitBox",
+		"WindowHitBox2"
+	]
+}

@@ -131,7 +131,8 @@
 					}
 				}
 			],
-			"sid": 906827097135478
+			"sid": 906827097135478,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -166,7 +167,8 @@
 					}
 				}
 			],
-			"sid": 826843676523491
+			"sid": 826843676523491,
+			"disabled": true
 		},
 		{
 			"eventType": "comment",
@@ -196,6 +198,7 @@
 			],
 			"actions": [],
 			"sid": 214279865854224,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -264,7 +267,8 @@
 							}
 						}
 					],
-					"sid": 594464037459412
+					"sid": 594464037459412,
+					"disabled": true
 				}
 			]
 		},
@@ -304,7 +308,8 @@
 					}
 				}
 			],
-			"sid": 792655644387070
+			"sid": 792655644387070,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -330,6 +335,7 @@
 			],
 			"actions": [],
 			"sid": 877002919304162,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -372,7 +378,8 @@
 							}
 						}
 					],
-					"sid": 554763178798480
+					"sid": 554763178798480,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -435,7 +442,8 @@
 							}
 						}
 					],
-					"sid": 451583384784198
+					"sid": 451583384784198,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -462,7 +470,8 @@
 							}
 						}
 					],
-					"sid": 455770730080747
+					"sid": 455770730080747,
+					"disabled": true
 				}
 			]
 		},
@@ -494,6 +503,7 @@
 			],
 			"actions": [],
 			"sid": 127848251600708,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -562,7 +572,8 @@
 							}
 						}
 					],
-					"sid": 184174878432663
+					"sid": 184174878432663,
+					"disabled": true
 				}
 			]
 		},
@@ -592,17 +603,9 @@
 					}
 				}
 			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "DestText",
-					"sid": 728571444812582,
-					"parameters": {
-						"text": "left(CellSink_Text_1.Text, len(DestText.Text) + 1)"
-					}
-				}
-			],
-			"sid": 649273612243867
+			"actions": [],
+			"sid": 649273612243867,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -628,6 +631,7 @@
 			],
 			"actions": [],
 			"sid": 597303788398311,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -670,7 +674,8 @@
 							}
 						}
 					],
-					"sid": 678317713796600
+					"sid": 678317713796600,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -733,7 +738,8 @@
 							}
 						}
 					],
-					"sid": 850103313601182
+					"sid": 850103313601182,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -760,7 +766,8 @@
 							}
 						}
 					],
-					"sid": 543726349950265
+					"sid": 543726349950265,
+					"disabled": true
 				}
 			]
 		},
@@ -792,6 +799,7 @@
 			],
 			"actions": [],
 			"sid": 879731627796783,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -875,7 +883,8 @@
 							"sid": 178079682812315
 						}
 					],
-					"sid": 259611763601375
+					"sid": 259611763601375,
+					"disabled": true
 				}
 			]
 		},
@@ -915,7 +924,8 @@
 					}
 				}
 			],
-			"sid": 835093851904266
+			"sid": 835093851904266,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -941,6 +951,7 @@
 			],
 			"actions": [],
 			"sid": 764919093396708,
+			"disabled": true,
 			"children": [
 				{
 					"eventType": "block",
@@ -983,7 +994,8 @@
 							}
 						}
 					],
-					"sid": 325195940834379
+					"sid": 325195940834379,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1037,7 +1049,8 @@
 							}
 						}
 					],
-					"sid": 620184191492159
+					"sid": 620184191492159,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -1064,7 +1077,8 @@
 							}
 						}
 					],
-					"sid": 217685294729610
+					"sid": 217685294729610,
+					"disabled": true
 				}
 			]
 		},
@@ -2848,6 +2862,39 @@
 			],
 			"sid": 837639328263500,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Joe_Player",
+					"sid": 804094786426301,
+					"parameters": {
+						"object": "Cell_HitBox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "UIText",
+					"sid": 878829729896794,
+					"parameters": {
+						"text": "left(Cell_HitBox.Text, len(UIText.Text) + 1)"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 910861633403479,
+					"parameters": {
+						"layer": "3",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 296857289505359
 		}
 	],
 	"sid": 161931613315162
