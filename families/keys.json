@@ -1,0 +1,13 @@
+{
+	"name": "Keys",
+	"plugin-id": "Sprite",
+	"sid": 990117693854367,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Key",
+		"Key2",
+		"Key_SecurityRoom"
+	]
+}

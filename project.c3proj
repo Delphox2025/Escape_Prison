@@ -280,7 +280,14 @@
 			"UIText",
 			"WindowHitBox3",
 			"Lockpick",
-			"TPtoCourtyard"
+			"TPtoCourtyard",
+			"MonitorSystem",
+			"SecurityRoom_MS_HitBox",
+			"SecurityRoom_Cabinets_HitBox",
+			"SecurityRoom_OfficeDesk_HitBox",
+			"Key_HitBox",
+			"Key_HitBox2",
+			"Key_SecurityRoom"
 		],
 		"subfolders": [
 			{
@@ -300,7 +307,10 @@
 	"families": {
 		"items": [
 			"Cell_HitBox",
-			"Player"
+			"Player",
+			"Security_Room_Assets",
+			"SecurityRoom_HitBoxes",
+			"Keys"
 		],
 		"subfolders": []
 	},

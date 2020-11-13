@@ -1,0 +1,15 @@
+{
+	"name": "SecurityRoom_HitBoxes",
+	"plugin-id": "Sprite",
+	"sid": 881282521278306,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"SecurityRoom_Cabinets_HitBox",
+		"SecurityRoom_MS_HitBox",
+		"SecurityRoom_OfficeDesk_HitBox",
+		"Key_HitBox",
+		"Key_HitBox2"
+	]
+}

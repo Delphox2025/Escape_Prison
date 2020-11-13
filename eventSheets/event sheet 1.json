@@ -1929,6 +1929,41 @@
 				}
 			],
 			"sid": 422823393042661
+		},
+		{
+			"eventType": "comment",
+			"text": "This will  be Controls For the SecurityRoom "
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 200004720069265,
+					"parameters": {
+						"object": "SecurityRoom_HitBoxes"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Key_HitBox",
+					"sid": 125698056388972,
+					"parameters": {
+						"object": "Key_SecurityRoom",
+						"layer": "1",
+						"image-point": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Key_HitBox",
+					"sid": 697647239085408
+				}
+			],
+			"sid": 151917568340814
 		}
 	],
 	"sid": 161931613315162

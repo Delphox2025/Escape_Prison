@@ -1,0 +1,13 @@
+{
+	"name": "Security_Room_Assets",
+	"plugin-id": "Sprite",
+	"sid": 965792521793007,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"FilingCabinet",
+		"MonitorSystem",
+		"OfficeDesk"
+	]
+}
