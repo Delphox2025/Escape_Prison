@@ -287,7 +287,11 @@
 			"SecurityRoom_OfficeDesk_HitBox",
 			"Key_HitBox",
 			"Key_HitBox2",
-			"Key_SecurityRoom"
+			"Key_SecurityRoom",
+			"Joe_Player5",
+			"TioletStallWalls",
+			"BathroomSinks",
+			"ShowerStallWalls"
 		],
 		"subfolders": [
 			{
@@ -318,14 +322,22 @@
 		"items": [
 			"StartPage",
 			"RoomOne",
-			"Test Enemy Room_1",
-			"Test Enemy Room_2",
-			"Test Enemy Room_3",
 			"CourtYard",
 			"HallWay",
-			"Security_Room"
+			"Security_Room",
+			"Bathroom"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"Test Enemy Room_1",
+					"Test Enemy Room_2",
+					"Test Enemy Room_3"
+				],
+				"subfolders": [],
+				"name": "Enemy Test Levels "
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
