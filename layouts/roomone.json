@@ -1307,7 +1307,7 @@
 					}
 				},
 				{
-					"type": "Joe_Player",
+					"type": "Cell_Joe_Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

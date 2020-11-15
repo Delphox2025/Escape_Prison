@@ -8,6 +8,7 @@
 	"members": [
 		"Enemy_TestRoom_3",
 		"Enemy_TestRoom_4",
-		"StandByGuard"
+		"StandByGuard",
+		"Enemy_Bathroom_Guard"
 	]
 }

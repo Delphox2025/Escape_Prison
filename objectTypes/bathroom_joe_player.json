@@ -1,24 +1,24 @@
 {
-	"name": "Joe_Player3",
+	"name": "BathRoom_Joe_Player",
 	"plugin-id": "Sprite",
-	"sid": 845207256900620,
+	"sid": 105568528719404,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
 			"name": "8Direction",
-			"sid": 112759304857113
+			"sid": 854740472098529
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 351646096617237
+			"sid": 738445471747263
 		},
 		{
 			"behaviorId": "scrollto",
 			"name": "ScrollTo",
-			"sid": 790424894475064
+			"sid": 219018820471215
 		}
 	],
 	"effectTypes": [],
@@ -34,7 +34,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3073371,
+						"imageSpriteId": 392914,
 						"collisionPoly": {
 							"points": [
 								0.0810667972878909,
@@ -59,7 +59,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 831411145471681,
+				"sid": 584939590716446,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

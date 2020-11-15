@@ -220,7 +220,7 @@
 			"Cell_Window",
 			"Cell_Window2",
 			"Cell_MainDoor",
-			"Joe_Player",
+			"Cell_Joe_Player",
 			"Video",
 			"Cell_Text_Box",
 			"Cell_BedText_1",
@@ -246,7 +246,7 @@
 			"CellWindow_Text_1",
 			"WindowHitBox",
 			"NextLevel",
-			"Joe_Player3",
+			"Courtyard_Joe_Player",
 			"NextLevel2",
 			"NextLevel3",
 			"NextLevel4",
@@ -284,7 +284,7 @@
 			"TPtoSecurityRoom",
 			"OfficeDesk",
 			"FilingCabinet",
-			"Joe_Player4",
+			"Hallway_Joe_Player",
 			"UIText",
 			"WindowHitBox3",
 			"Lockpick",
@@ -296,7 +296,7 @@
 			"Key_HitBox",
 			"Key_HitBox2",
 			"Key_SecurityRoom",
-			"Joe_Player5",
+			"BathRoom_Joe_Player",
 			"TioletStallWalls",
 			"BathroomSinks",
 			"ShowerStallWalls",
@@ -310,7 +310,10 @@
 			"SecurityRoom_Cabinets_HitBox4",
 			"SecurityRoom_Cabinets_HitBox5",
 			"Wrong",
-			"SecurityKey_HitBox"
+			"SecurityKey_HitBox",
+			"SecurityRoom_Joe_Player",
+			"Enemy_Bathroom_Guard",
+			"Enemy_BathRoomGuard_View"
 		],
 		"subfolders": [
 			{

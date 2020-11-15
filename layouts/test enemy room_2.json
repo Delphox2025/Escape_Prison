@@ -403,7 +403,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Joe_Player3",
+					"type": "Courtyard_Joe_Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

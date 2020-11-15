@@ -12,58 +12,168 @@
 			"sid": 656450901371456
 		},
 		{
-			"eventType": "comment",
-			"text": "Cell MAin GAte Audio "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player_ToNxtLvl",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 964007524103982,
-					"parameters": {
-						"object": "NextLevel"
-					}
+					"eventType": "comment",
+					"text": "CourtYArd to Hallway"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Courtyard_Joe_Player",
+							"sid": 267076624387064,
+							"parameters": {
+								"object": "NxtlvlHallway"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 294761653523968,
+							"parameters": {
+								"layout": "HallWay"
+							}
+						}
+					],
+					"sid": 144341177307454
+				},
+				{
+					"eventType": "comment",
+					"text": "Cell MAin GAte Audio "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Cell_Joe_Player",
+							"sid": 881015290151225,
+							"parameters": {
+								"object": "NextLevel"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 420407622935090,
+							"parameters": {
+								"audio-file": "270461__littlerobotsoundfactory__gate-open-00",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 395419734219988,
+							"disabled": true,
+							"parameters": {
+								"layout": "Test Enemy Room_1"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Cell_MainDoor",
+							"sid": 117308775053163,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "NextLevel",
+							"sid": 750682410334997
+						}
+					],
+					"sid": 595858072246232
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Courtyard_Joe_Player",
+							"sid": 727123868647443,
+							"parameters": {
+								"object": "NextLevel2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 520599044376680,
+							"parameters": {
+								"layout": "Test Enemy Room_2"
+							}
+						}
+					],
+					"sid": 127057798454642
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Courtyard_Joe_Player",
+							"sid": 250162289000346,
+							"parameters": {
+								"object": "NextLevel3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 512325338214233,
+							"parameters": {
+								"layout": "Test Enemy Room_3"
+							}
+						}
+					],
+					"sid": 712310469851786
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Courtyard_Joe_Player",
+							"sid": 794787071814381,
+							"parameters": {
+								"object": "NextLevel4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 428217476032022,
+							"parameters": {
+								"layout": "StartPage"
+							}
+						}
+					],
+					"sid": 952490518357775
 				}
 			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 703778982592379,
-					"parameters": {
-						"audio-file": "270461__littlerobotsoundfactory__gate-open-00",
-						"loop": "not-looping",
-						"volume": "0",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 137142324744618,
-					"disabled": true,
-					"parameters": {
-						"layout": "Test Enemy Room_1"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "Cell_MainDoor",
-					"sid": 520591356948342,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "active"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "NextLevel",
-					"sid": 720350162259685
-				}
-			],
-			"sid": 191677835829270
+			"sid": 193249826556114
 		},
 		{
 			"eventType": "group",
@@ -107,7 +217,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 809607154202290,
 							"parameters": {
 								"object": "Enemy_View"
@@ -117,7 +227,7 @@
 					"actions": [
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 169521009643666,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -329,7 +439,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 883775240196037,
 							"parameters": {
 								"object": "Enemy_View3"
@@ -339,7 +449,7 @@
 					"actions": [
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 934721620097775,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -536,8 +646,8 @@
 							"sid": 523493593721927,
 							"behaviorType": "Pathfinding",
 							"parameters": {
-								"x": "Joe_Player3.X",
-								"y": "Joe_Player3.Y"
+								"x": "Courtyard_Joe_Player.X",
+								"y": "Courtyard_Joe_Player.Y"
 							}
 						},
 						{
@@ -695,7 +805,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 369516432386971,
 							"parameters": {
 								"object": "Enemy_View4"
@@ -725,7 +835,7 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 586936777056344,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -762,7 +872,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 697944048330874,
 							"parameters": {
 								"object": "Enemy_TestRoom_3"
@@ -792,7 +902,7 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 550265160006708,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -1049,78 +1159,6 @@
 			"sid": 679732794819616
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player3",
-					"sid": 771990196947678,
-					"parameters": {
-						"object": "NextLevel2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 947057708464858,
-					"parameters": {
-						"layout": "Test Enemy Room_2"
-					}
-				}
-			],
-			"sid": 937167000982632
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player3",
-					"sid": 737809191584037,
-					"parameters": {
-						"object": "NextLevel3"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 888532077598572,
-					"parameters": {
-						"layout": "Test Enemy Room_3"
-					}
-				}
-			],
-			"sid": 470072870103724
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player3",
-					"sid": 800084396806411,
-					"parameters": {
-						"object": "NextLevel4"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 110348503197743,
-					"parameters": {
-						"layout": "StartPage"
-					}
-				}
-			],
-			"sid": 318703039602966
-		},
-		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Week 2: Prototype 2",
@@ -1162,7 +1200,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 320299969095207,
 							"parameters": {
 								"object": "Enemy_View5"
@@ -1192,7 +1230,7 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 649031223062454,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -1229,7 +1267,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 115792069760562,
 							"parameters": {
 								"object": "Enemy_TestRoom_4"
@@ -1259,7 +1297,7 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 406954847460063,
 							"behaviorType": "8Direction",
 							"parameters": {
@@ -1542,7 +1580,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player",
+							"objectClass": "Cell_Joe_Player",
 							"sid": 318717834763544,
 							"parameters": {
 								"object": "NextLevel5"
@@ -1566,7 +1604,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 390707796833570,
 							"parameters": {
 								"object": "Key"
@@ -1642,7 +1680,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Joe_Player3",
+							"objectClass": "Courtyard_Joe_Player",
 							"sid": 723402650184390,
 							"parameters": {
 								"object": "NextLevel6"
@@ -1691,528 +1729,373 @@
 			"sid": 957881653875611
 		},
 		{
-			"eventType": "comment",
-			"text": "Music start and stop from lvl strt - roomone"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Music_Bat",
-					"sid": 121090012484167,
-					"parameters": {
-						"object": "Music_BAr_Cell"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "stop",
-					"objectClass": "Audio",
-					"sid": 241821086028002,
-					"parameters": {
-						"tag": "\"Groovy\""
-					}
-				}
-			],
-			"sid": 458111757247334
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Music_Bat",
-					"sid": 236134142372643,
-					"parameters": {
-						"object": "Sink_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Music_Bat",
-					"sid": 595207365540971
-				}
-			],
-			"sid": 904404549516799
-		},
-		{
-			"eventType": "comment",
-			"text": "CourtYArd to Hallway"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player3",
-					"sid": 595137701379999,
-					"parameters": {
-						"object": "NxtlvlHallway"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 242854081311375,
-					"parameters": {
-						"layout": "HallWay"
-					}
-				}
-			],
-			"sid": 446630727474836
-		},
-		{
-			"eventType": "comment",
-			"text": "Changes For Hallway and Security Room "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Joe_Player4",
-					"sid": 984279579812598,
-					"parameters": {
-						"object": "TPtoSecurityRoom"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 525550582575076,
-					"parameters": {
-						"layout": "Security_Room"
-					}
-				}
-			],
-			"sid": 837639328263500
-		},
-		{
-			"eventType": "comment",
-			"text": "Going to be the new interactionSystem"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 804094786426301,
-					"parameters": {
-						"object": "Cell_HitBox"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 563802543565232,
-					"parameters": {
-						"layer": "3",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "UIText",
-					"sid": 634698555033720,
-					"parameters": {
-						"text": "left(Cell_HitBox.Text, len(UIText.Text) + 1)"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Joe_Player",
-					"sid": 676246181016405,
-					"behaviorType": "8Direction",
-					"parameters": {
-						"max-speed": "0"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 337457487607347,
-					"parameters": {
-						"seconds": "3.5"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Joe_Player",
-					"sid": 454771381843582,
-					"behaviorType": "8Direction",
-					"parameters": {
-						"max-speed": "250"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 681574606256762,
-					"parameters": {
-						"seconds": "0.5"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 688391080985186,
-					"parameters": {
-						"layer": "3",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "NextLevel",
-					"sid": 228300672359640,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				}
-			],
-			"sid": 296857289505359
-		},
-		{
-			"eventType": "comment",
-			"text": "QuickLock pick in hand "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Joe_Player",
-					"sid": 547674281045554,
-					"parameters": {
-						"object": "WindowHitBox2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Joe_Player",
-					"sid": 240423292169261,
-					"parameters": {
-						"animation": "\"Read\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 321110840075884
-		},
-		{
-			"eventType": "comment",
-			"text": "Goes To each Room From Hallway "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 747674194147787,
-					"parameters": {
-						"object": "TPtoCourtyard"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 432748848622076,
-					"parameters": {
-						"layout": "CourtYard"
-					}
-				}
-			],
-			"sid": 422823393042661
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 294878803043814,
-					"parameters": {
-						"object": "TPtoBathRoom"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 358963800128188,
-					"parameters": {
-						"layout": "Bathroom"
-					}
-				}
-			],
-			"sid": 519727615612898
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 288337900561506,
-					"parameters": {
-						"object": "TPtoSecurityRoom"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 826701295484188,
-					"parameters": {
-						"layout": "Security_Room"
-					}
-				}
-			],
-			"sid": 228970224306349
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 894857552884072,
-					"parameters": {
-						"object": "TPtoHallway"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 126366086545815,
-					"parameters": {
-						"layout": "HallWay"
-					}
-				}
-			],
-			"sid": 515099180494604
-		},
-		{
-			"eventType": "comment",
-			"text": "BATHROOM |  Controls"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Player",
-					"sid": 190237019581226,
-					"parameters": {
-						"object": "BathRoom_HitBoxes"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 114798876522408,
-					"parameters": {
-						"layer": "\"DialougeBox\"",
-						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-font-face",
-					"objectClass": "UIText",
-					"sid": 590435401937047,
-					"parameters": {
-						"font-face": "\"Arial\"",
-						"style": "bold"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "UIText",
-					"sid": 886677387535411,
-					"parameters": {
-						"text": "left(BathRoom_Sink_Text_1.Text, len(UIText.Text) + 1)"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Joe_Player5",
-					"sid": 915179224543696,
-					"behaviorType": "8Direction",
-					"parameters": {
-						"max-speed": "0"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "Enemy_TestRoom_3",
-					"sid": 872079161840672,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "inactive"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 287494980860530,
-					"parameters": {
-						"seconds": "5.5"
-					}
-				},
-				{
-					"id": "destroy",
-					"objectClass": "BathRoom_HitBoxes",
-					"sid": 386671402870581
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Joe_Player5",
-					"sid": 444881140347250,
-					"behaviorType": "8Direction",
-					"parameters": {
-						"max-speed": "250"
-					}
-				},
-				{
-					"id": "set-active",
-					"objectClass": "Enemy_TestRoom_3",
-					"sid": 396532722402295,
-					"behaviorType": "Sine",
-					"parameters": {
-						"state": "active"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 854641358483252,
-					"parameters": {
-						"seconds": "0.5"
-					}
-				},
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 593315904994060,
-					"parameters": {
-						"layer": "\"DialougeBox\"",
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "find-path",
-					"objectClass": "StandByGuard",
-					"sid": 561548356308874,
-					"behaviorType": "Pathfinding",
-					"parameters": {
-						"x": "735",
-						"y": "567"
-					}
-				},
-				{
-					"id": "move-along-path",
-					"objectClass": "StandByGuard",
-					"sid": 385601645862502,
-					"behaviorType": "Pathfinding"
-				}
-			],
-			"sid": 925669947995177
-		},
-		{
-			"eventType": "comment",
-			"text": "This will  be Controls For the SecurityRoom "
-		},
-		{
-			"eventType": "comment",
-			"text": "KeySpawn Random in securityRoom "
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 801776041773224
-				}
-			],
-			"actions": [
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 179421608650602,
-					"parameters": {
-						"variable": "KeySpawn_SecurityRoom",
-						"value": "choose(1,2,3,4,5)"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Key_SecurityRoom",
-					"sid": 527439188392619,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 876707675631126,
+			"eventType": "group",
+			"disabled": false,
+			"title": "Music_Lvls",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "Music start and stop from lvl strt - roomone"
+				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 412165711127838,
+							"id": "on-collision-with-another-object",
+							"objectClass": "Music_Bat",
+							"sid": 927387014353896,
 							"parameters": {
-								"variable": "KeySpawn_SecurityRoom",
-								"comparison": 0,
-								"value": "1"
+								"object": "Music_BAr_Cell"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-visible",
-							"objectClass": "Key_SecurityRoom",
-							"sid": 942809635372102,
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 561383972071377,
 							"parameters": {
+								"tag": "\"Groovy\""
+							}
+						}
+					],
+					"sid": 631102015650546
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Music_Bat",
+							"sid": 116664757638191,
+							"parameters": {
+								"object": "Sink_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Music_Bat",
+							"sid": 479389046621879
+						}
+					],
+					"sid": 976751334851344
+				}
+			],
+			"sid": 895421244239150
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "CellRoomOne_Controls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "QuickLock pick in hand "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Cell_Joe_Player",
+							"sid": 891707845637536,
+							"parameters": {
+								"object": "WindowHitBox2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cell_Joe_Player",
+							"sid": 847245222136008,
+							"parameters": {
+								"animation": "\"Read\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 995969654324936
+				},
+				{
+					"eventType": "comment",
+					"text": "Going to be the new interactionSystem"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Cell_Joe_Player",
+							"sid": 808707767592897,
+							"parameters": {
+								"object": "Cell_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 532507929670176,
+							"parameters": {
+								"layer": "3",
 								"visibility": "visible"
 							}
 						},
 						{
-							"id": "spawn-another-object",
-							"objectClass": "SecurityRoom_Cabinets_HitBox",
-							"sid": 850504539989505,
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 800123104761378,
 							"parameters": {
-								"object": "Key_SecurityRoom",
-								"layer": "\"Game\"",
-								"image-point": "1"
+								"text": "left(Cell_HitBox.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Cell_Joe_Player",
+							"sid": 320201605132442,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 419848314330599,
+							"parameters": {
+								"seconds": "3.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Cell_Joe_Player",
+							"sid": 347709347248509,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 783432758836324,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 541015960570457,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "NextLevel",
+							"sid": 218477657728747,
+							"parameters": {
+								"collisions": "enabled"
 							}
 						}
 					],
-					"sid": 305413349420539,
+					"sid": 242244432757820
+				}
+			],
+			"sid": 768789187191196
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hallway_Controls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Changes For Hallway and Security Room "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 594642116396786,
+							"parameters": {
+								"object": "TPtoSecurityRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 619879494948101,
+							"parameters": {
+								"layout": "Security_Room"
+							}
+						}
+					],
+					"sid": 821432985924775
+				},
+				{
+					"eventType": "comment",
+					"text": "Goes To each Room From Hallway "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 805744648421024,
+							"parameters": {
+								"object": "TPtoCourtyard"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 749939695994174,
+							"parameters": {
+								"layout": "CourtYard"
+							}
+						}
+					],
+					"sid": 957661218748350
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 424741184519093,
+							"parameters": {
+								"object": "TPtoBathRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 120175620120879,
+							"parameters": {
+								"layout": "Bathroom"
+							}
+						}
+					],
+					"sid": 619883263920022
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 282568854279032,
+							"parameters": {
+								"object": "TPtoSecurityRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 401736453253997,
+							"parameters": {
+								"layout": "Security_Room"
+							}
+						}
+					],
+					"sid": 676804661181880
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 863652272944828,
+							"parameters": {
+								"object": "TPtoHallway"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 284818768750553,
+							"parameters": {
+								"layout": "HallWay"
+							}
+						}
+					],
+					"sid": 400593055602575
+				}
+			],
+			"sid": 788486928695440
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SecurityRoom",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "This will  be Controls For the SecurityRoom "
+				},
+				{
+					"eventType": "comment",
+					"text": "KeySpawn Random in securityRoom "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 399593879169021
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 164304409446049,
+							"parameters": {
+								"variable": "KeySpawn_SecurityRoom",
+								"value": "choose(1,2,3,4,5)"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_SecurityRoom",
+							"sid": 342960928686629,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 971356920607241,
 					"children": [
 						{
 							"eventType": "block",
@@ -2220,20 +2103,27 @@
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 264822994715166,
+									"sid": 254016313835015,
 									"parameters": {
 										"variable": "KeySpawn_SecurityRoom",
-										"comparison": 1,
+										"comparison": 0,
 										"value": "1"
-									},
-									"isInverted": true
+									}
 								}
 							],
 							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 652808309383402,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "SecurityRoom_Cabinets_HitBox",
-									"sid": 391445249649968,
+									"sid": 782392384477895,
 									"parameters": {
 										"object": "Key_SecurityRoom",
 										"layer": "\"Game\"",
@@ -2241,66 +2131,66 @@
 									}
 								}
 							],
-							"sid": 246545120314197
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 209495379574001,
-							"parameters": {
-								"variable": "KeySpawn_SecurityRoom",
-								"comparison": 0,
-								"value": "2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Key_SecurityRoom",
-							"sid": 480067528577383,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"sid": 636548926430599,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 623834168301005,
+											"parameters": {
+												"variable": "KeySpawn_SecurityRoom",
+												"comparison": 1,
+												"value": "1"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SecurityRoom_Cabinets_HitBox",
+											"sid": 811142616317285,
+											"parameters": {
+												"object": "Key_SecurityRoom",
+												"layer": "\"Game\"",
+												"image-point": "1"
+											}
+										}
+									],
+									"sid": 832640396326450
+								}
+							]
 						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "SecurityRoom_Cabinets_HitBox2",
-							"sid": 211839787997656,
-							"parameters": {
-								"object": "Key_SecurityRoom",
-								"layer": "\"Game\"",
-								"image-point": "1"
-							}
-						}
-					],
-					"sid": 616216276897998,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 779816428909964,
+									"sid": 495291241398379,
 									"parameters": {
 										"variable": "KeySpawn_SecurityRoom",
-										"comparison": 1,
+										"comparison": 0,
 										"value": "2"
-									},
-									"isInverted": true
+									}
 								}
 							],
 							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 676382003739752,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "SecurityRoom_Cabinets_HitBox2",
-									"sid": 433493478566452,
+									"sid": 987893349482476,
 									"parameters": {
 										"object": "Key_SecurityRoom",
 										"layer": "\"Game\"",
@@ -2308,66 +2198,66 @@
 									}
 								}
 							],
-							"sid": 758441401930146
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 987264681996113,
-							"parameters": {
-								"variable": "KeySpawn_SecurityRoom",
-								"comparison": 0,
-								"value": "3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Key_SecurityRoom",
-							"sid": 855661847070139,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"sid": 395645401627955,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 983236170357546,
+											"parameters": {
+												"variable": "KeySpawn_SecurityRoom",
+												"comparison": 1,
+												"value": "2"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SecurityRoom_Cabinets_HitBox2",
+											"sid": 160745316689503,
+											"parameters": {
+												"object": "Key_SecurityRoom",
+												"layer": "\"Game\"",
+												"image-point": "1"
+											}
+										}
+									],
+									"sid": 142854003071342
+								}
+							]
 						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "SecurityRoom_Cabinets_HitBox3",
-							"sid": 983653297323169,
-							"parameters": {
-								"object": "Key_SecurityRoom",
-								"layer": "\"Game\"",
-								"image-point": "1"
-							}
-						}
-					],
-					"sid": 740594439381281,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 479299462139992,
+									"sid": 797836928423214,
 									"parameters": {
 										"variable": "KeySpawn_SecurityRoom",
-										"comparison": 1,
+										"comparison": 0,
 										"value": "3"
-									},
-									"isInverted": true
+									}
 								}
 							],
 							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 567935154604774,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "SecurityRoom_Cabinets_HitBox3",
-									"sid": 438288024140496,
+									"sid": 579017062304711,
 									"parameters": {
 										"object": "Key_SecurityRoom",
 										"layer": "\"Game\"",
@@ -2375,66 +2265,66 @@
 									}
 								}
 							],
-							"sid": 457021718102636
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 699828519108361,
-							"parameters": {
-								"variable": "KeySpawn_SecurityRoom",
-								"comparison": 0,
-								"value": "4"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Key_SecurityRoom",
-							"sid": 632658046243492,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"sid": 884615302178616,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 963475159092078,
+											"parameters": {
+												"variable": "KeySpawn_SecurityRoom",
+												"comparison": 1,
+												"value": "3"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SecurityRoom_Cabinets_HitBox3",
+											"sid": 789126858340412,
+											"parameters": {
+												"object": "Key_SecurityRoom",
+												"layer": "\"Game\"",
+												"image-point": "1"
+											}
+										}
+									],
+									"sid": 475810680304781
+								}
+							]
 						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "SecurityRoom_Cabinets_HitBox4",
-							"sid": 441781473021959,
-							"parameters": {
-								"object": "Key_SecurityRoom",
-								"layer": "\"Game\"",
-								"image-point": "1"
-							}
-						}
-					],
-					"sid": 493405235843588,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 925114083918149,
+									"sid": 308259416720566,
 									"parameters": {
 										"variable": "KeySpawn_SecurityRoom",
-										"comparison": 1,
+										"comparison": 0,
 										"value": "4"
-									},
-									"isInverted": true
+									}
 								}
 							],
 							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 589376896210650,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "SecurityRoom_Cabinets_HitBox4",
-									"sid": 685013754691507,
+									"sid": 417023637330917,
 									"parameters": {
 										"object": "Key_SecurityRoom",
 										"layer": "\"Game\"",
@@ -2442,66 +2332,66 @@
 									}
 								}
 							],
-							"sid": 246608781987020
-						}
-					]
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 694891383680927,
-							"parameters": {
-								"variable": "KeySpawn_SecurityRoom",
-								"comparison": 0,
-								"value": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "Key_SecurityRoom",
-							"sid": 729843130149044,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"sid": 676670032721573,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 304569871621687,
+											"parameters": {
+												"variable": "KeySpawn_SecurityRoom",
+												"comparison": 1,
+												"value": "4"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SecurityRoom_Cabinets_HitBox4",
+											"sid": 656769083055479,
+											"parameters": {
+												"object": "Key_SecurityRoom",
+												"layer": "\"Game\"",
+												"image-point": "1"
+											}
+										}
+									],
+									"sid": 502956443104837
+								}
+							]
 						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "SecurityRoom_Cabinets_HitBox5",
-							"sid": 357049088065212,
-							"parameters": {
-								"object": "Key_SecurityRoom",
-								"layer": "\"Game\"",
-								"image-point": "1"
-							}
-						}
-					],
-					"sid": 320937250634178,
-					"children": [
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 979858405792796,
+									"sid": 754041419501550,
 									"parameters": {
 										"variable": "KeySpawn_SecurityRoom",
-										"comparison": 1,
+										"comparison": 0,
 										"value": "5"
-									},
-									"isInverted": true
+									}
 								}
 							],
 							"actions": [
 								{
+									"id": "set-visible",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 577618348340804,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
 									"id": "spawn-another-object",
 									"objectClass": "SecurityRoom_Cabinets_HitBox5",
-									"sid": 967000376771490,
+									"sid": 836599652767286,
 									"parameters": {
 										"object": "Key_SecurityRoom",
 										"layer": "\"Game\"",
@@ -2509,11 +2399,487 @@
 									}
 								}
 							],
-							"sid": 937888998593244
+							"sid": 583430805873859,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 712821982282507,
+											"parameters": {
+												"variable": "KeySpawn_SecurityRoom",
+												"comparison": 1,
+												"value": "5"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "SecurityRoom_Cabinets_HitBox5",
+											"sid": 796033981477644,
+											"parameters": {
+												"object": "Key_SecurityRoom",
+												"layer": "\"Game\"",
+												"image-point": "1"
+											}
+										}
+									],
+									"sid": 784077185121210
+								}
+							]
 						}
 					]
 				}
-			]
+			],
+			"sid": 736953452191012
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "BathRoomControls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set Enemy_View4 position to enemy."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 175471635567487
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Enemy_BathRoomGuard_View",
+							"sid": 572744627711036,
+							"parameters": {
+								"object": "Enemy_Bathroom_Guard",
+								"image-point-optional": "0"
+							}
+						}
+					],
+					"sid": 403881161004826
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is overlapping with Enemy_View4, it turns red."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 520458727094153,
+							"parameters": {
+								"object": "Enemy_BathRoomGuard_View"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 213973615956005,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 760198315281551,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 363996367313646,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_BathRoomGuard_View",
+							"sid": 436152060305361,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 865956459942620,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 846461584337371
+						}
+					],
+					"sid": 811453502731766
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 139324664201786,
+							"parameters": {
+								"object": "Enemies"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 427859024411403,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 276809491399661,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 467178126756266,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_BathRoomGuard_View",
+							"sid": 626185332289586,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 391767806790088,
+							"parameters": {
+								"seconds": "2.0"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 845099780138322
+						}
+					],
+					"sid": 493636340814630
+				},
+				{
+					"eventType": "comment",
+					"text": "When player is not overlapping with Enemy_View4, it turns gray."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 611297050622790
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_BathRoomGuard_View",
+							"sid": 331019150662423,
+							"parameters": {
+								"animation": "\"Not_Alerted\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 207165075664329
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 684750074804142,
+							"parameters": {
+								"object": "EnemyFlip_Trigger2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 667171164888703,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 423768090653726,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 933997609497097,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 317059228549426,
+							"parameters": {
+								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_BathRoomGuard_View",
+							"sid": 699176964023795,
+							"parameters": {
+								"state": "flipped"
+							}
+						}
+					],
+					"sid": 576730141265322
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 476346441014924,
+							"parameters": {
+								"object": "EnemyFlip_Trigger"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 662099912399547,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 669252602878582,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 846161009556415,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 690620952125843,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						},
+						{
+							"id": "set-flipped",
+							"objectClass": "Enemy_BathRoomGuard_View",
+							"sid": 940162148028184,
+							"parameters": {
+								"state": "not-flipped"
+							}
+						}
+					],
+					"sid": 243156514804875
+				},
+				{
+					"eventType": "comment",
+					"text": "BATHROOM |  Controls"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 293229092869140,
+							"parameters": {
+								"object": "BathRoom_HitBoxes"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 819962744697531,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 459139497944770,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 399778909171793,
+							"parameters": {
+								"text": "left(BathRoom_Sink_Text_1.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 344612804283383,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 107070854703114,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 637223258081835,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BathRoom_HitBoxes",
+							"sid": 351766188177475
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 547316791456228,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 160202058807058,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 851069505952055,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 679534384476692,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "find-path",
+							"objectClass": "StandByGuard",
+							"sid": 722380676382528,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "735",
+								"y": "567"
+							}
+						},
+						{
+							"id": "move-along-path",
+							"objectClass": "StandByGuard",
+							"sid": 648501510218575,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 107743895011007
+				}
+			],
+			"sid": 856717083738230
 		}
 	],
 	"sid": 161931613315162

@@ -1,14 +1,14 @@
 {
-	"name": "Joe_Player",
+	"name": "SecurityRoom_Joe_Player",
 	"plugin-id": "Sprite",
-	"sid": 329671178812052,
+	"sid": 624291000065025,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "EightDir",
 			"name": "8Direction",
-			"sid": 118762779166925
+			"sid": 169268108184752
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7047477,
+						"imageSpriteId": 5451970,
 						"collisionPoly": {
 							"points": [
 								0.06951460786385201,
@@ -49,7 +49,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 749376809159450,
+				"sid": 939515919683296,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
@@ -67,12 +67,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5214161,
+						"imageSpriteId": 1049805,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 795281310988613,
+				"sid": 787451304270880,
 				"name": "Read",
 				"isLooping": false,
 				"isPingPong": false,

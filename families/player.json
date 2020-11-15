@@ -6,9 +6,10 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"Joe_Player",
-		"Joe_Player3",
-		"Joe_Player4",
-		"Joe_Player5"
+		"Cell_Joe_Player",
+		"Courtyard_Joe_Player",
+		"Hallway_Joe_Player",
+		"BathRoom_Joe_Player",
+		"SecurityRoom_Joe_Player"
 	]
 }
