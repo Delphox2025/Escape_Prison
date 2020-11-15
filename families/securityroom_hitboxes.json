@@ -10,6 +10,10 @@
 		"SecurityRoom_MS_HitBox",
 		"SecurityRoom_OfficeDesk_HitBox",
 		"Key_HitBox",
-		"Key_HitBox2"
+		"Key_HitBox2",
+		"SecurityRoom_Cabinets_HitBox2",
+		"SecurityRoom_Cabinets_HitBox3",
+		"SecurityRoom_Cabinets_HitBox4",
+		"SecurityRoom_Cabinets_HitBox5"
 	]
 }

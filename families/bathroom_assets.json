@@ -1,0 +1,13 @@
+{
+	"name": "BathRoom_Assets",
+	"plugin-id": "Sprite",
+	"sid": 729297876811264,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BathroomSinks",
+		"ShowerStallWalls",
+		"TioletStallWalls"
+	]
+}

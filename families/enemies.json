@@ -1,0 +1,13 @@
+{
+	"name": "Enemies",
+	"plugin-id": "Sprite",
+	"sid": 103383043141141,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Enemy_TestRoom_3",
+		"Enemy_TestRoom_4",
+		"StandByGuard"
+	]
+}

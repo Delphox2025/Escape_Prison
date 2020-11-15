@@ -175,6 +175,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "screen",
 			"name": "Screen",
@@ -291,7 +299,18 @@
 			"Joe_Player5",
 			"TioletStallWalls",
 			"BathroomSinks",
-			"ShowerStallWalls"
+			"ShowerStallWalls",
+			"Bathroom_HitBox",
+			"BathRoom_Sink_Text_1",
+			"StandByGuard",
+			"TPtoBathRoom",
+			"TPtoHallway",
+			"SecurityRoom_Cabinets_HitBox2",
+			"SecurityRoom_Cabinets_HitBox3",
+			"SecurityRoom_Cabinets_HitBox4",
+			"SecurityRoom_Cabinets_HitBox5",
+			"Wrong",
+			"SecurityKey_HitBox"
 		],
 		"subfolders": [
 			{
@@ -314,7 +333,11 @@
 			"Player",
 			"Security_Room_Assets",
 			"SecurityRoom_HitBoxes",
-			"Keys"
+			"Keys",
+			"Enemies",
+			"BathRoom_HitBoxes",
+			"BathRoom_Assets",
+			"Hallway_Assets"
 		],
 		"subfolders": []
 	},

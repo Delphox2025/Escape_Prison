@@ -1,7 +1,7 @@
 {
-	"name": "TPtoSecurityRoom",
+	"name": "Wrong",
 	"plugin-id": "Sprite",
-	"sid": 199857587162375,
+	"sid": 108749890399616,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,19 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 225,
+						"height": 220,
+						"originX": 0.4711111111111111,
+						"originY": 0.4772727272727273,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2001057,
+						"imageSpriteId": 125827,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 406261571646507,
+				"sid": 216252591506398,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

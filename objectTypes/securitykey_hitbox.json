@@ -1,10 +1,16 @@
 {
-	"name": "TPtoSecurityRoom",
+	"name": "SecurityKey_HitBox",
 	"plugin-id": "Sprite",
-	"sid": 199857587162375,
+	"sid": 918298377356611,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 810145370699064
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2001057,
+						"imageSpriteId": 3971536,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 406261571646507,
+				"sid": 345634461902849,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,0 +1,11 @@
+{
+	"name": "BathRoom_HitBoxes",
+	"plugin-id": "Sprite",
+	"sid": 823855217984681,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Bathroom_HitBox"
+	]
+}

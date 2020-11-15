@@ -1,7 +1,7 @@
 {
-	"name": "TPtoSecurityRoom",
+	"name": "SecurityRoom_Cabinets_HitBox2",
 	"plugin-id": "Sprite",
-	"sid": 199857587162375,
+	"sid": 851223548357117,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,19 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2001057,
+						"imageSpriteId": 4196072,
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "KeySpawn",
+								"x": 0.888,
+								"y": 0.488
+							}
+						],
 						"duration": 1
 					}
 				],
-				"sid": 406261571646507,
+				"sid": 852877404729245,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

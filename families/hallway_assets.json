@@ -1,0 +1,14 @@
+{
+	"name": "Hallway_Assets",
+	"plugin-id": "Sprite",
+	"sid": 388825028812808,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"TPtoBathRoom",
+		"TPtoCourtyard",
+		"TPtoSecurityRoom",
+		"TPtoHallway"
+	]
+}
