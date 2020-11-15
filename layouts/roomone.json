@@ -2113,48 +2113,6 @@
 					}
 				},
 				{
-					"type": "DestText",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Copperplate Gothic",
-						"size": 15,
-						"line-height": 0,
-						"bold": true,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 48,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 622,
-						"y": 719,
-						"width": 477,
-						"height": 343,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "CellWindow_Text_1",
 					"properties": {
 						"text": "How I miss the outside world already....... I should plan my escape  Bet I  can make a lock pick out of these loose window bars!",

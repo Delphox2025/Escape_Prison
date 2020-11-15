@@ -1,0 +1,64 @@
+{
+	"name": "Key_BathRoom",
+	"plugin-id": "Sprite",
+	"sid": 125252437469089,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 73,
+						"height": 28,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Key.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1255072,
+						"collisionPoly": {
+							"points": [
+								0.16599516518936333,
+								0.05252100840336114,
+								0.39202256244963707,
+								0.38445378151260506,
+								0.9782433521353746,
+								0.40126050420168063,
+								0.9226430298146652,
+								0.7521008403361346,
+								0.5108783239323127,
+								0.8550420168067228,
+								0.39967767929089404,
+								0.5588235294117646,
+								0.126510878323932,
+								0.9432773109243694,
+								0.0217566478646253,
+								0.4285714285714281
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "KeyHitBox",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 497192221515080,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

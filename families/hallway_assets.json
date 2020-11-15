@@ -2,13 +2,21 @@
 	"name": "Hallway_Assets",
 	"plugin-id": "Sprite",
 	"sid": 388825028812808,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Text",
+			"type": "string",
+			"desc": "",
+			"sid": 955922195861858
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
 		"TPtoBathRoom",
 		"TPtoCourtyard",
 		"TPtoSecurityRoom",
-		"TPtoHallway"
+		"TPtoHallway",
+		"Hallway_WhatsHappening_HitBox"
 	]
 }

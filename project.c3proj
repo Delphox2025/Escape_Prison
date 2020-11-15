@@ -313,7 +313,14 @@
 			"SecurityKey_HitBox",
 			"SecurityRoom_Joe_Player",
 			"Enemy_Bathroom_Guard",
-			"Enemy_BathRoomGuard_View"
+			"Enemy_BathRoomGuard_View",
+			"BathroomSink_Hitbox_",
+			"BathroomSink_Hitbox_2",
+			"BathroomSink_Hitbox_3",
+			"BathroomSink_Hitbox_4",
+			"Key_BathRoom",
+			"BathRoom_StanbyGuard_AfterSpot",
+			"Hallway_WhatsHappening_HitBox"
 		],
 		"subfolders": [
 			{
@@ -448,6 +455,11 @@
 					"name": "He'sEscappingOuttheback.mp3",
 					"type": "audio/mpeg",
 					"sid": 955192602904632
+				},
+				{
+					"name": "AfterHimMyKey.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 365924921409023
 				}
 			],
 			"subfolders": []

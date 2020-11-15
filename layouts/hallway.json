@@ -120,7 +120,9 @@
 						"live-preview": false
 					},
 					"uid": 245,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1071,
@@ -203,12 +205,43 @@
 						}
 					},
 					"world": {
-						"x": 165,
-						"y": 450,
+						"x": 73,
+						"y": 448,
 						"width": 109.8682570203281,
 						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
 						"originY": 0.5279093697821613,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hallway_WhatsHappening_HitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {
+						"Text": "Wait a sec! So many doors they gotta have some keys in them! "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 220,
+						"y": 448,
+						"width": 79.89993742175272,
+						"height": 79.89993742175272,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -258,7 +291,9 @@
 						"live-preview": false
 					},
 					"uid": 199,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1434,
@@ -287,7 +322,9 @@
 						"live-preview": false
 					},
 					"uid": 161,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 698.6830134553652,
@@ -310,6 +347,106 @@
 			"sid": 562548391563406,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "DialougeBox",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Cell_Text_Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 259,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 517,
+						"y": 533,
+						"width": 445.5385026801572,
+						"height": 167.70837062336983,
+						"originX": 0.4943310657596372,
+						"originY": 0.5602409638554217,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 260,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 334,
+						"y": 457,
+						"width": 347.2829873463245,
+						"height": 121.62553962128986,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 789995385583946,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

@@ -1930,8 +1930,8 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Hallway_Joe_Player",
-							"sid": 594642116396786,
+							"objectClass": "Player",
+							"sid": 715993969000796,
 							"parameters": {
 								"object": "TPtoSecurityRoom"
 							}
@@ -2048,6 +2048,114 @@
 						}
 					],
 					"sid": 400593055602575
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 400121515963227,
+							"parameters": {
+								"object": "Hallway_WhatsHappening_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 361501072546726,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 450172580150303,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 482488955872403,
+							"parameters": {
+								"text": "left(Hallway_Assets.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 719693727492533,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 542351852532422,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 286022278726005,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 587335487685613
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 766549996225805,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 194488230144100,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 210210232683677,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 900767011172222,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 528768697473239
 				}
 			],
 			"sid": 788486928695440
@@ -2760,9 +2868,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 293229092869140,
+							"sid": 135127414009950,
 							"parameters": {
-								"object": "BathRoom_HitBoxes"
+								"object": "Bathroom_HitBox"
 							}
 						}
 					],
@@ -2788,9 +2896,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "UIText",
-							"sid": 399778909171793,
+							"sid": 565528748892403,
 							"parameters": {
-								"text": "left(BathRoom_Sink_Text_1.Text, len(UIText.Text) + 1)"
+								"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
 							}
 						},
 						{
@@ -2821,8 +2929,8 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "BathRoom_HitBoxes",
-							"sid": 351766188177475
+							"objectClass": "Bathroom_HitBox",
+							"sid": 921456441975946
 						},
 						{
 							"id": "set-max-speed",
@@ -2858,25 +2966,544 @@
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
 							}
+						}
+					],
+					"sid": 107743895011007
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 954052625195980,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 831725819990621,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 122077803932669,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 838071335254627,
+							"parameters": {
+								"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 840882538066561,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 519955403318975,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 244769166326454,
+							"parameters": {
+								"seconds": "3.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BathroomSink_Hitbox_",
+							"sid": 297182293763287
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 125985918023488,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 145635718085048,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 130825834605111,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 368728915508206,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 832675057859346
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 937907009167886,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 843463123788121,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 344745295476563,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 569234371074019,
+							"parameters": {
+								"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 949861143138238,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 357981116467774,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 688333130617425,
+							"parameters": {
+								"seconds": "3.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BathroomSink_Hitbox_2",
+							"sid": 644905004793871
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 383085872933579,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 619457516552432,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 722715112629709,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 575409182192376,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 339634322344447
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 963168235569259,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 250081457631867,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 828683323216992,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 184601896200293,
+							"parameters": {
+								"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 755798564071291,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 764281812297868,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 239489161362628,
+							"parameters": {
+								"seconds": "3.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BathroomSink_Hitbox_3",
+							"sid": 349753652271277
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 998630471856105,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 117512526211182,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 400228820291255,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 379261721077296,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
 						},
 						{
 							"id": "find-path",
 							"objectClass": "StandByGuard",
-							"sid": 722380676382528,
+							"sid": 882813286953355,
 							"behaviorType": "Pathfinding",
 							"parameters": {
-								"x": "735",
-								"y": "567"
+								"x": "731",
+								"y": "566"
 							}
 						},
 						{
 							"id": "move-along-path",
 							"objectClass": "StandByGuard",
-							"sid": 648501510218575,
+							"sid": 793022322752279,
 							"behaviorType": "Pathfinding"
 						}
 					],
-					"sid": 107743895011007
+					"sid": 543432379949716
+				},
+				{
+					"eventType": "comment",
+					"text": "For TheWorking Sink Sound"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 922741217298126,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 539483502904724,
+							"parameters": {
+								"audio-file": "234868__mlsulli__sink-running",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"Washing_Hands\""
+							}
+						}
+					],
+					"sid": 706116775910685
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 536442884540464,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 387847480671830,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 366867545800456,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold-and-italic"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 946379865671772,
+							"parameters": {
+								"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 351788461169929,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 468215803698221,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 763003999635304,
+							"parameters": {
+								"seconds": "3.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BathroomSink_Hitbox_4",
+							"sid": 524871439627162
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 402729705900443,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_Bathroom_Guard",
+							"sid": 386984389213428,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 568628562373662,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 175196119026598,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 605065452541016
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 326877249587702,
+							"parameters": {
+								"object": "Key_BathRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 256337609884071,
+							"parameters": {
+								"tag": "\"Washing_Hands\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 618401597086711,
+							"parameters": {
+								"audio-file": "AfterHimMyKey",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_BathRoom",
+							"sid": 286284895188917
+						},
+						{
+							"id": "find-path",
+							"objectClass": "StandByGuard",
+							"sid": 933288811645738,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "1602",
+								"y": "511"
+							}
+						},
+						{
+							"id": "move-along-path",
+							"objectClass": "StandByGuard",
+							"sid": 225363017774593,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 467683169658215
 				}
 			],
 			"sid": 856717083738230

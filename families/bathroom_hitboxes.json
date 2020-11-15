@@ -2,10 +2,21 @@
 	"name": "BathRoom_HitBoxes",
 	"plugin-id": "Sprite",
 	"sid": 823855217984681,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Text",
+			"type": "string",
+			"desc": "",
+			"sid": 260434316509327
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"Bathroom_HitBox"
+		"Bathroom_HitBox",
+		"BathroomSink_Hitbox_",
+		"BathroomSink_Hitbox_2",
+		"BathroomSink_Hitbox_3",
+		"BathroomSink_Hitbox_4"
 	]
 }

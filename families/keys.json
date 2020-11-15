@@ -8,6 +8,7 @@
 	"members": [
 		"Key",
 		"Key2",
-		"Key_SecurityRoom"
+		"Key_SecurityRoom",
+		"Key_BathRoom"
 	]
 }

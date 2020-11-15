@@ -4,7 +4,66 @@
 		{
 			"name": "BG",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "Key_BathRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 256,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 312.50846413781943,
+						"y": 899.7026785596692,
+						"width": 66.75002500429756,
+						"height": 25.602749316716867,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 5.555961824619363,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BathRoom_StanbyGuard_AfterSpot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 257,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1602,
+						"y": 511,
+						"width": 40.42276586281548,
+						"height": 40.42276586281548,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 989687673971377,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -68,8 +127,8 @@
 						}
 					},
 					"world": {
-						"x": 934,
-						"y": 324,
+						"x": 1610,
+						"y": 876,
 						"width": 87.82382637230556,
 						"height": 89.33442789730012,
 						"originX": 0.4419938642398618,
@@ -1104,6 +1163,72 @@
 						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Enemy_Bathroom_Guard",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 252,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 13,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 600,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 972,
+						"y": 118,
+						"width": 89.781207,
+						"height": 103.418859,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 496711115158332,
@@ -1244,7 +1369,9 @@
 						"live-preview": false
 					},
 					"uid": 243,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": "That Guard has the KEY! If I distract him with the sink that should work! But I gotta hide fast after!!"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 512,
@@ -1273,7 +1400,9 @@
 						"live-preview": false
 					},
 					"uid": 249,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1684,
@@ -1293,7 +1422,7 @@
 					}
 				},
 				{
-					"type": "Enemy_Bathroom_Guard",
+					"type": "BathroomSink_Hitbox_",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1301,58 +1430,116 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 252,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": 70,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 300,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 13,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 600,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
+					"uid": 242,
+					"instanceVariables": {
+						"Text": "Why Does this not turn on! Well I am in jail...."
 					},
+					"behaviors": {},
 					"world": {
-						"x": 972,
-						"y": 118,
-						"width": 89.781207,
-						"height": 103.418859,
-						"originX": 0.4430379746835443,
-						"originY": 0.5274725274725275,
+						"x": 728,
+						"y": 262,
+						"width": 64.66300355241242,
+						"height": 60.66300355241242,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BathroomSink_Hitbox_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 253,
+					"instanceVariables": {
+						"Text": "Wow... Did some really stick a ToothBrush up this one....Weirdos!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 728,
+						"y": 413,
+						"width": 66.66300355241242,
+						"height": 60.66300355241242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BathroomSink_Hitbox_3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 254,
+					"instanceVariables": {
+						"Text": "FINALLY! A working sink! Now to turn it on and See if it cathces his attention! "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 727.5,
+						"y": 566,
+						"width": 67.66300355241242,
+						"height": 60.66300355241242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BathroomSink_Hitbox_4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 255,
+					"instanceVariables": {
+						"Text": "Wow you really came all the way to this sink you my good sir are a true adventurer!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 725,
+						"y": 723,
+						"width": 64.66300355241242,
+						"height": 60.66300355241242,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
