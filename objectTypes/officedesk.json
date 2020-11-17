@@ -24,7 +24,7 @@
 						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\Office_Desk.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4111030,
+						"imageSpriteId": 278285,
 						"collisionPoly": {
 							"points": [
 								0.22058823529411764,
@@ -43,6 +43,38 @@
 								0.9444444444444444,
 								0.014705882352941176,
 								0.5555555555555556
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 149,
+						"height": 109,
+						"originX": 0.4899328859060403,
+						"originY": 0.4954128440366973,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5523414,
+						"collisionPoly": {
+							"points": [
+								0.1342281879194631,
+								0.009174311926605505,
+								0.4899328859060403,
+								0.009174311926605505,
+								0.8389261744966443,
+								0.009174311926605505,
+								0.9865771812080537,
+								0.4954128440366973,
+								0.8456375838926175,
+								0.981651376146789,
+								0.4899328859060403,
+								0.981651376146789,
+								0.12751677852348994,
+								0.981651376146789,
+								0.0067114093959731785,
+								0.4954128440366973
 							]
 						},
 						"useCollisionPoly": true,
