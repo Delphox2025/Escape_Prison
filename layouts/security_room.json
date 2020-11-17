@@ -205,21 +205,28 @@
 					},
 					"uid": 205,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 1084,
-						"y": 285,
-						"width": 526,
-						"height": 178,
+						"x": 1123.764875236959,
+						"y": 264.3445005739225,
+						"width": 415.41161264150713,
+						"height": 223.85904051255375,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.5555555555555556,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 3.141592653589793,
 						"zElevation": 0
 					}
 				},
@@ -234,21 +241,28 @@
 					},
 					"uid": 207,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 177,
-						"y": 634,
-						"width": 96,
-						"height": 98,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 168,
+						"y": 638,
+						"width": 79.54286295762431,
+						"height": 91.1428638056112,
+						"originX": 0.5510204081632653,
+						"originY": 0.43636363636363634,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},
@@ -263,21 +277,28 @@
 					},
 					"uid": 208,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 173,
-						"y": 829,
-						"width": 96,
-						"height": 98,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 164,
+						"y": 833,
+						"width": 79.54286295762431,
+						"height": 91.1428638056112,
+						"originX": 0.5510204081632653,
+						"originY": 0.43636363636363634,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},
@@ -292,21 +313,28 @@
 					},
 					"uid": 209,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 1568,
-						"y": 630,
-						"width": 96,
-						"height": 98,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1577,
+						"y": 628,
+						"width": 79.54286295762431,
+						"height": 91.1428638056112,
+						"originX": 0.5510204081632653,
+						"originY": 0.43636363636363634,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -321,21 +349,28 @@
 					},
 					"uid": 206,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 1569,
-						"y": 809,
-						"width": 96,
-						"height": 98,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1578,
+						"y": 804,
+						"width": 79.54286295762431,
+						"height": 91.1428638056112,
+						"originX": 0.5510204081632653,
+						"originY": 0.43636363636363634,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -350,21 +385,28 @@
 					},
 					"uid": 98,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": 1567,
-						"y": 448,
-						"width": 96,
-						"height": 98,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1576,
+						"y": 441,
+						"width": 79.54286295762431,
+						"height": 91.1428638056112,
+						"originX": 0.5510204081632653,
+						"originY": 0.43636363636363634,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -388,12 +430,12 @@
 						}
 					},
 					"world": {
-						"x": 220,
-						"y": 343,
-						"width": 181,
-						"height": 366,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 230,
+						"y": 324,
+						"width": 178.83175864178511,
+						"height": 458.856669009813,
+						"originX": 0.5416666666666666,
+						"originY": 0.4878048780487805,
 						"color": [
 							1,
 							1,
@@ -406,6 +448,106 @@
 				}
 			],
 			"sid": 156170167542906,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "DialougeBox",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Cell_Text_Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 261,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 905,
+						"y": 665,
+						"width": 486.21814595896603,
+						"height": 168.36948794775006,
+						"originX": 0.4943310657596372,
+						"originY": 0.5602409638554217,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 262,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 678,
+						"y": 585,
+						"width": 451.9409416661633,
+						"height": 139.586822489296,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 386096233016979,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -443,7 +585,9 @@
 						"live-preview": false
 					},
 					"uid": 99,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": "WOW the Main Monitor System! I can see every cell and Room. Why are there some rooms I haven't seen before? "
+					},
 					"behaviors": {},
 					"world": {
 						"x": 316,
@@ -501,11 +645,13 @@
 						"live-preview": false
 					},
 					"uid": 210,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": "Im in Shock a Sherif's Desk but no KEY! Is this man living in 2099!"
+					},
 					"behaviors": {},
 					"world": {
-						"x": 1073,
-						"y": 202,
+						"x": 1117,
+						"y": 167,
 						"width": 213,
 						"height": 59,
 						"originX": 0.5,
@@ -523,7 +669,7 @@
 				{
 					"type": "TPtoHallway",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -721,10 +867,10 @@
 						}
 					},
 					"world": {
-						"x": 1130,
-						"y": 714,
-						"width": 130.73758018615806,
-						"height": 133.62510633449534,
+						"x": 917,
+						"y": 863,
+						"width": 99.2101875393266,
+						"height": 110.32224142709569,
 						"originX": 0.4416549816561341,
 						"originY": 0.5280501364601233,
 						"color": [
@@ -734,6 +880,37 @@
 							1
 						],
 						"angle": 4.7346866064056545,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SecurityRoom_Dialouge_HitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 260,
+					"instanceVariables": {
+						"Text": "This Has to be the Head Security Room! Must be a KEY in here!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 903,
+						"y": 771,
+						"width": 646,
+						"height": -24,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

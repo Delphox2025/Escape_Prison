@@ -1,0 +1,20 @@
+{
+	"name": "BathroomFloor",
+	"plugin-id": "TiledBg",
+	"sid": 416121490642639,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 64,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\Bathroom_floor.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 9246618,
+		"useCollisionPoly": true
+	}
+}

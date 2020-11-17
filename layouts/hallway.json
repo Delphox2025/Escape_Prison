@@ -452,21 +452,21 @@
 					},
 					"uid": 258,
 					"instanceVariables": {
-						"Text": "Wait a sec! So many doors they have to have some keys in them! "
+						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 194,
-						"y": 450,
-						"width": 79.89993742175272,
-						"height": 79.89993742175272,
+						"x": 214.5,
+						"y": 462,
+						"width": 38.899937421752725,
+						"height": 295.8999374217527,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0

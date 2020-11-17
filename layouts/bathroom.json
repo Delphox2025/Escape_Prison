@@ -62,6 +62,180 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Bathroom_drain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 263,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1173,
+						"y": 314,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_drain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 264,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1171,
+						"y": 479,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_drain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 265,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1166,
+						"y": 645,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_drain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 266,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1306,
+						"y": 645,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_drain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 267,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1306,
+						"y": 311,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_drain",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 268,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1306,
+						"y": 478,
+						"width": 100,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 989687673971377,
@@ -127,10 +301,10 @@
 						}
 					},
 					"world": {
-						"x": 1610,
-						"y": 876,
-						"width": 87.82382637230556,
-						"height": 89.33442789730012,
+						"x": 1546,
+						"y": 875,
+						"width": 83.33197633394596,
+						"height": 84.76531641636538,
 						"originX": 0.4419938642398618,
 						"originY": 0.5279093697821613,
 						"color": [
@@ -139,7 +313,7 @@
 							1,
 							1
 						],
-						"angle": 3.832801995599039,
+						"angle": 3.141592653589793,
 						"zElevation": 0
 					}
 				},
@@ -651,10 +825,10 @@
 						}
 					},
 					"world": {
-						"x": 815,
-						"y": 220,
-						"width": 545,
-						"height": 44.11570994943918,
+						"x": 813.2052911117406,
+						"y": 198.46349334088853,
+						"width": 611.0032733136542,
+						"height": 41.6813560108087,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -687,11 +861,11 @@
 						}
 					},
 					"world": {
-						"x": 735,
-						"y": 262,
-						"width": 64,
-						"height": 71,
-						"originX": 0.5,
+						"x": 735.0858021675768,
+						"y": 262.34018853076725,
+						"width": 36.2214822311834,
+						"height": 61.676550049173464,
+						"originX": 0.5116279069767442,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -723,11 +897,11 @@
 						}
 					},
 					"world": {
-						"x": 734,
-						"y": 414,
-						"width": 64,
-						"height": 71,
-						"originX": 0.5,
+						"x": 734.704352016888,
+						"y": 413.30394655276893,
+						"width": 36.4272667381046,
+						"height": 62.02695201117665,
+						"originX": 0.5116279069767442,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -759,11 +933,11 @@
 						}
 					},
 					"world": {
-						"x": 735,
-						"y": 567,
-						"width": 64,
-						"height": 71,
-						"originX": 0.5,
+						"x": 735.6143040139184,
+						"y": 566.4517528369596,
+						"width": 36.14827055526446,
+						"height": 61.55188801670394,
+						"originX": 0.5116279069767442,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -795,11 +969,11 @@
 						}
 					},
 					"world": {
-						"x": 731,
-						"y": 723,
-						"width": 64,
-						"height": 71,
-						"originX": 0.5,
+						"x": 731.3256503599,
+						"y": 722.9507656691667,
+						"width": 36.527292550427745,
+						"height": 62.19727212620072,
+						"originX": 0.5116279069767442,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -1073,7 +1247,7 @@
 							1,
 							1
 						],
-						"angle": 6.0271747154837065,
+						"angle": 6.19804005305726,
 						"zElevation": 0
 					}
 				},
@@ -1374,10 +1548,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 512,
-						"y": 300,
-						"width": 339,
-						"height": 47,
+						"x": 1320.5151959494422,
+						"y": 832.8318045104573,
+						"width": 294.6884907719013,
+						"height": 40.856516419703134,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1386,7 +1560,7 @@
 							1,
 							0.5
 						],
-						"angle": 0,
+						"angle": 5.701764887053381,
 						"zElevation": 0
 					}
 				},
@@ -1436,9 +1610,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 728,
+						"x": 736.5,
 						"y": 262,
-						"width": 64.66300355241242,
+						"width": 47.66300355241242,
 						"height": 60.66300355241242,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1463,13 +1637,13 @@
 					},
 					"uid": 253,
 					"instanceVariables": {
-						"Text": "Wow... Did some really stick a ToothBrush up this one....Weirdos!"
+						"Text": "Wow... Did someone really stick a ToothBrush up this one....Weirdos!"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 728,
+						"x": 733.4105822234814,
 						"y": 413,
-						"width": 66.66300355241242,
+						"width": 48.66300355241242,
 						"height": 60.66300355241242,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1498,10 +1672,10 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 727.5,
-						"y": 566,
-						"width": 67.66300355241242,
-						"height": 60.66300355241242,
+						"x": 728.8488203693212,
+						"y": 566.0755181485678,
+						"width": 57.65605910796796,
+						"height": 61.19772577463448,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1529,9 +1703,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 725,
+						"x": 733.5,
 						"y": 723,
-						"width": 64.66300355241242,
+						"width": 47.66300355241242,
 						"height": 60.66300355241242,
 						"originX": 0.5,
 						"originY": 0.5,

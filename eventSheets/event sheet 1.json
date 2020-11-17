@@ -2532,6 +2532,322 @@
 							]
 						}
 					]
+				},
+				{
+					"eventType": "comment",
+					"text": "This is Whats Making the Door Appear "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 878797003590915,
+							"parameters": {
+								"object": "Key_SecurityRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TPtoHallway",
+							"sid": 210372235108279,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_SecurityRoom",
+							"sid": 692676917162125
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "FilingCabinet",
+							"sid": 777437957366599,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 920201480187485
+				},
+				{
+					"eventType": "comment",
+					"text": "This is the Dialouge for the Hitboxes over Items! "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 341257379440314,
+							"parameters": {
+								"object": "SecurityRoom_Dialouge_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 876221374596657,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 520656259075057,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 650459092656999,
+							"parameters": {
+								"text": "left(SecurityRoom_Dialouge_HitBox.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 836917178628773,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 436958965287656,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "SecurityRoom_Dialouge_HitBox",
+							"sid": 167696563176396
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 921042930154956,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 318641355319410,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 101984351874347,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 595575492559406
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 959713163357419,
+							"parameters": {
+								"object": "SecurityRoom_MS_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 650107013819379,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 276875617302693,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 886749490117538,
+							"parameters": {
+								"text": "left(SecurityRoom_MS_HitBox.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 264546121524843,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 307828678163244,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "SecurityRoom_MS_HitBox",
+							"sid": 543859111324045
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 762325357146552,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 509762762990294,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 716234607474239,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 705845743588676
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 841152494444006,
+							"parameters": {
+								"object": "SecurityRoom_OfficeDesk_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 548834967388158,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 475150764359847,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 459519625052394,
+							"parameters": {
+								"text": "left(SecurityRoom_OfficeDesk_HitBox.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 594834723824790,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 354404057573670,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "SecurityRoom_OfficeDesk_HitBox",
+							"sid": 687650298709379
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "SecurityRoom_Joe_Player",
+							"sid": 221882165479497,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 311264665234013,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 816375235949550,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 872488796532437
 				}
 			],
 			"sid": 736953452191012
@@ -3285,11 +3601,11 @@
 						{
 							"id": "find-path",
 							"objectClass": "StandByGuard",
-							"sid": 882813286953355,
+							"sid": 369515559739626,
 							"behaviorType": "Pathfinding",
 							"parameters": {
-								"x": "731",
-								"y": "566"
+								"x": "725",
+								"y": "567"
 							}
 						},
 						{
@@ -3479,8 +3795,9 @@
 						},
 						{
 							"id": "find-path",
-							"objectClass": "StandByGuard",
-							"sid": 933288811645738,
+							"objectClass": "StandByGuard2",
+							"sid": 801839245389450,
+							"disabled": true,
 							"behaviorType": "Pathfinding",
 							"parameters": {
 								"x": "1602",
@@ -3489,8 +3806,9 @@
 						},
 						{
 							"id": "move-along-path",
-							"objectClass": "StandByGuard",
-							"sid": 225363017774593,
+							"objectClass": "StandByGuard2",
+							"sid": 292304285683254,
+							"disabled": true,
 							"behaviorType": "Pathfinding"
 						}
 					],

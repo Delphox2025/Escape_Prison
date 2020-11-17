@@ -1,14 +1,14 @@
 {
-	"name": "SecurityRoom_MS_HitBox",
+	"name": "SecurityRoom_Dialouge_HitBox",
 	"plugin-id": "Sprite",
-	"sid": 589557031179696,
+	"sid": 908054492784957,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "Text",
 			"type": "string",
 			"desc": "",
-			"sid": 512983746155410
+			"sid": 533663419687963
 		}
 	],
 	"behaviorTypes": [],
@@ -25,12 +25,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7981318,
+						"imageSpriteId": 3535181,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 306059117014276,
+				"sid": 999600430602749,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -4,21 +4,47 @@
 	"sid": 136839352203136,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 208515360062610
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 68,
+						"height": 36,
 						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
+						"originY": 0.5555555555555556,
+						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\Office_Desk.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 375415,
+						"imageSpriteId": 727900,
+						"collisionPoly": {
+							"points": [
+								0.22058823529411764,
+								0.027777777777777776,
+								0.5,
+								0.027777777777777776,
+								0.7647058823529411,
+								0.027777777777777776,
+								0.9705882352941176,
+								0.5555555555555556,
+								0.7058823529411765,
+								0.9444444444444444,
+								0.5,
+								0.9444444444444444,
+								0.27941176470588236,
+								0.9444444444444444,
+								0.014705882352941176,
+								0.5555555555555556
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

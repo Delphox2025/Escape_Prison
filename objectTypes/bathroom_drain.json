@@ -1,16 +1,9 @@
 {
-	"name": "SecurityRoom_MS_HitBox",
+	"name": "Bathroom_drain",
 	"plugin-id": "Sprite",
-	"sid": 589557031179696,
+	"sid": 873784275106193,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Text",
-			"type": "string",
-			"desc": "",
-			"sid": 512983746155410
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -18,20 +11,20 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 100,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7981318,
+						"imageSpriteId": 8271691,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 306059117014276,
-				"name": "Animation 1",
+				"sid": 227343904126453,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

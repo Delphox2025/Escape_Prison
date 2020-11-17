@@ -320,7 +320,12 @@
 			"BathroomSink_Hitbox_4",
 			"Key_BathRoom",
 			"BathRoom_StanbyGuard_AfterSpot",
-			"Hallway_WhatsHappening_HitBox"
+			"Hallway_WhatsHappening_HitBox",
+			"SecurityRoom_Dialouge_HitBox",
+			"StandByGuard2",
+			"StandbyGuard2_Spawn",
+			"BathroomFloor",
+			"Bathroom_drain"
 		],
 		"subfolders": [
 			{

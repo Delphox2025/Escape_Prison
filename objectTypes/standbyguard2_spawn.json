@@ -1,16 +1,9 @@
 {
-	"name": "SecurityRoom_MS_HitBox",
+	"name": "StandbyGuard2_Spawn",
 	"plugin-id": "Sprite",
-	"sid": 589557031179696,
+	"sid": 664639904508533,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Text",
-			"type": "string",
-			"desc": "",
-			"sid": 512983746155410
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
@@ -25,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7981318,
+						"imageSpriteId": 5557554,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 306059117014276,
+				"sid": 588146960793805,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
