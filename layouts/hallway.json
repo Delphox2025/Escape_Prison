@@ -220,37 +220,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Hallway_WhatsHappening_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 258,
-					"instanceVariables": {
-						"Text": "Wait a sec! So many doors they gotta have some keys in them! "
-					},
-					"behaviors": {},
-					"world": {
-						"x": 220,
-						"y": 448,
-						"width": 79.89993742175272,
-						"height": 79.89993742175272,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 272806540024065,
@@ -381,14 +350,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 259,
+					"uid": 48,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 517,
-						"y": 533,
-						"width": 445.5385026801572,
-						"height": 167.70837062336983,
+						"x": 555,
+						"y": 527,
+						"width": 434.34990148429074,
+						"height": 150.408352939665,
 						"originX": 0.4943310657596372,
 						"originY": 0.5602409638554217,
 						"color": [
@@ -423,14 +392,14 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 260,
+					"uid": 259,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 334,
+						"x": 359,
 						"y": 457,
-						"width": 347.2829873463245,
-						"height": 121.62553962128986,
+						"width": 395,
+						"height": 122,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -447,6 +416,66 @@
 			"sid": 789995385583946,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Hallway_WhatsHappening_HitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {
+						"Text": "Wait a sec! So many doors they have to have some keys in them! "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 194,
+						"y": 450,
+						"width": 79.89993742175272,
+						"height": 79.89993742175272,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 533745666927245,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,

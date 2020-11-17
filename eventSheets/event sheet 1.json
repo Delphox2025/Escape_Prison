@@ -1850,6 +1850,15 @@
 							}
 						},
 						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 505040265180824,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
 							"id": "set-text",
 							"objectClass": "UIText",
 							"sid": 800123104761378,
@@ -2054,10 +2063,10 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
-							"sid": 400121515963227,
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 575086910401922,
 							"parameters": {
-								"object": "Hallway_WhatsHappening_HitBox"
+								"object": "Hallway_Assets"
 							}
 						}
 					],
@@ -2083,7 +2092,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "UIText",
-							"sid": 482488955872403,
+							"sid": 264884117460464,
 							"parameters": {
 								"text": "left(Hallway_Assets.Text, len(UIText.Text) + 1)"
 							}
@@ -2095,15 +2104,6 @@
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 542351852532422,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
 							}
 						},
 						{
@@ -2126,15 +2126,6 @@
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "250"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 194488230144100,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
 							}
 						},
 						{
