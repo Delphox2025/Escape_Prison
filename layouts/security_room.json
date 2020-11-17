@@ -415,7 +415,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 1,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -430,12 +430,12 @@
 						}
 					},
 					"world": {
-						"x": 230,
-						"y": 324,
-						"width": 178.83175864178511,
-						"height": 458.856669009813,
-						"originX": 0.5416666666666666,
-						"originY": 0.4878048780487805,
+						"x": 252,
+						"y": 329,
+						"width": 85.58840808316062,
+						"height": 481.52073852757803,
+						"originX": 0.4322033898305085,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

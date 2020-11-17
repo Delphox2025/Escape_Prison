@@ -47,6 +47,38 @@
 						},
 						"useCollisionPoly": true,
 						"duration": 1
+					},
+					{
+						"width": 59,
+						"height": 221,
+						"originX": 0.4322033898305085,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\colom\\OneDrive\\Desktop\\Sprites\\monitor desk.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3409273,
+						"collisionPoly": {
+							"points": [
+								0.01694915254237288,
+								0.8235294117647058,
+								0.4322033898305085,
+								0.004524886877828055,
+								0.9661016949152542,
+								0.7873303167420814,
+								0.9661016949152542,
+								0.5,
+								0.9661016949152542,
+								0.2081447963800905,
+								0.4322033898305085,
+								0.9909502262443439,
+								0.01694915254237288,
+								0.17194570135746606,
+								0.01694915254237288,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
 					}
 				],
 				"sid": 118858810550050,
