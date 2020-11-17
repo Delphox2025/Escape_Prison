@@ -325,7 +325,8 @@
 			"StandByGuard2",
 			"StandbyGuard2_Spawn",
 			"BathroomFloor",
-			"Bathroom_drain"
+			"Bathroom_drain",
+			"BathroomGround"
 		],
 		"subfolders": [
 			{
