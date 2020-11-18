@@ -297,7 +297,7 @@
 			"Key_HitBox2",
 			"Key_SecurityRoom",
 			"BathRoom_Joe_Player",
-			"TioletStallWalls",
+			"ToiletStallWalls",
 			"BathroomSinks",
 			"ShowerStallWalls",
 			"Bathroom_HitBox",
@@ -326,7 +326,9 @@
 			"StandbyGuard2_Spawn",
 			"BathroomFloor",
 			"Bathroom_drain",
-			"BathroomGround"
+			"BathroomGround",
+			"KitchenCounters",
+			"ToiletStallDoor"
 		],
 		"subfolders": [
 			{
@@ -364,7 +366,8 @@
 			"CourtYard",
 			"HallWay",
 			"Security_Room",
-			"Bathroom"
+			"Bathroom",
+			"Kitchen"
 		],
 		"subfolders": [
 			{

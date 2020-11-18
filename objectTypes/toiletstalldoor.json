@@ -1,0 +1,57 @@
+{
+	"name": "ToiletStallDoor",
+	"plugin-id": "Sprite",
+	"sid": 235030764430000,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 5,
+						"height": 19,
+						"originX": 0.6,
+						"originY": 0.5263157894736842,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Bathroom\\Bathroom_wall_stal_doorl.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5508727,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0.42105263157894735,
+								0.6,
+								0.05263157894736842,
+								0.6,
+								0.47368421052631576,
+								0.6,
+								0.5263157894736842,
+								0.6,
+								0.5263157894736842,
+								0.6,
+								0.8947368421052632,
+								0.2,
+								0.5789473684210527,
+								0.2,
+								0.5263157894736842
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 824613792336418,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"name": "TioletStallWalls",
+	"name": "ToiletStallWalls",
 	"plugin-id": "Sprite",
 	"sid": 277474329757098,
 	"isGlobal": false,
@@ -17,14 +17,34 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Bathroom\\Bathroom_wall_stall.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 2543483,
+						"imageSpriteId": 8389810,
+						"collisionPoly": {
+							"points": [
+								0.4375,
+								0.4375,
+								0.5,
+								0.4375,
+								0.53125,
+								0.4375,
+								0.96875,
+								0.5,
+								0.53125,
+								0.53125,
+								0.5,
+								0.53125,
+								0.4375,
+								0.53125,
+								0,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

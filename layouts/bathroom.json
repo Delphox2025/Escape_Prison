@@ -6,35 +6,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Key_BathRoom",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 256,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 312.50846413781943,
-						"y": 899.7026785596692,
-						"width": 66.75002500429756,
-						"height": 25.602749316716867,
-						"originX": 0.4657534246575342,
-						"originY": 0.5714285714285714,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 5.555961824619363,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BathRoom_StanbyGuard_AfterSpot",
 					"properties": {
 						"initially-visible": true,
@@ -269,6 +240,122 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "ToiletStallDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 278,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 300.67069466755277,
+						"y": 208.18982800743842,
+						"width": 16,
+						"height": 205.90883671896995,
+						"originX": 0.6,
+						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ToiletStallDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 279,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 300,
+						"y": 392,
+						"width": 16,
+						"height": 205.90883671896995,
+						"originX": 0.6,
+						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ToiletStallDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 280,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 299.27101892050257,
+						"y": 763.7570063068342,
+						"width": 16,
+						"height": 205.90883671896995,
+						"originX": 0.6,
+						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ToiletStallDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 281,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 215.7925475803395,
+						"y": 515.431854145484,
+						"width": 16,
+						"height": 198.11131019844237,
+						"originX": 0.6,
+						"originY": 0.5263157894736842,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.178722803291193,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 989687673971377,
@@ -351,7 +438,7 @@
 					}
 				},
 				{
-					"type": "TioletStallWalls",
+					"type": "ToiletStallWalls",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -370,10 +457,10 @@
 						}
 					},
 					"world": {
-						"x": 143,
-						"y": 111,
-						"width": 286,
-						"height": 14,
+						"x": 163,
+						"y": 112,
+						"width": 280.03283922806713,
+						"height": 81.62996389327381,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -387,7 +474,7 @@
 					}
 				},
 				{
-					"type": "TioletStallWalls",
+					"type": "ToiletStallWalls",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -406,10 +493,10 @@
 						}
 					},
 					"world": {
-						"x": 143,
-						"y": 291,
-						"width": 286,
-						"height": 14,
+						"x": 163,
+						"y": 292,
+						"width": 280.03283922806713,
+						"height": 81.62996389327381,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -423,7 +510,7 @@
 					}
 				},
 				{
-					"type": "TioletStallWalls",
+					"type": "ToiletStallWalls",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -442,10 +529,10 @@
 						}
 					},
 					"world": {
-						"x": 143,
-						"y": 477,
-						"width": 286,
-						"height": 14,
+						"x": 163,
+						"y": 478,
+						"width": 280.03283922806713,
+						"height": 81.62996389327381,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -459,7 +546,7 @@
 					}
 				},
 				{
-					"type": "TioletStallWalls",
+					"type": "ToiletStallWalls",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -478,10 +565,10 @@
 						}
 					},
 					"world": {
-						"x": 143,
-						"y": 664,
-						"width": 286,
-						"height": 14,
+						"x": 163,
+						"y": 665,
+						"width": 280.03283922806713,
+						"height": 81.62996389327381,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -763,7 +850,7 @@
 					}
 				},
 				{
-					"type": "TioletStallWalls",
+					"type": "ToiletStallWalls",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -782,10 +869,10 @@
 						}
 					},
 					"world": {
-						"x": 143,
-						"y": 851,
-						"width": 286,
-						"height": 14,
+						"x": 163,
+						"y": 852,
+						"width": 280.03283922806713,
+						"height": 81.62996389327381,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1434,6 +1521,35 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Key_BathRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 256,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 318,
+						"y": 890,
+						"width": 66.75002500429756,
+						"height": 25.602749316716867,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 5.555961824619363,
 						"zElevation": 0
 					}
 				}
