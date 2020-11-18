@@ -1,0 +1,11 @@
+{
+	"name": "CommonRoom_Assets",
+	"plugin-id": "Sprite",
+	"sid": 729550111884076,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"CommonRoom_Bench"
+	]
+}

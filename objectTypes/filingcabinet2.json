@@ -1,14 +1,14 @@
 {
-	"name": "FilingCabinet",
+	"name": "FilingCabinet2",
 	"plugin-id": "Sprite",
-	"sid": 975209041327455,
+	"sid": 994940646292309,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 271349995100555
+			"sid": 919722736844364
 		}
 	],
 	"effectTypes": [],
@@ -20,36 +20,36 @@
 						"width": 49,
 						"height": 55,
 						"originX": 0.5510204081632653,
-						"originY": 0.4363636363636363,
+						"originY": 0.43636363636363634,
 						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\cabinet.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5712564,
+						"imageSpriteId": 826055,
 						"collisionPoly": {
 							"points": [
-								0.24489795918367352,
-								0.16363636363636358,
+								0.24489795918367346,
+								0.16363636363636364,
 								0.5510204081632653,
-								0.018181818181818188,
+								0.01818181818181818,
 								0.8367346938775511,
-								0.16363636363636358,
+								0.16363636363636364,
 								0.9591836734693877,
-								0.4363636363636363,
+								0.43636363636363634,
 								0.9591836734693877,
 								0.8,
 								0.5510204081632653,
 								0.9636363636363636,
-								0.020408163265306145,
+								0.02040816326530612,
 								0.8909090909090909,
-								0.020408163265306145,
-								0.4363636363636363
+								0.02040816326530612,
+								0.43636363636363634
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 908787325544138,
+				"sid": 262530131505177,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
@@ -67,12 +67,12 @@
 						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\cabinet_open.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7532468,
+						"imageSpriteId": 7475125,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 614342010323493,
+				"sid": 277139580991960,
 				"name": "Open",
 				"isLooping": false,
 				"isPingPong": false,

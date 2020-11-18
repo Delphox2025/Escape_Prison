@@ -328,7 +328,21 @@
 			"Bathroom_drain",
 			"BathroomGround",
 			"KitchenCounters",
-			"ToiletStallDoor"
+			"ToiletStallDoor",
+			"CommonRoom_Bench",
+			"CommonRoom_CircleTables",
+			"CommonRoom_PingPongTable",
+			"FilingCabinet2",
+			"FilingCabinet3",
+			"FilingCabinet4",
+			"FilingCabinet5",
+			"Enemy_BathRoomGuard_View2",
+			"TPtoKitchen",
+			"TPtoCommonRoom",
+			"Kitchen_Joe_Player",
+			"CommonRoom_Joe_Player",
+			"Key_Kitchen",
+			"Key_CommonRoom"
 		],
 		"subfolders": [
 			{
@@ -355,7 +369,8 @@
 			"Enemies",
 			"BathRoom_HitBoxes",
 			"BathRoom_Assets",
-			"Hallway_Assets"
+			"Hallway_Assets",
+			"CommonRoom_Assets"
 		],
 		"subfolders": []
 	},
@@ -367,7 +382,8 @@
 			"HallWay",
 			"Security_Room",
 			"Bathroom",
-			"Kitchen"
+			"Kitchen",
+			"CommonRoom"
 		],
 		"subfolders": [
 			{

@@ -1,14 +1,14 @@
 {
-	"name": "KitchenCounters",
+	"name": "CommonRoom_CircleTables",
 	"plugin-id": "Sprite",
-	"sid": 387991775083151,
+	"sid": 784504827481786,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 406001540755957
+			"sid": 394735005844533
 		}
 	],
 	"effectTypes": [],
@@ -17,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 129,
+						"height": 129,
+						"originX": 0.6589147286821705,
+						"originY": 0.5813953488372093,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6809143,
+						"imageSpriteId": 1572197,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 753055203671975,
+				"sid": 226031970786034,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -26,7 +26,7 @@
 					},
 					"world": {
 						"x": 851,
-						"y": 804,
+						"y": 803,
 						"width": 366.3067305466865,
 						"height": 1844.8026182790686,
 						"originX": 0.5,
@@ -111,7 +111,7 @@
 					}
 				},
 				{
-					"type": "TPtoBathRoom",
+					"type": "TPtoKitchen",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -119,16 +119,43 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 245,
-					"instanceVariables": {
-						"Text": ""
-					},
+					"uid": 257,
+					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1071,
-						"y": 191,
-						"width": 104,
-						"height": 190,
+						"x": 1453,
+						"y": 716,
+						"width": 97.10202881505619,
+						"height": 200.62402647738878,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoCommonRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 308,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1099,
+						"y": 709.5,
+						"width": 91.07917347881543,
+						"height": 187.1757477222057,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -205,8 +232,8 @@
 						}
 					},
 					"world": {
-						"x": 73,
-						"y": 448,
+						"x": 74,
+						"y": 459,
 						"width": 109.8682570203281,
 						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
@@ -298,6 +325,37 @@
 					"world": {
 						"x": 698.6830134553652,
 						"y": 192.3660269107301,
+						"width": 104,
+						"height": 190,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoBathRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 245,
+					"instanceVariables": {
+						"Text": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1071,
+						"y": 191,
 						"width": 104,
 						"height": 190,
 						"originX": 0.5,
@@ -466,7 +524,7 @@
 							1,
 							1,
 							1,
-							0.5
+							0
 						],
 						"angle": 0,
 						"zElevation": 0

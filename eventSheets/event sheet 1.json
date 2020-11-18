@@ -2040,6 +2040,30 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
+							"sid": 582577591339917,
+							"parameters": {
+								"object": "TPtoCommonRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 564159657003041,
+							"parameters": {
+								"layout": "CommonRoom"
+							}
+						}
+					],
+					"sid": 245075708475408
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
 							"sid": 863652272944828,
 							"parameters": {
 								"object": "TPtoHallway"
@@ -2054,9 +2078,42 @@
 							"parameters": {
 								"layout": "HallWay"
 							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Player",
+							"sid": 166611554087919,
+							"parameters": {
+								"x": "694",
+								"y": "346"
+							}
 						}
 					],
 					"sid": 400593055602575
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 400687888358150,
+							"parameters": {
+								"object": "TPtoKitchen"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 597574815861609,
+							"parameters": {
+								"layout": "Kitchen"
+							}
+						}
+					],
+					"sid": 115219163867429
 				},
 				{
 					"eventType": "block",
@@ -2147,6 +2204,64 @@
 						}
 					],
 					"sid": 528768697473239
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 259414275602794,
+							"parameters": {
+								"object": "Key_Kitchen"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TPtoHallway",
+							"sid": 871048501485338,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_Kitchen",
+							"sid": 785722784778397
+						}
+					],
+					"sid": 459729575053204
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 461719453763097,
+							"parameters": {
+								"object": "Key_CommonRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TPtoHallway",
+							"sid": 793000272764829,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_CommonRoom",
+							"sid": 907813294531891
+						}
+					],
+					"sid": 961765778317986
 				}
 			],
 			"sid": 788486928695440
@@ -2215,6 +2330,7 @@
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 652808309383402,
+									"disabled": true,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -2282,6 +2398,7 @@
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 676382003739752,
+									"disabled": true,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -2349,6 +2466,7 @@
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 567935154604774,
+									"disabled": true,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -2416,6 +2534,7 @@
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 589376896210650,
+									"disabled": true,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -2483,6 +2602,7 @@
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 577618348340804,
+									"disabled": true,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -2552,6 +2672,14 @@
 					"actions": [
 						{
 							"id": "set-visible",
+							"objectClass": "Key_SecurityRoom",
+							"sid": 786932024189908,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
 							"objectClass": "TPtoHallway",
 							"sid": 210372235108279,
 							"parameters": {
@@ -2562,15 +2690,6 @@
 							"id": "destroy",
 							"objectClass": "Key_SecurityRoom",
 							"sid": 692676917162125
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "FilingCabinet",
-							"sid": 777437957366599,
-							"parameters": {
-								"animation": "\"Open\"",
-								"from": "beginning"
-							}
 						}
 					],
 					"sid": 920201480187485
@@ -2848,6 +2967,135 @@
 						}
 					],
 					"sid": 872488796532437
+				},
+				{
+					"eventType": "comment",
+					"text": "Opening Cabinet "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 607230346317084,
+							"parameters": {
+								"object": "SecurityRoom_Cabinets_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FilingCabinet",
+							"sid": 848279875456640,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 807391744271935
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 359545311687520,
+							"parameters": {
+								"object": "SecurityRoom_Cabinets_HitBox2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FilingCabinet2",
+							"sid": 747458716785099,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 349898054209757
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 703624505242822,
+							"parameters": {
+								"object": "SecurityRoom_Cabinets_HitBox3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FilingCabinet3",
+							"sid": 696890696094185,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 451896376416144
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 135180841527794,
+							"parameters": {
+								"object": "SecurityRoom_Cabinets_HitBox4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FilingCabinet4",
+							"sid": 512213192678660,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 914399933009954
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 578974349331943,
+							"parameters": {
+								"object": "SecurityRoom_Cabinets_HitBox5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "FilingCabinet5",
+							"sid": 462322246325987,
+							"parameters": {
+								"animation": "\"Open\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 905180549827703
 				}
 			],
 			"sid": 736953452191012
@@ -2879,6 +3127,15 @@
 							"sid": 572744627711036,
 							"parameters": {
 								"object": "Enemy_Bathroom_Guard",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Enemy_BathRoomGuard_View2",
+							"sid": 864037541841825,
+							"parameters": {
+								"object": "StandByGuard",
 								"image-point-optional": "0"
 							}
 						}
@@ -3609,6 +3866,11 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Enemy_BathRoomGuard_View2",
+							"sid": 637592665774543
+						},
+						{
 							"id": "move-along-path",
 							"objectClass": "StandByGuard",
 							"sid": 793022322752279,
@@ -3795,8 +4057,8 @@
 						},
 						{
 							"id": "find-path",
-							"objectClass": "StandByGuard2",
-							"sid": 801839245389450,
+							"objectClass": "StandByGuard",
+							"sid": 126914475337949,
 							"disabled": true,
 							"behaviorType": "Pathfinding",
 							"parameters": {
@@ -3806,13 +4068,242 @@
 						},
 						{
 							"id": "move-along-path",
-							"objectClass": "StandByGuard2",
-							"sid": 292304285683254,
+							"objectClass": "StandByGuard",
+							"sid": 341824258496590,
 							"disabled": true,
 							"behaviorType": "Pathfinding"
 						}
 					],
 					"sid": 467683169658215
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 752826516966264,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BathroomSinks",
+							"sid": 581385072162099,
+							"parameters": {
+								"unique-id": "232"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 728322064905094,
+							"parameters": {
+								"animation": "\"Glow\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 780579278235572,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 998833640628157,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 100349047431539
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 141775337325198,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_2"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BathroomSinks",
+							"sid": 402603682489981,
+							"parameters": {
+								"unique-id": "233"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 475151870177614,
+							"parameters": {
+								"animation": "\"Glow\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 454598395478425,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 161063748646487,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 808773770003612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 656515477664885,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_3"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BathroomSinks",
+							"sid": 353184112643816,
+							"parameters": {
+								"unique-id": "234"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 405398582976490,
+							"parameters": {
+								"animation": "\"Glow\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 463006618325126,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 235430580865921,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 653018599646965
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 737778348274475,
+							"parameters": {
+								"object": "BathroomSink_Hitbox_4"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BathroomSinks",
+							"sid": 323443954995489,
+							"parameters": {
+								"unique-id": "235"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 369160124452767,
+							"parameters": {
+								"animation": "\"Glow\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 374623057425924,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BathroomSinks",
+							"sid": 144702596820663,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 908714091338561
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 298354193479182,
+							"parameters": {
+								"object": "Key_BathRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TPtoHallway",
+							"sid": 809856619681110,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_BathRoom",
+							"sid": 515426539436009
+						}
+					],
+					"sid": 757777031161551
 				}
 			],
 			"sid": 856717083738230

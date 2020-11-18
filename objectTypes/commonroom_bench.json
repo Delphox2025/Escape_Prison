@@ -1,14 +1,14 @@
 {
-	"name": "KitchenCounters",
+	"name": "CommonRoom_Bench",
 	"plugin-id": "Sprite",
-	"sid": 387991775083151,
+	"sid": 754520890971417,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "solid",
 			"name": "Solid",
-			"sid": 406001540755957
+			"sid": 244018124041036
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6809143,
+						"imageSpriteId": 1778853,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 753055203671975,
+				"sid": 868573241366112,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

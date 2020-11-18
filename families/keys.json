@@ -9,6 +9,8 @@
 		"Key",
 		"Key2",
 		"Key_SecurityRoom",
-		"Key_BathRoom"
+		"Key_BathRoom",
+		"Key_Kitchen",
+		"Key_CommonRoom"
 	]
 }

@@ -10,6 +10,8 @@
 		"Courtyard_Joe_Player",
 		"Hallway_Joe_Player",
 		"BathRoom_Joe_Player",
-		"SecurityRoom_Joe_Player"
+		"SecurityRoom_Joe_Player",
+		"Kitchen_Joe_Player",
+		"CommonRoom_Joe_Player"
 	]
 }

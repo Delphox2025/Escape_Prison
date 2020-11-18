@@ -8,6 +8,10 @@
 	"members": [
 		"FilingCabinet",
 		"MonitorSystem",
-		"OfficeDesk"
+		"OfficeDesk",
+		"FilingCabinet2",
+		"FilingCabinet3",
+		"FilingCabinet4",
+		"FilingCabinet5"
 	]
 }

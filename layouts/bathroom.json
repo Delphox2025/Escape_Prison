@@ -6,35 +6,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "BathRoom_StanbyGuard_AfterSpot",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 257,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1602,
-						"y": 511,
-						"width": 40.42276586281548,
-						"height": 40.42276586281548,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BathroomGround",
 					"properties": {
 						"initially-visible": true,
@@ -386,6 +357,42 @@
 			"name": "GAME",
 			"overriden": 0,
 			"instances": [
+				{
+					"type": "ShowerStallWalls",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 206,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 747.8651512848493,
+						"y": 495.4939334060831,
+						"width": 532.6848411151791,
+						"height": 56,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "BathRoom_Joe_Player",
 					"properties": {
@@ -981,7 +988,7 @@
 						}
 					},
 					"world": {
-						"x": 735.0858021675768,
+						"x": 753.0858021675768,
 						"y": 262.34018853076725,
 						"width": 36.2214822311834,
 						"height": 61.676550049173464,
@@ -1017,7 +1024,7 @@
 						}
 					},
 					"world": {
-						"x": 734.704352016888,
+						"x": 752.704352016888,
 						"y": 413.30394655276893,
 						"width": 36.4272667381046,
 						"height": 62.02695201117665,
@@ -1047,14 +1054,14 @@
 					"behaviors": {
 						"Solid": {
 							"properties": {
-								"enabled": true,
+								"enabled": false,
 								"tags": ""
 							}
 						}
 					},
 					"world": {
-						"x": 735.6143040139184,
-						"y": 566.4517528369596,
+						"x": 754.5918560258069,
+						"y": 566.172671189726,
 						"width": 36.14827055526446,
 						"height": 61.55188801670394,
 						"originX": 0.5116279069767442,
@@ -1089,7 +1096,7 @@
 						}
 					},
 					"world": {
-						"x": 731.3256503599,
+						"x": 753.3256503599,
 						"y": 722.9507656691667,
 						"width": 36.527292550427745,
 						"height": 62.19727212620072,
@@ -1552,6 +1559,35 @@
 						"angle": 5.555961824619363,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Enemy_BathRoomGuard_View2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 307,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1346,
+						"y": -282,
+						"width": 123.26977835923876,
+						"height": 210.4983758696219,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 496711115158332,
@@ -1697,9 +1733,9 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1320.5151959494422,
-						"y": 832.8318045104573,
-						"width": 294.6884907719013,
+						"x": 1431.9067993689591,
+						"y": 759.6251903323813,
+						"width": 587.3980050870671,
 						"height": 40.856516419703134,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -1707,7 +1743,7 @@
 							1,
 							1,
 							1,
-							0.5
+							0
 						],
 						"angle": 5.701764887053381,
 						"zElevation": 0
@@ -1716,7 +1752,7 @@
 				{
 					"type": "TPtoHallway",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1759,7 +1795,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 736.5,
+						"x": 742.5,
 						"y": 262,
 						"width": 47.66300355241242,
 						"height": 60.66300355241242,
@@ -1769,7 +1805,7 @@
 							1,
 							1,
 							1,
-							0.5
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1790,7 +1826,7 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 733.4105822234814,
+						"x": 736.4105822234814,
 						"y": 413,
 						"width": 48.66300355241242,
 						"height": 60.66300355241242,
@@ -1800,7 +1836,7 @@
 							1,
 							1,
 							1,
-							0.5
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1821,8 +1857,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 728.8488203693212,
-						"y": 566.0755181485678,
+						"x": 742.8029027310039,
+						"y": 565.7964365013341,
 						"width": 57.65605910796796,
 						"height": 61.19772577463448,
 						"originX": 0.5,
@@ -1831,7 +1867,7 @@
 							1,
 							1,
 							1,
-							0.5
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1862,7 +1898,7 @@
 							1,
 							1,
 							1,
-							0.5
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
