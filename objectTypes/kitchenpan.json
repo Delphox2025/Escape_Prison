@@ -1,0 +1,57 @@
+{
+	"name": "KitchenPan",
+	"plugin-id": "Sprite",
+	"sid": 612824740486688,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 47,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\kitchen_pan.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7725212,
+						"collisionPoly": {
+							"points": [
+								0.203125,
+								0.06382978723404255,
+								0.5,
+								0.0851063829787234,
+								0.625,
+								0.2765957446808511,
+								0.96875,
+								0.46808510638297873,
+								0.640625,
+								0.6595744680851063,
+								0.5,
+								0.8936170212765957,
+								0.171875,
+								0.8936170212765957,
+								0.015625,
+								0.46808510638297873
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 719483662478346,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

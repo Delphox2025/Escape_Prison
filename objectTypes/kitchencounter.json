@@ -1,0 +1,63 @@
+{
+	"name": "KitchenCounter",
+	"plugin-id": "Sprite",
+	"sid": 665374243531634,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 469466579898782
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 34,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\kitchen_counter.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 276384,
+						"collisionPoly": {
+							"points": [
+								0.25757575757575757,
+								0.029411764705882353,
+								0.5,
+								0.029411764705882353,
+								0.7272727272727273,
+								0.029411764705882353,
+								0.9696969696969697,
+								0.5,
+								0.7272727272727273,
+								0.9411764705882353,
+								0.5,
+								0.9411764705882353,
+								0.25757575757575757,
+								0.9411764705882353,
+								0.015151515151515152,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 340048762996081,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

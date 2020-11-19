@@ -223,7 +223,14 @@
 					},
 					"uid": 278,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 300.67069466755277,
 						"y": 208.18982800743842,
@@ -252,7 +259,14 @@
 					},
 					"uid": 279,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 300,
 						"y": 392,
@@ -281,7 +295,14 @@
 					},
 					"uid": 280,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 299.27101892050257,
 						"y": 763.7570063068342,
@@ -310,7 +331,14 @@
 					},
 					"uid": 281,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
 						"x": 215.7925475803395,
 						"y": 515.431854145484,

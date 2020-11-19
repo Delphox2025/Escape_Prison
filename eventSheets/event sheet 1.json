@@ -1591,9 +1591,9 @@
 						{
 							"id": "go-to-layout",
 							"objectClass": "System",
-							"sid": 269625585153103,
+							"sid": 414575738940196,
 							"parameters": {
-								"layout": "HallWay"
+								"layout": "Hallway_2"
 							}
 						}
 					],
@@ -1926,7 +1926,7 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Hallway_Controls",
+			"title": "Hallway_Controls | Hallway2_",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [

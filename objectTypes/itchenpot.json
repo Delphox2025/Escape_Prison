@@ -1,0 +1,57 @@
+{
+	"name": "itchenPot",
+	"plugin-id": "Sprite",
+	"sid": 689067276828603,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 65,
+						"height": 61,
+						"originX": 0.49230769230769234,
+						"originY": 0.4918032786885246,
+						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\Assests\\kitchen_pot.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 644261,
+						"collisionPoly": {
+							"points": [
+								0.18461538461538463,
+								0.16393442622950818,
+								0.49230769230769234,
+								0.01639344262295082,
+								0.8,
+								0.14754098360655737,
+								0.9692307692307692,
+								0.4918032786885246,
+								0.8,
+								0.819672131147541,
+								0.49230769230769234,
+								0.9672131147540983,
+								0.16923076923076924,
+								0.819672131147541,
+								0.015384615384615385,
+								0.4918032786885246
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 995673654531605,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -17,6 +17,7 @@
 		"TPtoCourtyard",
 		"TPtoSecurityRoom",
 		"TPtoHallway",
-		"Hallway_WhatsHappening_HitBox"
+		"Hallway_WhatsHappening_HitBox",
+		"TPtoMainCell"
 	]
 }

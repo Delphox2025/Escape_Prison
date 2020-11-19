@@ -342,7 +342,15 @@
 			"Kitchen_Joe_Player",
 			"CommonRoom_Joe_Player",
 			"Key_Kitchen",
-			"Key_CommonRoom"
+			"Key_CommonRoom",
+			"TPtoMainCell",
+			"Hallway_Joe_Player2",
+			"KitchenCounterTop",
+			"KitchenCounter",
+			"itchenPot",
+			"KitchenPan",
+			"kitchen_counter_with_plates",
+			"TiledBackground"
 		],
 		"subfolders": [
 			{
@@ -383,7 +391,8 @@
 			"Security_Room",
 			"Bathroom",
 			"Kitchen",
-			"CommonRoom"
+			"CommonRoom",
+			"Hallway_2"
 		],
 		"subfolders": [
 			{
