@@ -1,0 +1,86 @@
+{
+	"name": "CommonRoom_HeadSedcurity",
+	"plugin-id": "Sprite",
+	"sid": 711534986872783,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 624736699844697
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 659,
+						"height": 761,
+						"originX": 0.4416549816561341,
+						"originY": 0.5280501364601233,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2576720,
+						"collisionPoly": {
+							"points": [
+								0.06951460786385201,
+								0.2073183058728394,
+								0.4416549816561341,
+								0.0007075710098049124,
+								0.84358733024721,
+								0.16900838977054483,
+								0.9602773669349417,
+								0.5280501364601233,
+								0.84358733024721,
+								0.8758718285656525,
+								0.4416549816561341,
+								0.9880723744061457,
+								0.06565375232899867,
+								0.8422116648135045,
+								0.026757073433088106,
+								0.5280501364601233
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 937527839934057,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 659,
+						"height": 761,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2045270,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 882909488920906,
+				"name": "Read",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

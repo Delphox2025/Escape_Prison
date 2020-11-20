@@ -1,0 +1,212 @@
+{
+	"name": "Kitchen_Cheff_",
+	"plugin-id": "Sprite",
+	"sid": 801327868993613,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 634840083669173
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 850,
+						"height": 979,
+						"originX": 0.4419938642398618,
+						"originY": 0.5279093697821613,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3106451,
+						"collisionPoly": {
+							"points": [
+								0.0810667972878909,
+								0.21532442822195472,
+								0.4419938642398618,
+								0.0032132178775288326,
+								0.8415916883652582,
+								0.17066943657049666,
+								0.9576039598855345,
+								0.5279093697821613,
+								0.8415916883652582,
+								0.8739855550809614,
+								0.4419938642398618,
+								0.9856230342096066,
+								0.06817654489674908,
+								0.840494311342368,
+								0.029505787723323625,
+								0.5279093697821613
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Retreived_SPawn",
+								"x": 0.20588235294117646,
+								"y": 0.5097037793667007
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 485286694449794,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 850,
+						"height": 979,
+						"originX": 0.5011764705882353,
+						"originY": 0.5010214504596527,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4527005,
+						"collisionPoly": {
+							"points": [
+								0.001176470588235294,
+								0.0010214504596527069,
+								1,
+								0.0010214504596527069,
+								1,
+								1,
+								0.001176470588235294,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 444388844917776,
+				"name": "Listening",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 850,
+						"height": 979,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5573920,
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 979,
+						"height": 850,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5182662,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0,
+								1,
+								0,
+								1,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 850,
+						"height": 979,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9646429,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 979,
+						"height": 850,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 473744,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 850,
+						"height": 979,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2999821,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 490348204632061,
+				"name": "Shocked",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}

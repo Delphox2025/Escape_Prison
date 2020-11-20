@@ -1,0 +1,13 @@
+{
+	"name": "NPCs",
+	"plugin-id": "Sprite",
+	"sid": 668246836405075,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Cell_Joe_Player2",
+		"Kitchen_Cheff_",
+		"CommonRoom_HeadSedcurity"
+	]
+}

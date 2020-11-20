@@ -350,7 +350,17 @@
 			"itchenPot",
 			"KitchenPan",
 			"kitchen_counter_with_plates",
-			"TiledBackground"
+			"TiledBackground",
+			"Cell_Joe_Player2",
+			"CellMate_Joe2_CellRoom",
+			"Kitchen_Cheff_",
+			"Kitchen_Hitbox_Cheff",
+			"Kitchen_Pan_HitBox",
+			"CommonRoom_FrontDesk",
+			"CommonRoom_HeadSedcurity",
+			"Enemy_CommonRoom_",
+			"Enemy_CommonRoom_2",
+			"CommonRoom_HitBox"
 		],
 		"subfolders": [
 			{
@@ -378,7 +388,9 @@
 			"BathRoom_HitBoxes",
 			"BathRoom_Assets",
 			"Hallway_Assets",
-			"CommonRoom_Assets"
+			"CommonRoom_Assets",
+			"Kitchen_HitBoxes",
+			"NPCs"
 		],
 		"subfolders": []
 	},
@@ -514,6 +526,11 @@
 					"name": "2Edited_019-05-09_-_Escape_Chase_-_David_Fesliyan.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 929695985280924
+				},
+				{
+					"name": "Frying-Food-A-Mono-www.fesliyanstudios.com.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 347188457149877
 				}
 			],
 			"subfolders": []

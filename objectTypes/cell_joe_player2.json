@@ -1,0 +1,86 @@
+{
+	"name": "Cell_Joe_Player2",
+	"plugin-id": "Sprite",
+	"sid": 311062987760094,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 396550122443924
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 659,
+						"height": 761,
+						"originX": 0.4416549816561341,
+						"originY": 0.5280501364601233,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4873980,
+						"collisionPoly": {
+							"points": [
+								0.06951460786385201,
+								0.2073183058728394,
+								0.4416549816561341,
+								0.0007075710098049124,
+								0.84358733024721,
+								0.16900838977054483,
+								0.9602773669349417,
+								0.5280501364601233,
+								0.84358733024721,
+								0.8758718285656525,
+								0.4416549816561341,
+								0.9880723744061457,
+								0.06565375232899867,
+								0.8422116648135045,
+								0.026757073433088106,
+								0.5280501364601233
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 422595061927707,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 659,
+						"height": 761,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6584090,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 613647051847971,
+				"name": "Read",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

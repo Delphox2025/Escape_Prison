@@ -37,6 +37,71 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "KitchenCounter",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 272,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 508,
+						"y": 520,
+						"width": 385.79351145401387,
+						"height": 198.74211196115866,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "itchenPot",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 273,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 376,
+						"y": 480,
+						"width": 88.13644414704535,
+						"height": 82.71266296876564,
+						"originX": 0.49230769230769234,
+						"originY": 0.4918032786885246,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 179958295056371,
@@ -362,18 +427,13 @@
 							"properties": {
 								"bound-by": "edge"
 							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"world": {
-						"x": 80,
-						"y": 841,
-						"width": 109.8682570203281,
-						"height": 111.1958159650702,
+						"x": 1345,
+						"y": 412,
+						"width": 130.73758,
+						"height": 133.625106,
 						"originX": 0.4419938642398618,
 						"originY": 0.5279093697821613,
 						"color": [
@@ -389,7 +449,7 @@
 				{
 					"type": "Key_Kitchen",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -399,10 +459,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1609,
-						"y": 197,
-						"width": 94.94777400581931,
-						"height": 36.41832427620468,
+						"x": 665.5502156382994,
+						"y": 489.8810172028885,
+						"width": 88.99706506385084,
+						"height": 35.44102157572602,
 						"originX": 0.4657534246575342,
 						"originY": 0.5714285714285714,
 						"color": [
@@ -411,43 +471,7 @@
 							1,
 							1
 						],
-						"angle": 3.119789255690092,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "KitchenCounter",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 272,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 507,
-						"y": 507,
-						"width": 385.79351145401387,
-						"height": 198.74211196115866,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
+						"angle": 3.141592653589793,
 						"zElevation": 0
 					}
 				},
@@ -486,11 +510,176 @@
 						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Kitchen_Cheff_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 287,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1376,
+						"y": 197,
+						"width": 117.83770425997587,
+						"height": 114.15017670124101,
+						"originX": 0.4419938642398618,
+						"originY": 0.5279093697821613,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 282,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 666.5276753240172,
+						"y": 488.63331576983154,
+						"width": 136.48474312677948,
+						"height": 100.23098323372868,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 148045180170222,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "DialougeBox",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Cell_Text_Box",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 289,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 814,
+						"y": 214,
+						"width": 585.5421611116515,
+						"height": 202.76378958202832,
+						"originX": 0.4943310657596372,
+						"originY": 0.5602409638554217,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "UIText",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 12,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 290,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 550,
+						"y": 120,
+						"width": 528.2986239254997,
+						"height": 159.74539776939483,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 368560656836340,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -548,7 +737,7 @@
 					}
 				},
 				{
-					"type": "itchenPot",
+					"type": "Kitchen_Hitbox_Cheff",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -556,28 +745,30 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 273,
-					"instanceVariables": {},
+					"uid": 288,
+					"instanceVariables": {
+						"Text": "Dude is that you JOE! No Way! Best Theif Get's Caught! WOW! welp then, Move that Pan and the key should be under it! "
+					},
 					"behaviors": {},
 					"world": {
-						"x": 376,
-						"y": 480,
-						"width": 88.13644414704535,
-						"height": 82.71266296876564,
-						"originX": 0.49230769230769234,
-						"originY": 0.4918032786885246,
+						"x": 1378,
+						"y": 205.5,
+						"width": 149.60877712759418,
+						"height": 138.60877712759418,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
 					}
 				},
 				{
-					"type": "KitchenPan",
+					"type": "Kitchen_Pan_HitBox",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -585,21 +776,23 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 282,
-					"instanceVariables": {},
+					"uid": 291,
+					"instanceVariables": {
+						"Text": "Wow I haven't Seen FilthyFrank in forever!! Wonder why he keep's keys under pan's?"
+					},
 					"behaviors": {},
 					"world": {
-						"x": 656,
-						"y": 487,
-						"width": 136.48474312677948,
-						"height": 100.23098323372868,
+						"x": 738,
+						"y": -116,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
 						"originX": 0.5,
-						"originY": 0.46808510638297873,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0

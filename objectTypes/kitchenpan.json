@@ -40,6 +40,13 @@
 							]
 						},
 						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "HB_Spawn",
+								"x": 1.015625,
+								"y": 0.48936170212765956
+							}
+						],
 						"duration": 1
 					}
 				],

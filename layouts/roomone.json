@@ -1644,6 +1644,42 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Cell_Joe_Player2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 285,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1599,
+						"y": 297,
+						"width": 130.73758018615806,
+						"height": 133.62510633449534,
+						"originX": 0.4416549816561341,
+						"originY": 0.5280501364601233,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.0068326921069612,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 204382903744963,
@@ -2003,7 +2039,7 @@
 					},
 					"uid": 160,
 					"instanceVariables": {
-						"Text": "Bet I  can make a lock pick out of these loose window bars!"
+						"Text": "I think i can make a lock pick out of these loose window bars!"
 					},
 					"behaviors": {},
 					"world": {
@@ -2042,6 +2078,37 @@
 						"y": 385,
 						"width": 22.79273345183415,
 						"height": 260.08616176590294,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CellMate_Joe2_CellRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 286,
+					"instanceVariables": {
+						"Text": "Great Scott! You're that great theif JOE! Hey man you should try the windows might help you find a way out."
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1585,
+						"y": 309,
+						"width": 138.79273345183415,
+						"height": 181.08616176590294,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

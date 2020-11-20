@@ -14,11 +14,6 @@
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
 			"sid": 462681502052121
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 882968361875408
 		}
 	],
 	"effectTypes": [],

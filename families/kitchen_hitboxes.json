@@ -1,22 +1,19 @@
 {
-	"name": "Cell_HitBox",
+	"name": "Kitchen_HitBoxes",
 	"plugin-id": "Sprite",
-	"sid": 420632914497784,
+	"sid": 983305372100900,
 	"instanceVariables": [
 		{
 			"name": "Text",
 			"type": "string",
 			"desc": "",
-			"sid": 130076404547937
+			"sid": 334634418170757
 		}
 	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"BEd_HitBox",
-		"Sink_HitBox",
-		"WindowHitBox2",
-		"WindowHitBox3",
-		"CellMate_Joe2_CellRoom"
+		"Kitchen_Hitbox_Cheff",
+		"Kitchen_Pan_HitBox"
 	]
 }
