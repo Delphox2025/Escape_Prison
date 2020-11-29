@@ -367,7 +367,8 @@
 					"Bathroom_EnemyFlip_Trigger",
 					"Bathroom_EnemyFlip_Trigger2",
 					"Bathroom_EnemyFlip_Trigger3",
-					"Bathroom_EnemyFlip_Trigger4"
+					"Bathroom_EnemyFlip_Trigger4",
+					"Stall_Shadow"
 				],
 				"subfolders": [],
 				"name": "Bathroom"
@@ -396,6 +397,21 @@
 				],
 				"subfolders": [],
 				"name": "Courtyard"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Securityroom"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Cellroom"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Commonroom"
 			}
 		]
 	},
