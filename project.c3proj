@@ -16,6 +16,22 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
@@ -64,24 +80,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -98,38 +98,6 @@
 			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Platform",
-			"name": "Platform",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "destroy",
-			"name": "Destroy outside layout",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Flash",
-			"name": "Flash",
-			"author": "Scirra",
-			"version": "r219",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -154,6 +122,38 @@
 			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r219",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
 			"author": "Scirra",
 			"version": "r219",
 			"bundled": false
@@ -241,8 +241,6 @@
 			"Enemy_TestRoom_2",
 			"Enemy_TestRoom_3",
 			"Enemy_View4",
-			"EnemyFlip_Trigger",
-			"EnemyFlip_Trigger2",
 			"CellWindow_Text_1",
 			"WindowHitBox",
 			"NextLevel",
@@ -296,13 +294,6 @@
 			"Key_HitBox",
 			"Key_HitBox2",
 			"Key_SecurityRoom",
-			"BathRoom_Joe_Player",
-			"ToiletStallWalls",
-			"BathroomSinks",
-			"ShowerStallWalls",
-			"Bathroom_HitBox",
-			"BathRoom_Sink_Text_1",
-			"StandByGuard",
 			"TPtoBathRoom",
 			"TPtoHallway",
 			"SecurityRoom_Cabinets_HitBox2",
@@ -312,23 +303,12 @@
 			"Wrong",
 			"SecurityKey_HitBox",
 			"SecurityRoom_Joe_Player",
-			"Enemy_Bathroom_Guard",
-			"Enemy_BathRoomGuard_View",
-			"BathroomSink_Hitbox_",
-			"BathroomSink_Hitbox_2",
-			"BathroomSink_Hitbox_3",
-			"BathroomSink_Hitbox_4",
-			"Key_BathRoom",
 			"BathRoom_StanbyGuard_AfterSpot",
 			"Hallway_WhatsHappening_HitBox",
 			"SecurityRoom_Dialouge_HitBox",
 			"StandByGuard2",
 			"StandbyGuard2_Spawn",
 			"BathroomFloor",
-			"Bathroom_drain",
-			"BathroomGround",
-			"KitchenCounters",
-			"ToiletStallDoor",
 			"CommonRoom_Bench",
 			"CommonRoom_CircleTables",
 			"CommonRoom_PingPongTable",
@@ -336,26 +316,15 @@
 			"FilingCabinet3",
 			"FilingCabinet4",
 			"FilingCabinet5",
-			"Enemy_BathRoomGuard_View2",
 			"TPtoKitchen",
 			"TPtoCommonRoom",
-			"Kitchen_Joe_Player",
 			"CommonRoom_Joe_Player",
-			"Key_Kitchen",
 			"Key_CommonRoom",
 			"TPtoMainCell",
 			"Hallway_Joe_Player2",
-			"KitchenCounterTop",
-			"KitchenCounter",
 			"itchenPot",
-			"KitchenPan",
-			"kitchen_counter_with_plates",
-			"TiledBackground",
 			"Cell_Joe_Player2",
 			"CellMate_Joe2_CellRoom",
-			"Kitchen_Cheff_",
-			"Kitchen_Hitbox_Cheff",
-			"Kitchen_Pan_HitBox",
 			"CommonRoom_FrontDesk",
 			"CommonRoom_HeadSedcurity",
 			"Enemy_CommonRoom_",
@@ -372,6 +341,61 @@
 				],
 				"subfolders": [],
 				"name": "Test Enemy Room_1 Objects"
+			},
+			{
+				"items": [
+					"BathroomGround",
+					"Bathroom_drain",
+					"Bathroom_HitBox",
+					"BathRoom_Joe_Player",
+					"BathRoom_Sink_Text_1",
+					"Bathroom_StandByGuard",
+					"BathroomSink_Hitbox_",
+					"BathroomSink_Hitbox_2",
+					"BathroomSink_Hitbox_3",
+					"BathroomSink_Hitbox_4",
+					"BathroomSinks",
+					"Enemy_Bathroom_Guard",
+					"Enemy_Bathroom_Guard2",
+					"Enemy_BathRoomGuard_View",
+					"Enemy_BathRoomGuard_View2",
+					"Enemy_BathRoomGuard_View3",
+					"Key_BathRoom",
+					"ToiletStallDoor",
+					"ToiletStallWalls",
+					"ShowerStallWalls",
+					"Bathroom_EnemyFlip_Trigger",
+					"Bathroom_EnemyFlip_Trigger2",
+					"Bathroom_EnemyFlip_Trigger3",
+					"Bathroom_EnemyFlip_Trigger4"
+				],
+				"subfolders": [],
+				"name": "Bathroom"
+			},
+			{
+				"items": [
+					"Kitchen_Cheff_",
+					"kitchen_counter_with_plates",
+					"Kitchen_Floor",
+					"Kitchen_Hitbox_Cheff",
+					"Kitchen_Joe_Player",
+					"Kitchen_Pan_HitBox",
+					"KitchenCounter",
+					"KitchenCounters",
+					"KitchenCounterTop",
+					"KitchenPan",
+					"Key_Kitchen"
+				],
+				"subfolders": [],
+				"name": "Kitchen"
+			},
+			{
+				"items": [
+					"EnemyFlip_Trigger",
+					"EnemyFlip_Trigger2"
+				],
+				"subfolders": [],
+				"name": "Courtyard"
 			}
 		]
 	},

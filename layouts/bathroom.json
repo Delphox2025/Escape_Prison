@@ -386,6 +386,35 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "Enemy_BathRoomGuard_View3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 343,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1726,
+						"y": -487,
+						"width": 123.26977835923876,
+						"height": 210.4983758696219,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "ShowerStallWalls",
 					"properties": {
 						"initially-visible": true,
@@ -1363,7 +1392,7 @@
 					}
 				},
 				{
-					"type": "StandByGuard",
+					"type": "Bathroom_StandByGuard",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1403,64 +1432,6 @@
 							1
 						],
 						"angle": 6.19804005305726,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "EnemyFlip_Trigger2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 215,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1634,
-						"y": 161,
-						"width": 31.452667140804927,
-						"height": 258.61081871328497,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "EnemyFlip_Trigger",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 216,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 366,
-						"y": 161,
-						"width": 31.452667140804927,
-						"height": 258.61081871328497,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -1614,6 +1585,188 @@
 							1
 						],
 						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_EnemyFlip_Trigger2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 344,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 366,
+						"y": 161,
+						"width": 31.452667000000005,
+						"height": 258.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_EnemyFlip_Trigger",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 345,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1634,
+						"y": 161,
+						"width": 31.452667140804927,
+						"height": 258.61081871328497,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_EnemyFlip_Trigger3",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 215,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 941,
+						"y": 883,
+						"width": 31.452667000000005,
+						"height": 258.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_EnemyFlip_Trigger4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 216,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 925,
+						"y": 220,
+						"width": 31.452667000000005,
+						"height": 258.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Bathroom_Guard2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 342,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "vertical",
+								"wave": "sine",
+								"period": 13,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 300,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 932,
+						"y": 550,
+						"width": 89.781207,
+						"height": 103.418859,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
@@ -1792,8 +1945,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1684,
-						"y": 116,
+						"x": 1692,
+						"y": 813,
 						"width": 36,
 						"height": 185,
 						"originX": 0.5,

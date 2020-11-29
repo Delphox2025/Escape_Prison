@@ -3050,319 +3050,645 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "comment",
-					"text": "Set Enemy_View4 position to enemy."
+					"eventType": "group",
+					"disabled": false,
+					"title": "Patrol_Guard_2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Set Enemy_View4 position to enemy."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 613204680714637
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 863077449219069,
+									"parameters": {
+										"object": "Enemy_Bathroom_Guard2",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 975546020260662
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is overlapping with Enemy_View4, it turns red."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 407271853429902,
+									"parameters": {
+										"object": "Enemy_BathRoomGuard_View3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 567310571471362,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 823240996440665,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 463827835309553,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 488903459698781,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 488396564298652,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 531286603790027
+								}
+							],
+							"sid": 331865559697367
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 201914144908857,
+									"parameters": {
+										"object": "Enemies"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 744223231329628,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 756329744067877,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 871238970420937,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 767513682226781,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 423002696462463,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 313632636713623
+								}
+							],
+							"sid": 832745152928968
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is not overlapping with Enemy_View4, it turns gray."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 196613056361294
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 411423857110534,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 509812230806820
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 619098332504735,
+									"parameters": {
+										"object": "Bathroom_EnemyFlip_Trigger3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 264855665575991,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 126648384523920,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 799008038938621,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 155337813605219,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 929985548221904,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 717118057453170
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 242697742139271,
+									"parameters": {
+										"object": "Bathroom_EnemyFlip_Trigger4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 957316533254497,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 187092511981246,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 999254952573337,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 825818046227947,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 218295620738074,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 756883030698284
+						}
+					],
+					"sid": 328753884185852
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Patrol_Guard_1",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 175471635567487
+							"eventType": "comment",
+							"text": "Set Enemy_View4 position to enemy."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 679063535895306
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 431925057276037,
+									"parameters": {
+										"object": "Enemy_Bathroom_Guard",
+										"image-point-optional": "0"
+									}
+								},
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_BathRoomGuard_View2",
+									"sid": 165694066014208,
+									"parameters": {
+										"object": "Bathroom_StandByGuard",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 347704017451588
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is overlapping with Enemy_View4, it turns red."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 532733289674517,
+									"parameters": {
+										"object": "Enemy_BathRoomGuard_View"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 139758879715754,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 734751289359017,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 169400390493234,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 836471219956350,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 911911995311762,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 287386565847712
+								}
+							],
+							"sid": 791343073571073
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 403353403254185,
+									"parameters": {
+										"object": "Enemies"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 212198814820417,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 221287860178961,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 891868752612326,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 935822248559897,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 577677074985026,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 563432305201161
+								}
+							],
+							"sid": 552088877840245
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is not overlapping with Enemy_View4, it turns gray."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 305702092492803
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 350023448996717,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 919352497841451
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 957810805208948,
+									"parameters": {
+										"object": "Bathroom_EnemyFlip_Trigger"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 611832833916558,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 403657154723192,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 317589492839658,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 889139024322086,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 990056586725299,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 926393258602433
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 954715369157641,
+									"parameters": {
+										"object": "Bathroom_EnemyFlip_Trigger2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 880974910228556,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 573811704345159,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 466628131963034,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 839133379569662,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 904308055185039,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 138893190841690
 						}
 					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 572744627711036,
-							"parameters": {
-								"object": "Enemy_Bathroom_Guard",
-								"image-point-optional": "0"
-							}
-						},
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Enemy_BathRoomGuard_View2",
-							"sid": 864037541841825,
-							"parameters": {
-								"object": "StandByGuard",
-								"image-point-optional": "0"
-							}
-						}
-					],
-					"sid": 403881161004826
-				},
-				{
-					"eventType": "comment",
-					"text": "When player is overlapping with Enemy_View4, it turns red."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "BathRoom_Joe_Player",
-							"sid": 520458727094153,
-							"parameters": {
-								"object": "Enemy_BathRoomGuard_View"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 213973615956005,
-							"parameters": {
-								"audio-file": "40754__tommon__one-blast-whistle",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 760198315281551,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "BathRoom_Joe_Player",
-							"sid": 363996367313646,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 436152060305361,
-							"parameters": {
-								"animation": "\"Alerted\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 865956459942620,
-							"parameters": {
-								"seconds": "2.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 846461584337371
-						}
-					],
-					"sid": 811453502731766
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "BathRoom_Joe_Player",
-							"sid": 139324664201786,
-							"parameters": {
-								"object": "Enemies"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 427859024411403,
-							"parameters": {
-								"audio-file": "40754__tommon__one-blast-whistle",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 276809491399661,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "BathRoom_Joe_Player",
-							"sid": 467178126756266,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 626185332289586,
-							"parameters": {
-								"animation": "\"Alerted\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 391767806790088,
-							"parameters": {
-								"seconds": "2.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 845099780138322
-						}
-					],
-					"sid": 493636340814630
-				},
-				{
-					"eventType": "comment",
-					"text": "When player is not overlapping with Enemy_View4, it turns gray."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 611297050622790
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 331019150662423,
-							"parameters": {
-								"animation": "\"Not_Alerted\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 207165075664329
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 684750074804142,
-							"parameters": {
-								"object": "EnemyFlip_Trigger2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 667171164888703,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 423768090653726,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 933997609497097,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 317059228549426,
-							"parameters": {
-								"state": "mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 699176964023795,
-							"parameters": {
-								"state": "flipped"
-							}
-						}
-					],
-					"sid": 576730141265322
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 476346441014924,
-							"parameters": {
-								"object": "EnemyFlip_Trigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 662099912399547,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 669252602878582,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 846161009556415,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_Bathroom_Guard",
-							"sid": 690620952125843,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 940162148028184,
-							"parameters": {
-								"state": "not-flipped"
-							}
-						}
-					],
-					"sid": 243156514804875
+					"sid": 459700153900445
 				},
 				{
 					"eventType": "comment",
@@ -3907,7 +4233,7 @@
 						},
 						{
 							"id": "find-path",
-							"objectClass": "StandByGuard",
+							"objectClass": "Bathroom_StandByGuard",
 							"sid": 369515559739626,
 							"behaviorType": "Pathfinding",
 							"parameters": {
@@ -3922,7 +4248,7 @@
 						},
 						{
 							"id": "move-along-path",
-							"objectClass": "StandByGuard",
+							"objectClass": "Bathroom_StandByGuard",
 							"sid": 793022322752279,
 							"behaviorType": "Pathfinding"
 						}
@@ -4107,7 +4433,7 @@
 						},
 						{
 							"id": "find-path",
-							"objectClass": "StandByGuard",
+							"objectClass": "Bathroom_StandByGuard",
 							"sid": 126914475337949,
 							"disabled": true,
 							"behaviorType": "Pathfinding",
@@ -4118,7 +4444,7 @@
 						},
 						{
 							"id": "move-along-path",
-							"objectClass": "StandByGuard",
+							"objectClass": "Bathroom_StandByGuard",
 							"sid": 341824258496590,
 							"disabled": true,
 							"behaviorType": "Pathfinding"

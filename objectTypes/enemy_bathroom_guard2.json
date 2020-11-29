@@ -1,0 +1,88 @@
+{
+	"name": "Enemy_Bathroom_Guard2",
+	"plugin-id": "Sprite",
+	"sid": 372088961765415,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Pathfinding",
+			"sid": 501422216849908
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 481793626525425
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 318861760942921
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 732068149265303
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 79,
+						"height": 91,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\Basic_Cop.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6479101,
+						"collisionPoly": {
+							"points": [
+								0.9287974683544301,
+								0.7853708791208798,
+								0.7798655063291142,
+								0.9296016483516486,
+								0.5877175632911391,
+								0.9836881868131869,
+								0.20371835443037964,
+								0.9416208791208793,
+								0.05241297468354424,
+								0.750686813186813,
+								0.04005142405063289,
+								0.34958791208791207,
+								0.12262658227848107,
+								0.18200549450549441,
+								0.28837025316455717,
+								0.015453296703296683,
+								0.5947389240506334,
+								0.03176510989010988,
+								0.8793512658227852,
+								0.20089285714285696,
+								0.9594541139240498,
+								0.34031593406593463,
+								0.9599485759493663,
+								0.525068681318682,
+								0.9740407436708853,
+								0.6826923076923083
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 629000028791464,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -8,10 +8,11 @@
 	"members": [
 		"Enemy_TestRoom_3",
 		"Enemy_TestRoom_4",
-		"StandByGuard",
+		"Bathroom_StandByGuard",
 		"Enemy_Bathroom_Guard",
 		"StandByGuard2",
 		"Enemy_CommonRoom_",
-		"Enemy_CommonRoom_2"
+		"Enemy_CommonRoom_2",
+		"Enemy_Bathroom_Guard2"
 	]
 }
