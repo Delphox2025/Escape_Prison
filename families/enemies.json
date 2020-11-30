@@ -13,6 +13,8 @@
 		"StandByGuard2",
 		"Enemy_CommonRoom_",
 		"Enemy_CommonRoom_2",
-		"Enemy_Bathroom_Guard2"
+		"Enemy_Bathroom_Guard2",
+		"Solitary_SleepyGuard",
+		"Solitary_CrazyGuard"
 	]
 }

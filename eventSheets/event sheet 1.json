@@ -6529,6 +6529,132 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 262024022829561,
+							"parameters": {
+								"object": "CommonRoom_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 226586895140455,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 266588976227822,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 934092724117801,
+							"parameters": {
+								"text": "left(CommonRoom_HitBox.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "CommonRoom_Joe_Player",
+							"sid": 688695416585931,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 593398257409912,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 795144742737772,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 579761086895867,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "CommonRoom_HitBox",
+							"sid": 888005225174088
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "CommonRoom_Joe_Player",
+							"sid": 866921525375596,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 192748651183615,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 569636350553228,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 465424469593902,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 619296965333335,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 805060814980667
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
 							"sid": 833694910286979,
@@ -6556,6 +6682,609 @@
 				}
 			],
 			"sid": 868106719494066
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "SolitaryRoom_Controls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 995878410265142,
+							"parameters": {
+								"object": "Solitary_HitBox_Text1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 467323172839606,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 167152392218591,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 770793507671537,
+							"parameters": {
+								"text": "left(Solitary_HitBox_Text1.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 188427970141407,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 146050763876531,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 233366534037946,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 112225488298795,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Solitary_HitBox_Text1",
+							"sid": 824701569630590
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 352333666876218,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 551123357470175,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 215546546770850,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 242614294970713,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 771655789032309,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 965968917967363
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 527982628167549,
+							"parameters": {
+								"object": "Solitary_HitBox_Text2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 816929197494661,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 673358864008586,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 975161814280307,
+							"parameters": {
+								"text": "left(Solitary_HitBox_Text2.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 179763669650214,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 255511301719534,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 593841393649501,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 799232258147777,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Solitary_HitBox_Text2",
+							"sid": 303240140731621
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 856226360144282,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 960676259348713,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 692273213844028,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 258847475045358,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 726429914706362,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 823585408334395
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 830056353094481,
+							"parameters": {
+								"object": "Solitary_CrazyGuard_Hitbox_Text1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 114386209550875,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 837452014285451,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 429080639472609,
+							"parameters": {
+								"text": "left(Solitary_CrazyGuard_Hitbox_Text1.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 249658819928551,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 763385646744449,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 838651829236154,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 879603867397748,
+							"parameters": {
+								"seconds": "6"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Solitary_CrazyGuard_Hitbox_Text1",
+							"sid": 677578832253141
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 770848099750633,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 463417973693293,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 345258721864790,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 483777848284499,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 592519694820759,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 906131161426100
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Solitary_CrazyGuard_Hitbox_Text1",
+							"sid": 148762303201300
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SolitaryBlock",
+							"sid": 447788091335378,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 724735863483954
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 289106860492221,
+							"parameters": {
+								"object": "SolitaryBlock"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 634119531530399,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 923408186756391,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 247826866131735,
+							"parameters": {
+								"text": "left(SolitaryBlock.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 919857592795243,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 515511924286628,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 773001742389789,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 166741670355201,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "SolitaryBlock",
+							"sid": 615338701378756
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Solitary_Joe_Player",
+							"sid": 822149999793706,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 785300390726281,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 549751636896054,
+							"disabled": true,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 567033989254643,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 189174137806575,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 529244899845512
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "SolitaryBlock",
+							"sid": 804817699865522
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Solitary_CrazyGuard",
+							"sid": 199373913307439,
+							"parameters": {
+								"object": "Key_SolitaryRoom",
+								"layer": "1",
+								"image-point": "1"
+							}
+						}
+					],
+					"sid": 224874809814206
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 145318738042843,
+							"parameters": {
+								"object": "Key_SolitaryRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TPtoHallway",
+							"sid": 111583966118914,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_SolitaryRoom",
+							"sid": 897684436281697
+						}
+					],
+					"sid": 958361761151258
+				}
+			],
+			"sid": 837364113732847
 		}
 	],
 	"sid": 161931613315162

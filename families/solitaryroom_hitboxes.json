@@ -1,0 +1,21 @@
+{
+	"name": "SolitaryRoom_HitBoxes",
+	"plugin-id": "Sprite",
+	"sid": 847789000363281,
+	"instanceVariables": [
+		{
+			"name": "Text",
+			"type": "string",
+			"desc": "",
+			"sid": 747705410055647
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Solitary_HitBox_Text1",
+		"Solitary_HitBox_Text2",
+		"Solitary_CrazyGuard_Hitbox_Text1",
+		"SolitaryBlock"
+	]
+}

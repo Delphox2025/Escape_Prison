@@ -329,7 +329,15 @@
 			"CommonRoom_HeadSedcurity",
 			"Enemy_CommonRoom_",
 			"Enemy_CommonRoom_2",
-			"CommonRoom_HitBox"
+			"CommonRoom_HitBox",
+			"Solitary_CrazyGuard",
+			"Solitary_HitBox_Text1",
+			"Solitary_HitBox_Text2",
+			"Solitary_CrazyGuard_Text1",
+			"Solitary_CrazyGuard_Hitbox_Text1",
+			"SolitaryBlock",
+			"Key_SolitaryRoom",
+			"TPtoCommonRoom2"
 		],
 		"subfolders": [
 			{
@@ -368,7 +376,8 @@
 					"Bathroom_EnemyFlip_Trigger2",
 					"Bathroom_EnemyFlip_Trigger3",
 					"Bathroom_EnemyFlip_Trigger4",
-					"Stall_Shadow"
+					"Stall_Shadow",
+					"Solitary_SleepyGuard"
 				],
 				"subfolders": [],
 				"name": "Bathroom"
@@ -385,7 +394,8 @@
 					"KitchenCounters",
 					"KitchenCounterTop",
 					"KitchenPan",
-					"Key_Kitchen"
+					"Key_Kitchen",
+					"Solitary_Joe_Player"
 				],
 				"subfolders": [],
 				"name": "Kitchen"
@@ -430,7 +440,8 @@
 			"Hallway_Assets",
 			"CommonRoom_Assets",
 			"Kitchen_HitBoxes",
-			"NPCs"
+			"NPCs",
+			"SolitaryRoom_HitBoxes"
 		],
 		"subfolders": []
 	},
@@ -444,7 +455,8 @@
 			"Bathroom",
 			"Kitchen",
 			"CommonRoom",
-			"Hallway_2"
+			"Hallway_2",
+			"Solitary"
 		],
 		"subfolders": [
 			{

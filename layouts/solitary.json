@@ -1,12 +1,12 @@
 {
-	"name": "Security_Room",
+	"name": "Solitary",
 	"layers": [
 		{
 			"name": "BG",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "PrisonWalls",
+					"type": "Kitchen_Floor",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -18,68 +18,21 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 201,
+					"uid": 348,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": -10.571712169194,
-						"y": 963.7903810150362,
-						"width": 966.6777319110929,
-						"height": 44.11570994943918,
+						"x": -23,
+						"y": -35,
+						"width": 1776,
+						"height": 1017,
 						"originX": 0,
 						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
-							1
-						],
-						"angle": 4.716376255393383,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "PrisonWalls",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 202,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": -8,
-						"y": 918,
-						"width": 1723.677731911093,
-						"height": 44.11570994943918,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
+							0.75
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -98,7 +51,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 203,
+					"uid": 349,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -109,10 +62,90 @@
 						}
 					},
 					"world": {
-						"x": 1728,
-						"y": -3.494761422780357,
-						"width": 961.1724933338733,
-						"height": 41.10828754869562,
+						"x": 1691,
+						"y": 328,
+						"width": 799,
+						"height": 116.11570994943918,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 350,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1691,
+						"y": 666,
+						"width": 799,
+						"height": 112.11570994943918,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 356,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1733,
+						"y": -87,
+						"width": 1133,
+						"height": 44.11570994943918,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -138,7 +171,7 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 204,
+					"uid": 355,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -149,9 +182,89 @@
 						}
 					},
 					"world": {
-						"x": -8,
-						"y": -2,
-						"width": 1723.677731911093,
+						"x": 23,
+						"y": -87,
+						"width": 890,
+						"height": 44.11570994943918,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 354,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -85,
+						"y": 937,
+						"width": 1880,
+						"height": 44.11570994943918,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 353,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -82,
+						"y": -32,
+						"width": 1880,
 						"height": 44.11570994943918,
 						"originX": 0,
 						"originY": 0,
@@ -166,7 +279,7 @@
 					}
 				}
 			],
-			"sid": 634215291735232,
+			"sid": 569558845778813,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -191,47 +304,11 @@
 			"global": false
 		},
 		{
-			"name": "Game",
+			"name": "GAME",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "OfficeDesk",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 205,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1121,
-						"y": 278,
-						"width": 411.3679144177455,
-						"height": 257.31838348553634,
-						"originX": 0.4899328859060403,
-						"originY": 0.4954128440366973,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FilingCabinet",
+					"type": "Solitary_SleepyGuard",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -239,43 +316,82 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 207,
+					"uid": 351,
 					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 168,
-						"y": 638,
-						"width": 79.54286295762431,
-						"height": 91.1428638056112,
-						"originX": 0.5510204081632653,
-						"originY": 0.4363636363636363,
+						"x": 845,
+						"y": 617,
+						"width": 109.10499815837977,
+						"height": 125.67790927104507,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
+						"angle": 3.1470218445426656,
 						"zElevation": 0
 					}
 				},
 				{
-					"type": "MonitorSystem",
+					"type": "Solitary_Joe_Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 1,
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 47,
+					"uid": 352,
+					"instanceVariables": {},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 250,
+								"acceleration": 700,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						}
+					},
+					"world": {
+						"x": 73,
+						"y": 870,
+						"width": 130.73758,
+						"height": 133.625106,
+						"originX": 0.4419938642398618,
+						"originY": 0.5279093697821613,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.10709712422154,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solitary_CrazyGuard",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 357,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -286,12 +402,41 @@
 						}
 					},
 					"world": {
-						"x": 252,
-						"y": 329,
-						"width": 85.58840808316062,
-						"height": 481.5207385275781,
-						"originX": 0.4322033898305085,
-						"originY": 0.5,
+						"x": 1621,
+						"y": 80,
+						"width": 109.10499815837977,
+						"height": 125.67790927104508,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.021385919380437,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Key_SolitaryRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 362,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 870.5753424657535,
+						"y": -252.42857142857142,
+						"width": 100,
+						"height": 36,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
 						"color": [
 							1,
 							1,
@@ -301,194 +446,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "FilingCabinet2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 306,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 162,
-						"y": 831,
-						"width": 79.54286295762431,
-						"height": 91.1428638056112,
-						"originX": 0.5510204081632653,
-						"originY": 0.43636363636363634,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FilingCabinet3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 208,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1574,
-						"y": 443,
-						"width": 79.54286295762431,
-						"height": 91.1428638056112,
-						"originX": 0.5510204081632653,
-						"originY": 0.43636363636363634,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FilingCabinet4",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 98,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1579,
-						"y": 628,
-						"width": 79.54286295762431,
-						"height": 91.1428638056112,
-						"originX": 0.5510204081632653,
-						"originY": 0.43636363636363634,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FilingCabinet5",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 209,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1573,
-						"y": 805,
-						"width": 79.54286295762431,
-						"height": 91.1428638056112,
-						"originX": 0.5510204081632653,
-						"originY": 0.43636363636363634,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_Joe_Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 100,
-					"instanceVariables": {},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 250,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": true,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 917,
-						"y": 863,
-						"width": 130.73758,
-						"height": 133.625106,
-						"originX": 0.4416549816561341,
-						"originY": 0.5280501364601233,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.7346866064056545,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 156170167542906,
+			"sid": 179222225780230,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -525,14 +485,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 261,
+					"uid": 363,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 905,
-						"y": 665,
-						"width": 486.21814595896603,
-						"height": 168.36948794775006,
+						"x": 420,
+						"y": 425,
+						"width": 585.5421611116515,
+						"height": 202.76378958202832,
 						"originX": 0.4943310657596372,
 						"originY": 0.5602409638554217,
 						"color": [
@@ -567,14 +527,14 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 262,
+					"uid": 364,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 678,
-						"y": 585,
-						"width": 451.9409416661633,
-						"height": 139.586822489296,
+						"x": 156,
+						"y": 331,
+						"width": 528.2986239254997,
+						"height": 159.74539776939483,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -586,38 +546,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Key_SecurityRoom",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 347,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1648,
-						"y": -99,
-						"width": 73,
-						"height": 28,
-						"originX": 0.4657534246575342,
-						"originY": 0.5714285714285714,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 386096233016979,
+			"sid": 163863401354673,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -646,97 +577,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "SecurityRoom_MS_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 99,
-					"instanceVariables": {
-						"Text": "WOW the Main Monitor System! I can see every cell and Room. Why are there some rooms I haven't seen before? "
-					},
-					"behaviors": {},
-					"world": {
-						"x": 316,
-						"y": 337,
-						"width": 51.02940328869229,
-						"height": 158.0294032886923,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.75
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_Cabinets_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 200,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 176,
-						"y": 634,
-						"width": 98.52566196315664,
-						"height": 94.01608730672444,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_OfficeDesk_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 210,
-					"instanceVariables": {
-						"Text": "Im in Shock a Sherif's Desk but no KEY! Is this man living in 2099!"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1117,
-						"y": 167,
-						"width": 213,
-						"height": 59,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "TPtoHallway",
 					"properties": {
 						"initially-visible": false,
@@ -745,14 +585,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 248,
+					"uid": 365,
 					"instanceVariables": {
 						"Text": ""
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1679,
-						"y": 148,
+						"x": 1671,
+						"y": 845,
 						"width": 36,
 						"height": 185,
 						"originX": 0.5,
@@ -768,7 +608,7 @@
 					}
 				},
 				{
-					"type": "SecurityRoom_Cabinets_HitBox2",
+					"type": "Solitary_HitBox_Text2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -776,175 +616,123 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 211,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 172,
-						"y": 828,
-						"width": 100.35713354544572,
-						"height": 93.85847200607633,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_Cabinets_HitBox3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 212,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1567,
-						"y": 449,
-						"width": 95.37540706896287,
-						"height": 94.95611374360031,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_Cabinets_HitBox4",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 213,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1568.6256054661417,
-						"y": 630.6140626703537,
-						"width": 94.13651754684486,
-						"height": 93.72267067904876,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_Cabinets_HitBox5",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 214,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1566,
-						"y": 812,
-						"width": 90.18277791628384,
-						"height": 89.78631264284485,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Wrong",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 250,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 692,
-						"y": -194,
-						"width": 86.99529767856316,
-						"height": 85.06206884126175,
-						"originX": 0.4711111111111111,
-						"originY": 0.4772727272727273,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SecurityRoom_Dialouge_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 260,
+					"uid": 359,
 					"instanceVariables": {
-						"Text": "This Has to be the Head Security Room! Must be a KEY in here!"
+						"Text": "*A guard weird* And he's crying? "
 					},
 					"behaviors": {},
 					"world": {
-						"x": 903,
-						"y": 771,
-						"width": 646,
-						"height": -24,
+						"x": 956,
+						"y": 106,
+						"width": 35,
+						"height": 187,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solitary_HitBox_Text1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 358,
+					"instanceVariables": {
+						"Text": "Wow im in Solitary! last place I would want to end up, It sounds like someone is crying......? Gotta try not to wake that guard!  "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 229,
+						"y": 820,
+						"width": 40,
+						"height": 505.17313601781086,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 5.31490271324669,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solitary_CrazyGuard_Hitbox_Text1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 361,
+					"instanceVariables": {
+						"Text": "Well Hello there! what year is it! 1976 or 2005 maybe 2099 if im right!!  I have been here so long I just cant Rember. Stranger I have a key if you want it! GO STAND IN SOLITARY!  "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1460,
+						"y": 109,
+						"width": 35,
+						"height": 187,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.3
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SolitaryBlock",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 360,
+					"instanceVariables": {
+						"Text": "How's it feel to be in Solitary like me, I guess i can give you the key! Come and get it Stephan or was it thresh... Forgot sorry!  "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1640,
+						"y": 371,
+						"width": 66.74578638386095,
+						"height": 66.74578638386095,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
 						],
 						"angle": 0,
 						"zElevation": 0
 					}
 				}
 			],
-			"sid": 175758654645116,
+			"sid": 422672230386019,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -969,7 +757,7 @@
 			"global": false
 		}
 	],
-	"sid": 196423681624120,
+	"sid": 309682966979100,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1710,

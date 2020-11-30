@@ -11,6 +11,7 @@
 		"Key_SecurityRoom",
 		"Key_BathRoom",
 		"Key_Kitchen",
-		"Key_CommonRoom"
+		"Key_CommonRoom",
+		"Key_SolitaryRoom"
 	]
 }
