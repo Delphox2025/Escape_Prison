@@ -1,7 +1,7 @@
 {
-	"name": "SecurityRoom_Cabinets_HitBox2",
+	"name": "EndGoalDoor",
 	"plugin-id": "Sprite",
-	"sid": 851223548357117,
+	"sid": 625369747767918,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,19 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4196072,
+						"imageSpriteId": 7329066,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "KeySpawn",
-								"x": 1.336,
-								"y": 0.516
-							}
-						],
 						"duration": 1
 					}
 				],
-				"sid": 852877404729245,
+				"sid": 556614745105546,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

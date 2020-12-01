@@ -22,6 +22,66 @@
 			"sid": 867848827486525
 		},
 		{
+			"eventType": "variable",
+			"name": "EndGoal",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 682284644226656
+		},
+		{
+			"eventType": "variable",
+			"name": "CourtYardPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 416757529009091
+		},
+		{
+			"eventType": "variable",
+			"name": "BathroomPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 514692212653954
+		},
+		{
+			"eventType": "variable",
+			"name": "CommonRoomPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 285891331272123
+		},
+		{
+			"eventType": "variable",
+			"name": "SecurityRoomPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 835208694228010
+		},
+		{
+			"eventType": "variable",
+			"name": "KitchenPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 581207078329478
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player_ToNxtLvl",
@@ -1886,6 +1946,24 @@
 							}
 						},
 						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 553693236021250,
+							"parameters": {
+								"variable": "CourtYardPoint",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 776380221872762,
+							"parameters": {
+								"variable": "EndGoal",
+								"value": "1"
+							}
+						},
+						{
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 552056415901490,
@@ -2135,6 +2213,29 @@
 						}
 					],
 					"sid": 640644094071944
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 983132664064491,
+							"parameters": {
+								"variable": "CourtYardPoint",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Key",
+							"sid": 813971158902264
+						}
+					],
+					"sid": 395086961543819
 				}
 			],
 			"sid": 957881653875611
@@ -3194,6 +3295,24 @@
 							],
 							"actions": [
 								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 917388415969427,
+									"parameters": {
+										"variable": "SecurityRoomPoint",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 931088606139590,
+									"parameters": {
+										"variable": "EndGoal",
+										"value": "1"
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 777131663516324,
@@ -3212,10 +3331,33 @@
 								{
 									"id": "destroy",
 									"objectClass": "Key_SecurityRoom",
-									"sid": 941667883785364
+									"sid": 415386254145068
 								}
 							],
 							"sid": 673316766390893
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 107366019590027,
+									"parameters": {
+										"variable": "SecurityRoomPoint",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 423589087399643
+								}
+							],
+							"sid": 925633065644463
 						}
 					],
 					"sid": 814095571224792
@@ -3254,6 +3396,7 @@
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 144766082670920,
+									"disabled": true,
 									"parameters": {
 										"visibility": "invisible"
 									}
@@ -3279,8 +3422,7 @@
 										{
 											"id": "set-visible",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 101858911826212,
-											"disabled": true,
+											"sid": 628582904226297,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -3325,7 +3467,8 @@
 													}
 												}
 											],
-											"sid": 894939315816103
+											"sid": 894939315816103,
+											"disabled": true
 										}
 									]
 								},
@@ -3347,8 +3490,7 @@
 										{
 											"id": "set-visible",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 596701848716567,
-											"disabled": true,
+											"sid": 781752734161411,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -3393,7 +3535,8 @@
 													}
 												}
 											],
-											"sid": 720485207685480
+											"sid": 720485207685480,
+											"disabled": true
 										}
 									]
 								},
@@ -3415,8 +3558,7 @@
 										{
 											"id": "set-visible",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 435008749298007,
-											"disabled": true,
+											"sid": 589870668456402,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -3461,7 +3603,8 @@
 													}
 												}
 											],
-											"sid": 476143069640842
+											"sid": 476143069640842,
+											"disabled": true
 										}
 									]
 								},
@@ -3483,8 +3626,7 @@
 										{
 											"id": "set-visible",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 763515751819876,
-											"disabled": true,
+											"sid": 167807173317841,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -3529,7 +3671,8 @@
 													}
 												}
 											],
-											"sid": 991388031262066
+											"sid": 991388031262066,
+											"disabled": true
 										}
 									]
 								},
@@ -3551,8 +3694,7 @@
 										{
 											"id": "set-visible",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 573724581446694,
-											"disabled": true,
+											"sid": 689158438391880,
 											"parameters": {
 												"visibility": "visible"
 											}
@@ -3597,7 +3739,8 @@
 													}
 												}
 											],
-											"sid": 326741027542246
+											"sid": 326741027542246,
+											"disabled": true
 										}
 									]
 								}
@@ -3867,6 +4010,24 @@
 							],
 							"actions": [
 								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 926952433997339,
+									"parameters": {
+										"variable": "BathroomPoint",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 666238998549485,
+									"parameters": {
+										"variable": "EndGoal",
+										"value": "1"
+									}
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 787876531270064,
@@ -3948,6 +4109,29 @@
 								}
 							],
 							"sid": 640677642790384
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 850346073448172,
+									"parameters": {
+										"variable": "BathroomPoint",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Key_BathRoom",
+									"sid": 221232810085306
+								}
+							],
+							"sid": 587976714192626
 						}
 					],
 					"sid": 495027497468799
@@ -6357,20 +6541,56 @@
 					],
 					"actions": [
 						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 838620319073635,
+							"parameters": {
+								"variable": "KitchenPoint",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 241581123583389,
+							"parameters": {
+								"variable": "EndGoal",
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "TPtoHallway",
 							"sid": 172648224632545,
 							"parameters": {
 								"visibility": "visible"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Key_Kitchen",
-							"sid": 559592277827510
 						}
 					],
 					"sid": 386769779700451
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 149410010594180,
+							"parameters": {
+								"variable": "KitchenPoint",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Key_Kitchen",
+							"sid": 613811767597919
+						}
+					],
+					"sid": 444074571136030
 				}
 			],
 			"sid": 799888893836497
@@ -7260,20 +7480,56 @@
 					],
 					"actions": [
 						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 302941799697202,
+							"parameters": {
+								"variable": "CommonRoomPoint",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 773569762569403,
+							"parameters": {
+								"variable": "EndGoal",
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "TPtoHallway",
 							"sid": 703485850001007,
 							"parameters": {
 								"visibility": "visible"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Key_CommonRoom",
-							"sid": 673492898087963
 						}
 					],
 					"sid": 747186794241797
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 147851178385401,
+							"parameters": {
+								"variable": "CommonRoomPoint",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Key_CommonRoom",
+							"sid": 209505714039663
+						}
+					],
+					"sid": 193678122956056
 				}
 			],
 			"sid": 868106719494066
@@ -7880,6 +8136,56 @@
 				}
 			],
 			"sid": 837364113732847
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 340938430700436,
+					"parameters": {
+						"variable": "EndGoal",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "EndGoalDoor",
+					"sid": 326842071533931,
+					"parameters": {
+						"collisions": "enabled"
+					}
+				}
+			],
+			"sid": 657104917127416
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 459190570353294,
+					"parameters": {
+						"object": "EndGoalDoor"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 868872854377196,
+					"parameters": {
+						"layout": "Solitary"
+					}
+				}
+			],
+			"sid": 489173496279592
 		}
 	],
 	"sid": 161931613315162

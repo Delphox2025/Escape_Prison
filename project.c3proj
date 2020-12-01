@@ -343,7 +343,8 @@
 			"BackTo_Hallway2",
 			"BackTo_Courtyard",
 			"Enemy_CommonRoomGuard_View4",
-			"Enemy_CommonRoomGuard_View5"
+			"Enemy_CommonRoomGuard_View5",
+			"EndGoalDoor"
 		],
 		"subfolders": [
 			{

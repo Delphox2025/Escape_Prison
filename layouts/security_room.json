@@ -486,6 +486,35 @@
 						"angle": 4.7346866064056545,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Key_SecurityRoom",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 347,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1143,
+						"y": -150,
+						"width": 73,
+						"height": 28,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 156170167542906,
@@ -577,35 +606,6 @@
 						"height": 139.586822489296,
 						"originX": 0,
 						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Key_SecurityRoom",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 347,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1648,
-						"y": -99,
-						"width": 73,
-						"height": 28,
-						"originX": 0.4657534246575342,
-						"originY": 0.5714285714285714,
 						"color": [
 							1,
 							1,

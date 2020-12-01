@@ -1639,7 +1639,9 @@
 						"live-preview": false
 					},
 					"uid": 181,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Points": 0
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1309.1522532817928,
