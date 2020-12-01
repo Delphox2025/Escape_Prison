@@ -11,14 +11,34 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 86,
+						"height": 40,
 						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
+						"originY": 0.775,
+						"originalSource": "C:\\Users\\D\\Downloads\\Police_desk.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8726250,
+						"imageSpriteId": 8888930,
+						"collisionPoly": {
+							"points": [
+								0.1511627906976744,
+								0.025,
+								0.5,
+								0.025,
+								0.8372093023255814,
+								0.025,
+								0.9767441860465116,
+								0.775,
+								0.5813953488372093,
+								0.95,
+								0.5,
+								0.95,
+								0.4069767441860465,
+								0.95,
+								0.011627906976744186,
+								0.775
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

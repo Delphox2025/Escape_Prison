@@ -82,6 +82,16 @@
 			"sid": 581207078329478
 		},
 		{
+			"eventType": "variable",
+			"name": "HallWayPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 344620512529641
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player_ToNxtLvl",
@@ -2757,6 +2767,15 @@
 					],
 					"actions": [
 						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 614465916212242,
+							"parameters": {
+								"variable": "HallWayPoint",
+								"value": "1"
+							}
+						},
+						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 361501072546726,
@@ -2832,6 +2851,92 @@
 						}
 					],
 					"sid": 528768697473239
+				},
+				{
+					"eventType": "comment",
+					"text": "End door in hallway Controls "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 270716703727079,
+							"parameters": {
+								"variable": "EndGoal",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "EndGoalDoor",
+							"sid": 389963244540905,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						}
+					],
+					"sid": 929616590007165
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 833980033158193,
+							"parameters": {
+								"object": "EndGoalDoor"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 993280222530292,
+							"parameters": {
+								"layout": "Solitary"
+							}
+						}
+					],
+					"sid": 927269914678970
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 123894795470109,
+							"parameters": {
+								"variable": "HallWayPoint",
+								"comparison": 0,
+								"value": "241"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 650763238684012,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 256537152234288
+						}
+					],
+					"sid": 749512626119907
 				}
 			],
 			"sid": 788486928695440
@@ -3420,11 +3525,13 @@
 									],
 									"actions": [
 										{
-											"id": "set-visible",
+											"id": "spawn-another-object",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 628582904226297,
+											"sid": 490106372369516,
 											"parameters": {
-												"visibility": "visible"
+												"object": "Wrong",
+												"layer": "1",
+												"image-point": "1"
 											}
 										},
 										{
@@ -3488,11 +3595,13 @@
 									],
 									"actions": [
 										{
-											"id": "set-visible",
+											"id": "spawn-another-object",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 781752734161411,
+											"sid": 432766153077765,
 											"parameters": {
-												"visibility": "visible"
+												"object": "Wrong",
+												"layer": "1",
+												"image-point": "1"
 											}
 										},
 										{
@@ -3556,11 +3665,13 @@
 									],
 									"actions": [
 										{
-											"id": "set-visible",
+											"id": "spawn-another-object",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 589870668456402,
+											"sid": 287446608159670,
 											"parameters": {
-												"visibility": "visible"
+												"object": "Wrong",
+												"layer": "1",
+												"image-point": "1"
 											}
 										},
 										{
@@ -3624,11 +3735,13 @@
 									],
 									"actions": [
 										{
-											"id": "set-visible",
+											"id": "spawn-another-object",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 167807173317841,
+											"sid": 678617803603345,
 											"parameters": {
-												"visibility": "visible"
+												"object": "Wrong",
+												"layer": "1",
+												"image-point": "1"
 											}
 										},
 										{
@@ -3692,11 +3805,13 @@
 									],
 									"actions": [
 										{
-											"id": "set-visible",
+											"id": "spawn-another-object",
 											"objectClass": "Key_SecurityRoom",
-											"sid": 689158438391880,
+											"sid": 268301107514666,
 											"parameters": {
-												"visibility": "visible"
+												"object": "Wrong",
+												"layer": "1",
+												"image-point": "1"
 											}
 										},
 										{
@@ -3745,6 +3860,68 @@
 									]
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 856935058102188
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 688702403915517,
+									"parameters": {
+										"object": "Wrong",
+										"layer": "1",
+										"image-point": "1"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 799090614729549,
+									"parameters": {
+										"object": "Wrong",
+										"layer": "1",
+										"image-point": "2"
+									}
+								}
+							],
+							"sid": 442916193991206
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 106241870633174,
+									"parameters": {
+										"object": "Wrong"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Key_SecurityRoom",
+									"sid": 631375563880075,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Wrong",
+									"sid": 138025598287295
+								}
+							],
+							"sid": 932703255201901
 						}
 					],
 					"sid": 759689810867905
@@ -8136,56 +8313,6 @@
 				}
 			],
 			"sid": 837364113732847
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-eventvar",
-					"objectClass": "System",
-					"sid": 340938430700436,
-					"parameters": {
-						"variable": "EndGoal",
-						"comparison": 0,
-						"value": "5"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-collisions-enabled",
-					"objectClass": "EndGoalDoor",
-					"sid": 326842071533931,
-					"parameters": {
-						"collisions": "enabled"
-					}
-				}
-			],
-			"sid": 657104917127416
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 459190570353294,
-					"parameters": {
-						"object": "EndGoalDoor"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 868872854377196,
-					"parameters": {
-						"layout": "Solitary"
-					}
-				}
-			],
-			"sid": 489173496279592
 		}
 	],
 	"sid": 161931613315162
