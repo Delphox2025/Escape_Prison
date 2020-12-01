@@ -337,14 +337,16 @@
 			"Solitary_CrazyGuard_Hitbox_Text1",
 			"SolitaryBlock",
 			"Key_SolitaryRoom",
-			"TPtoCommonRoom2",
+			"TPtoSolitary",
 			"Cell_Hallway_Spawn",
 			"Cell_Hallway_Spawn2",
 			"BackTo_Hallway2",
 			"BackTo_Courtyard",
 			"Enemy_CommonRoomGuard_View4",
 			"Enemy_CommonRoomGuard_View5",
-			"EndGoalDoor"
+			"EndGoalDoor",
+			"FinalDoor_Freedom_TextHitBox",
+			"TPtoStartPAge"
 		],
 		"subfolders": [
 			{

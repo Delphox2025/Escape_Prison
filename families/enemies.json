@@ -15,6 +15,16 @@
 		"Enemy_CommonRoom_2",
 		"Enemy_Bathroom_Guard2",
 		"Solitary_SleepyGuard",
-		"Solitary_CrazyGuard"
+		"Solitary_CrazyGuard",
+		"Enemy_CommonRoomGuard_View4",
+		"Enemy_CommonRoomGuard_View5",
+		"Enemy_BathRoomGuard_View",
+		"Enemy_BathRoomGuard_View2",
+		"Enemy_BathRoomGuard_View3",
+		"Enemy_View",
+		"Enemy_View2",
+		"Enemy_View3",
+		"Enemy_View4",
+		"Enemy_View5"
 	]
 }

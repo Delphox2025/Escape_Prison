@@ -1,0 +1,44 @@
+{
+	"name": "FinalDoor_Freedom_TextHitBox",
+	"plugin-id": "Sprite",
+	"sid": 652305322202456,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Text",
+			"type": "string",
+			"desc": "",
+			"sid": 158078799914850
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3908322,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 239486005415161,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -92,6 +92,78 @@
 			"sid": 344620512529641
 		},
 		{
+			"eventType": "variable",
+			"name": "FinalSolitary3x",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 437454819898433
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 788919566749881,
+					"parameters": {
+						"object": "Enemies"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Player",
+					"sid": 986059462991500,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 480535588978840,
+					"parameters": {
+						"variable": "FinalSolitary3x",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 507138008637047,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 905892375590283,
+					"parameters": {
+						"variable": "FinalSolitary3x",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 494664480870451,
+					"parameters": {
+						"layout": "Solitary"
+					}
+				}
+			],
+			"sid": 928138621984425,
+			"disabled": true
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player_ToNxtLvl",
@@ -1195,6 +1267,24 @@
 							],
 							"actions": [
 								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 534732839186600,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 383640994892276,
+									"parameters": {
+										"variable": "FinalSolitary3x",
+										"value": "1"
+									}
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 270472689352503,
@@ -1261,6 +1351,24 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 151906921278330,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 184898562567972,
+									"parameters": {
+										"variable": "FinalSolitary3x",
+										"value": "1"
+									}
+								},
 								{
 									"id": "play",
 									"objectClass": "Audio",
@@ -1590,6 +1698,24 @@
 							],
 							"actions": [
 								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 678127316315968,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 432497866474775,
+									"parameters": {
+										"variable": "FinalSolitary3x",
+										"value": "1"
+									}
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 612343191057670,
@@ -1656,6 +1782,24 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Player",
+									"sid": 501468074821841,
+									"parameters": {
+										"instance-variable": "HP",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 778325233669881,
+									"parameters": {
+										"variable": "FinalSolitary3x",
+										"value": "1"
+									}
+								},
 								{
 									"id": "play",
 									"objectClass": "Audio",
@@ -2243,6 +2387,14 @@
 							"id": "destroy",
 							"objectClass": "Key",
 							"sid": 813971158902264
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "TPtoCourtyard",
+							"sid": 599381013654902,
+							"parameters": {
+								"collisions": "disabled"
+							}
 						}
 					],
 					"sid": 395086961543819
@@ -2548,6 +2700,30 @@
 						}
 					],
 					"sid": 721978292076127
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 172267966093156,
+							"parameters": {
+								"object": "TPtoMainCell"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 684103126724191,
+							"parameters": {
+								"layout": "RoomOne"
+							}
+						}
+					],
+					"sid": 764731060910798
 				}
 			],
 			"sid": 768789187191196
@@ -2853,6 +3029,106 @@
 					"sid": 528768697473239
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 316749272410076,
+							"parameters": {
+								"object": "FinalDoor_Freedom_TextHitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 652812333278260,
+							"disabled": true,
+							"parameters": {
+								"variable": "HallWayPoint",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 680503163990991,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 109650865125406,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 596420207193245,
+							"parameters": {
+								"text": "left(FinalDoor_Freedom_TextHitBox.Text, len(UIText.Text) + 1)"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 264789691544629,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 750944300915478,
+							"parameters": {
+								"seconds": "6.6"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 922361672359243
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Hallway_Joe_Player",
+							"sid": 439422680154220,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 293251601259645,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 909577827157913,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 562530281157373
+				},
+				{
 					"eventType": "comment",
 					"text": "End door in hallway Controls "
 				},
@@ -2907,6 +3183,10 @@
 					"sid": 927269914678970
 				},
 				{
+					"eventType": "comment",
+					"text": "Helps keep the text box from re apeearing in layouts after re enter "
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -2932,11 +3212,201 @@
 						},
 						{
 							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 117426982560828
+						},
+						{
+							"id": "destroy",
 							"objectClass": "Hallway_WhatsHappening_HitBox",
-							"sid": 256537152234288
+							"sid": 136760233610539
 						}
 					],
 					"sid": 749512626119907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 674188323893543,
+							"parameters": {
+								"variable": "CommonRoomPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 196502685624385
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 845587594637663
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 174035445586263,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 723952582302115
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 522229355930537,
+							"parameters": {
+								"variable": "BathroomPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 321610660017160
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 526093854570767
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 731459127676509,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 518039408509357
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 301436956848713,
+							"parameters": {
+								"variable": "SecurityRoomPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 728397986321279
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 939768737377478
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 307195532534735,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 275385793093388
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 902536060103920,
+							"parameters": {
+								"variable": "KitchenPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 976152555837176
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 827753006389909
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 411451622382241,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 522081250266537
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 690943416031682,
+							"parameters": {
+								"variable": "CourtYardPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 855065218176066
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 889429350987503
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 412243115371965,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 814648029589153
 				}
 			],
 			"sid": 788486928695440
@@ -3543,6 +4013,11 @@
 												"layer": "\"Game\"",
 												"image-point": "1"
 											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "SecurityRoom_Cabinets_HitBox",
+											"sid": 661574458416864
 										}
 									],
 									"sid": 591961800025145,
@@ -3613,6 +4088,11 @@
 												"layer": "\"Game\"",
 												"image-point": "1"
 											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "SecurityRoom_Cabinets_HitBox2",
+											"sid": 553026657632683
 										}
 									],
 									"sid": 350338231890163,
@@ -3683,6 +4163,11 @@
 												"layer": "\"Game\"",
 												"image-point": "1"
 											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "SecurityRoom_Cabinets_HitBox3",
+											"sid": 934726832885893
 										}
 									],
 									"sid": 411880206166941,
@@ -3753,6 +4238,11 @@
 												"layer": "\"Game\"",
 												"image-point": "1"
 											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "SecurityRoom_Cabinets_HitBox4",
+											"sid": 649128067455281
 										}
 									],
 									"sid": 519208784629058,
@@ -3823,6 +4313,11 @@
 												"layer": "\"Game\"",
 												"image-point": "1"
 											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "SecurityRoom_Cabinets_HitBox5",
+											"sid": 213131051747916
 										}
 									],
 									"sid": 621183153952870,
@@ -8049,9 +8544,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 879603867397748,
+							"sid": 515865994789913,
 							"parameters": {
-								"seconds": "6"
+								"seconds": "7.5"
 							}
 						},
 						{
@@ -8112,180 +8607,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-destroyed",
-							"objectClass": "Solitary_CrazyGuard_Hitbox_Text1",
-							"sid": 148762303201300
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "SolitaryBlock",
-							"sid": 447788091335378,
-							"parameters": {
-								"visibility": "visible"
-							}
-						}
-					],
-					"sid": 724735863483954
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Solitary_Joe_Player",
-							"sid": 289106860492221,
-							"parameters": {
-								"object": "SolitaryBlock"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 634119531530399,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-font-face",
-							"objectClass": "UIText",
-							"sid": 923408186756391,
-							"parameters": {
-								"font-face": "\"Arial\"",
-								"style": "bold"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "UIText",
-							"sid": 247826866131735,
-							"parameters": {
-								"text": "left(SolitaryBlock.Text, len(UIText.Text) + 1)"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "Solitary_Joe_Player",
-							"sid": 919857592795243,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 515511924286628,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 773001742389789,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 166741670355201,
-							"parameters": {
-								"seconds": "5"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "SolitaryBlock",
-							"sid": 615338701378756
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "Solitary_Joe_Player",
-							"sid": 822149999793706,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "250"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 785300390726281,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 549751636896054,
-							"disabled": true,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 567033989254643,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 189174137806575,
-							"parameters": {
-								"layer": "\"DialougeBox\"",
-								"visibility": "invisible"
-							}
-						}
-					],
-					"sid": 529244899845512
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "SolitaryBlock",
-							"sid": 804817699865522
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Solitary_CrazyGuard",
-							"sid": 199373913307439,
-							"parameters": {
-								"object": "Key_SolitaryRoom",
-								"layer": "1",
-								"image-point": "1"
-							}
-						}
-					],
-					"sid": 224874809814206
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
 							"sid": 145318738042843,
@@ -8297,8 +8618,8 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "TPtoHallway",
-							"sid": 111583966118914,
+							"objectClass": "TPtoStartPAge",
+							"sid": 269448190436181,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -8310,9 +8631,45 @@
 						}
 					],
 					"sid": 958361761151258
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 758307115929187,
+							"parameters": {
+								"object": "TPtoStartPAge"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 312818273857616,
+							"parameters": {
+								"layout": "StartPage"
+							}
+						}
+					],
+					"sid": 888693117951768
 				}
 			],
 			"sid": 837364113732847
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 651671652490146
+				}
+			],
+			"actions": [],
+			"sid": 703990524903812
 		}
 	],
 	"sid": 161931613315162

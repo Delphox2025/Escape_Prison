@@ -18,6 +18,10 @@
 		"TPtoSecurityRoom",
 		"TPtoHallway",
 		"Hallway_WhatsHappening_HitBox",
-		"TPtoMainCell"
+		"TPtoMainCell",
+		"TPtoCommonRoom",
+		"TPtoKitchen",
+		"TPtoSolitary",
+		"TPtoStartPAge"
 	]
 }

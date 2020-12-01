@@ -109,64 +109,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "TPtoKitchen",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 257,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1453,
-						"y": 716,
-						"width": 97.10202881505619,
-						"height": 200.62402647738878,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TPtoCommonRoom",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 308,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1099,
-						"y": 709.5,
-						"width": 91.07917347881543,
-						"height": 187.1757477222057,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 413453396542843,
@@ -207,7 +149,9 @@
 						"live-preview": false
 					},
 					"uid": 18,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"HP": 3
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
@@ -227,8 +171,8 @@
 						}
 					},
 					"world": {
-						"x": 117,
-						"y": 457,
+						"x": 1500,
+						"y": 459,
 						"width": 109.8682570203281,
 						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
@@ -366,7 +310,7 @@
 					}
 				},
 				{
-					"type": "TPtoCommonRoom2",
+					"type": "TPtoSolitary",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -375,7 +319,9 @@
 						"live-preview": false
 					},
 					"uid": 366,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"Text": ""
+					},
 					"behaviors": {},
 					"world": {
 						"x": 832.5,
@@ -411,6 +357,68 @@
 						"y": 443,
 						"width": 250,
 						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoKitchen",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 257,
+					"instanceVariables": {
+						"Text": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1453,
+						"y": 716,
+						"width": 97.10202881505619,
+						"height": 200.62402647738878,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoCommonRoom",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 308,
+					"instanceVariables": {
+						"Text": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1099,
+						"y": 709.5,
+						"width": 91.07917347881543,
+						"height": 187.1757477222057,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -607,6 +615,37 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FinalDoor_Freedom_TextHitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 374,
+					"instanceVariables": {
+						"Text": "Well then, now thats a lock! This door has 5 KEY holes! The KEYS must be inside these rooms, Then im HOME FREE! "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1648,
+						"y": 443,
+						"width": 44,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0

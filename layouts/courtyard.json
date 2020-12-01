@@ -1588,7 +1588,9 @@
 						"live-preview": false
 					},
 					"uid": 102,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"HP": 3
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {

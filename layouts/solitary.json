@@ -277,6 +277,37 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TPtoStartPAge",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 375,
+					"instanceVariables": {
+						"Text": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1671,
+						"y": 844,
+						"width": 36,
+						"height": 185,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 569558845778813,
@@ -308,35 +339,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Solitary_SleepyGuard",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 351,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 845,
-						"y": 617,
-						"width": 109.10499815837977,
-						"height": 125.67790927104508,
-						"originX": 0.4430379746835443,
-						"originY": 0.5274725274725275,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 3.1470218445426656,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Solitary_Joe_Player",
 					"properties": {
 						"initially-visible": true,
@@ -346,7 +348,9 @@
 						"live-preview": false
 					},
 					"uid": 352,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"HP": 3
+					},
 					"behaviors": {
 						"8Direction": {
 							"properties": {
@@ -431,8 +435,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 870.5753424657535,
-						"y": -252.42857142857142,
+						"x": 1172,
+						"y": 832,
 						"width": 100,
 						"height": 36,
 						"originX": 0.4657534246575342,
@@ -577,37 +581,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "TPtoHallway",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 365,
-					"instanceVariables": {
-						"Text": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1671,
-						"y": 845,
-						"width": 36,
-						"height": 185,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Solitary_HitBox_Text2",
 					"properties": {
 						"initially-visible": true,
@@ -649,7 +622,7 @@
 					},
 					"uid": 358,
 					"instanceVariables": {
-						"Text": "Wow im in Solitary! last place I would want to end up, It sounds like someone is crying......? Gotta try not to wake that guard!  "
+						"Text": "Wow im in Solitary! last place I would want to end up! A KEY is over there strange?   "
 					},
 					"behaviors": {},
 					"world": {
@@ -680,7 +653,7 @@
 					},
 					"uid": 361,
 					"instanceVariables": {
-						"Text": "Well Hello there! what year is it! 1976 or 2005 maybe 2099 if im right!!  I have been here so long I just cant Rember. Stranger I have a key if you want it! GO STAND IN SOLITARY!  "
+						"Text": "Well Hello there! what year is it! 1976 or 2005 maybe 2099 if im right!!  I have been here so long I just cant Rember. Stranger wont you join me in SOLITARY!  "
 					},
 					"behaviors": {},
 					"world": {
@@ -695,37 +668,6 @@
 							1,
 							1,
 							0.3
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "SolitaryBlock",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 360,
-					"instanceVariables": {
-						"Text": "How's it feel to be in Solitary like me, I guess i can give you the key! Come and get it Stephan or was it thresh... Forgot sorry!  "
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1640,
-						"y": 371,
-						"width": 66.74578638386095,
-						"height": 66.74578638386095,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
 						],
 						"angle": 0,
 						"zElevation": 0

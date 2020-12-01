@@ -2,7 +2,14 @@
 	"name": "Player",
 	"plugin-id": "Sprite",
 	"sid": 849240631963782,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "HP",
+			"type": "number",
+			"desc": "",
+			"sid": 433255918877537
+		}
+	],
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
