@@ -202,6 +202,35 @@
 					}
 				},
 				{
+					"type": "Cell_Hallway_Spawn",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 367,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 800,
+						"y": 444,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Hallway_Joe_Player2",
 					"properties": {
 						"initially-visible": true,
@@ -236,12 +265,41 @@
 						}
 					},
 					"world": {
-						"x": 76,
-						"y": 490,
+						"x": 136,
+						"y": 499,
 						"width": 109.8682570203281,
 						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
 						"originY": 0.5279093697821613,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Cell_Hallway_Spawn2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 368,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1565,
+						"y": 492,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
