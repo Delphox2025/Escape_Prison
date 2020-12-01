@@ -831,72 +831,6 @@
 					}
 				},
 				{
-					"type": "Enemy_CommonRoom_",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 332,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": 70,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 300,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 8,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 400,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 328,
-						"y": 139,
-						"width": 135.180311,
-						"height": 155.998079,
-						"originX": 0.4430379746835443,
-						"originY": 0.5274725274725275,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "EnemyFlip_Trigger2",
 					"properties": {
 						"initially-visible": false,
@@ -915,101 +849,6 @@
 						"height": 183.61081871328497,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Enemy_BathRoomGuard_View",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Not_Alerted",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 335,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 893,
-						"y": -281,
-						"width": 123.26977835923876,
-						"height": 210.4983758696219,
-						"originX": 0.5003107520198882,
-						"originY": 0.0012861736334405238,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Enemy_CommonRoom_2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 336,
-					"instanceVariables": {},
-					"behaviors": {
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": 70,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 300,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 8,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 600,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 556,
-						"y": 852,
-						"width": 135.180311,
-						"height": 155.998079,
-						"originX": 0.4430379746835443,
-						"originY": 0.5274725274725275,
 						"color": [
 							1,
 							1,
@@ -1123,7 +962,7 @@
 					"behaviors": {
 						"8Direction": {
 							"properties": {
-								"max-speed": 250,
+								"max-speed": 300,
 								"acceleration": 700,
 								"deceleration": 500,
 								"directions": "dir-8",
@@ -1193,6 +1032,196 @@
 							1
 						],
 						"angle": 1.5846286533419303,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_CommonRoomGuard_View4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 372,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1305,
+						"y": -356,
+						"width": 123.26977835923876,
+						"height": 210.4983758696219,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_CommonRoomGuard_View5",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 373,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1200,
+						"y": -633,
+						"width": 123.26977835923876,
+						"height": 210.4983758696219,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_CommonRoom_",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 332,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 8,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 200,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 413,
+						"y": 139,
+						"width": 135.180311,
+						"height": 155.998079,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_CommonRoom_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 336,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 8,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 440,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 713,
+						"y": 852,
+						"width": 135.180311,
+						"height": 155.998079,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

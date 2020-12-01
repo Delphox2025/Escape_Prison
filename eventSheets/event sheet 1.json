@@ -6383,592 +6383,612 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "CommonRoom_Guard_2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 730920161790285
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 833548831812294
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 901529459393618,
+									"parameters": {
+										"object": "Enemy_CommonRoom_2",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 629474938951521
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 619659164439513,
+									"parameters": {
+										"object": "Enemy_CommonRoomGuard_View5"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 319592258897950,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 434314129903131,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 598932293163771,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 596718958977042,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 510391119692053,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 779855389117893
+								}
+							],
+							"sid": 686408293236213
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 389800033529119,
+									"parameters": {
+										"object": "Enemies"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 224697140214530,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 287793883154241,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 851774027445427,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 714862571440831,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 729229885262448,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 831079768666220
+								}
+							],
+							"sid": 679253705376314
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 427434183816728
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 731462591979564,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 640717653456882
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 997818162897691,
+									"parameters": {
+										"object": "EnemyFlip_Trigger2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 646922860004963,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 760305345164455,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 186544391640426,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 510521536524314,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 919709626914564,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 268861543903073
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 519472212456937,
+									"parameters": {
+										"object": "EnemyFlip_Trigger"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 184993723101264,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 402199073751170,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 797715549348041,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 292007204970397,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 461425258895795,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 965530968293172
 						}
 					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 375421682507951,
-							"parameters": {
-								"object": "Enemy_CommonRoom_",
-								"image-point-optional": "0"
-							}
-						}
-					],
-					"sid": 605402874866855
+					"sid": 923037072349366
 				},
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "CommonRoom_Guard_1",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 813328173720989,
-							"parameters": {
-								"object": "Enemy_BathRoomGuard_View"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 165224718129425
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 201264715274211,
+									"parameters": {
+										"object": "Enemy_CommonRoom_",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 536244190148287
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 698059934704196,
+									"parameters": {
+										"object": "Enemy_CommonRoomGuard_View4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 659339013222964,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 716306029237046,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 705948996103844,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 237813853910799,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 892578530017652,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 765029421757428
+								}
+							],
+							"sid": 530646429626321
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 913528397929627,
+									"parameters": {
+										"object": "Enemies"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 914495146009766,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 643431026778297,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 551829139825729,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 738068316835388,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 329815770420372,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 924795785802145
+								}
+							],
+							"sid": 217901116134910
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 734953399224617
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 245742704433624,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 469360172034959
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 428851072940757,
+									"parameters": {
+										"object": "EnemyFlip_Trigger2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 717546470755048,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 812403272989432,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 542872681796164,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 935255703148864,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 742599429932983,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 259173337836629
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 158851313756586,
+									"parameters": {
+										"object": "EnemyFlip_Trigger"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 929075525715027,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "inactive"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 473117783164774,
+									"parameters": {
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 553907763304741,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 275918402240866,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 835480799950408,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 518833453087414
 						}
 					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 621412785096857,
-							"parameters": {
-								"audio-file": "40754__tommon__one-blast-whistle",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 138542423019270,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 694320421324615,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 437842117582271,
-							"parameters": {
-								"animation": "\"Alerted\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 737871576312824,
-							"parameters": {
-								"seconds": "2.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 460299867487527
-						}
-					],
-					"sid": 327847556757100
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 769550094714231,
-							"parameters": {
-								"object": "Enemies"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 474026846166244,
-							"parameters": {
-								"audio-file": "40754__tommon__one-blast-whistle",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 476338103241409,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 278793114464612,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 133365069587148,
-							"parameters": {
-								"animation": "\"Alerted\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 161808684135318,
-							"parameters": {
-								"seconds": "2.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 612619799908840
-						}
-					],
-					"sid": 429108064901325
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 572124322151207
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 171169727394694,
-							"parameters": {
-								"animation": "\"Not_Alerted\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 694761654862574
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 324288774120146,
-							"parameters": {
-								"object": "EnemyFlip_Trigger2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 863288388297251,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 688076112528196,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 505391046066640,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 929148715708442,
-							"parameters": {
-								"state": "mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 697745483352461,
-							"parameters": {
-								"state": "flipped"
-							}
-						}
-					],
-					"sid": 726473197206329
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 448223016414949,
-							"parameters": {
-								"object": "EnemyFlip_Trigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 106085819550851,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 586589960853214,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 621426792570356,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_CommonRoom_",
-							"sid": 695092325709344,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 179122780394316,
-							"parameters": {
-								"state": "not-flipped"
-							}
-						}
-					],
-					"sid": 801751065459366
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 294607208266310
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position-to-another-object",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 765845725370979,
-							"parameters": {
-								"object": "Enemy_CommonRoom_2",
-								"image-point-optional": "0"
-							}
-						}
-					],
-					"sid": 525638686043769
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 879229367641172,
-							"parameters": {
-								"object": "Enemy_BathRoomGuard_View"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 499491573547983,
-							"parameters": {
-								"audio-file": "40754__tommon__one-blast-whistle",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 600368807824496,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 769339227632813,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 941775501627252,
-							"parameters": {
-								"animation": "\"Alerted\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 141675630809391,
-							"parameters": {
-								"seconds": "2.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 698716006914749
-						}
-					],
-					"sid": 466162953392713
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 888977225642536,
-							"parameters": {
-								"object": "Enemies"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 391452977601240,
-							"parameters": {
-								"audio-file": "40754__tommon__one-blast-whistle",
-								"loop": "not-looping",
-								"volume": "-5",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 965277472468465,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "set-max-speed",
-							"objectClass": "CommonRoom_Joe_Player",
-							"sid": 412423752816344,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"max-speed": "0"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 434596532705545,
-							"parameters": {
-								"animation": "\"Alerted\"",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 977624986566249,
-							"parameters": {
-								"seconds": "2.0"
-							}
-						},
-						{
-							"id": "restart-layout",
-							"objectClass": "System",
-							"sid": 478496577695602
-						}
-					],
-					"sid": 124632165955544
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 658686504145621
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 170734485609441,
-							"parameters": {
-								"animation": "\"Not_Alerted\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 620889302153571
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 727976522972856,
-							"parameters": {
-								"object": "EnemyFlip_Trigger2"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 967474987573055,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 910733157725771,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 116446446675400,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 248990652972814,
-							"parameters": {
-								"state": "mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 529167891512659,
-							"parameters": {
-								"state": "flipped"
-							}
-						}
-					],
-					"sid": 628203051093492
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 700517054908154,
-							"parameters": {
-								"object": "EnemyFlip_Trigger"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 290373203019675,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "inactive"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 239630007436609,
-							"parameters": {
-								"seconds": "1.0"
-							}
-						},
-						{
-							"id": "set-active",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 668065354793350,
-							"behaviorType": "Sine",
-							"parameters": {
-								"state": "active"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "Enemy_CommonRoom_2",
-							"sid": 788616679257452,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						},
-						{
-							"id": "set-flipped",
-							"objectClass": "Enemy_BathRoomGuard_View",
-							"sid": 375792313947635,
-							"parameters": {
-								"state": "not-flipped"
-							}
-						}
-					],
-					"sid": 575692720838602
+					"sid": 891060903465731
 				},
 				{
 					"eventType": "comment",
