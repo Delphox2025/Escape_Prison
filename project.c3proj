@@ -346,7 +346,9 @@
 			"Enemy_CommonRoomGuard_View5",
 			"EndGoalDoor",
 			"FinalDoor_Freedom_TextHitBox",
-			"TPtoStartPAge"
+			"TPtoStartPAge",
+			"Enemy_Kitchen_Guard1",
+			"Enemy_KitchenGuard_View1"
 		],
 		"subfolders": [
 			{
@@ -465,7 +467,8 @@
 			"Kitchen",
 			"CommonRoom",
 			"Hallway_2",
-			"Solitary"
+			"Solitary",
+			"Victory_EndScreen"
 		],
 		"subfolders": [
 			{

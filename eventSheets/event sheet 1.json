@@ -3888,6 +3888,17 @@
 									}
 								},
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 662878229559224,
+									"parameters": {
+										"audio-file": "204862__sijam11__keys-5",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-visible",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 777131663516324,
@@ -6966,6 +6977,539 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Kitchen_Guard_1",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Set Enemy_View position to enemy."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 669584679168642
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 191454324236032,
+									"parameters": {
+										"object": "Enemy_Kitchen_Guard1",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 427844923044150
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is overlapping with Enemy_View, it turns red."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 940605577654354,
+									"parameters": {
+										"object": "Enemy_KitchenGuard_View1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 900032450872262,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 504854922120349,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 946819404937281,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 521329563641647,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 173760182413791
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemy_Kitchen_Guard1",
+									"sid": 794177832625248,
+									"parameters": {
+										"instance-variable": "LR",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 955391185231678
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 668297472682307,
+									"parameters": {
+										"object": "Enemy_Kitchen_Guard1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 170541688551149,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 156274897245199,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 414746602283615,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 327611108513966,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 202668079705326
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Enemy_Kitchen_Guard1",
+									"sid": 219842171050824,
+									"parameters": {
+										"instance-variable": "LR",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 130971803342226
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is not overlapping with Enemy_View, it turns gray."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 236167127061873
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 367976950140354,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 184027836460824
+						},
+						{
+							"eventType": "comment",
+							"text": "ENEMY_TESTROOM_1 LOOKING BACK AND FORTH."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 998885102133311,
+									"parameters": {
+										"interval-seconds": "3.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "Enemy_Kitchen_Guard1",
+									"sid": 927869030374161,
+									"parameters": {
+										"instance-variable": "LR"
+									}
+								}
+							],
+							"sid": 261083525430737,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Enemy_Kitchen_Guard1",
+											"sid": 773365207821800,
+											"parameters": {
+												"instance-variable": "LR"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Enemy_Kitchen_Guard1",
+											"sid": 311989253404592,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-flipped",
+											"objectClass": "Enemy_KitchenGuard_View1",
+											"sid": 241077416542144,
+											"parameters": {
+												"state": "flipped"
+											}
+										}
+									],
+									"sid": 239472537333352
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Enemy_Kitchen_Guard1",
+											"sid": 136871426272607,
+											"parameters": {
+												"instance-variable": "LR"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Enemy_Kitchen_Guard1",
+											"sid": 609861777998354,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										},
+										{
+											"id": "set-flipped",
+											"objectClass": "Enemy_KitchenGuard_View1",
+											"sid": 411584293765827,
+											"parameters": {
+												"state": "not-flipped"
+											}
+										}
+									],
+									"sid": 538906658480425
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 860933741052739,
+											"parameters": {
+												"count": "30"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 473227065118851
+								}
+							]
+						}
+					],
+					"sid": 327091882461313
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Kitchen_Guard_2",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Set Enemy_View3 position to enemy."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 408776291019729
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position-to-another-object",
+									"objectClass": "Enemy_View3",
+									"sid": 439680856723669,
+									"parameters": {
+										"object": "Enemy2_TestRoom_1",
+										"image-point-optional": "0"
+									}
+								}
+							],
+							"sid": 858498659278753
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is overlapping with Enemy_View3, it turns red."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 493212424284993,
+									"parameters": {
+										"object": "Enemy_View3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 369753458047109,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_View3",
+									"sid": 561766064228311,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 345182181527860,
+									"parameters": {
+										"seconds": "2.0"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 996377632818981
+								}
+							],
+							"sid": 288729181019121
+						},
+						{
+							"eventType": "comment",
+							"text": "When player is not overlapping with Enemy_View3, it turns gray."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 283987868804159
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_View3",
+									"sid": 443135545040966,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 566881963112876
+						},
+						{
+							"eventType": "comment",
+							"text": "ENEMY2_TESTROOM_1 LOOKING BACK AND FORTH."
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 705075260927607,
+									"parameters": {
+										"interval-seconds": "2.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "Enemy2_TestRoom_1",
+									"sid": 114147115678546,
+									"parameters": {
+										"instance-variable": "LR"
+									}
+								}
+							],
+							"sid": 561603770620241,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Enemy2_TestRoom_1",
+											"sid": 865743562691174,
+											"parameters": {
+												"instance-variable": "LR"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Enemy2_TestRoom_1",
+											"sid": 794996332820598,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-flipped",
+											"objectClass": "Enemy_View3",
+											"sid": 702516329156204,
+											"parameters": {
+												"state": "flipped"
+											}
+										}
+									],
+									"sid": 185434677640876
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Enemy2_TestRoom_1",
+											"sid": 653486732677301,
+											"parameters": {
+												"instance-variable": "LR"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Enemy2_TestRoom_1",
+											"sid": 816325367781196,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										},
+										{
+											"id": "set-flipped",
+											"objectClass": "Enemy_View3",
+											"sid": 714802461097931,
+											"parameters": {
+												"state": "not-flipped"
+											}
+										}
+									],
+									"sid": 600825909522303
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 203031225963583,
+											"parameters": {
+												"count": "20"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 846660373899075
+								}
+							]
+						}
+					],
+					"sid": 975668628624322
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -7228,6 +7772,17 @@
 							"parameters": {
 								"variable": "EndGoal",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 608367666508747,
+							"parameters": {
+								"audio-file": "204862__sijam11__keys-5",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
@@ -8167,6 +8722,17 @@
 							"parameters": {
 								"variable": "EndGoal",
 								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 993563795915129,
+							"parameters": {
+								"audio-file": "204862__sijam11__keys-5",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
 							}
 						},
 						{
