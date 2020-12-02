@@ -121,35 +121,6 @@
 					}
 				},
 				{
-					"type": "Bush",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 178,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1907.0736774046588,
-						"y": 1850.8481167357736,
-						"width": 67,
-						"height": 66,
-						"originX": 0.5818181818181818,
-						"originY": 0.5957446808510638,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.481937518297579,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Test_Wall2",
 					"properties": {
 						"initially-visible": true,
@@ -1646,8 +1617,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1309.1522532817928,
-						"y": 1764.3511481180483,
+						"x": 1892,
+						"y": 1844,
 						"width": 78.71240076083714,
 						"height": 34.35361924792375,
 						"originX": 0.4657534246575342,
@@ -2239,6 +2210,35 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bush",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 178,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1907.0736774046588,
+						"y": 1850.8481167357736,
+						"width": 67,
+						"height": 66,
+						"originX": 0.5818181818181818,
+						"originY": 0.5957446808510638,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.481937518297579,
 						"zElevation": 0
 					}
 				}
