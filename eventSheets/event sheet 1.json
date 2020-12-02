@@ -2603,6 +2603,7 @@
 							"id": "set-animation",
 							"objectClass": "Cell_Joe_Player",
 							"sid": 847245222136008,
+							"disabled": true,
 							"parameters": {
 								"animation": "\"Read\"",
 								"from": "beginning"
@@ -3532,6 +3533,73 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Securityroom_Walking_Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Securityroom_Walking_Animation_Player",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "SecurityRoom_Joe_Player",
+											"sid": 151505354868766,
+											"behaviorType": "8Direction"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "SecurityRoom_Joe_Player",
+											"sid": 149403605007546,
+											"parameters": {
+												"animation": "\"Walking\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 934557686037445
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "SecurityRoom_Joe_Player",
+											"sid": 805182242236904,
+											"behaviorType": "8Direction",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "SecurityRoom_Joe_Player",
+											"sid": 912871038045883,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 993430374991476
+								}
+							],
+							"sid": 122354650523191
+						}
+					],
+					"sid": 492113077959457
+				},
 				{
 					"eventType": "comment",
 					"text": "This will  be Controls For the SecurityRoom "
@@ -7304,6 +7372,73 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Kitchen_Walking_Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Kitchen_Walking_Animations_Player",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Kitchen_Joe_Player",
+											"sid": 515116188577642,
+											"behaviorType": "8Direction"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Kitchen_Joe_Player",
+											"sid": 630890010728701,
+											"parameters": {
+												"animation": "\"Walking\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 885879313259237
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Kitchen_Joe_Player",
+											"sid": 944327466957264,
+											"behaviorType": "8Direction",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Kitchen_Joe_Player",
+											"sid": 774531570805596,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 712682206877146
+								}
+							],
+							"sid": 811875307836760
+						}
+					],
+					"sid": 928233147565798
+				},
 				{
 					"eventType": "group",
 					"disabled": false,

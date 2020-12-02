@@ -1550,59 +1550,6 @@
 					}
 				},
 				{
-					"type": "Courtyard_Joe_Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 102,
-					"instanceVariables": {
-						"HP": 3
-					},
-					"behaviors": {
-						"8Direction": {
-							"properties": {
-								"max-speed": 550,
-								"acceleration": 700,
-								"deceleration": 1000,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 149.26972201352368,
-						"y": 209.02629601803156,
-						"width": 122.067086,
-						"height": 124.43734100000002,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Key",
 					"properties": {
 						"initially-visible": true,
@@ -2239,6 +2186,59 @@
 							1
 						],
 						"angle": 0.481937518297579,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Courtyard_Joe_Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 102,
+					"instanceVariables": {
+						"HP": 3
+					},
+					"behaviors": {
+						"8Direction": {
+							"properties": {
+								"max-speed": 550,
+								"acceleration": 700,
+								"deceleration": 1000,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 153,
+						"y": 202,
+						"width": 70.92258635415409,
+						"height": 147.67605601976666,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
