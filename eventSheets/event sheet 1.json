@@ -1219,6 +1219,63 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Courtyard_Walking_Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 547592672521975,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 836289948868756,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 796501023206208
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 742257175720791,
+									"behaviorType": "8Direction",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 745797080469297,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 778974384320840
+						}
+					],
+					"sid": 382976415459571
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Guard_2",
 					"description": "",
 					"isActiveOnStart": true,
@@ -2468,6 +2525,63 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Walking_Animation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Cell_Joe_Player",
+									"sid": 589957683654709,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Cell_Joe_Player",
+									"sid": 569560521971782,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 710834436400815
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Cell_Joe_Player",
+									"sid": 846081046685336,
+									"behaviorType": "8Direction",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Cell_Joe_Player",
+									"sid": 454819439562870,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 310379690184777
+						}
+					],
+					"sid": 919789974236767
+				},
 				{
 					"eventType": "comment",
 					"text": "QuickLock pick in hand "
@@ -6273,6 +6387,14 @@
 									"parameters": {
 										"object": "Enemy_BathRoomGuard_View"
 									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 977696801536628,
+									"parameters": {
+										"unique-id": "251"
+									}
 								}
 							],
 							"actions": [
@@ -6336,9 +6458,17 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 904463055036387,
+									"sid": 749990528312551,
 									"parameters": {
-										"object": "Enemies"
+										"object": "Enemy_Bathroom_Guard"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 341194185372701,
+									"parameters": {
+										"unique-id": "251"
 									}
 								}
 							],
@@ -6589,6 +6719,14 @@
 									"parameters": {
 										"object": "Enemy_BathRoomGuard_View3"
 									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 721517063609296,
+									"parameters": {
+										"unique-id": "342"
+									}
 								}
 							],
 							"actions": [
@@ -6655,6 +6793,14 @@
 									"sid": 300561736042125,
 									"parameters": {
 										"object": "Enemy_Bathroom_Guard2"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 407921254748899,
+									"parameters": {
+										"unique-id": "342"
 									}
 								}
 							],
@@ -7029,7 +7175,7 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 900032450872262,
+									"sid": 235832119700267,
 									"parameters": {
 										"audio-file": "40754__tommon__one-blast-whistle",
 										"loop": "not-looping",
@@ -7049,7 +7195,7 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 946819404937281,
+									"sid": 943413525056864,
 									"parameters": {
 										"animation": "\"Alerted\"",
 										"from": "beginning"
@@ -7072,6 +7218,7 @@
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemy_Kitchen_Guard1",
 									"sid": 794177832625248,
+									"disabled": true,
 									"parameters": {
 										"instance-variable": "LR",
 										"value": "false"
@@ -7116,7 +7263,7 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 414746602283615,
+									"sid": 849273977254604,
 									"parameters": {
 										"animation": "\"Alerted\"",
 										"from": "beginning"
@@ -7139,6 +7286,7 @@
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemy_Kitchen_Guard1",
 									"sid": 219842171050824,
+									"disabled": true,
 									"parameters": {
 										"instance-variable": "LR",
 										"value": "false"
@@ -7288,7 +7436,7 @@
 				},
 				{
 					"eventType": "group",
-					"disabled": false,
+					"disabled": true,
 					"title": "Kitchen_Guard_2",
 					"description": "",
 					"isActiveOnStart": true,
@@ -7317,7 +7465,8 @@
 									}
 								}
 							],
-							"sid": 858498659278753
+							"sid": 858498659278753,
+							"disabled": true
 						},
 						{
 							"eventType": "comment",
@@ -7368,7 +7517,8 @@
 									"sid": 996377632818981
 								}
 							],
-							"sid": 288729181019121
+							"sid": 288729181019121,
+							"disabled": true
 						},
 						{
 							"eventType": "comment",
@@ -7394,7 +7544,8 @@
 									}
 								}
 							],
-							"sid": 566881963112876
+							"sid": 566881963112876,
+							"disabled": true
 						},
 						{
 							"eventType": "comment",
@@ -7423,6 +7574,7 @@
 								}
 							],
 							"sid": 561603770620241,
+							"disabled": true,
 							"children": [
 								{
 									"eventType": "block",
@@ -7454,7 +7606,8 @@
 											}
 										}
 									],
-									"sid": 185434677640876
+									"sid": 185434677640876,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -7487,7 +7640,8 @@
 											}
 										}
 									],
-									"sid": 600825909522303
+									"sid": 600825909522303,
+									"disabled": true
 								},
 								{
 									"eventType": "block",
@@ -7502,7 +7656,8 @@
 										}
 									],
 									"actions": [],
-									"sid": 846660373899075
+									"sid": 846660373899075,
+									"disabled": true
 								}
 							]
 						}

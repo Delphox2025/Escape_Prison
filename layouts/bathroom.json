@@ -435,7 +435,7 @@
 					},
 					"world": {
 						"x": 747.8651512848493,
-						"y": 495.4939334060831,
+						"y": 492.4939334060831,
 						"width": 532.6848411151791,
 						"height": 56,
 						"originX": 0.5,
@@ -1011,9 +1011,9 @@
 						}
 					},
 					"world": {
-						"x": 813.2052911117406,
-						"y": 198.46349334088853,
-						"width": 611.0032733136542,
+						"x": 805,
+						"y": 203,
+						"width": 579.3273516042113,
 						"height": 41.6813560108087,
 						"originX": 0,
 						"originY": 0,
@@ -1469,6 +1469,12 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
 						}
 					},
 					"world": {
@@ -1708,6 +1714,12 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
+							}
+						},
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
