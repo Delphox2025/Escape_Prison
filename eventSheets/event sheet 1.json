@@ -4557,6 +4557,63 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Bathroom_Walking_Animation",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 630461927440046,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 489802664468776,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 851922718137996
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 949137688926824,
+									"behaviorType": "8Direction",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 736690597064935,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 754419835739682
+						}
+					],
+					"sid": 921759500083927
+				},
+				{
 					"eventType": "comment",
 					"text": "BATHROOM |  Controls"
 				},
@@ -6365,6 +6422,7 @@
 									"id": "set-position-to-another-object",
 									"objectClass": "Enemy_BathRoomGuard_View2",
 									"sid": 701703400812918,
+									"disabled": true,
 									"parameters": {
 										"object": "Bathroom_StandByGuard",
 										"image-point-optional": "0"
@@ -6412,19 +6470,19 @@
 								{
 									"id": "set-active",
 									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 469962252989416,
+									"sid": 832684457851512,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "inactive"
 									}
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 630918785979279,
+									"sid": 297276973986219,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"state": "disabled"
 									}
 								},
 								{
@@ -6466,9 +6524,9 @@
 								{
 									"id": "pick-by-unique-id",
 									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 341194185372701,
+									"sid": 253485415030430,
 									"parameters": {
-										"unique-id": "251"
+										"unique-id": "252"
 									}
 								}
 							],
@@ -6494,12 +6552,12 @@
 									}
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 665569722964508,
+									"sid": 532414185336087,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"state": "disabled"
 									}
 								},
 								{
@@ -6668,6 +6726,53 @@
 								}
 							],
 							"sid": 455420937564945
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 679287854816056,
+									"behaviorType": "Sine"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 248257332037450,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 578234036406220
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 324358686178514,
+									"behaviorType": "Sine",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 358305602140604,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 877291117392736
 						}
 					],
 					"sid": 634795589212755
@@ -6723,9 +6828,9 @@
 								{
 									"id": "pick-by-unique-id",
 									"objectClass": "Enemy_BathRoomGuard_View3",
-									"sid": 721517063609296,
+									"sid": 561068513951657,
 									"parameters": {
-										"unique-id": "342"
+										"unique-id": "343"
 									}
 								}
 							],
@@ -7108,6 +7213,53 @@
 								}
 							],
 							"sid": 106353802354603
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 255277857860719,
+									"behaviorType": "Sine"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 251013259392820,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 658142868377178
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 818732260272488,
+									"behaviorType": "Sine",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 778837747605168,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 149578679120913
 						}
 					],
 					"sid": 328753884185852
@@ -7984,6 +8136,63 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Commonroom_Walking_Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 916754466109757,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 704696278662007,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 925857351305083
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 710881036999504,
+									"behaviorType": "8Direction",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 515305656771271,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 971529862075364
+						}
+					],
+					"sid": 361227762871891
+				},
 				{
 					"eventType": "group",
 					"disabled": false,

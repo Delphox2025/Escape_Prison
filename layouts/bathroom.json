@@ -454,7 +454,7 @@
 					"type": "BathRoom_Joe_Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -487,12 +487,12 @@
 						}
 					},
 					"world": {
-						"x": 1562,
-						"y": 833,
-						"width": 83.33197633394596,
-						"height": 84.76531641636538,
-						"originX": 0.4419938642398618,
-						"originY": 0.5279093697821613,
+						"x": 1559,
+						"y": 832,
+						"width": 60.17801805124463,
+						"height": 99.48694452035338,
+						"originX": 0.42553191489361697,
+						"originY": 0.5104166666666666,
 						"color": [
 							1,
 							1,
@@ -1469,16 +1469,10 @@
 								"enabled": true,
 								"live-preview": false
 							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
 						}
 					},
 					"world": {
-						"x": 1012,
+						"x": 1008,
 						"y": 118,
 						"width": 89.781207,
 						"height": 103.418859,
@@ -1714,12 +1708,6 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
-							}
-						},
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
 							}
 						}
 					},

@@ -952,7 +952,7 @@
 					"type": "CommonRoom_Joe_Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -985,12 +985,12 @@
 						}
 					},
 					"world": {
-						"x": 1594,
-						"y": 849,
-						"width": 130.73758,
-						"height": 133.625106,
-						"originX": 0.4419938642398618,
-						"originY": 0.5279093697821613,
+						"x": 1587.4646961672413,
+						"y": 836.0784742979845,
+						"width": 84.89844410456622,
+						"height": 136.00041336174561,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
 						"color": [
 							1,
 							1,
