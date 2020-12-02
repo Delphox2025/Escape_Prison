@@ -1101,7 +1101,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 200,
+								"magnitude": 220,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -1109,7 +1109,7 @@
 						}
 					},
 					"world": {
-						"x": 413,
+						"x": 419,
 						"y": 139,
 						"width": 135.180311,
 						"height": 155.998079,
@@ -1167,7 +1167,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 440,
+								"magnitude": 460,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -1175,7 +1175,7 @@
 						}
 					},
 					"world": {
-						"x": 713,
+						"x": 711,
 						"y": 852,
 						"width": 135.180311,
 						"height": 155.998079,
