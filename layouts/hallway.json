@@ -171,8 +171,8 @@
 						}
 					},
 					"world": {
-						"x": 1500,
-						"y": 459,
+						"x": 161,
+						"y": 441,
 						"width": 109.8682570203281,
 						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
@@ -248,37 +248,6 @@
 					}
 				},
 				{
-					"type": "TPtoCourtyard",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 161,
-					"instanceVariables": {
-						"Text": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 698.6830134553652,
-						"y": 192.3660269107301,
-						"width": 104,
-						"height": 190,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "TPtoBathRoom",
 					"properties": {
 						"initially-visible": true,
@@ -297,66 +266,6 @@
 						"y": 191,
 						"width": 104,
 						"height": 190,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TPtoSolitary",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 366,
-					"instanceVariables": {
-						"Text": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 832.5,
-						"y": 718.5,
-						"width": 138.07917347881545,
-						"height": 204.1757477222057,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "EndGoalDoor",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": false,
-						"live-preview": false
-					},
-					"uid": 335,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1811,
-						"y": 443,
-						"width": 250,
-						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -561,37 +470,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Hallway_WhatsHappening_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 258,
-					"instanceVariables": {
-						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 214.5,
-						"y": 462,
-						"width": 38.899937421752725,
-						"height": 295.8999374217527,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BackTo_Courtyard",
 					"properties": {
 						"initially-visible": true,
@@ -619,37 +497,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "FinalDoor_Freedom_TextHitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 374,
-					"instanceVariables": {
-						"Text": "Well then, now thats a lock! This door has 5 KEY holes! The KEYS must be inside these rooms, Then im HOME FREE! "
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1648,
-						"y": 443,
-						"width": 44,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 533745666927245,
@@ -670,6 +517,108 @@
 			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "HP",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Health",
+					"properties": {
+						"text": "HP: ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 377,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 18,
+						"y": 549,
+						"width": 273.16607803550437,
+						"height": 193.42491170532566,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hallway_WhatsHappening_HitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {
+						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 257,
+						"y": 446,
+						"width": 38.899937421752725,
+						"height": 295.8999374217527,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 422419534369862,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

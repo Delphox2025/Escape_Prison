@@ -224,7 +224,7 @@
 							1,
 							1,
 							1,
-							1
+							0.2
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -267,8 +267,8 @@
 						}
 					},
 					"world": {
-						"x": 136,
-						"y": 499,
+						"x": 156,
+						"y": 507,
 						"width": 109.8682570203281,
 						"height": 111.1958159650702,
 						"originX": 0.4419938642398618,
@@ -296,8 +296,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1565,
-						"y": 492,
+						"x": 110,
+						"y": 399,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -306,7 +306,7 @@
 							1,
 							1,
 							1,
-							1
+							0.2
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -339,6 +339,95 @@
 		},
 		{
 			"name": "UI",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "EndGoalDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 335,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -95,
+						"y": 498,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FinalDoor_Freedom_TextHitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 374,
+					"instanceVariables": {
+						"Text": "Well then, now thats a lock! This door has 5 KEY holes! The KEYS must be somewhere, Let me try that door down there! "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 58,
+						"y": 496,
+						"width": 44,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 472138050628494,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "DialougeBox",
 			"overriden": 0,
 			"instances": [
 				{
@@ -413,7 +502,7 @@
 					}
 				}
 			],
-			"sid": 472138050628494,
+			"sid": 119374570007400,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
 			"color": [
@@ -431,6 +520,77 @@
 			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "HP",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Health",
+					"properties": {
+						"text": "HP: ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 360,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 8,
+						"y": 603,
+						"width": 122.16607803550437,
+						"height": 188.42491170532566,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 334405848890937,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

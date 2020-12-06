@@ -348,7 +348,8 @@
 			"FinalDoor_Freedom_TextHitBox",
 			"TPtoStartPAge",
 			"Enemy_Kitchen_Guard1",
-			"Enemy_KitchenGuard_View1"
+			"Enemy_KitchenGuard_View1",
+			"Health"
 		],
 		"subfolders": [
 			{

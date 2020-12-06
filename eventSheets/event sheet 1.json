@@ -102,6 +102,16 @@
 			"sid": 437454819898433
 		},
 		{
+			"eventType": "variable",
+			"name": "PlayerHP",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 835683780986107
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -133,8 +143,7 @@
 					}
 				}
 			],
-			"sid": 507138008637047,
-			"disabled": true
+			"sid": 507138008637047
 		},
 		{
 			"eventType": "block",
@@ -160,8 +169,28 @@
 					}
 				}
 			],
-			"sid": 928138621984425,
-			"disabled": true
+			"sid": 928138621984425
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 349141687920912
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Health",
+					"sid": 508875691994277,
+					"parameters": {
+						"text": "Player.HP"
+					}
+				}
+			],
+			"sid": 962007397875411
 		},
 		{
 			"eventType": "group",
@@ -1324,9 +1353,19 @@
 							],
 							"actions": [
 								{
+									"id": "set-text",
+									"objectClass": "Health",
+									"sid": 163116714199723,
+									"disabled": true,
+									"parameters": {
+										"text": "Player.HP"
+									}
+								},
+								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
 									"sid": 534732839186600,
+									"disabled": true,
 									"parameters": {
 										"instance-variable": "HP",
 										"value": "1"
@@ -1336,6 +1375,7 @@
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 383640994892276,
+									"disabled": true,
 									"parameters": {
 										"variable": "FinalSolitary3x",
 										"value": "1"
@@ -1390,7 +1430,17 @@
 								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 375058222146157
+									"sid": 375058222146157,
+									"disabled": true
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 200102536490929,
+									"parameters": {
+										"x": "153",
+										"y": "202"
+									}
 								}
 							],
 							"sid": 356495819345345
@@ -1412,6 +1462,7 @@
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
 									"sid": 151906921278330,
+									"disabled": true,
 									"parameters": {
 										"instance-variable": "HP",
 										"value": "1"
@@ -1421,6 +1472,7 @@
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 184898562567972,
+									"disabled": true,
 									"parameters": {
 										"variable": "FinalSolitary3x",
 										"value": "1"
@@ -1755,9 +1807,19 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 986221023103051,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
 									"sid": 678127316315968,
+									"disabled": true,
 									"parameters": {
 										"instance-variable": "HP",
 										"value": "1"
@@ -1767,6 +1829,7 @@
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 432497866474775,
+									"disabled": true,
 									"parameters": {
 										"variable": "FinalSolitary3x",
 										"value": "1"
@@ -1793,12 +1856,12 @@
 									}
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "Courtyard_Joe_Player",
-									"sid": 661582160557602,
+									"sid": 382377417474194,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"state": "disabled"
 									}
 								},
 								{
@@ -1819,9 +1882,46 @@
 									}
 								},
 								{
+									"id": "set-enabled",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 244379402273646,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_TestRoom_4",
+									"sid": 842453162902561,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_View5",
+									"sid": 927822362760311,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 165716709249115,
+									"parameters": {
+										"x": "153",
+										"y": "202"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 776757657286091
+									"sid": 776757657286091,
+									"disabled": true
 								}
 							],
 							"sid": 776223529118831
@@ -1840,9 +1940,19 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 539361239390742,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
 									"sid": 501468074821841,
+									"disabled": true,
 									"parameters": {
 										"instance-variable": "HP",
 										"value": "1"
@@ -1852,6 +1962,7 @@
 									"id": "add-to-eventvar",
 									"objectClass": "System",
 									"sid": 778325233669881,
+									"disabled": true,
 									"parameters": {
 										"variable": "FinalSolitary3x",
 										"value": "1"
@@ -1904,9 +2015,46 @@
 									}
 								},
 								{
+									"id": "set-max-speed",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 131153097084179,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_TestRoom_4",
+									"sid": 394257338119272,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_View5",
+									"sid": 805354396333231,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 594836885491070,
+									"parameters": {
+										"x": "153",
+										"y": "202"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 657277265008852
+									"sid": 657277265008852,
+									"disabled": true
 								}
 							],
 							"sid": 652508460824323
@@ -2447,8 +2595,17 @@
 						},
 						{
 							"id": "set-collisions-enabled",
+							"objectClass": "NextLevel6",
+							"sid": 652250728322375,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
 							"objectClass": "TPtoCourtyard",
 							"sid": 599381013654902,
+							"disabled": true,
 							"parameters": {
 								"collisions": "disabled"
 							}
@@ -2602,10 +2759,9 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Cell_Joe_Player",
-							"sid": 847245222136008,
-							"disabled": true,
+							"sid": 861121008755735,
 							"parameters": {
-								"animation": "\"Read\"",
+								"animation": "\"LockPick\"",
 								"from": "beginning"
 							}
 						}
@@ -3049,8 +3205,8 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Hallway_Joe_Player",
-							"sid": 575086910401922,
+							"objectClass": "Player",
+							"sid": 354100467461996,
 							"parameters": {
 								"object": "Hallway_Assets"
 							}
@@ -3148,8 +3304,8 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Hallway_Joe_Player",
-							"sid": 316749272410076,
+							"objectClass": "Hallway_Joe_Player2",
+							"sid": 983877957543443,
 							"parameters": {
 								"object": "FinalDoor_Freedom_TextHitBox"
 							}
@@ -3194,8 +3350,8 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Hallway_Joe_Player",
-							"sid": 264789691544629,
+							"objectClass": "Hallway_Joe_Player2",
+							"sid": 865174351184915,
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "0"
@@ -3216,8 +3372,8 @@
 						},
 						{
 							"id": "set-max-speed",
-							"objectClass": "Hallway_Joe_Player",
-							"sid": 439422680154220,
+							"objectClass": "Hallway_Joe_Player2",
+							"sid": 951182208620610,
 							"behaviorType": "8Direction",
 							"parameters": {
 								"max-speed": "250"
@@ -3522,6 +3678,30 @@
 						}
 					],
 					"sid": 814648029589153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 896375275776197,
+							"parameters": {
+								"object": "BackTo_Courtyard"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 699871344685629,
+							"parameters": {
+								"layout": "CourtYard"
+							}
+						}
+					],
+					"sid": 498821817984709
 				}
 			],
 			"sid": 788486928695440
@@ -4811,7 +4991,7 @@
 				},
 				{
 					"eventType": "group",
-					"disabled": false,
+					"disabled": true,
 					"title": "Beginning_Text",
 					"description": "",
 					"isActiveOnStart": true,
@@ -5030,7 +5210,8 @@
 									}
 								}
 							],
-							"sid": 213809323649631
+							"sid": 213809323649631,
+							"disabled": true
 						}
 					],
 					"sid": 948628944411336
@@ -5116,6 +5297,14 @@
 									"parameters": {
 										"x": "1580",
 										"y": "823"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 197062321710847,
+									"parameters": {
+										"seconds": "3"
 									}
 								},
 								{
@@ -6215,6 +6404,7 @@
 											"id": "find-path",
 											"objectClass": "Bathroom_StandByGuard",
 											"sid": 140977709381478,
+											"disabled": true,
 											"behaviorType": "Pathfinding",
 											"parameters": {
 												"x": "725",
@@ -6224,12 +6414,14 @@
 										{
 											"id": "destroy",
 											"objectClass": "Enemy_BathRoomGuard_View2",
-											"sid": 720903010076882
+											"sid": 720903010076882,
+											"disabled": true
 										},
 										{
 											"id": "move-along-path",
 											"objectClass": "Bathroom_StandByGuard",
 											"sid": 705331305694851,
+											"disabled": true,
 											"behaviorType": "Pathfinding"
 										}
 									],
@@ -6695,9 +6887,46 @@
 									}
 								},
 								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 547835133573860,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 264111701071301,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 764645002030338,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 887375310093796,
+									"parameters": {
+										"x": "1559",
+										"y": "832"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 646561929252282
+									"sid": 646561929252282,
+									"disabled": true
 								}
 							],
 							"sid": 754369105381381
@@ -6770,9 +6999,37 @@
 									}
 								},
 								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 483536630954654,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 977087338713038,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 937863483371336,
+									"parameters": {
+										"x": "1559",
+										"y": "832"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 154848323112406
+									"sid": 154848323112406,
+									"disabled": true
 								}
 							],
 							"sid": 405501051879451
@@ -6990,12 +7247,12 @@
 									}
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 463827835309553,
+									"sid": 206641922423457,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"state": "disabled"
 									}
 								},
 								{
@@ -7027,9 +7284,46 @@
 									}
 								},
 								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 834000717877946,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 989381541682932,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 837772680058009,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 305325038476808,
+									"parameters": {
+										"x": "1559",
+										"y": "832"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 531286603790027
+									"sid": 531286603790027,
+									"disabled": true
 								}
 							],
 							"sid": 331865559697367
@@ -7065,12 +7359,12 @@
 									}
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 871238970420937,
+									"sid": 879147506933041,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"state": "disabled"
 									}
 								},
 								{
@@ -7102,9 +7396,46 @@
 									}
 								},
 								{
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 197750575359870,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View3",
+									"sid": 154578357267055,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 557003501514817,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 955766990623651,
+									"parameters": {
+										"x": "1559",
+										"y": "832"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 313632636713623
+									"sid": 313632636713623,
+									"disabled": true
 								}
 							],
 							"sid": 832745152928968
@@ -7285,24 +7616,25 @@
 								{
 									"id": "set-text",
 									"objectClass": "UIText",
-									"sid": 911708984967387,
+									"sid": 109190591071875,
 									"parameters": {
-										"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
+										"text": "left(BathRoom_Sink_Text_1.Text, len(UIText.Text) + 1)"
 									}
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 142321536249206,
+									"sid": 444444983323690,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"state": "disabled"
 									}
 								},
 								{
 									"id": "set-active",
 									"objectClass": "Enemy_Bathroom_Guard2",
 									"sid": 147501513911003,
+									"disabled": true,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "inactive"
@@ -7322,18 +7654,19 @@
 									"sid": 229024736810639
 								},
 								{
-									"id": "set-max-speed",
+									"id": "set-enabled",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 351569067256658,
+									"sid": 321048466827452,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "250"
+										"state": "enabled"
 									}
 								},
 								{
 									"id": "set-active",
 									"objectClass": "Enemy_Bathroom_Guard2",
 									"sid": 812168900325700,
+									"disabled": true,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "active"
@@ -9912,15 +10245,9 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 651671652490146
-				}
-			],
+			"conditions": [],
 			"actions": [],
-			"sid": 703990524903812
+			"sid": 422084646308327
 		}
 	],
 	"sid": 161931613315162

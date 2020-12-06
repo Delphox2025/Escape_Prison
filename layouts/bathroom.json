@@ -1354,7 +1354,7 @@
 				{
 					"type": "BathRoom_Sink_Text_1",
 					"properties": {
-						"text": "That Guard has the KEY! If I distract him with the sink that should work! But I gotta hide fast after!!",
+						"text": "So many Guards in a Bathroom? Nevermind that gotta find this key! ",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 15,
@@ -1379,8 +1379,8 @@
 					"world": {
 						"x": 204,
 						"y": -294,
-						"width": 474.5180597805401,
-						"height": 105.17770896708102,
+						"width": 588.5180597805402,
+						"height": 157.177708967081,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1501,8 +1501,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 318,
-						"y": 890,
+						"x": 135,
+						"y": 630,
 						"width": 66.75002500429756,
 						"height": 25.602749316716867,
 						"originX": 0.4657534246575342,
@@ -1513,7 +1513,7 @@
 							1,
 							1
 						],
-						"angle": 5.555961824619363,
+						"angle": 5.9850742256596945,
 						"zElevation": 0
 					}
 				},
@@ -1729,35 +1729,6 @@
 					}
 				},
 				{
-					"type": "Stall_Shadow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 346,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 162.57797162627796,
-						"y": 571.3034543941703,
-						"width": 279.61335531169135,
-						"height": 178.74981056688625,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Bathroom_StandByGuard",
 					"properties": {
 						"initially-visible": true,
@@ -1825,6 +1796,35 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Stall_Shadow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 346,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 158,
+						"y": 571,
+						"width": 279.61335531169135,
+						"height": 178.74981056688625,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1970,7 +1970,7 @@
 					},
 					"uid": 243,
 					"instanceVariables": {
-						"Text": "That Guard has the KEY! If I distract him with the sink that should work! But I gotta hide fast after!!"
+						"Text": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -2005,8 +2005,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1692,
-						"y": 813,
+						"x": 1667,
+						"y": 835,
 						"width": 36,
 						"height": 185,
 						"originX": 0.5,
@@ -2147,6 +2147,77 @@
 				}
 			],
 			"sid": 694521162049766,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "HP",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Health",
+					"properties": {
+						"text": "HP: ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 378,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1174,
+						"y": 891,
+						"width": 126.16607803550437,
+						"height": 176.42491170532566,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 292184355134534,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
