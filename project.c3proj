@@ -351,7 +351,9 @@
 			"Enemy_KitchenGuard_View1",
 			"Health",
 			"Enemy_BathroomFlip_Guard",
-			"Enemy_BatrromFlipGuard_View"
+			"Enemy_BatrromFlipGuard_View",
+			"TiledBackground",
+			"CommonRoom_Floor"
 		],
 		"subfolders": [
 			{
