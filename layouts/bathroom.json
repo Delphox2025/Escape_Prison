@@ -2185,9 +2185,9 @@
 						"bold": false,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -2200,8 +2200,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1174,
-						"y": 891,
+						"x": 68,
+						"y": 56,
 						"width": 126.16607803550437,
 						"height": 176.42491170532566,
 						"originX": 0,

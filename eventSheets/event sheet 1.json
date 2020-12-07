@@ -3007,6 +3007,120 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Hallway_2_Walking_Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Hallway_Joe_Player2",
+									"sid": 491728437548620,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Hallway_Joe_Player2",
+									"sid": 968665828140100,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 705361534622320
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Hallway_Joe_Player2",
+									"sid": 346946922265249,
+									"behaviorType": "8Direction",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Hallway_Joe_Player2",
+									"sid": 965812130500205,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 952355888855613
+						}
+					],
+					"sid": 913225117975530
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Hallway_Walking_Animations",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Hallway_Joe_Player",
+									"sid": 861956300029385,
+									"behaviorType": "8Direction"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Hallway_Joe_Player",
+									"sid": 605192410952729,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 609236886912217
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "Hallway_Joe_Player",
+									"sid": 518222168822805,
+									"behaviorType": "8Direction",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Hallway_Joe_Player",
+									"sid": 422334194218631,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 746176624821595
+						}
+					],
+					"sid": 881945550449030
+				},
+				{
 					"eventType": "comment",
 					"text": "Changes For Hallway and Security Room "
 				},
@@ -6861,12 +6975,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 297276973986219,
+									"sid": 686768244041474,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "disabled"
+										"max-speed": "0"
 									}
 								},
 								{
@@ -6905,12 +7019,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 764645002030338,
+									"sid": 614242111261466,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "enabled"
+										"max-speed": "250"
 									}
 								},
 								{
@@ -6973,12 +7087,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 532414185336087,
+									"sid": 736980237924559,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "disabled"
+										"max-speed": "0"
 									}
 								},
 								{
@@ -7008,12 +7122,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 977087338713038,
+									"sid": 698244838891682,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "enabled"
+										"max-speed": "250"
 									}
 								},
 								{
@@ -7247,12 +7361,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 206641922423457,
+									"sid": 220546868203136,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "disabled"
+										"max-speed": "0"
 									}
 								},
 								{
@@ -7302,12 +7416,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 837772680058009,
+									"sid": 177130704923682,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "enabled"
+										"max-speed": "250"
 									}
 								},
 								{
@@ -7359,12 +7473,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 879147506933041,
+									"sid": 323172693827059,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "disabled"
+										"max-speed": "0"
 									}
 								},
 								{
@@ -7414,12 +7528,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 557003501514817,
+									"sid": 524483915811527,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "enabled"
+										"max-speed": "250"
 									}
 								},
 								{
@@ -7596,6 +7710,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 145331971152679,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 132638520768043,
@@ -7622,12 +7745,12 @@
 									}
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 444444983323690,
+									"sid": 970387041710935,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "disabled"
+										"max-speed": "0"
 									}
 								},
 								{
@@ -7654,12 +7777,12 @@
 									"sid": 229024736810639
 								},
 								{
-									"id": "set-enabled",
+									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 321048466827452,
+									"sid": 177483204244320,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"state": "enabled"
+										"max-speed": "250"
 									}
 								},
 								{
@@ -7678,6 +7801,15 @@
 									"sid": 805634846744708,
 									"parameters": {
 										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 186443301458427,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
 									}
 								},
 								{

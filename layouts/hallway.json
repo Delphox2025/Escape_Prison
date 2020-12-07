@@ -94,9 +94,9 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2,
+						"x": -4,
 						"y": 283,
-						"width": 1709.8068675436098,
+						"width": 1718.2862063865848,
 						"height": 337,
 						"originX": 0,
 						"originY": 0,
@@ -143,7 +143,7 @@
 					"type": "Hallway_Joe_Player",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -171,12 +171,12 @@
 						}
 					},
 					"world": {
-						"x": 161,
-						"y": 441,
-						"width": 109.8682570203281,
-						"height": 111.1958159650702,
-						"originX": 0.4419938642398618,
-						"originY": 0.5279093697821613,
+						"x": 162,
+						"y": 435,
+						"width": 72.26397033308855,
+						"height": 123.1248521026624,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
 						"color": [
 							1,
 							1,
@@ -538,9 +538,9 @@
 						"bold": false,
 						"italic": false,
 						"color": [
-							0,
-							0,
-							0,
+							1,
+							1,
+							1,
 							1
 						],
 						"horizontal-alignment": "left",
@@ -553,8 +553,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 18,
-						"y": 549,
+						"x": 68,
+						"y": 56,
 						"width": 273.16607803550437,
 						"height": 193.42491170532566,
 						"originX": 0,
