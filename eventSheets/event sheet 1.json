@@ -6995,9 +6995,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 277999082919102,
+									"sid": 859662948878679,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
 									}
 								},
 								{
@@ -7107,9 +7107,18 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 355523110925965,
+									"sid": 700283730572639,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BathRoomGuard_View",
+									"sid": 373817830747422,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -7172,7 +7181,8 @@
 									}
 								}
 							],
-							"sid": 674470308465233
+							"sid": 674470308465233,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -7352,6 +7362,17 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 882301589183851,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-active",
 									"objectClass": "Enemy_Bathroom_Guard2",
 									"sid": 823240996440665,
@@ -7370,17 +7391,6 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 854674570074312,
-									"parameters": {
-										"audio-file": "40754__tommon__one-blast-whistle",
-										"loop": "not-looping",
-										"volume": "-5",
-										"tag-optional": "\"\""
-									}
-								},
-								{
 									"id": "set-animation",
 									"objectClass": "Enemy_BathRoomGuard_View3",
 									"sid": 488903459698781,
@@ -7392,9 +7402,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 488396564298652,
+									"sid": 628622254432077,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
 									}
 								},
 								{
@@ -7464,6 +7474,17 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 664756513679838,
+									"parameters": {
+										"audio-file": "40754__tommon__one-blast-whistle",
+										"loop": "not-looping",
+										"volume": "-5",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-active",
 									"objectClass": "Enemy_Bathroom_Guard2",
 									"sid": 756329744067877,
@@ -7482,17 +7503,6 @@
 									}
 								},
 								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 435766330047371,
-									"parameters": {
-										"audio-file": "40754__tommon__one-blast-whistle",
-										"loop": "not-looping",
-										"volume": "-5",
-										"tag-optional": "\"\""
-									}
-								},
-								{
 									"id": "set-animation",
 									"objectClass": "Enemy_BathRoomGuard_View3",
 									"sid": 767513682226781,
@@ -7504,9 +7514,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 423002696462463,
+									"sid": 767252471329487,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
 									}
 								},
 								{
@@ -7578,7 +7588,8 @@
 									}
 								}
 							],
-							"sid": 509812230806820
+							"sid": 509812230806820,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -7877,8 +7888,8 @@
 								},
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 974468941642966,
+									"objectClass": "Enemy_BatrromFlipGuard_View",
+									"sid": 487367984969681,
 									"parameters": {
 										"unique-id": "387"
 									}
@@ -7887,19 +7898,19 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 145719259087660,
+									"objectClass": "Enemy_BatrromFlipGuard_View",
+									"sid": 193256673221178,
 									"parameters": {
-										"animation": "\"Idle\"",
+										"animation": "\"Alerted\"",
 										"from": "beginning"
 									}
 								},
 								{
 									"id": "set-animation",
-									"objectClass": "Enemy_BatrromFlipGuard_View",
-									"sid": 673397154003784,
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 145719259087660,
 									"parameters": {
-										"animation": "\"Alerted\"",
+										"animation": "\"Idle\"",
 										"from": "beginning"
 									}
 								},
@@ -7926,9 +7937,18 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 936848875456344,
+									"sid": 109670162825149,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BatrromFlipGuard_View",
+									"sid": 727120950441292,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -7980,8 +8000,8 @@
 								},
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "Enemy_Kitchen_Guard1",
-									"sid": 965465481726511,
+									"objectClass": "Enemy_BathroomFlip_Guard",
+									"sid": 357187588947634,
 									"parameters": {
 										"unique-id": "386"
 									}
@@ -7990,19 +8010,19 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 925470480559676,
+									"objectClass": "Enemy_BatrromFlipGuard_View",
+									"sid": 252576566876708,
 									"parameters": {
-										"animation": "\"Idle\"",
+										"animation": "\"Alerted\"",
 										"from": "beginning"
 									}
 								},
 								{
 									"id": "set-animation",
-									"objectClass": "Enemy_BatrromFlipGuard_View",
-									"sid": 886877228273907,
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 925470480559676,
 									"parameters": {
-										"animation": "\"Alerted\"",
+										"animation": "\"Idle\"",
 										"from": "beginning"
 									}
 								},
@@ -8029,9 +8049,18 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 569232019921914,
+									"sid": 949094948939041,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_BatrromFlipGuard_View",
+									"sid": 895887128017656,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -8094,7 +8123,8 @@
 									}
 								}
 							],
-							"sid": 893222896960399
+							"sid": 893222896960399,
+							"disabled": true
 						},
 						{
 							"eventType": "comment",
@@ -8376,9 +8406,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 521329563641647,
+									"sid": 196109656738593,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
 									}
 								},
 								{
@@ -8451,9 +8481,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 327611108513966,
+									"sid": 396359199184371,
 									"parameters": {
-										"seconds": "2.0"
+										"seconds": "1.0"
 									}
 								},
 								{
