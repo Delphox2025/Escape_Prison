@@ -7945,11 +7945,19 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-overlapping-another-object",
+									"id": "on-collision-with-another-object",
 									"objectClass": "Kitchen_Joe_Player",
-									"sid": 940605577654354,
+									"sid": 749707065281666,
 									"parameters": {
 										"object": "Enemy_KitchenGuard_View1"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 167517275018312,
+									"parameters": {
+										"unique-id": "376"
 									}
 								}
 							],
@@ -8000,7 +8008,6 @@
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemy_Kitchen_Guard1",
 									"sid": 794177832625248,
-									"disabled": true,
 									"parameters": {
 										"instance-variable": "LR",
 										"value": "false"
@@ -8013,11 +8020,19 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-overlapping-another-object",
+									"id": "on-collision-with-another-object",
 									"objectClass": "Kitchen_Joe_Player",
-									"sid": 668297472682307,
+									"sid": 357374278085397,
 									"parameters": {
 										"object": "Enemy_Kitchen_Guard1"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Enemy_Kitchen_Guard1",
+									"sid": 557675522975580,
+									"parameters": {
+										"unique-id": "365"
 									}
 								}
 							],
@@ -8068,7 +8083,6 @@
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemy_Kitchen_Guard1",
 									"sid": 219842171050824,
-									"disabled": true,
 									"parameters": {
 										"instance-variable": "LR",
 										"value": "false"
@@ -8085,9 +8099,9 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "else",
+									"id": "trigger-once-while-true",
 									"objectClass": "System",
-									"sid": 236167127061873
+									"sid": 482108804338829
 								}
 							],
 							"actions": [
