@@ -24,7 +24,7 @@
 					"world": {
 						"x": 21,
 						"y": 19,
-						"width": 1673,
+						"width": 1692.7125950938646,
 						"height": 925,
 						"originX": 0,
 						"originY": 0,
@@ -711,9 +711,9 @@
 						}
 					},
 					"world": {
-						"x": 1734,
+						"x": 1737,
 						"y": -82,
-						"width": 1133,
+						"width": 894.4204036243153,
 						"height": 44.11570994943918,
 						"originX": 0,
 						"originY": 0,
@@ -1993,7 +1993,7 @@
 				{
 					"type": "TPtoHallway",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -2005,19 +2005,19 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1667,
-						"y": 835,
-						"width": 36,
-						"height": 185,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1703.4591439030987,
+						"y": 874.6670134533496,
+						"width": 128.22952767955422,
+						"height": 18.5,
+						"originX": 0.49295774647887325,
+						"originY": 0.4,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},

@@ -70,8 +70,8 @@
 					},
 					"world": {
 						"x": -8,
-						"y": 918,
-						"width": 1723.677731911093,
+						"y": 930,
+						"width": 799.9237979980284,
 						"height": 44.11570994943918,
 						"originX": 0,
 						"originY": 0,
@@ -152,6 +152,46 @@
 						"x": -8,
 						"y": -2,
 						"width": 1723.677731911093,
+						"height": 44.11570994943918,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 383,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1011.2522771746363,
+						"y": 930,
+						"width": 717.350500422025,
 						"height": 44.11570994943918,
 						"originX": 0,
 						"originY": 0,
@@ -473,8 +513,8 @@
 						}
 					},
 					"world": {
-						"x": 946.4808179168188,
-						"y": 840.8358717928566,
+						"x": 898,
+						"y": 865,
 						"width": 84.57776575311962,
 						"height": 124.02535721918179,
 						"originX": 0.425531914893617,
@@ -770,7 +810,7 @@
 				{
 					"type": "TPtoHallway",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -782,12 +822,12 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1679,
-						"y": 148,
-						"width": 36,
-						"height": 185,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 900,
+						"y": 942,
+						"width": 226.968806,
+						"height": 32.745367,
+						"originX": 0.49295774647887325,
+						"originY": 0.4,
 						"color": [
 							1,
 							1,
