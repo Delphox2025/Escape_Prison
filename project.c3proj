@@ -349,7 +349,9 @@
 			"TPtoStartPAge",
 			"Enemy_Kitchen_Guard1",
 			"Enemy_KitchenGuard_View1",
-			"Health"
+			"Health",
+			"Enemy_BathroomFlip_Guard",
+			"Enemy_BatrromFlipGuard_View"
 		],
 		"subfolders": [
 			{

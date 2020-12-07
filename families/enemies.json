@@ -27,6 +27,8 @@
 		"Enemy_View4",
 		"Enemy_View5",
 		"Enemy_Kitchen_Guard1",
-		"Enemy_KitchenGuard_View1"
+		"Enemy_KitchenGuard_View1",
+		"Enemy_BathroomFlip_Guard",
+		"Enemy_BatrromFlipGuard_View"
 	]
 }

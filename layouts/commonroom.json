@@ -598,7 +598,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 713,
+						"x": 718,
 						"y": 150.5,
 						"width": 31.452667140804927,
 						"height": 183.61081871328497,
@@ -1081,6 +1081,42 @@
 					}
 				},
 				{
+					"type": "CommonRoom_HeadSedcurity",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 294,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 831,
+						"y": 222,
+						"width": 108.654413,
+						"height": 111.05420100000002,
+						"originX": 0.4416549816561341,
+						"originY": 0.5280501364601233,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5846286533419303,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Enemy_CommonRoomGuard_View4",
 					"properties": {
 						"initially-visible": true,
@@ -1103,7 +1139,7 @@
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 4.71238898038469,
 						"zElevation": 0
@@ -1132,7 +1168,7 @@
 							1,
 							1,
 							1,
-							1
+							0.5
 						],
 						"angle": 4.71238898038469,
 						"zElevation": 0
@@ -1188,10 +1224,10 @@
 						}
 					},
 					"world": {
-						"x": 430.29036633681835,
-						"y": 113.29426742309646,
-						"width": 92.94999501739002,
-						"height": 107.26429432295369,
+						"x": 433.344994251041,
+						"y": 120.23897386566306,
+						"width": 104.35901230949248,
+						"height": 120.4303002869862,
 						"originX": 0.4430379746835443,
 						"originY": 0.5274725274725275,
 						"color": [
@@ -1254,10 +1290,10 @@
 						}
 					},
 					"world": {
-						"x": 721.2903663368185,
-						"y": 830.2942674230965,
-						"width": 92.94999501739002,
-						"height": 107.26429432295369,
+						"x": 719.344994251041,
+						"y": 837.2389738656631,
+						"width": 104.35901230949248,
+						"height": 120.4303002869862,
 						"originX": 0.4430379746835443,
 						"originY": 0.5274725274725275,
 						"color": [
@@ -1267,42 +1303,6 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CommonRoom_HeadSedcurity",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 294,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 831,
-						"y": 222,
-						"width": 108.654413,
-						"height": 111.05420100000002,
-						"originX": 0.4416549816561341,
-						"originY": 0.5280501364601233,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5846286533419303,
 						"zElevation": 0
 					}
 				}
@@ -1477,7 +1477,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 208,
+						"x": 204,
 						"y": 821,
 						"width": 31.452667140804927,
 						"height": 195.61081871328497,
