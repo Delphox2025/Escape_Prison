@@ -1,7 +1,7 @@
 {
-	"name": "Cell_Hallway_Spawn2",
+	"name": "Second_Hallway_Spawn_Kitchen",
 	"plugin-id": "Sprite",
-	"sid": 131021872542349,
+	"sid": 506983896440291,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6476911,
+						"imageSpriteId": 801581,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 336565831958478,
+				"sid": 796063042008430,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -16,12 +16,14 @@
 		"TPtoBathRoom",
 		"TPtoCourtyard",
 		"TPtoSecurityRoom",
-		"TPtoHallway",
+		"TPtoHallwaySecond",
 		"Hallway_WhatsHappening_HitBox",
 		"TPtoMainCell",
 		"TPtoCommonRoom",
 		"TPtoKitchen",
 		"TPtoSolitary",
-		"TPtoStartPAge"
+		"TPtoStartPAge",
+		"Hallway_WhatsHappening_HitBox2",
+		"TPtoHallwayThird"
 	]
 }

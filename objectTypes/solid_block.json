@@ -1,10 +1,16 @@
 {
-	"name": "SecurityRoom_Cabinets_HitBox5",
+	"name": "Solid_Block",
 	"plugin-id": "Sprite",
-	"sid": 880786396730815,
+	"sid": 996501199545695,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 481507470518527
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,19 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3323997,
+						"imageSpriteId": 2083644,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "KeySpawn",
-								"x": 0.652,
-								"y": 0.476
-							}
-						],
 						"duration": 1
 					}
 				],
-				"sid": 937217994459081,
+				"sid": 374903119512672,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

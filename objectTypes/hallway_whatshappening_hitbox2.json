@@ -1,7 +1,7 @@
 {
-	"name": "SecurityRoom_Cabinets_HitBox5",
+	"name": "Hallway_WhatsHappening_HitBox2",
 	"plugin-id": "Sprite",
-	"sid": 880786396730815,
+	"sid": 670846646697957,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,19 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3323997,
+						"imageSpriteId": 7394611,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "KeySpawn",
-								"x": 0.652,
-								"y": 0.476
-							}
-						],
 						"duration": 1
 					}
 				],
-				"sid": 937217994459081,
+				"sid": 316942040599003,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -1,7 +1,7 @@
 {
-	"name": "SecurityRoom_Cabinets_HitBox5",
+	"name": "Third_Hallway_Spawn_Security",
 	"plugin-id": "Sprite",
-	"sid": 880786396730815,
+	"sid": 648192833942334,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,19 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3323997,
+						"imageSpriteId": 7398837,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "KeySpawn",
-								"x": 0.652,
-								"y": 0.476
-							}
-						],
 						"duration": 1
 					}
 				],
-				"sid": 937217994459081,
+				"sid": 121791178110484,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

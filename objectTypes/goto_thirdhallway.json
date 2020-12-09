@@ -1,7 +1,7 @@
 {
-	"name": "BackTo_Hallway2",
+	"name": "GoTo_ThirdHAllway",
 	"plugin-id": "Sprite",
-	"sid": 203074838831896,
+	"sid": 167534870501148,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,12 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5033563,
+						"imageSpriteId": 4120300,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 379980687515961,
+				"sid": 817783665685180,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

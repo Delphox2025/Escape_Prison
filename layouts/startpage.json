@@ -69,7 +69,7 @@
 						"type": "button",
 						"text": "OK",
 						"tooltip": "",
-						"initially-visible": true,
+						"initially-visible": false,
 						"enabled": true,
 						"auto-font-size": true,
 						"checked": false,

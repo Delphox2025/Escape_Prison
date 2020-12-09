@@ -274,7 +274,7 @@
 			"Jail_Door",
 			"NextLevel6",
 			"DoorStopTrigger2",
-			"NxtlvlHallway",
+			"NxtlvlHallwaySecond",
 			"CourtYard_Key_Text",
 			"Floor_",
 			"Floor_3",
@@ -295,7 +295,7 @@
 			"Key_HitBox2",
 			"Key_SecurityRoom",
 			"TPtoBathRoom",
-			"TPtoHallway",
+			"TPtoHallwaySecond",
 			"SecurityRoom_Cabinets_HitBox2",
 			"SecurityRoom_Cabinets_HitBox3",
 			"SecurityRoom_Cabinets_HitBox4",
@@ -339,8 +339,8 @@
 			"Key_SolitaryRoom",
 			"TPtoSolitary",
 			"Cell_Hallway_Spawn",
-			"Cell_Hallway_Spawn2",
-			"BackTo_Hallway2",
+			"First_Hallway_Spawn",
+			"BackTo_HallwayFirst",
 			"BackTo_Courtyard",
 			"Enemy_CommonRoomGuard_View4",
 			"Enemy_CommonRoomGuard_View5",
@@ -356,7 +356,17 @@
 			"CommonRoom_Floor",
 			"Victory",
 			"Congratulations",
-			"Press_Any"
+			"Press_Any",
+			"Hallway_WhatsHappening_HitBox2",
+			"Solid_Block",
+			"Third_Hallway_Spawn_Security",
+			"Third_Hallway_Spawn_CommonRoom",
+			"Second_Hallway_Spawn_BathRoom",
+			"Second_Hallway_Spawn_Kitchen",
+			"TPtoHallwayThird",
+			"BackTo_HallwaySecond",
+			"GoTo_ThirdHAllway",
+			"KeysFound"
 		],
 		"subfolders": [
 			{
@@ -469,14 +479,15 @@
 			"StartPage",
 			"RoomOne",
 			"CourtYard",
-			"HallWay",
+			"Second_HallWay",
 			"Security_Room",
 			"Bathroom",
 			"Kitchen",
 			"CommonRoom",
-			"Hallway_2",
+			"First_Hallway",
 			"Solitary",
-			"Victory_EndScreen"
+			"Victory_EndScreen",
+			"Third_Hallway"
 		],
 		"subfolders": [
 			{

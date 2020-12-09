@@ -1,7 +1,7 @@
 {
-	"name": "SecurityRoom_Cabinets_HitBox5",
+	"name": "Second_Hallway_Spawn_BathRoom",
 	"plugin-id": "Sprite",
-	"sid": 880786396730815,
+	"sid": 219588976526347,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,19 +18,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3323997,
+						"imageSpriteId": 9232887,
 						"useCollisionPoly": true,
-						"imagePoints": [
-							{
-								"name": "KeySpawn",
-								"x": 0.652,
-								"y": 0.476
-							}
-						],
 						"duration": 1
 					}
 				],
-				"sid": 937217994459081,
+				"sid": 250949241107353,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

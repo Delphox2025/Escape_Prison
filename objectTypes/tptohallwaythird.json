@@ -1,7 +1,7 @@
 {
-	"name": "TPtoHallway",
+	"name": "TPtoHallwayThird",
 	"plugin-id": "Sprite",
-	"sid": 241637713097642,
+	"sid": 104124770281737,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,7 +18,7 @@
 						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Jail_Door.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8109138,
+						"imageSpriteId": 5812789,
 						"collisionPoly": {
 							"points": [
 								0.014084507042253521,
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 376256033686169,
+				"sid": 887310769376649,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

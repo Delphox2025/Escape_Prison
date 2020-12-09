@@ -1,10 +1,43 @@
 {
-	"name": "Hallway_2",
+	"name": "Third_Hallway",
 	"layers": [
 		{
 			"name": "BG",
 			"overriden": 0,
 			"instances": [
+				{
+					"type": "Floor_3",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 348,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -2,
+						"y": 283,
+						"width": 1712.53414,
+						"height": 337,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
 				{
 					"type": "Test_Wall2",
 					"properties": {
@@ -14,7 +47,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 319,
+					"uid": 349,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -25,8 +58,8 @@
 						}
 					},
 					"world": {
-						"x": 849,
-						"y": 849,
+						"x": 851,
+						"y": 803,
 						"width": 366.3067305466865,
 						"height": 1844.8026182790686,
 						"originX": 0.5,
@@ -50,7 +83,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 320,
+					"uid": 350,
 					"instanceVariables": {},
 					"behaviors": {
 						"Solid": {
@@ -61,8 +94,8 @@
 						}
 					},
 					"world": {
-						"x": 826,
-						"y": 147,
+						"x": 828,
+						"y": 101,
 						"width": 366.3067305466865,
 						"height": 1844.8026182790686,
 						"originX": 0.5,
@@ -90,13 +123,13 @@
 						"image-scale-y": 1,
 						"image-angle": 0
 					},
-					"uid": 321,
+					"uid": 352,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -74,
-						"y": 1087,
-						"width": 1712.5341402708823,
+						"x": -490,
+						"y": 1170,
+						"width": 1718.2862063865848,
 						"height": 337,
 						"originX": 0,
 						"originY": 0,
@@ -109,42 +142,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Floor_3",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0
-					},
-					"uid": 385,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 0,
-						"y": 329,
-						"width": 1712.53414,
-						"height": 337,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 136334873804070,
+			"sid": 860281204738639,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -173,98 +173,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "TPtoCourtyard",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 322,
-					"instanceVariables": {
-						"Text": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1587,
-						"y": 240,
-						"width": 104,
-						"height": 190,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TPtoMainCell",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 323,
-					"instanceVariables": {
-						"Text": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 108.6527079093969,
-						"y": 236.1342826657306,
-						"width": 93.30541581879379,
-						"height": 195.7314346685388,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Cell_Hallway_Spawn",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 367,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 800,
-						"y": 444,
-						"width": 74.41773982055622,
-						"height": 74.41773982055622,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Hallway_Joe_Player2",
+					"type": "Hallway_Joe_Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -272,7 +181,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 324,
+					"uid": 353,
 					"instanceVariables": {
 						"HP": 3
 					},
@@ -292,18 +201,13 @@
 							"properties": {
 								"bound-by": "edge"
 							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"world": {
-						"x": 154.87234042553192,
-						"y": 495,
-						"width": 69.68421798145098,
-						"height": 132.686612760328,
+						"x": 162,
+						"y": 435,
+						"width": 72.26397033308855,
+						"height": 123.1248521026624,
 						"originX": 0.425531914893617,
 						"originY": 0.5104166666666666,
 						"color": [
@@ -315,38 +219,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Cell_Hallway_Spawn2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 368,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 826,
-						"y": 622,
-						"width": 74.41773982055622,
-						"height": 74.41773982055622,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 803636412258197,
+			"sid": 974768572449847,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -371,26 +246,28 @@
 			"global": false
 		},
 		{
-			"name": "UI",
+			"name": "Doors",
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "EndGoalDoor",
+					"type": "TPtoSecurityRoom",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": false,
+						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 335,
-					"instanceVariables": {},
+					"uid": 354,
+					"instanceVariables": {
+						"Text": ""
+					},
 					"behaviors": {},
 					"world": {
-						"x": -95,
-						"y": 498,
-						"width": 250,
-						"height": 250,
+						"x": 1434,
+						"y": 193,
+						"width": 104,
+						"height": 190,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -404,7 +281,7 @@
 					}
 				},
 				{
-					"type": "FinalDoor_Freedom_TextHitBox",
+					"type": "TPtoCommonRoom",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -412,30 +289,30 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 374,
+					"uid": 357,
 					"instanceVariables": {
-						"Text": "Well then, now thats a lock! This door has 5 KEY holes! The KEYS must be somewhere, Let me try that door down there! "
+						"Text": ""
 					},
 					"behaviors": {},
 					"world": {
-						"x": 101,
-						"y": 485,
-						"width": 44,
-						"height": 250,
+						"x": 1099,
+						"y": 709.5,
+						"width": 91.07917347881543,
+						"height": 187.1757477222057,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.5
+							1
 						],
 						"angle": 0,
 						"zElevation": 0
 					}
 				}
 			],
-			"sid": 472138050628494,
+			"sid": 331058446921316,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -472,12 +349,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 328,
+					"uid": 358,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 553,
-						"y": 573,
+						"x": 555,
+						"y": 527,
 						"width": 434.34990148429074,
 						"height": 150.408352939665,
 						"originX": 0.4943310657596372,
@@ -514,12 +391,12 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 329,
+					"uid": 359,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 357,
-						"y": 503,
+						"x": 359,
+						"y": 457,
 						"width": 395,
 						"height": 122,
 						"originX": 0,
@@ -535,9 +412,67 @@
 					}
 				}
 			],
-			"sid": 119374570007400,
+			"sid": 706416381492655,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "UI",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Third_Hallway_Spawn_Security",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 375,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1430,
+						"y": 347,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 399491022820575,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
 			"color": [
 				1,
 				1,
@@ -585,14 +520,145 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 360,
+					"uid": 362,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 68,
-						"y": 56,
-						"width": 122.16607803550437,
-						"height": 188.42491170532566,
+						"x": 24,
+						"y": 39,
+						"width": 410.16607803550437,
+						"height": 86.42491170532566,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hallway_WhatsHappening_HitBox2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 199,
+					"instanceVariables": {
+						"Text": "A Security Room! That has to have a key Inside!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 252,
+						"y": 446,
+						"width": 38.899937421752725,
+						"height": 295.8999374217527,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Third_Hallway_Spawn_CommonRoom",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 367,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1098,
+						"y": 574,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BackTo_HallwaySecond",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 395,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -106,
+						"y": 447,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KeysFound",
+					"properties": {
+						"text": "Keys Found:",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 50,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 406,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 24,
+						"y": 113,
+						"width": 477,
+						"height": 91,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -606,7 +672,7 @@
 					}
 				}
 			],
-			"sid": 334405848890937,
+			"sid": 785643408645700,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -631,7 +697,7 @@
 			"global": false
 		}
 	],
-	"sid": 970789796920645,
+	"sid": 880365969954832,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1710,
