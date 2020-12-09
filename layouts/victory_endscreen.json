@@ -33,6 +33,79 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Congratulations",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 391,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "size",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 1203,
+						"y": 373,
+						"width": 603.3559267160354,
+						"height": 118.09058351810826,
+						"originX": 0.49837284983728497,
+						"originY": 0.24703087885985747,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Press_Any",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 392,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1207,
+						"y": 881,
+						"width": 332.66643669091985,
+						"height": 101.94616608270125,
+						"originX": 0.5074884792626728,
+						"originY": 0.4906015037593985,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 832525089500940,
@@ -122,5 +195,5 @@
 	"width": 3416,
 	"height": 1920,
 	"unboundedScrolling": false,
-	"eventSheet": null
+	"eventSheet": "VS Event Sheet"
 }

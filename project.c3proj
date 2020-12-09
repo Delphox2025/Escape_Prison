@@ -354,7 +354,9 @@
 			"Enemy_BatrromFlipGuard_View",
 			"TiledBackground",
 			"CommonRoom_Floor",
-			"Victory"
+			"Victory",
+			"Congratulations",
+			"Press_Any"
 		],
 		"subfolders": [
 			{
@@ -491,7 +493,8 @@
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"StartPage_"
+			"StartPage_",
+			"VS Event Sheet"
 		],
 		"subfolders": []
 	},

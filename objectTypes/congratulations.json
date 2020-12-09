@@ -1,0 +1,63 @@
+{
+	"name": "Congratulations",
+	"plugin-id": "Sprite",
+	"sid": 523949927917406,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 437037862223751
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2151,
+						"height": 421,
+						"originX": 0.49837284983728497,
+						"originY": 0.24703087885985747,
+						"originalSource": "D:\\Photoshop\\Group Game Project 1\\GroupGameProject_Project_5\\You have escaped.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1769629,
+						"collisionPoly": {
+							"points": [
+								0.12831241283124128,
+								0.10451306413301663,
+								0.49837284983728497,
+								0.10451306413301663,
+								0.8600650860065086,
+								0.14489311163895488,
+								0.9679218967921897,
+								0.24703087885985747,
+								0.8577405857740585,
+								0.334916864608076,
+								0.49837284983728497,
+								0.9026128266033254,
+								0.13854021385402138,
+								0.334916864608076,
+								0.00232450023245001,
+								0.24703087885985747
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 545094153440617,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

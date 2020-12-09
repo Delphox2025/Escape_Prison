@@ -1,0 +1,27 @@
+{
+	"name": "VS Event Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 270530711982721
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 812713848587379,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 729594934792312
+		}
+	],
+	"sid": 690922267054669
+}
