@@ -366,7 +366,11 @@
 			"TPtoHallwayThird",
 			"BackTo_HallwaySecond",
 			"GoTo_ThirdHAllway",
-			"KeysFound"
+			"KeysFound",
+			"Failure",
+			"FinallyCaught",
+			"PressAnyButton2",
+			"PrisonWalls2"
 		],
 		"subfolders": [
 			{
@@ -505,7 +509,8 @@
 		"items": [
 			"Event sheet 1",
 			"StartPage_",
-			"VS Event Sheet"
+			"VS Event Sheet",
+			"FS Even Sheet"
 		],
 		"subfolders": []
 	},

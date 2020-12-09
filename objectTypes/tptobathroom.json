@@ -11,14 +11,34 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 58,
+						"height": 82,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Bathroom_Door.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5104153,
+						"imageSpriteId": 9736631,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0.012195121951219513,
+								1,
+								0,
+								0.9655172413793104,
+								0.5,
+								1,
+								1,
+								0.5,
+								0.975609756097561,
+								0,
+								1,
+								0.017241379310344827,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

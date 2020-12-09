@@ -6,6 +6,46 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "PrisonWalls2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 411,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1794,
+						"y": -25,
+						"width": 366.306731,
+						"height": 1844.802618,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Test_Wall2",
 					"properties": {
 						"initially-visible": true,
@@ -25,8 +65,8 @@
 						}
 					},
 					"world": {
-						"x": 849,
-						"y": 849,
+						"x": 1891,
+						"y": 1293,
 						"width": 366.3067305466865,
 						"height": 1844.8026182790686,
 						"originX": 0.5,
@@ -61,8 +101,8 @@
 						}
 					},
 					"world": {
-						"x": 826,
-						"y": 147,
+						"x": 556,
+						"y": -686,
 						"width": 366.3067305466865,
 						"height": 1844.8026182790686,
 						"originX": 0.5,
@@ -188,10 +228,10 @@
 					"behaviors": {},
 					"world": {
 						"x": 1587,
-						"y": 240,
+						"y": 238,
 						"width": 104,
 						"height": 190,
-						"originX": 0.5,
+						"originX": 0.44642857142857145,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -220,9 +260,9 @@
 					"world": {
 						"x": 540,
 						"y": 236,
-						"width": 93.30541581879379,
-						"height": 195.7314346685388,
-						"originX": 0.5,
+						"width": 93.305416,
+						"height": 195.731435,
+						"originX": 0.5208333333333334,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -560,8 +600,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 11,
-						"y": 41,
+						"x": 24,
+						"y": 31,
 						"width": 373.16607803550437,
 						"height": 95.42491170532566,
 						"originX": 0,
@@ -602,8 +642,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -3,
-						"y": 128,
+						"x": 24,
+						"y": 113,
 						"width": 441,
 						"height": 96,
 						"originX": 0,
@@ -615,6 +655,46 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 410,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1822,
+						"y": 664,
+						"width": 366.306731,
+						"height": 1994.8026179999997,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}

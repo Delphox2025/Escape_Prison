@@ -1,0 +1,27 @@
+{
+	"name": "FS Even Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 227484368463252
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 204418540591357,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 364048047116538
+		}
+	],
+	"sid": 452684704666516
+}

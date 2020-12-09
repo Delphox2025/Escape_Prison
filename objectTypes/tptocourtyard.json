@@ -11,14 +11,34 @@
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
+						"width": 56,
+						"height": 82,
+						"originX": 0.44642857142857145,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Courtyard_Door.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 3472061,
+						"imageSpriteId": 3162823,
+						"collisionPoly": {
+							"points": [
+								0.017857142857142856,
+								0.2073170731707317,
+								0.44642857142857145,
+								0.012195121951219513,
+								0.9464285714285714,
+								0.14634146341463414,
+								0.9642857142857143,
+								0.5,
+								1,
+								1,
+								0.44642857142857145,
+								0.975609756097561,
+								0,
+								1,
+								0.017857142857142856,
+								0.5
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
