@@ -353,7 +353,8 @@
 			"Enemy_BathroomFlip_Guard",
 			"Enemy_BatrromFlipGuard_View",
 			"TiledBackground",
-			"CommonRoom_Floor"
+			"CommonRoom_Floor",
+			"Victory"
 		],
 		"subfolders": [
 			{
