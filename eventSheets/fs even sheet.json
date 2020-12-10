@@ -21,6 +21,24 @@
 				}
 			],
 			"sid": 364048047116538
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 675099387933643
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 525344145837867
+				}
+			],
+			"sid": 474489202785858
 		}
 	],
 	"sid": 452684704666516
