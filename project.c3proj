@@ -370,7 +370,9 @@
 			"Failure",
 			"FinallyCaught",
 			"PressAnyButton2",
-			"PrisonWalls2"
+			"PrisonWalls2",
+			"cool",
+			"CoolNumber"
 		],
 		"subfolders": [
 			{

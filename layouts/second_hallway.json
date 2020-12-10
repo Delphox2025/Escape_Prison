@@ -369,7 +369,8 @@
 					},
 					"uid": 258,
 					"instanceVariables": {
-						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!"
+						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -429,7 +430,8 @@
 					},
 					"uid": 245,
 					"instanceVariables": {
-						"Text": ""
+						"Text": "",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -460,7 +462,8 @@
 					},
 					"uid": 257,
 					"instanceVariables": {
-						"Text": ""
+						"Text": "",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {

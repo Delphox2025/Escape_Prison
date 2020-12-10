@@ -567,7 +567,8 @@
 					},
 					"uid": 248,
 					"instanceVariables": {
-						"Text": ""
+						"Text": "",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {

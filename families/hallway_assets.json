@@ -8,6 +8,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 955922195861858
+		},
+		{
+			"name": "LayoutName",
+			"type": "string",
+			"desc": "",
+			"sid": 492807890016528
 		}
 	],
 	"behaviorTypes": [],

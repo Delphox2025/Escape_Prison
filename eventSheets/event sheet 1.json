@@ -122,6 +122,37 @@
 			"sid": 479500519447316
 		},
 		{
+			"eventType": "variable",
+			"name": "TestNumber",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 780723548118469
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 313906329147884
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "TPtoHallwaySecond",
+					"sid": 721143780965058,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 843273568565334
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -9307,6 +9338,14 @@
 							}
 						},
 						{
+							"id": "set-collisions-enabled",
+							"objectClass": "TPtoHallwaySecond",
+							"sid": 416709565966334,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
 							"id": "set-visible",
 							"objectClass": "TPtoHallwaySecond",
 							"sid": 172648224632545,
@@ -10961,9 +11000,49 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 422084646308327
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 296133275907731,
+					"parameters": {
+						"object": "cool"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 261121531090699,
+					"parameters": {
+						"variable": "TestNumber",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 635283232931644
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 904769101789483
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "CoolNumber",
+					"sid": 411559697794278,
+					"parameters": {
+						"text": "TestNumber"
+					}
+				}
+			],
+			"sid": 322076188721911
 		}
 	],
 	"sid": 161931613315162

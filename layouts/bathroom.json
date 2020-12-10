@@ -1930,7 +1930,7 @@
 				{
 					"type": "TPtoHallwaySecond",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -1938,14 +1938,15 @@
 					},
 					"uid": 249,
 					"instanceVariables": {
-						"Text": ""
+						"Text": "",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1696.4591439030987,
-						"y": 827.6670134533496,
-						"width": 226.96880599999997,
-						"height": 32.745367,
+						"x": 1696,
+						"y": 828.2392895419537,
+						"width": 222.81313052578454,
+						"height": 32.14581712821681,
 						"originX": 0.49295774647887325,
 						"originY": 0.4,
 						"color": [

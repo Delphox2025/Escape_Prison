@@ -311,7 +311,8 @@
 					},
 					"uid": 199,
 					"instanceVariables": {
-						"Text": "A Security Room! That has to have a key Inside!"
+						"Text": "A Security Room! That has to have a key Inside!",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -429,7 +430,8 @@
 					},
 					"uid": 354,
 					"instanceVariables": {
-						"Text": ""
+						"Text": "",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {
@@ -460,7 +462,8 @@
 					},
 					"uid": 357,
 					"instanceVariables": {
-						"Text": ""
+						"Text": "",
+						"LayoutName": ""
 					},
 					"behaviors": {},
 					"world": {
