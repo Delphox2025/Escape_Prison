@@ -1121,8 +1121,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 135,
-						"y": 630,
+						"x": 1324,
+						"y": 854,
 						"width": 66.75002500429756,
 						"height": 25.602749316716867,
 						"originX": 0.4657534246575342,
@@ -1295,8 +1295,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 158,
-						"y": 571,
+						"x": 162,
+						"y": 572,
 						"width": 279.61335531169135,
 						"height": 178.74981056688625,
 						"originX": 0.5,
@@ -1926,38 +1926,6 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "TPtoHallwaySecond",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 249,
-					"instanceVariables": {
-						"Text": "",
-						"LayoutName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1696,
-						"y": 828.2392895419537,
-						"width": 222.81313052578454,
-						"height": 32.14581712821681,
-						"originX": 0.49295774647887325,
-						"originY": 0.4,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 496711115158332,
@@ -2238,6 +2206,96 @@
 							1,
 							1,
 							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoHallwaySecond_v2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 418,
+					"instanceVariables": {
+						"Text": "",
+						"LayoutName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1700,
+						"y": 828,
+						"width": 222.81313052578454,
+						"height": 32.14581712821681,
+						"originX": 0.49295774647887325,
+						"originY": 0.4,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_EnemyFlip_Trigger5",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 249,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 770,
+						"y": 859.5,
+						"width": 31.452667140804927,
+						"height": 141.61081871328497,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Bathroom_EnemyFlip_Trigger6",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 419,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 325,
+						"y": 859,
+						"width": 31.452667000000005,
+						"height": 148.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0

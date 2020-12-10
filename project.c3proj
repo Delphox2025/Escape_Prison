@@ -372,7 +372,11 @@
 			"PressAnyButton2",
 			"PrisonWalls2",
 			"cool",
-			"CoolNumber"
+			"CoolNumber",
+			"Hallway_Joe_Player3",
+			"TPtoHallwaySecond_v2",
+			"Bathroom_EnemyFlip_Trigger5",
+			"Bathroom_EnemyFlip_Trigger6"
 		],
 		"subfolders": [
 			{

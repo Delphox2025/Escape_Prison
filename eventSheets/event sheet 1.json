@@ -132,6 +132,36 @@
 			"sid": 780723548118469
 		},
 		{
+			"eventType": "variable",
+			"name": "Hallway2_SpawnPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 715291773009339
+		},
+		{
+			"eventType": "variable",
+			"name": "Test_X",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 487743111428751
+		},
+		{
+			"eventType": "variable",
+			"name": "Test_Y",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 819247202141644
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -3188,6 +3218,7 @@
 									"id": "compare-eventvar",
 									"objectClass": "System",
 									"sid": 314621499508758,
+									"disabled": true,
 									"parameters": {
 										"variable": "PreviousRoom",
 										"comparison": 0,
@@ -3198,6 +3229,7 @@
 									"id": "compare-eventvar",
 									"objectClass": "System",
 									"sid": 398763599036316,
+									"disabled": true,
 									"parameters": {
 										"variable": "PreviousRoom",
 										"comparison": 0,
@@ -3319,9 +3351,28 @@
 							"id": "set-eventvar-value",
 							"objectClass": "System",
 							"sid": 638144313953313,
+							"disabled": true,
 							"parameters": {
 								"variable": "PreviousRoom",
 								"value": "\"Second_Hallway\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 192703729334857,
+							"parameters": {
+								"variable": "Test_X",
+								"value": "1454"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 392743509788601,
+							"parameters": {
+								"variable": "Test_Y",
+								"value": "369"
 							}
 						}
 					],
@@ -3407,6 +3458,77 @@
 						}
 					],
 					"sid": 400593055602575
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 600354627342231,
+							"parameters": {
+								"object": "TPtoHallwaySecond_v2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 155873188765033,
+							"parameters": {
+								"layout": "Second_HallWay"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Second_Hallway_Spawn_BathRoom",
+							"sid": 949367604924324,
+							"disabled": true,
+							"parameters": {
+								"x": "1000",
+								"y": "472"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 990543287204863,
+							"disabled": true,
+							"parameters": {
+								"variable": "PreviousRoom",
+								"value": "\"Second_Hallway\""
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Player",
+							"sid": 595686693780748,
+							"disabled": true,
+							"parameters": {
+								"x": "Test_X"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Player",
+							"sid": 776746536037575,
+							"disabled": true,
+							"parameters": {
+								"y": "Test_Y"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Player",
+							"sid": 127678930437648,
+							"parameters": {
+								"x": "Test_X",
+								"y": "Test_Y"
+							}
+						}
+					],
+					"sid": 301995845727542
 				},
 				{
 					"eventType": "block",
@@ -5634,8 +5756,8 @@
 							"actions": [
 								{
 									"id": "set-visible",
-									"objectClass": "TPtoHallwaySecond",
-									"sid": 524847035177337,
+									"objectClass": "TPtoHallwaySecond_v2",
+									"sid": 418560526005098,
 									"parameters": {
 										"visibility": "visible"
 									}
@@ -5644,6 +5766,16 @@
 									"id": "destroy",
 									"objectClass": "Key_BathRoom",
 									"sid": 246332563380846
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 539720556802490,
+									"disabled": true,
+									"parameters": {
+										"variable": "Hallway2_SpawnPoint",
+										"value": "1"
+									}
 								}
 							],
 							"sid": 640677642790384
@@ -11004,9 +11136,9 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player",
-					"sid": 296133275907731,
+					"sid": 862123781844672,
 					"parameters": {
-						"object": "cool"
+						"object": "TPtoBathRoom"
 					}
 				}
 			],
@@ -11021,28 +11153,8 @@
 					}
 				}
 			],
-			"sid": 635283232931644
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 904769101789483
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "CoolNumber",
-					"sid": 411559697794278,
-					"parameters": {
-						"text": "TestNumber"
-					}
-				}
-			],
-			"sid": 322076188721911
+			"sid": 635283232931644,
+			"disabled": true
 		}
 	],
 	"sid": 161931613315162
