@@ -72,7 +72,7 @@
 							1,
 							1,
 							1,
-							1
+							0.65
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -299,6 +299,95 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Second_Hallway_Spawn_BathRoom",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 393,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1449,
+						"y": 344,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Second_Hallway_Spawn_Kitchen",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 394,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1454,
+						"y": 568,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hallway_WhatsHappening_HitBox",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 258,
+					"instanceVariables": {
+						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 257,
+						"y": 446,
+						"width": 38.899937421752725,
+						"height": 295.8999374217527,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.25
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 272806540024065,
@@ -345,7 +434,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1452,
-						"y": 191,
+						"y": 195,
 						"width": 104,
 						"height": 190,
 						"originX": 0.5,
@@ -375,8 +464,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1490.6033057851241,
-						"y": 716,
+						"x": 1465.6033057851241,
+						"y": 710,
 						"width": 172.30864057024803,
 						"height": 200.62402600000001,
 						"originX": 0.5,
@@ -615,95 +704,6 @@
 							1,
 							1,
 							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Hallway_WhatsHappening_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 258,
-					"instanceVariables": {
-						"Text": "Wait a second! I wonder if there are diffrent keys in these rooms!"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 257,
-						"y": 446,
-						"width": 38.899937421752725,
-						"height": 295.8999374217527,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Second_Hallway_Spawn_BathRoom",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 393,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1449,
-						"y": 344,
-						"width": 74.41773982055622,
-						"height": 74.41773982055622,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Second_Hallway_Spawn_Kitchen",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 394,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1454,
-						"y": 568,
-						"width": 74.41773982055622,
-						"height": 74.41773982055622,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
 						],
 						"angle": 0,
 						"zElevation": 0

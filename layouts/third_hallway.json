@@ -299,6 +299,95 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Hallway_WhatsHappening_HitBox2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 199,
+					"instanceVariables": {
+						"Text": "A Security Room! That has to have a key Inside!"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 252,
+						"y": 446,
+						"width": 38.899937421752725,
+						"height": 295.8999374217527,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Third_Hallway_Spawn_CommonRoom",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 367,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1098,
+						"y": 574,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Third_Hallway_Spawn_Security",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 375,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1430,
+						"y": 347,
+						"width": 74.41773982055622,
+						"height": 74.41773982055622,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.2
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 974768572449847,
@@ -519,37 +608,7 @@
 		{
 			"name": "UI",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "Third_Hallway_Spawn_Security",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 375,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1430,
-						"y": 347,
-						"width": 74.41773982055622,
-						"height": 74.41773982055622,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 399491022820575,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -615,66 +674,6 @@
 							1,
 							1,
 							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Hallway_WhatsHappening_HitBox2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 199,
-					"instanceVariables": {
-						"Text": "A Security Room! That has to have a key Inside!"
-					},
-					"behaviors": {},
-					"world": {
-						"x": 252,
-						"y": 446,
-						"width": 38.899937421752725,
-						"height": 295.8999374217527,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Third_Hallway_Spawn_CommonRoom",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 367,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1098,
-						"y": 574,
-						"width": 74.41773982055622,
-						"height": 74.41773982055622,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.2
 						],
 						"angle": 0,
 						"zElevation": 0

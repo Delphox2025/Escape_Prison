@@ -93,6 +93,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "ThirdHallWayPoint",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 933170364220768
+		},
+		{
+			"eventType": "variable",
 			"name": "PlayerHP",
 			"type": "number",
 			"initialValue": "3",
@@ -3273,6 +3283,15 @@
 							"parameters": {
 								"layout": "Bathroom"
 							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 638144313953313,
+							"parameters": {
+								"variable": "PreviousRoom",
+								"value": "\"Second_Hallway\""
+							}
 						}
 					],
 					"sid": 619883263920022
@@ -3530,9 +3549,9 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 776005090116991,
+							"sid": 470847336443967,
 							"parameters": {
-								"variable": "HallWayPoint",
+								"variable": "ThirdHallWayPoint",
 								"value": "1"
 							}
 						},
@@ -3807,6 +3826,39 @@
 						}
 					],
 					"sid": 749512626119907
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 102793582928492,
+							"parameters": {
+								"variable": "ThirdHallWayPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox2",
+							"sid": 706208247012823
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 423396819513265,
+							"disabled": true,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 369589867586105
 				},
 				{
 					"eventType": "block",
