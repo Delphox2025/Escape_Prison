@@ -11,32 +11,32 @@
 			{
 				"frames": [
 					{
-						"width": 57,
-						"height": 82,
+						"width": 112,
+						"height": 112,
 						"originX": 0.5087719298245614,
 						"originY": 0.5,
-						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Common_room_door.png",
+						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Common_room_door (1).png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4827695,
+						"imageSpriteId": 5320487,
 						"collisionPoly": {
 							"points": [
-								0.0043859649122807015,
 								0,
-								0.5087719298245614,
-								0.012195121951219513,
+								0.24107142857142858,
+								0.4819862155388471,
+								0.24107142857142858,
 								1,
+								0.24107142857142858,
+								1,
+								0.49776785714285715,
+								1,
+								0.5714285714285714,
+								0.4777311932174183,
+								0.5714285714285714,
 								0,
-								0.9649122807017544,
-								0.5,
-								1,
-								1,
-								0.5087719298245614,
-								0.975609756097561,
+								0.5714285714285714,
 								0,
-								1,
-								0.017543859649122806,
-								0.5
+								0.49776785714285715
 							]
 						},
 						"useCollisionPoly": true,
