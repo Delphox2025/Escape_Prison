@@ -54,9 +54,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 763467175577958,
+					"sid": 926234651603321,
 					"parameters": {
-						"layout": "RoomOne"
+						"layout": "Instructions"
 					}
 				},
 				{
@@ -70,6 +70,27 @@
 				}
 			],
 			"sid": 865909851991746
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "GameStart",
+					"sid": 117927797563408
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 745776318036364,
+					"parameters": {
+						"layout": "RoomOne"
+					}
+				}
+			],
+			"sid": 772288664652932
 		}
 	],
 	"sid": 242281940055724

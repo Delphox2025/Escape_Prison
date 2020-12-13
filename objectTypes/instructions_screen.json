@@ -1,0 +1,57 @@
+{
+	"name": "Instructions_Screen",
+	"plugin-id": "Sprite",
+	"sid": 354301658296084,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1710,
+						"height": 960,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\D\\Desktop\\GroupGameWarrioWare\\Escape_Room\\Escape_Prison\\Sprites_\\TitleScreens\\Instructions.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 885550,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9994152046783625,
+								0,
+								0.9994152046783625,
+								0.5,
+								0.9994152046783625,
+								0.9989583333333333,
+								0.5,
+								0.9989583333333333,
+								0,
+								0.9989583333333333,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 227510400297824,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

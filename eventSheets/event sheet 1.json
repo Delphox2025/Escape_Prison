@@ -23,16 +23,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "EndGoal",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 682284644226656
-		},
-		{
-			"eventType": "variable",
 			"name": "CourtYardPoint",
 			"type": "number",
 			"initialValue": "0",
@@ -105,7 +95,7 @@
 			"eventType": "variable",
 			"name": "PlayerHP",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -113,9 +103,19 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "EndGoal",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 166665824409292
+		},
+		{
+			"eventType": "variable",
 			"name": "KeysFound",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "5",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -196,11 +196,20 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 982567644265705,
+					"sid": 541604336567942,
 					"parameters": {
 						"variable": "KeysFound",
+						"value": "1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 187758909417986,
+					"parameters": {
+						"variable": "EndGoal",
 						"value": "1"
 					}
 				}
@@ -221,9 +230,9 @@
 			],
 			"actions": [
 				{
-					"id": "subtract-from-eventvar",
+					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 690663272741257,
+					"sid": 598297489240594,
 					"parameters": {
 						"variable": "PlayerHP",
 						"value": "1"
@@ -238,11 +247,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 275554884561061,
+					"sid": 361749385444813,
 					"parameters": {
 						"variable": "PlayerHP",
-						"comparison": 3,
-						"value": "0"
+						"comparison": 5,
+						"value": "3"
 					}
 				}
 			],
@@ -271,9 +280,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Health",
-					"sid": 775146197179385,
+					"sid": 523515510962818,
 					"parameters": {
-						"text": "\"Caught \"&PlayerHP"
+						"text": "\"Caught: \"&PlayerHP"
 					}
 				}
 			],
@@ -292,13 +301,38 @@
 				{
 					"id": "set-text",
 					"objectClass": "KeysFound",
-					"sid": 267896600876002,
+					"sid": 965458086222741,
 					"parameters": {
-						"text": "\"KeysFound \"&KeysFound"
+						"text": "\"Keys: \"&KeysFound"
 					}
 				}
 			],
 			"sid": 702162920103335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 764908445229414,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 221161657208869,
+					"parameters": {
+						"layer": "\"DialougeBox\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 587706496754236
 		},
 		{
 			"eventType": "group",
@@ -1729,6 +1763,31 @@
 							"eventType": "block",
 							"conditions": [
 								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 860748085394513,
+									"parameters": {
+										"key": 69
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 652977960034958,
+									"parameters": {
+										"layer": "3",
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 530401016927561
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Enemy_TestRoom_3",
 									"sid": 975127256606747,
@@ -2892,9 +2951,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 710792039192727,
+							"sid": 533017310835098,
 							"parameters": {
-								"seconds": "3"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -2918,6 +2977,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 541015960570457,
+							"disabled": true,
 							"parameters": {
 								"layer": "3",
 								"visibility": "invisible"
@@ -3063,7 +3123,8 @@
 							}
 						}
 					],
-					"sid": 764731060910798
+					"sid": 764731060910798,
+					"disabled": true
 				}
 			],
 			"sid": 768789187191196
@@ -3647,9 +3708,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 286022278726005,
+							"sid": 296351272325271,
 							"parameters": {
-								"seconds": "4"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -3678,6 +3739,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 900767011172222,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -3746,9 +3808,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 276591722261015,
+							"sid": 874129344997088,
 							"parameters": {
-								"seconds": "4"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -3777,6 +3839,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 687833439267482,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -3846,9 +3909,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 653344332518533,
+							"sid": 842339831896519,
 							"parameters": {
-								"seconds": "4"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -3877,6 +3940,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 909577827157913,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -3884,6 +3948,31 @@
 						}
 					],
 					"sid": 562530281157373
+				},
+				{
+					"eventType": "comment",
+					"text": "This just cancels that text box re apearing "
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 399766262495535
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "TPtoMainCell",
+							"sid": 658891732612871,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 944609831690890
 				},
 				{
 					"eventType": "comment",
@@ -3895,11 +3984,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 270716703727079,
+							"sid": 720228969003512,
 							"parameters": {
 								"variable": "EndGoal",
-								"comparison": 0,
-								"value": "5"
+								"comparison": 3,
+								"value": "0"
 							}
 						}
 					],
@@ -4197,6 +4286,90 @@
 						}
 					],
 					"sid": 814648029589153
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 481846528013755,
+							"parameters": {
+								"variable": "CourtYardPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 318953463769573
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 680876950728499
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 756155827995683,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 595181299249602
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 580248695472420,
+							"parameters": {
+								"instance-variable": "First_HAllwayPoint",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Cell_Text_Box",
+							"sid": 404614747656997
+						}
+					],
+					"sid": 873464413414224,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-visible",
+							"objectClass": "Cell_Text_Box",
+							"sid": 634705988022835
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 979927455858472,
+							"parameters": {
+								"instance-variable": "First_HAllwayPoint",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 472088034012259,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -4716,9 +4889,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 594490650878074,
+									"sid": 953758149630138,
 									"parameters": {
-										"seconds": "4"
+										"seconds": "1.5"
 									}
 								},
 								{
@@ -4747,6 +4920,7 @@
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 191022959351582,
+									"disabled": true,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
 										"visibility": "invisible"
@@ -4806,9 +4980,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 378309295535832,
+									"sid": 699511407561959,
 									"parameters": {
-										"seconds": "5"
+										"seconds": "1.5"
 									}
 								},
 								{
@@ -4837,6 +5011,7 @@
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 915104314646071,
+									"disabled": true,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
 										"visibility": "invisible"
@@ -4896,9 +5071,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 400826182248028,
+									"sid": 443844462697174,
 									"parameters": {
-										"seconds": "5"
+										"seconds": "1.5"
 									}
 								},
 								{
@@ -4927,6 +5102,7 @@
 									"id": "set-layer-visible",
 									"objectClass": "System",
 									"sid": 226569424125208,
+									"disabled": true,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
 										"visibility": "invisible"
@@ -5416,7 +5592,7 @@
 				},
 				{
 					"eventType": "group",
-					"disabled": true,
+					"disabled": false,
 					"title": "Beginning_Text",
 					"description": "",
 					"isActiveOnStart": true,
@@ -5427,7 +5603,7 @@
 								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
-									"sid": 472149264335581,
+									"sid": 240462577926458,
 									"parameters": {
 										"object": "Bathroom_HitBox"
 									}
@@ -5435,9 +5611,18 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 369140048998336,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
-									"sid": 771856890875850,
+									"sid": 998479825415777,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
 										"visibility": "visible"
@@ -5446,7 +5631,7 @@
 								{
 									"id": "set-font-face",
 									"objectClass": "UIText",
-									"sid": 898165917530607,
+									"sid": 101098569996589,
 									"parameters": {
 										"font-face": "\"Arial\"",
 										"style": "bold"
@@ -5455,15 +5640,15 @@
 								{
 									"id": "set-text",
 									"objectClass": "UIText",
-									"sid": 290796876463339,
+									"sid": 588294777251753,
 									"parameters": {
-										"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
+										"text": "BathRoom_Sink_Text_1.Text"
 									}
 								},
 								{
 									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 668920741817480,
+									"sid": 155132411856395,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"max-speed": "0"
@@ -5471,8 +5656,9 @@
 								},
 								{
 									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 170162009293764,
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 187745333002233,
+									"disabled": true,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "inactive"
@@ -5481,20 +5667,20 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 990505968441050,
+									"sid": 193216493167483,
 									"parameters": {
-										"seconds": "4"
+										"seconds": "1.5"
 									}
 								},
 								{
 									"id": "destroy",
 									"objectClass": "Bathroom_HitBox",
-									"sid": 108350566006615
+									"sid": 883819668686288
 								},
 								{
 									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 532949953084716,
+									"sid": 229357536665873,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"max-speed": "250"
@@ -5502,8 +5688,9 @@
 								},
 								{
 									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 496489653361646,
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 479244096634709,
+									"disabled": true,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "active"
@@ -5512,131 +5699,32 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 415489610951232,
+									"sid": 588129578074699,
 									"parameters": {
 										"seconds": "0.5"
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 829720756219382,
+									"parameters": {
+										"animation": "\"Walking\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
-									"sid": 349422693722041,
+									"sid": 508427269188556,
+									"disabled": true,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
 										"visibility": "invisible"
 									}
 								}
 							],
-							"sid": 689414552762573
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Player",
-									"sid": 391483857455088,
-									"parameters": {
-										"object": "Bathroom_HitBox"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 690185741696567,
-									"parameters": {
-										"layer": "\"DialougeBox\"",
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-font-face",
-									"objectClass": "UIText",
-									"sid": 245206406245336,
-									"parameters": {
-										"font-face": "\"Arial\"",
-										"style": "bold"
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "UIText",
-									"sid": 448433608033349,
-									"parameters": {
-										"text": "left(BathRoom_HitBoxes.Text, len(UIText.Text) + 1)"
-									}
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 662439731354827,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"max-speed": "0"
-									}
-								},
-								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 210148812271123,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "inactive"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 911546068163319,
-									"parameters": {
-										"seconds": "4"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Bathroom_HitBox",
-									"sid": 987520399581686
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 631004433663521,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"max-speed": "250"
-									}
-								},
-								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 989706319541169,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "active"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 247702438675999,
-									"parameters": {
-										"seconds": "0.5"
-									}
-								},
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 315496016645783,
-									"parameters": {
-										"layer": "\"DialougeBox\"",
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 213809323649631,
-							"disabled": true
+							"sid": 273424032089507
 						}
 					],
 					"sid": 948628944411336
@@ -5880,9 +5968,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 168165847733522,
+											"sid": 198920714979655,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -5920,6 +6008,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 460474953611939,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -5988,9 +6077,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 937653849682134,
+											"sid": 675223795210219,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6028,6 +6117,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 729125135602906,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -6096,9 +6186,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 635447756689133,
+											"sid": 385299483828072,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6136,6 +6226,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 641023058379569,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -6256,9 +6347,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 123200895521453,
+											"sid": 170455937705178,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6296,6 +6387,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 895668784938790,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -6574,9 +6666,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 726986257092727,
+											"sid": 381113780663859,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6614,6 +6706,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 287562348265812,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -6682,9 +6775,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 153275040906287,
+											"sid": 374272830688895,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6722,6 +6815,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 778796606611341,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -6790,9 +6884,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 225043291737303,
+											"sid": 590274352989123,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6821,15 +6915,16 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 552938771978308,
+											"sid": 824391194706010,
 											"parameters": {
-												"seconds": "0.5"
+												"seconds": "10"
 											}
 										},
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 149318949670032,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -6953,9 +7048,9 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 198284877126600,
+											"sid": 530817072202635,
 											"parameters": {
-												"seconds": "3.5"
+												"seconds": "1.5"
 											}
 										},
 										{
@@ -6993,6 +7088,7 @@
 											"id": "set-layer-visible",
 											"objectClass": "System",
 											"sid": 130358186198089,
+											"disabled": true,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
 												"visibility": "invisible"
@@ -8027,134 +8123,6 @@
 								}
 							],
 							"sid": 756883030698284
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Player",
-									"sid": 389490912531784,
-									"parameters": {
-										"object": "Bathroom_HitBox"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 145331971152679,
-									"parameters": {
-										"animation": "\"Idle\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 132638520768043,
-									"parameters": {
-										"layer": "\"DialougeBox\"",
-										"visibility": "visible"
-									}
-								},
-								{
-									"id": "set-font-face",
-									"objectClass": "UIText",
-									"sid": 567105212964098,
-									"parameters": {
-										"font-face": "\"Arial\"",
-										"style": "bold"
-									}
-								},
-								{
-									"id": "set-text",
-									"objectClass": "UIText",
-									"sid": 184646328664263,
-									"parameters": {
-										"text": "BathRoom_Sink_Text_1.Text"
-									}
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 970387041710935,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"max-speed": "0"
-									}
-								},
-								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard2",
-									"sid": 147501513911003,
-									"disabled": true,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "inactive"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 315744186961705,
-									"parameters": {
-										"seconds": "4"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Bathroom_HitBox",
-									"sid": 229024736810639
-								},
-								{
-									"id": "set-max-speed",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 177483204244320,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"max-speed": "250"
-									}
-								},
-								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard2",
-									"sid": 812168900325700,
-									"disabled": true,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "active"
-									}
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 805634846744708,
-									"parameters": {
-										"seconds": "0.5"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 186443301458427,
-									"parameters": {
-										"animation": "\"Walking\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-layer-visible",
-									"objectClass": "System",
-									"sid": 919254913086190,
-									"parameters": {
-										"layer": "\"DialougeBox\"",
-										"visibility": "invisible"
-									}
-								}
-							],
-							"sid": 106353802354603
 						}
 					],
 					"sid": 328753884185852
@@ -9253,9 +9221,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 383849541956826,
+							"sid": 128831618901420,
 							"parameters": {
-								"seconds": "7.5"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -9293,6 +9261,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 674862514723199,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -9388,9 +9357,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 175112114100129,
+							"sid": 968097512127257,
 							"parameters": {
-								"seconds": "4.5"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -9419,6 +9388,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 775921253891269,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -10415,9 +10385,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 746089140939427,
+							"sid": 641285211444487,
 							"parameters": {
-								"seconds": "4"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -10464,6 +10434,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 150452066374550,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -10541,9 +10512,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 579761086895867,
+							"sid": 901437119833949,
 							"parameters": {
-								"seconds": "4"
+								"seconds": "1.5"
 							}
 						},
 						{
@@ -10590,6 +10561,7 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 619296965333335,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
@@ -10679,7 +10651,7 @@
 		},
 		{
 			"eventType": "group",
-			"disabled": false,
+			"disabled": true,
 			"title": "SolitaryRoom_Controls",
 			"description": "",
 			"isActiveOnStart": true,
@@ -10806,13 +10778,15 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 771655789032309,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 965968917967363
+					"sid": 965968917967363,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -10936,13 +10910,15 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 726429914706362,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 823585408334395
+					"sid": 823585408334395,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -11066,13 +11042,15 @@
 							"id": "set-layer-visible",
 							"objectClass": "System",
 							"sid": 592519694820759,
+							"disabled": true,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
 								"visibility": "invisible"
 							}
 						}
 					],
-					"sid": 906131161426100
+					"sid": 906131161426100,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -11101,7 +11079,8 @@
 							"sid": 897684436281697
 						}
 					],
-					"sid": 958361761151258
+					"sid": 958361761151258,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -11125,7 +11104,8 @@
 							}
 						}
 					],
-					"sid": 888693117951768
+					"sid": 888693117951768,
+					"disabled": true
 				}
 			],
 			"sid": 837364113732847
@@ -11154,6 +11134,28 @@
 				}
 			],
 			"sid": 635283232931644,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 512453520852364
+				}
+			],
+			"actions": [
+				{
+					"id": "set-collisions-enabled",
+					"objectClass": "EndGoalDoor",
+					"sid": 195552961890427,
+					"parameters": {
+						"collisions": "disabled"
+					}
+				}
+			],
+			"sid": 780233270105268,
 			"disabled": true
 		}
 	],

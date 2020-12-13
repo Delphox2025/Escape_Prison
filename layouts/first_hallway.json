@@ -313,8 +313,8 @@
 						}
 					},
 					"world": {
-						"x": 541,
-						"y": 377,
+						"x": 531,
+						"y": 384,
 						"width": 69.68421798145098,
 						"height": 132.686612760328,
 						"originX": 0.425531914893617,
@@ -342,8 +342,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1583,
-						"y": 399,
+						"x": 1585,
+						"y": 465,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -427,12 +427,13 @@
 					},
 					"uid": 374,
 					"instanceVariables": {
-						"Text": "That Big Orange Door looks like a exit, but from here I can see i need 5 KEYS for it!  "
+						"Text": "That Big Orange Door looks like a exit, but from here I can see i need 5 KEYS for it!  ",
+						"First_HAllwayPoint": 0
 					},
 					"behaviors": {},
 					"world": {
-						"x": 554,
-						"y": 386.5,
+						"x": 534,
+						"y": 386,
 						"width": 173,
 						"height": 316.99999999999994,
 						"originX": 0.5,
@@ -441,7 +442,7 @@
 							1,
 							1,
 							1,
-							1
+							0.25
 						],
 						"angle": 4.71238898038469,
 						"zElevation": 0
@@ -699,48 +700,6 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "CoolNumber",
-					"properties": {
-						"text": "Text",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 417,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 723,
-						"y": 71,
-						"width": 323.0346993658943,
-						"height": 102.10520490488415,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 334405848890937,
@@ -761,6 +720,64 @@
 			"isTransparent": true,
 			"parallaxX": 0,
 			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Press_E",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "E_ClickOut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 424,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 864,
+						"y": 556,
+						"width": 2226,
+						"height": 1343,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 578309025201484,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

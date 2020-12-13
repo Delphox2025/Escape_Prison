@@ -345,8 +345,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1098,
-						"y": 574,
+						"x": 1096,
+						"y": 491,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -374,8 +374,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1430,
-						"y": 347,
+						"x": 1433,
+						"y": 417,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -436,9 +436,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 1422,
-						"y": 266,
+						"y": 264.5,
 						"width": 176.82758620689657,
-						"height": 259.5121951219512,
+						"height": 256.5121951219512,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -468,9 +468,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 1099,
-						"y": 634.6487603305784,
+						"y": 635.1487603305784,
 						"width": 178.96258554385963,
-						"height": 234.20739134206798,
+						"height": 233.20739134206798,
 						"originX": 0.5087719298245614,
 						"originY": 0.5,
 						"color": [
@@ -578,6 +578,35 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "E_ClickOut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 426,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 798,
+						"y": 441,
+						"width": 2226,
+						"height": 1343,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -772,6 +801,34 @@
 			"isTransparent": true,
 			"parallaxX": 0,
 			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Press_E",
+			"overriden": 0,
+			"instances": [],
+			"sid": 499528420444634,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

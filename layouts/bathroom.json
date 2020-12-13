@@ -1121,8 +1121,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1324,
-						"y": 854,
+						"x": 167,
+						"y": 617,
 						"width": 66.75002500429756,
 						"height": 25.602749316716867,
 						"originX": 0.4657534246575342,
@@ -2071,8 +2071,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1431.9067993689591,
-						"y": 759.6251903323813,
+						"x": 1419,
+						"y": 769,
 						"width": 587.3980050870671,
 						"height": 40.856516419703134,
 						"originX": 0.5,
@@ -2416,6 +2416,64 @@
 				}
 			],
 			"sid": 292184355134534,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "PressE",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "E_ClickOut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 420,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 883,
+						"y": 551,
+						"width": 2226,
+						"height": 1343,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 417873132030230,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [

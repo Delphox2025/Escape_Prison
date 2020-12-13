@@ -313,8 +313,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1454,
-						"y": 369,
+						"x": 1457,
+						"y": 415,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -342,8 +342,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1454,
-						"y": 568,
+						"x": 1459,
+						"y": 487,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -468,9 +468,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 1453.6033057851241,
-						"y": 639,
+						"y": 640.5,
 						"width": 235.34838712033877,
-						"height": 274.02305990243906,
+						"height": 271.02305990243906,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -782,6 +782,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "E_ClickOut",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 425,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 808,
+						"y": 452,
+						"width": 2226,
+						"height": 1343,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 422419534369862,
@@ -802,6 +831,34 @@
 			"isTransparent": true,
 			"parallaxX": 0,
 			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Press_E",
+			"overriden": 0,
+			"instances": [],
+			"sid": 521282010017369,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"useRenderCells": false,

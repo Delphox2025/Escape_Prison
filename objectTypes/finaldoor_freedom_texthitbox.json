@@ -9,6 +9,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 158078799914850
+		},
+		{
+			"name": "First_HAllwayPoint",
+			"type": "number",
+			"desc": "",
+			"sid": 971495766230874
 		}
 	],
 	"behaviorTypes": [],

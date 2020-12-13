@@ -376,7 +376,10 @@
 			"Hallway_Joe_Player3",
 			"TPtoHallwaySecond_v2",
 			"Bathroom_EnemyFlip_Trigger5",
-			"Bathroom_EnemyFlip_Trigger6"
+			"Bathroom_EnemyFlip_Trigger6",
+			"E_ClickOut",
+			"Instructions_Screen",
+			"GameStart"
 		],
 		"subfolders": [
 			{
@@ -487,6 +490,7 @@
 	"layouts": {
 		"items": [
 			"StartPage",
+			"Instructions",
 			"RoomOne",
 			"CourtYard",
 			"Second_HallWay",
