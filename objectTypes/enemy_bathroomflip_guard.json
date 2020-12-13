@@ -88,6 +88,49 @@
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 96,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2635315,
+						"collisionPoly": {
+							"points": [
+								0.02127659574468085,
+								0.3125,
+								0.425531914893617,
+								0.010416666666666666,
+								0.7659574468085106,
+								0.3333333333333333,
+								0.9574468085106383,
+								0.5104166666666666,
+								0.7021276595744681,
+								0.6458333333333334,
+								0.425531914893617,
+								0.9791666666666666,
+								0.02127659574468085,
+								0.6979166666666666,
+								0.02127659574468085,
+								0.5104166666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 426545851894361,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
 			}
 		],
 		"subfolders": []

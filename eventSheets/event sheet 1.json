@@ -4697,6 +4697,17 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 776568448464879,
+									"parameters": {
+										"audio-file": "426765__cmilan__cabinet-open",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "FilingCabinet",
 									"sid": 389553300889906,
@@ -4749,6 +4760,17 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 752904342774896,
+									"parameters": {
+										"audio-file": "426765__cmilan__cabinet-open",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "set-animation",
 									"objectClass": "FilingCabinet2",
@@ -4803,6 +4825,17 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 287689425815820,
+									"parameters": {
+										"audio-file": "426765__cmilan__cabinet-open",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "FilingCabinet3",
 									"sid": 571347203769971,
@@ -4856,6 +4889,17 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 550107321704858,
+									"parameters": {
+										"audio-file": "426765__cmilan__cabinet-open",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "FilingCabinet4",
 									"sid": 527539509606116,
@@ -4908,6 +4952,17 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 183891922433374,
+									"parameters": {
+										"audio-file": "426765__cmilan__cabinet-open",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "set-animation",
 									"objectClass": "FilingCabinet5",
@@ -8882,9 +8937,13 @@
 									}
 								},
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 173760182413791
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 326595977284852,
+									"parameters": {
+										"x": "113",
+										"y": "822"
+									}
 								},
 								{
 									"id": "set-boolean-instvar",
@@ -8957,9 +9016,13 @@
 									}
 								},
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 202668079705326
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 479007917539872,
+									"parameters": {
+										"x": "113",
+										"y": "822"
+									}
 								},
 								{
 									"id": "set-boolean-instvar",
@@ -9208,9 +9271,13 @@
 									}
 								},
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 285642479093405
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 927921840282332,
+									"parameters": {
+										"x": "113",
+										"y": "822"
+									}
 								},
 								{
 									"id": "set-boolean-instvar",
@@ -9283,9 +9350,13 @@
 									}
 								},
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 557545624243957
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 516556867116482,
+									"parameters": {
+										"x": "113",
+										"y": "822"
+									}
 								},
 								{
 									"id": "set-boolean-instvar",
