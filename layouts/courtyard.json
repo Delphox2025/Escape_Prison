@@ -2036,10 +2036,10 @@
 						}
 					},
 					"world": {
-						"x": 153,
-						"y": 202,
+						"x": 152.8040571721149,
+						"y": 195.12361737197745,
 						"width": 70.92258635415409,
-						"height": 147.67605601976666,
+						"height": 134.1984910995816,
 						"originX": 0.425531914893617,
 						"originY": 0.5104166666666666,
 						"color": [
@@ -2114,8 +2114,8 @@
 					"type": "Enemy_TestRoom_4",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 1,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -2152,7 +2152,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 1200,
+								"magnitude": 1170,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -2160,12 +2160,12 @@
 						}
 					},
 					"world": {
-						"x": 1482,
-						"y": 181,
-						"width": 135.18031119013685,
-						"height": 155.9980791134179,
-						"originX": 0.44166539576025615,
-						"originY": 0.5280454686085552,
+						"x": 1499,
+						"y": 170.79166666666669,
+						"width": 80.423729,
+						"height": 140.569402,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
 						"color": [
 							1,
 							1,
@@ -2180,7 +2180,7 @@
 					"type": "Enemy_TestRoom_3",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Idle",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -2218,7 +2218,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 1200,
+								"magnitude": 1170,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -2227,11 +2227,11 @@
 					},
 					"world": {
 						"x": 1479,
-						"y": 1717,
-						"width": 135.180311,
-						"height": 155.998079,
-						"originX": 0.4430379746835443,
-						"originY": 0.5274725274725275,
+						"y": 1729.75,
+						"width": 80.42372932911391,
+						"height": 140.56940202197802,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
 						"color": [
 							1,
 							1,

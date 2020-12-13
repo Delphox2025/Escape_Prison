@@ -1395,51 +1395,175 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Courtyard_Walking_Animation_Guard1",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "is-moving",
-									"objectClass": "Courtyard_Joe_Player",
-									"sid": 547592672521975,
-									"behaviorType": "8Direction"
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-active",
+											"objectClass": "Enemy_TestRoom_4",
+											"sid": 295538475719103,
+											"behaviorType": "Sine"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Enemy_TestRoom_4",
+											"sid": 946303659542967,
+											"parameters": {
+												"animation": "\"Walking\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 891759168016486
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-active",
+											"objectClass": "Enemy_TestRoom_4",
+											"sid": 705679042793942,
+											"behaviorType": "Sine",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Enemy_TestRoom_4",
+											"sid": 652693661547910,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 598622644062872
 								}
 							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Courtyard_Joe_Player",
-									"sid": 836289948868756,
-									"parameters": {
-										"animation": "\"Walking\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 796501023206208
+							"sid": 210618442463537
 						},
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Courtyard_Walking_Animation_Guard2",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "is-moving",
-									"objectClass": "Courtyard_Joe_Player",
-									"sid": 742257175720791,
-									"behaviorType": "8Direction",
-									"isInverted": true
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-active",
+											"objectClass": "Enemy_TestRoom_3",
+											"sid": 788039473187498,
+											"behaviorType": "Sine"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Enemy_TestRoom_3",
+											"sid": 854329259170274,
+											"parameters": {
+												"animation": "\"Walking\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 475032318079708
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-active",
+											"objectClass": "Enemy_TestRoom_3",
+											"sid": 563293360742109,
+											"behaviorType": "Sine",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Enemy_TestRoom_3",
+											"sid": 404589219203460,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 460207118023217
 								}
 							],
-							"actions": [
+							"sid": 257380910290909
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "Courtyard_Walking_Animation_Player",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "set-animation",
-									"objectClass": "Courtyard_Joe_Player",
-									"sid": 745797080469297,
-									"parameters": {
-										"animation": "\"Idle\"",
-										"from": "beginning"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Courtyard_Joe_Player",
+											"sid": 648849734360776,
+											"behaviorType": "8Direction"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Courtyard_Joe_Player",
+											"sid": 549286798834665,
+											"parameters": {
+												"animation": "\"Walking\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 699207902143729
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "Courtyard_Joe_Player",
+											"sid": 881162837649035,
+											"behaviorType": "8Direction",
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Courtyard_Joe_Player",
+											"sid": 399769014663065,
+											"parameters": {
+												"animation": "\"Idle\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 511285870018222
 								}
 							],
-							"sid": 778974384320840
+							"sid": 361228605833363
 						}
 					],
 					"sid": 382976415459571
