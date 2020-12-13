@@ -380,7 +380,13 @@
 			"E_ClickOut",
 			"Instructions_Screen",
 			"GameStart",
-			"BackToTitle"
+			"BackToTitle",
+			"Enemy_Kitchen_Guard2",
+			"Enemy_KitchenGuard_View2",
+			"Enemy_Kitchen_moving",
+			"Enemy_Kitchen_moving_view",
+			"EnemyFlip_Trigger_Kitchen",
+			"EnemyFlip_Trigger_Kitchen2"
 		],
 		"subfolders": [
 			{

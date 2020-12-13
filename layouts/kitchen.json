@@ -659,10 +659,10 @@
 						}
 					},
 					"world": {
-						"x": 905,
-						"y": 650,
-						"width": 128.73111675599327,
-						"height": 148.2852108760423,
+						"x": 897.1367683609543,
+						"y": 643.599695196322,
+						"width": 114.28471448483458,
+						"height": 131.6444183375967,
 						"originX": 0.4430379746835443,
 						"originY": 0.5274725274725275,
 						"color": [
@@ -704,6 +704,256 @@
 							1
 						],
 						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_KitchenGuard_View2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 430,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -625,
+						"y": 56,
+						"width": 123.26977835923876,
+						"height": 210.4983758696219,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Kitchen_Guard2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 417,
+					"instanceVariables": {
+						"LR": false
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 13,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 600,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 507,
+						"y": 117,
+						"width": 114.284714,
+						"height": 131.644418,
+						"originX": 0.4430379746835443,
+						"originY": 0.5274725274725275,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Kitchen_moving_view",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 433,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 237,
+						"y": 1253,
+						"width": 179.392282,
+						"height": 306.334484,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemyFlip_Trigger_Kitchen",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 435,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1612,
+						"y": 788,
+						"width": 31.452667000000005,
+						"height": 258.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EnemyFlip_Trigger_Kitchen2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 436,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 358,
+						"y": 796,
+						"width": 31.452667000000005,
+						"height": 258.610819,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Kitchen_moving",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 432,
+					"instanceVariables": {},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 10,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 580,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 977,
+						"y": 836,
+						"width": 80.423729,
+						"height": 140.569402,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
