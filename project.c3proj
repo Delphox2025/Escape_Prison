@@ -208,7 +208,7 @@
 			"Mouse",
 			"Music_Bat",
 			"Music_BAr",
-			"Button",
+			"Instructions",
 			"FlashBox",
 			"ShadowLight",
 			"FlashAnimation",
@@ -379,7 +379,8 @@
 			"Bathroom_EnemyFlip_Trigger6",
 			"E_ClickOut",
 			"Instructions_Screen",
-			"GameStart"
+			"GameStart",
+			"BackToTitle"
 		],
 		"subfolders": [
 			{

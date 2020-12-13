@@ -3984,10 +3984,10 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 720228969003512,
+							"sid": 690871291102670,
 							"parameters": {
 								"variable": "EndGoal",
-								"comparison": 3,
+								"comparison": 0,
 								"value": "0"
 							}
 						}

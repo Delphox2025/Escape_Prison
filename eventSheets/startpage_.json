@@ -46,7 +46,7 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "Button",
+					"objectClass": "Instructions",
 					"sid": 632367817654661
 				}
 			],
@@ -91,6 +91,27 @@
 				}
 			],
 			"sid": 772288664652932
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BackToTitle",
+					"sid": 229528248115352
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 897872193288552,
+					"parameters": {
+						"layout": "StartPage"
+					}
+				}
+			],
+			"sid": 886974253208189
 		}
 	],
 	"sid": 242281940055724

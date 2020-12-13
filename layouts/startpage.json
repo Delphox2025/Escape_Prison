@@ -33,6 +33,36 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "GameStart",
+					"properties": {
+						"type": "button",
+						"text": "ESCAPE!",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 429,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 543,
+						"y": 445,
+						"width": 178.66169147301838,
+						"height": 59.553897157672786,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
 				}
 			],
 			"sid": 128920448072370,
@@ -64,10 +94,10 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Button",
+					"type": "Instructions",
 					"properties": {
 						"type": "button",
-						"text": "OK",
+						"text": "Instructions",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -79,10 +109,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 778,
-						"y": 465.33333333333337,
-						"width": 109,
-						"height": 64,
+						"x": 958,
+						"y": 446,
+						"width": 179,
+						"height": 58,
 						"originX": 0,
 						"originY": 0,
 						"color": [
