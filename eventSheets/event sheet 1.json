@@ -6179,6 +6179,59 @@
 									}
 								},
 								{
+									"id": "set-visible",
+									"objectClass": "Key_BathRoom",
+									"sid": 507379505061055,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 735913648997747,
+									"parameters": {
+										"seconds": "1.5"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 450936745131223,
+									"parameters": {
+										"audio-file": "433557__xx57haxx__door-opening",
+										"loop": "not-looping",
+										"volume": "15",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "TPtoHallwaySecond_v2",
+									"sid": 117663651794239,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TPtoHallwaySecond_v2",
+									"sid": 638231182610944,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Solid_Block_Bathroom",
+									"sid": 936163091892881
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Key_BathRoom",
+									"sid": 257491683586871
+								},
+								{
 									"id": "stop",
 									"objectClass": "Audio",
 									"sid": 801430507498068,
@@ -6196,11 +6249,6 @@
 										"volume": "-5",
 										"tag-optional": "\"\""
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Key_BathRoom",
-									"sid": 128996911846225
 								},
 								{
 									"id": "find-path",
@@ -6242,14 +6290,6 @@
 								}
 							],
 							"actions": [
-								{
-									"id": "set-visible",
-									"objectClass": "TPtoHallwaySecond_v2",
-									"sid": 418560526005098,
-									"parameters": {
-										"visibility": "visible"
-									}
-								},
 								{
 									"id": "destroy",
 									"objectClass": "Key_BathRoom",
