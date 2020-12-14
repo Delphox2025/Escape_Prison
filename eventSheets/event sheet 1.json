@@ -4699,12 +4699,12 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 776568448464879,
+									"sid": 619608057001151,
 									"parameters": {
 										"audio-file": "426765__cmilan__cabinet-open",
 										"loop": "not-looping",
 										"volume": "0",
-										"tag-optional": "\"\""
+										"tag-optional": "\"Cabinet\""
 									}
 								},
 								{
@@ -4715,6 +4715,11 @@
 										"animation": "\"Open\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_Cabinets_HitBox",
+									"sid": 489733424524366
 								}
 							],
 							"sid": 770968540147581,
@@ -4779,6 +4784,11 @@
 										"animation": "\"Open\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_Cabinets_HitBox2",
+									"sid": 588523602810400
 								}
 							],
 							"sid": 329234021257708,
@@ -4843,6 +4853,11 @@
 										"animation": "\"Open\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_Cabinets_HitBox3",
+									"sid": 691191913904732
 								}
 							],
 							"sid": 929192711187393,
@@ -4907,6 +4922,11 @@
 										"animation": "\"Open\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_Cabinets_HitBox4",
+									"sid": 274274948475937
 								}
 							],
 							"sid": 831564251907766,
@@ -4971,6 +4991,11 @@
 										"animation": "\"Open\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_Cabinets_HitBox5",
+									"sid": 762810421411832
 								}
 							],
 							"sid": 716082899566060,
@@ -5002,6 +5027,170 @@
 									"sid": 675405183797103
 								}
 							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Stop Cabinet sound from repeatting "
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "FilingCabinet",
+									"sid": 216951619221946,
+									"parameters": {
+										"animation": "\"Open\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 815737028016742,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 646028416599811,
+									"parameters": {
+										"tag": "\"Cabinet\""
+									}
+								}
+							],
+							"sid": 849958397798720
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "FilingCabinet2",
+									"sid": 286872165926676,
+									"parameters": {
+										"animation": "\"Open\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 851608547767580,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 599167387448906,
+									"parameters": {
+										"tag": "\"Cabinet\""
+									}
+								}
+							],
+							"sid": 516768771940369
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "FilingCabinet3",
+									"sid": 654321234901850,
+									"parameters": {
+										"animation": "\"Open\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 214706669370611,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 658946964542435,
+									"parameters": {
+										"tag": "\"Cabinet\""
+									}
+								}
+							],
+							"sid": 422092113353013
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "FilingCabinet4",
+									"sid": 361277809297900,
+									"parameters": {
+										"animation": "\"Open\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 594903517119255,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 985153716522568,
+									"parameters": {
+										"tag": "\"Cabinet\""
+									}
+								}
+							],
+							"sid": 630729658147545
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-animation-finished",
+									"objectClass": "FilingCabinet5",
+									"sid": 362913266566788,
+									"parameters": {
+										"animation": "\"Open\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 241118686893136,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "stop",
+									"objectClass": "Audio",
+									"sid": 693251500559080,
+									"parameters": {
+										"tag": "\"Cabinet\""
+									}
+								}
+							],
+							"sid": 761912224925856
 						}
 					],
 					"sid": 795172171921822
@@ -5355,12 +5544,44 @@
 									}
 								},
 								{
-									"id": "set-visible",
-									"objectClass": "TPtoHallwaySecond",
-									"sid": 940480349955303,
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 359733170544089,
 									"parameters": {
-										"visibility": "visible"
+										"seconds": "1.5"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 540654634268738,
+									"parameters": {
+										"audio-file": "433557__xx57haxx__door-opening",
+										"loop": "not-looping",
+										"volume": "15",
+										"tag-optional": "\"Doors\""
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "TPtoHallwayThird",
+									"sid": 841888345829961,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TPtoHallwayThird",
+									"sid": 488256355156545,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Solid_Block_2",
+									"sid": 645057032063379
 								},
 								{
 									"id": "destroy",
@@ -8946,6 +9167,15 @@
 									}
 								},
 								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 870844478303697,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "350"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemy_Kitchen_Guard1",
 									"sid": 794177832625248,
@@ -9022,6 +9252,15 @@
 									"parameters": {
 										"x": "113",
 										"y": "822"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 503642559573377,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "350"
 									}
 								},
 								{
@@ -9280,6 +9519,15 @@
 									}
 								},
 								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 750382102585416,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "350"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Enemy_Kitchen_Guard2",
 									"sid": 112914444795092,
@@ -9356,6 +9604,15 @@
 									"parameters": {
 										"x": "113",
 										"y": "822"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 691388850572578,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "350"
 									}
 								},
 								{
@@ -9669,6 +9926,12 @@
 									}
 								},
 								{
+									"id": "reset-persisted-objects",
+									"objectClass": "System",
+									"sid": 906016057820249,
+									"disabled": true
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
 									"sid": 667731700531476,
@@ -9766,10 +10029,10 @@
 								{
 									"id": "set-max-speed",
 									"objectClass": "Kitchen_Joe_Player",
-									"sid": 822179060879281,
+									"sid": 812807579005549,
 									"behaviorType": "8Direction",
 									"parameters": {
-										"max-speed": "0"
+										"max-speed": "350"
 									}
 								},
 								{

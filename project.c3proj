@@ -386,7 +386,8 @@
 			"Enemy_Kitchen_moving",
 			"Enemy_Kitchen_moving_view",
 			"EnemyFlip_Trigger_Kitchen",
-			"EnemyFlip_Trigger_Kitchen2"
+			"EnemyFlip_Trigger_Kitchen2",
+			"Solid_Block_2"
 		],
 		"subfolders": [
 			{
@@ -642,6 +643,11 @@
 					"name": "426765__cmilan__cabinet-open.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 998598091962122
+				},
+				{
+					"name": "433557__xx57haxx__door-opening.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 516639775083678
 				}
 			],
 			"subfolders": []
