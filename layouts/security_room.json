@@ -589,7 +589,7 @@
 					}
 				},
 				{
-					"type": "Solid_Block_2",
+					"type": "Solid_Block_Security",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",

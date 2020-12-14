@@ -387,7 +387,10 @@
 			"Enemy_Kitchen_moving_view",
 			"EnemyFlip_Trigger_Kitchen",
 			"EnemyFlip_Trigger_Kitchen2",
-			"Solid_Block_2"
+			"Solid_Block_Security",
+			"Solid_Block_Kitchen",
+			"Solid_Block_Common",
+			"Solid_Block_Bathroom"
 		],
 		"subfolders": [
 			{

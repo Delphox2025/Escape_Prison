@@ -1307,6 +1307,38 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "TPtoHallwayThird",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 311,
+					"instanceVariables": {
+						"Text": "",
+						"LayoutName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1790,
+						"y": 821,
+						"width": 358.0352996056338,
+						"height": 146.69924416,
+						"originX": 0.49308129478626145,
+						"originY": -0.12222222222222198,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 830853244210966,
@@ -1651,38 +1683,6 @@
 					}
 				},
 				{
-					"type": "TPtoHallwayThird",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 311,
-					"instanceVariables": {
-						"Text": "",
-						"LayoutName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1704,
-						"y": 824,
-						"width": 358.0352996056338,
-						"height": 146.69924416,
-						"originX": 0.49308129478626145,
-						"originY": -0.12222222222222198,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "KeysFound",
 					"properties": {
 						"text": "Keys Found:",
@@ -1737,8 +1737,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 800,
-						"y": 480,
+						"x": 731,
+						"y": 322,
 						"width": 2226,
 						"height": 1343,
 						"originX": 0.5,
@@ -1750,6 +1750,42 @@
 							0
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solid_Block_Common",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 438,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 2087,
+						"y": 1145,
+						"width": 231,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}

@@ -5580,7 +5580,7 @@
 								},
 								{
 									"id": "destroy",
-									"objectClass": "Solid_Block_2",
+									"objectClass": "Solid_Block_Security",
 									"sid": 645057032063379
 								},
 								{
@@ -9167,6 +9167,15 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 967185556073759,
+									"parameters": {
+										"animation": "\"Not Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-max-speed",
 									"objectClass": "Kitchen_Joe_Player",
 									"sid": 870844478303697,
@@ -9252,6 +9261,15 @@
 									"parameters": {
 										"x": "113",
 										"y": "822"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 883335233703147,
+									"parameters": {
+										"animation": "\"Not Alerted\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -9510,6 +9528,15 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View2",
+									"sid": 650331240725467,
+									"parameters": {
+										"animation": "\"Not Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "Kitchen_Joe_Player",
 									"sid": 927921840282332,
@@ -9595,6 +9622,15 @@
 									"sid": 748801503531968,
 									"parameters": {
 										"seconds": "1.0"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View2",
+									"sid": 386481958791673,
+									"parameters": {
+										"animation": "\"Not Alerted\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -10804,6 +10840,33 @@
 							}
 						},
 						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 142280016699628,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 588885782297677,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 884539638838721,
+							"parameters": {
+								"audio-file": "433557__xx57haxx__door-opening",
+								"loop": "not-looping",
+								"volume": "15",
+								"tag-optional": "\"\""
+							}
+						},
+						{
 							"id": "set-collisions-enabled",
 							"objectClass": "TPtoHallwaySecond",
 							"sid": 416709565966334,
@@ -10814,10 +10877,20 @@
 						{
 							"id": "set-visible",
 							"objectClass": "TPtoHallwaySecond",
-							"sid": 172648224632545,
+							"sid": 554847588829763,
 							"parameters": {
-								"visibility": "visible"
+								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Solid_Block_Kitchen",
+							"sid": 346790878208660
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Key_Kitchen",
+							"sid": 667209489369669
 						}
 					],
 					"sid": 386769779700451

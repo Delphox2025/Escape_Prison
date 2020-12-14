@@ -1926,6 +1926,74 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Solid_Block_Bathroom",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 440,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1694.8560336774376,
+						"y": 830.8167446211781,
+						"width": 231,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoHallwaySecond_v2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 418,
+					"instanceVariables": {
+						"Text": "",
+						"LayoutName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1713,
+						"y": 827.4984594158577,
+						"width": 219.54046267448695,
+						"height": 144.01326073441132,
+						"originX": 0.49295774647887325,
+						"originY": 0.4,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 496711115158332,
@@ -2208,38 +2276,6 @@
 							0
 						],
 						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TPtoHallwaySecond_v2",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 418,
-					"instanceVariables": {
-						"Text": "",
-						"LayoutName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1700,
-						"y": 828,
-						"width": 222.81313052578454,
-						"height": 32.14581712821681,
-						"originX": 0.49295774647887325,
-						"originY": 0.4,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				},

@@ -676,38 +676,6 @@
 					}
 				},
 				{
-					"type": "TPtoHallwaySecond",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 309,
-					"instanceVariables": {
-						"Text": "",
-						"LayoutName": ""
-					},
-					"behaviors": {},
-					"world": {
-						"x": 17.980334996659845,
-						"y": 825.0257157269414,
-						"width": 226.96880567427087,
-						"height": 32.74536661301609,
-						"originX": 0.49295774647887325,
-						"originY": 0.4,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Enemy_KitchenGuard_View2",
 					"properties": {
 						"initially-visible": true,
@@ -954,6 +922,110 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solid_Block_Kitchen",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 437,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 2.568814190947407,
+						"y": 824.6239028843687,
+						"width": 231,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TPtoHallwaySecond",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": false,
+						"live-preview": false
+					},
+					"uid": 309,
+					"instanceVariables": {
+						"Text": "",
+						"LayoutName": ""
+					},
+					"behaviors": {},
+					"world": {
+						"x": 23.980334996659842,
+						"y": 824.5516691916347,
+						"width": 222.12387752857381,
+						"height": 146.69924242631205,
+						"originX": 0.49295774647887325,
+						"originY": 0.4,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Solid_Block_Common",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 434,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -395,
+						"y": 538,
+						"width": 231,
+						"height": 35,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
