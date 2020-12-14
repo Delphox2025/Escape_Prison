@@ -1,0 +1,57 @@
+{
+	"name": "TPtoThirdHallwayCommonRoom",
+	"plugin-id": "Sprite",
+	"sid": 783197483209297,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 112,
+						"height": 112,
+						"originX": 0.5087719298245614,
+						"originY": 0.5,
+						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Common_room_door (1).png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 58939,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.3267857142857144,
+								0.4802005012531328,
+								0.3124999999999998,
+								1,
+								0.3142857142857143,
+								1,
+								0.49776785714285715,
+								1,
+								0.5714285714285714,
+								0.4777311932174183,
+								0.5714285714285714,
+								0,
+								0.5714285714285714,
+								0,
+								0.49776785714285715
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 262288724836052,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

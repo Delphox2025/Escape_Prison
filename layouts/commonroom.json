@@ -83,42 +83,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 302,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1465,
-						"y": 319,
-						"width": 164.676187,
-						"height": 162.676187,
-						"originX": 0.6589147286821705,
-						"originY": 0.5813953488372093,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.47779116474729544,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CommonRoom_CircleTables",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 303,
 					"instanceVariables": {},
 					"behaviors": {
@@ -130,8 +94,8 @@
 						}
 					},
 					"world": {
-						"x": 1474,
-						"y": 644,
+						"x": 1417,
+						"y": 655,
 						"width": 164.67618739756114,
 						"height": 162.67618739756114,
 						"originX": 0.6589147286821705,
@@ -166,10 +130,10 @@
 						}
 					},
 					"world": {
-						"x": 1365,
-						"y": 149,
-						"width": 148.97964623368895,
-						"height": 146.97964623368895,
+						"x": 1517.860465116279,
+						"y": 143.72093023255815,
+						"width": 166.97964623368895,
+						"height": 161.97964623368895,
 						"originX": 0.6589147286821705,
 						"originY": 0.5813953488372093,
 						"color": [
@@ -552,42 +516,6 @@
 					}
 				},
 				{
-					"type": "Cell_Joe_Player2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 331,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"world": {
-						"x": 1405,
-						"y": 103,
-						"width": 108.654413,
-						"height": 111.05420100000002,
-						"originX": 0.4416549816561341,
-						"originY": 0.5280501364601233,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 2.717675127132323,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "EnemyFlip_Trigger2",
 					"properties": {
 						"initially-visible": false,
@@ -600,8 +528,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 718,
-						"y": 150.5,
+						"x": 725,
+						"y": 145,
 						"width": 31.452667140804927,
 						"height": 183.61081871328497,
 						"originX": 0.5,
@@ -640,37 +568,6 @@
 							1,
 							1,
 							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "CommonRoom_HitBox",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 339,
-					"instanceVariables": {
-						"Text": "You look like you want a KEY Joe..... I heard that the Noblesse by the Ping-Pong Table has a key..... "
-					},
-					"behaviors": {},
-					"world": {
-						"x": 1435,
-						"y": 125,
-						"width": 132.62352732452865,
-						"height": 132.62352732452865,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -948,8 +845,8 @@
 						}
 					},
 					"world": {
-						"x": 1367,
-						"y": 469,
+						"x": 1386,
+						"y": 405,
 						"width": 164.676187,
 						"height": 162.676187,
 						"originX": 0.6589147286821705,
@@ -984,8 +881,8 @@
 						}
 					},
 					"world": {
-						"x": 1336.7894513060594,
-						"y": 556.0238389230392,
+						"x": 1366,
+						"y": 466,
 						"width": 108.65441343451903,
 						"height": 111.05420119108386,
 						"originX": 0.4416549816561341,
@@ -1030,6 +927,42 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "Cell_Joe_Player3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 439,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1547,
+						"y": 98,
+						"width": 108.654413,
+						"height": 111.05420100000002,
+						"originX": 0.4416549816561341,
+						"originY": 0.5280501364601233,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 2.7381942632273786,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "CommonRoom_Joe_Player",
 					"properties": {
 						"initially-visible": true,
@@ -1066,8 +999,8 @@
 						}
 					},
 					"world": {
-						"x": 1587.6145726701886,
-						"y": 828.9292559294463,
+						"x": 1568,
+						"y": 832,
 						"width": 75.43862820279668,
 						"height": 134.93343330965902,
 						"originX": 0.425531914893617,
@@ -1309,12 +1242,12 @@
 					}
 				},
 				{
-					"type": "TPtoHallwayThird",
+					"type": "TPtoThirdHallwayCommonRoom",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
-						"enable-collisions": true,
+						"enable-collisions": false,
 						"live-preview": false
 					},
 					"uid": 311,
@@ -1324,19 +1257,19 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 1790,
-						"y": 821,
-						"width": 358.0352996056338,
-						"height": 146.69924416,
-						"originX": 0.49308129478626145,
-						"originY": -0.12222222222222198,
+						"x": 1696,
+						"y": 822.1236421889812,
+						"width": 224,
+						"height": 224,
+						"originX": 0.5087719298245614,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				}
@@ -1439,90 +1372,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "KeysFound",
-					"properties": {
-						"text": "Keys Found:",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 399,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 695,
-						"y": -144,
-						"width": 408,
-						"height": 96,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "KeysFound",
-					"properties": {
-						"text": "Keys Found:",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 50,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 400,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 627,
-						"y": -91,
-						"width": 408,
-						"height": 96,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 645411642710685,
@@ -1606,6 +1455,68 @@
 							1,
 							1,
 							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Psst_HitBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 302,
+					"instanceVariables": {
+						"Text": "Psst joe... Joe come over here In the top right corner, I got some info.."
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1586,
+						"y": 607.5,
+						"width": 155,
+						"height": 143,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CommonRoom_HitBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 339,
+					"instanceVariables": {
+						"Text": "You look like you want a KEY Joe..... I heard that the Ping_PONG Twins by the Ping-Pong Table have a key..... "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1583,
+						"y": 166,
+						"width": 132.62352732452865,
+						"height": 132.62352732452865,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1737,8 +1648,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 731,
-						"y": 322,
+						"x": -398,
+						"y": -626,
 						"width": 2226,
 						"height": 1343,
 						"originX": 0.5,
@@ -1773,8 +1684,8 @@
 						}
 					},
 					"world": {
-						"x": 2087,
-						"y": 1145,
+						"x": 1696,
+						"y": 832,
 						"width": 231,
 						"height": 35,
 						"originX": 0.5,

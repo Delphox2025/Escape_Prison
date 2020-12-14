@@ -3593,6 +3593,30 @@
 						{
 							"id": "on-collision-with-another-object",
 							"objectClass": "Player",
+							"sid": 203851600664777,
+							"parameters": {
+								"object": "TPtoThirdHallwayCommonRoom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 236593813005962,
+							"parameters": {
+								"layout": "Third_Hallway"
+							}
+						}
+					],
+					"sid": 437591366683452
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
 							"sid": 582577591339917,
 							"parameters": {
 								"object": "TPtoCommonRoom"
@@ -9192,18 +9216,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 196109656738593,
+									"sid": 265829089369903,
 									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Kitchen_Joe_Player",
-									"sid": 326595977284852,
-									"parameters": {
-										"x": "113",
-										"y": "822"
+										"seconds": "2"
 									}
 								},
 								{
@@ -9213,6 +9228,15 @@
 									"parameters": {
 										"animation": "\"Not Alerted\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 657922403649949,
+									"parameters": {
+										"x": "113",
+										"y": "822"
 									}
 								},
 								{
@@ -9289,18 +9313,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 396359199184371,
+									"sid": 585599693662447,
 									"parameters": {
-										"seconds": "1.0"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Kitchen_Joe_Player",
-									"sid": 479007917539872,
-									"parameters": {
-										"x": "113",
-										"y": "822"
+										"seconds": "2"
 									}
 								},
 								{
@@ -9310,6 +9325,15 @@
 									"parameters": {
 										"animation": "\"Not Alerted\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 558947641860222,
+									"parameters": {
+										"x": "113",
+										"y": "822"
 									}
 								},
 								{
@@ -9562,15 +9586,16 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 757303587096441,
+									"sid": 151640999550437,
 									"parameters": {
-										"seconds": "1.0"
+										"seconds": "1"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View2",
 									"sid": 650331240725467,
+									"disabled": true,
 									"parameters": {
 										"animation": "\"Not Alerted\"",
 										"from": "beginning"
@@ -9659,9 +9684,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 748801503531968,
+									"sid": 476629726543740,
 									"parameters": {
-										"seconds": "1.0"
+										"seconds": "1"
 									}
 								},
 								{
@@ -10957,6 +10982,60 @@
 						}
 					],
 					"sid": 444074571136030
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 449898267510156,
+							"parameters": {
+								"object": "Enemy_KitchenGuard_View2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "Enemy_KitchenGuard_View2",
+							"sid": 372504971000267,
+							"parameters": {
+								"instance-variable": "Test",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 787712155461482,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Enemy_KitchenGuard_View2",
+							"sid": 962729578371061,
+							"parameters": {
+								"instance-variable": "Test",
+								"comparison": 5,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_KitchenGuard_View2",
+							"sid": 235879585628924,
+							"parameters": {
+								"animation": "\"Not Alerted\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 407621145686425,
+					"disabled": true
 				}
 			],
 			"sid": 799888893836497
@@ -12090,12 +12169,44 @@
 							}
 						},
 						{
-							"id": "set-visible",
-							"objectClass": "TPtoHallwaySecond",
-							"sid": 703485850001007,
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 431243555823149,
 							"parameters": {
-								"visibility": "visible"
+								"seconds": "1.5"
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 289433836649992,
+							"parameters": {
+								"audio-file": "433557__xx57haxx__door-opening",
+								"loop": "not-looping",
+								"volume": "15",
+								"tag-optional": "\"Doors\""
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "TPtoThirdHallwayCommonRoom",
+							"sid": 129013651800252,
+							"parameters": {
+								"collisions": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TPtoThirdHallwayCommonRoom",
+							"sid": 995764066171637,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Solid_Block_Common",
+							"sid": 466401634303452
 						}
 					],
 					"sid": 747186794241797
@@ -12122,6 +12233,162 @@
 						}
 					],
 					"sid": 193678122956056
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 458980686526404,
+							"parameters": {
+								"object": "Psst_HitBox"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 201868905541397,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 453564581202978,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 965420029091463,
+							"parameters": {
+								"text": "Psst_HitBox.Text"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "CommonRoom_Joe_Player",
+							"sid": 725170328047315,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 150466851927326,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 194963249912394,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "inactive"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 568649486537008,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Psst_HitBox",
+							"sid": 812282101257732
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "CommonRoom_Joe_Player",
+							"sid": 400970859890011,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_",
+							"sid": 977959780050907,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "Enemy_CommonRoom_2",
+							"sid": 719863817621017,
+							"behaviorType": "Sine",
+							"parameters": {
+								"state": "active"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 967522354299324,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						}
+					],
+					"sid": 384954218685923
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Psst_HitBox",
+							"sid": 203586555436267
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cell_Joe_Player3",
+							"sid": 792712065552771,
+							"parameters": {
+								"animation": "\"Hey Hey\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 857737015171495,
+							"parameters": {
+								"seconds": "8"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Cell_Joe_Player3",
+							"sid": 304616019247776,
+							"parameters": {
+								"animation": "\"Animation 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 895432617794364
 				}
 			],
 			"sid": 868106719494066

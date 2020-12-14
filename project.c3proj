@@ -390,7 +390,10 @@
 			"Solid_Block_Security",
 			"Solid_Block_Kitchen",
 			"Solid_Block_Common",
-			"Solid_Block_Bathroom"
+			"Solid_Block_Bathroom",
+			"TPtoThirdHallwayCommonRoom",
+			"Psst_HitBox",
+			"Cell_Joe_Player3"
 		],
 		"subfolders": [
 			{
