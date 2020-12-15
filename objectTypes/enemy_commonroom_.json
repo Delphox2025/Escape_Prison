@@ -70,7 +70,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 10
 			},
 			{
 				"frames": [
@@ -465,7 +465,7 @@
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 7
+				"speed": 8
 			},
 			{
 				"frames": [

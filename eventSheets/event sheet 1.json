@@ -1914,7 +1914,7 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 975127256606747,
+									"sid": 128073593280729,
 									"parameters": {
 										"object": "EnemyFlip_Trigger2"
 									}
@@ -1922,9 +1922,33 @@
 							],
 							"actions": [
 								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger2",
+									"sid": 786172033381792,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 752177636947130,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger2",
+									"sid": 724060615362671,
+									"parameters": {
+										"collisions": "enabled"
+									}
+								},
+								{
 									"id": "set-active",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 527041094062979,
+									"sid": 778817682156895,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "inactive"
@@ -1933,7 +1957,8 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 779164930876130,
+									"sid": 255155515213402,
+									"disabled": true,
 									"parameters": {
 										"seconds": "1.0"
 									}
@@ -1941,7 +1966,7 @@
 								{
 									"id": "set-active",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 494723865670248,
+									"sid": 982467998772775,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "active"
@@ -1950,7 +1975,7 @@
 								{
 									"id": "set-mirrored",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 629990314940123,
+									"sid": 983379010279101,
 									"parameters": {
 										"state": "mirrored"
 									}
@@ -1958,13 +1983,13 @@
 								{
 									"id": "set-flipped",
 									"objectClass": "Enemy_View4",
-									"sid": 232885835374940,
+									"sid": 355763105912989,
 									"parameters": {
 										"state": "flipped"
 									}
 								}
 							],
-							"sid": 556803412646732
+							"sid": 894861389042315
 						},
 						{
 							"eventType": "block",
@@ -1972,7 +1997,7 @@
 								{
 									"id": "on-collision-with-another-object",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 698606720658184,
+									"sid": 812048077379633,
 									"parameters": {
 										"object": "EnemyFlip_Trigger"
 									}
@@ -1982,7 +2007,7 @@
 								{
 									"id": "set-active",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 892024817815664,
+									"sid": 713372066295076,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "inactive"
@@ -1991,7 +2016,8 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 108124547406480,
+									"sid": 384253151714165,
+									"disabled": true,
 									"parameters": {
 										"seconds": "1.0"
 									}
@@ -1999,7 +2025,7 @@
 								{
 									"id": "set-active",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 958371822982393,
+									"sid": 668508637976696,
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "active"
@@ -2008,7 +2034,7 @@
 								{
 									"id": "set-mirrored",
 									"objectClass": "Enemy_TestRoom_3",
-									"sid": 371445382202242,
+									"sid": 771192420362752,
 									"parameters": {
 										"state": "not-mirrored"
 									}
@@ -2016,13 +2042,13 @@
 								{
 									"id": "set-flipped",
 									"objectClass": "Enemy_View4",
-									"sid": 695139722679757,
+									"sid": 777534441559319,
 									"parameters": {
 										"state": "not-flipped"
 									}
 								}
 							],
-							"sid": 807792595790102
+							"sid": 208357577308397
 						}
 					],
 					"sid": 346418694548118
@@ -2469,6 +2495,30 @@
 									"parameters": {
 										"state": "flipped"
 									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger3",
+									"sid": 732851269585506,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 195662056250198,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger3",
+									"sid": 396612510245051,
+									"parameters": {
+										"collisions": "enabled"
+									}
 								}
 							],
 							"sid": 591442947509606
@@ -2526,6 +2576,30 @@
 									"sid": 352457681851348,
 									"parameters": {
 										"state": "not-flipped"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger4",
+									"sid": 156823766795182,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 687136129187028,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger4",
+									"sid": 284029684221173,
+									"parameters": {
+										"collisions": "enabled"
 									}
 								}
 							],
@@ -11507,6 +11581,30 @@
 									"parameters": {
 										"state": "flipped"
 									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger2",
+									"sid": 172023814399939,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 335616580983158,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger2",
+									"sid": 796910600799196,
+									"parameters": {
+										"collisions": "enabled"
+									}
 								}
 							],
 							"sid": 912351428302390
@@ -11564,6 +11662,30 @@
 									"sid": 859579040515612,
 									"parameters": {
 										"state": "not-flipped"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger",
+									"sid": 307471638242396,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 547933395565994,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger",
+									"sid": 616725299537749,
+									"parameters": {
+										"collisions": "enabled"
 									}
 								}
 							],
@@ -11827,6 +11949,30 @@
 									"parameters": {
 										"state": "flipped"
 									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger2",
+									"sid": 889448268157204,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 311657513707026,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger2",
+									"sid": 511170703919225,
+									"parameters": {
+										"collisions": "enabled"
+									}
 								}
 							],
 							"sid": 268861543903073
@@ -11884,6 +12030,30 @@
 									"sid": 461425258895795,
 									"parameters": {
 										"state": "not-flipped"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger",
+									"sid": 157283075197909,
+									"parameters": {
+										"collisions": "disabled"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 797535398150664,
+									"parameters": {
+										"seconds": "3.0"
+									}
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "EnemyFlip_Trigger",
+									"sid": 541800479350595,
+									"parameters": {
+										"collisions": "enabled"
 									}
 								}
 							],
