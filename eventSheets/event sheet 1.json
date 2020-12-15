@@ -9367,6 +9367,24 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 661211961443482,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 786763207574725,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 235832119700267,
@@ -9378,37 +9396,19 @@
 									}
 								},
 								{
-									"id": "set-max-speed",
-									"objectClass": "Kitchen_Joe_Player",
-									"sid": 504854922120349,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"max-speed": "0"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 943413525056864,
-									"parameters": {
-										"animation": "\"Alerted\"",
-										"from": "beginning"
-									}
-								},
-								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 265829089369903,
+									"sid": 226977929732756,
 									"parameters": {
-										"seconds": "2"
+										"seconds": "1.0"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 967185556073759,
+									"sid": 558136958467062,
 									"parameters": {
-										"animation": "\"Not Alerted\"",
+										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
 									}
 								},
@@ -9464,6 +9464,24 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_KitchenGuard_View1",
+									"sid": 319948967750574,
+									"parameters": {
+										"animation": "\"Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 645427597805868,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "0"
+									}
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 170541688551149,
@@ -9475,37 +9493,19 @@
 									}
 								},
 								{
-									"id": "set-max-speed",
-									"objectClass": "Kitchen_Joe_Player",
-									"sid": 156274897245199,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"max-speed": "0"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 849273977254604,
-									"parameters": {
-										"animation": "\"Alerted\"",
-										"from": "beginning"
-									}
-								},
-								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 585599693662447,
+									"sid": 618628361046824,
 									"parameters": {
-										"seconds": "2"
+										"seconds": "1.0"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View1",
-									"sid": 883335233703147,
+									"sid": 932088396805942,
 									"parameters": {
-										"animation": "\"Not Alerted\"",
+										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
 									}
 								},
@@ -9776,10 +9776,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View2",
-									"sid": 650331240725467,
-									"disabled": true,
+									"sid": 241331774723948,
 									"parameters": {
-										"animation": "\"Not Alerted\"",
+										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
 									}
 								},
@@ -9874,9 +9873,9 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_KitchenGuard_View2",
-									"sid": 386481958791673,
+									"sid": 168259103228002,
 									"parameters": {
-										"animation": "\"Not Alerted\"",
+										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
 									}
 								},

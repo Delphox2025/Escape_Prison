@@ -579,103 +579,6 @@
 					}
 				},
 				{
-					"type": "Enemy_KitchenGuard_View1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Not_Alerted",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 376,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -168.63341925369,
-						"y": -236.9414770107648,
-						"width": 127.99999999999999,
-						"height": 256,
-						"originX": 0.5003107520198882,
-						"originY": 0.0012861736334405238,
-						"color": [
-							1,
-							1,
-							1,
-							0.5
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Enemy_Kitchen_Guard1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 365,
-					"instanceVariables": {
-						"LR": false
-					},
-					"behaviors": {
-						"Pathfinding": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": 70,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 300,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": false
-							}
-						},
-						"Flash": {
-							"properties": {}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 13,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 600,
-								"magnitude-random": 0,
-								"enabled": false,
-								"live-preview": false
-							}
-						}
-					},
-					"world": {
-						"x": 897.1367683609543,
-						"y": 643.599695196322,
-						"width": 67.99217190869905,
-						"height": 138.87762813636576,
-						"originX": 0.425531914893617,
-						"originY": 0.5104166666666666,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Enemy_KitchenGuard_View2",
 					"properties": {
 						"initially-visible": true,
@@ -816,7 +719,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1612,
+						"x": 1517,
 						"y": 788,
 						"width": 31.452667000000005,
 						"height": 258.610819,
@@ -845,7 +748,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 358,
+						"x": 417,
 						"y": 796,
 						"width": 31.452667000000005,
 						"height": 258.610819,
@@ -903,7 +806,7 @@
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
-								"magnitude": 580,
+								"magnitude": 500,
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
@@ -1021,6 +924,103 @@
 						"height": 35,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_KitchenGuard_View1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Not_Alerted",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 376,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -168.63341925369,
+						"y": -236.9414770107648,
+						"width": 127.99999999999999,
+						"height": 256,
+						"originX": 0.5003107520198882,
+						"originY": 0.0012861736334405238,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Enemy_Kitchen_Guard1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 365,
+					"instanceVariables": {
+						"LR": false
+					},
+					"behaviors": {
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": 70,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 300,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": false
+							}
+						},
+						"Flash": {
+							"properties": {}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 13,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 600,
+								"magnitude-random": 0,
+								"enabled": false,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 897.1367683609543,
+						"y": 643.599695196322,
+						"width": 67.99217190869905,
+						"height": 138.87762813636576,
+						"originX": 0.425531914893617,
+						"originY": 0.5104166666666666,
 						"color": [
 							1,
 							1,
