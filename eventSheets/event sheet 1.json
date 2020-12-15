@@ -6335,7 +6335,8 @@
 								{
 									"id": "destroy",
 									"objectClass": "Key_BathRoom",
-									"sid": 257491683586871
+									"sid": 257491683586871,
+									"disabled": true
 								},
 								{
 									"id": "stop",
@@ -6375,6 +6376,11 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "Enemy_BathRoomGuard_View2",
+									"sid": 515782061745742
+								},
+								{
 									"id": "move-along-path",
 									"objectClass": "Bathroom_StandByGuard",
 									"sid": 903886106946375,
@@ -6412,7 +6418,8 @@
 									}
 								}
 							],
-							"sid": 640677642790384
+							"sid": 640677642790384,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -6441,6 +6448,11 @@
 									"parameters": {
 										"collisions": "enabled"
 									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Solid_Block_Bathroom",
+									"sid": 812773062481633
 								}
 							],
 							"sid": 587976714192626
@@ -9081,6 +9093,86 @@
 						}
 					],
 					"sid": 287899780071595
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 841376018655443,
+							"parameters": {
+								"object": "Enemy_BathRoomGuard_View2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 930441036530216,
+							"parameters": {
+								"audio-file": "40754__tommon__one-blast-whistle",
+								"loop": "not-looping",
+								"volume": "-5",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 118946890602887,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_BathRoomGuard_View2",
+							"sid": 819443494884534,
+							"parameters": {
+								"animation": "\"Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 816568261297345,
+							"parameters": {
+								"seconds": "1.0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Enemy_BathRoomGuard_View2",
+							"sid": 335041352318499,
+							"parameters": {
+								"animation": "\"Not_Alerted\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 168521252766839,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "BathRoom_Joe_Player",
+							"sid": 239954339455056,
+							"parameters": {
+								"x": "1559",
+								"y": "832"
+							}
+						}
+					],
+					"sid": 692072927979251
 				}
 			],
 			"sid": 856717083738230
