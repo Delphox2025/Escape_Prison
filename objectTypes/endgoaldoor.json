@@ -4,21 +4,47 @@
 	"sid": 625369747767918,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 131891594895067
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 250,
-						"height": 250,
+						"width": 112,
+						"height": 112,
 						"originX": 0.5,
 						"originY": 0.5,
-						"originalSource": "",
+						"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Exit_Door.png",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7329066,
+						"imageSpriteId": 5245782,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.6339285714285714,
+								0.5714285714285714,
+								0.6339285714285714,
+								0.5,
+								0.6339285714285714,
+								0.4375,
+								0.6339285714285714,
+								0,
+								0.6339285714285714,
+								0,
+								0.2857142857142857,
+								0.5,
+								0.2857142857142857,
+								1,
+								0.2857142857142857
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}

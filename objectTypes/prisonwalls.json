@@ -13,14 +13,14 @@
 	],
 	"effectTypes": [],
 	"image": {
-		"width": 93,
-		"height": 100,
+		"width": 112,
+		"height": 112,
 		"originX": 0.5376344086021505,
 		"originY": 0.5,
-		"originalSource": "C:\\Users\\colom\\OneDrive\\Desktop\\Sprites\\Wall.png",
+		"originalSource": "D:\\Documents\\Year 3\\Group Game Project 1\\Wall3.png",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 3068133,
+		"imageSpriteId": 6022468,
 		"useCollisionPoly": true
 	}
 }

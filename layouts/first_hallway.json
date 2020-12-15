@@ -30,8 +30,8 @@
 					},
 					"world": {
 						"x": 1794,
-						"y": -25,
-						"width": 366.306731,
+						"y": -8,
+						"width": 337.74435013927894,
 						"height": 1844.802618,
 						"originX": 0,
 						"originY": 0,
@@ -357,6 +357,46 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "PrisonWalls2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 331,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 43,
+						"y": 329,
+						"width": 366.306731,
+						"height": 693.8026179999997,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 803636412258197,
@@ -398,12 +438,19 @@
 					},
 					"uid": 335,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
 					"world": {
-						"x": -95,
-						"y": 498,
-						"width": 250,
-						"height": 250,
+						"x": 30.999999999999996,
+						"y": 498.10593538692706,
+						"width": 223.23234798167542,
+						"height": 145.4442187555296,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -412,7 +459,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 4.71238898038469,
 						"zElevation": 0
 					}
 				},
@@ -685,10 +732,10 @@
 						}
 					},
 					"world": {
-						"x": 1822,
+						"x": 1906,
 						"y": 664,
 						"width": 366.306731,
-						"height": 1994.8026179999997,
+						"height": 2144.8026179999997,
 						"originX": 0,
 						"originY": 0,
 						"color": [

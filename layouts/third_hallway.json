@@ -29,7 +29,7 @@
 						}
 					},
 					"world": {
-						"x": 1765.297520661157,
+						"x": 1794.143569,
 						"y": 618.7768595041321,
 						"width": 366.306731,
 						"height": 1994.8026179999997,
@@ -69,10 +69,10 @@
 						}
 					},
 					"world": {
-						"x": 1773.1435694283175,
-						"y": -83.26765629802378,
-						"width": 366.306731,
-						"height": 1994.8026179999997,
+						"x": 1794.143569,
+						"y": -52.26765629802378,
+						"width": 336.47129988712095,
+						"height": 2034.8026179999997,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -712,35 +712,6 @@
 					}
 				},
 				{
-					"type": "BackTo_HallwaySecond",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 395,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": -106,
-						"y": 447,
-						"width": 250,
-						"height": 250,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "KeysFound",
 					"properties": {
 						"text": "Keys Found:",
@@ -772,6 +743,115 @@
 						"height": 91,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 441,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": -1962,
+						"y": 620.7272727272727,
+						"width": 338.306731,
+						"height": 1992.169305456939,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "PrisonWalls2",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 442,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 3674,
+						"y": 283,
+						"width": 339.306731,
+						"height": 1994.8026179999997,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BackTo_HallwaySecond",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 395,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -90,
+						"y": 447,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
