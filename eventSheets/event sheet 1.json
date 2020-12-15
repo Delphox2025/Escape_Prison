@@ -105,7 +105,7 @@
 			"eventType": "variable",
 			"name": "EndGoal",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -115,7 +115,7 @@
 			"eventType": "variable",
 			"name": "KeysFound",
 			"type": "number",
-			"initialValue": "5",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -196,18 +196,18 @@
 			],
 			"actions": [
 				{
-					"id": "subtract-from-eventvar",
+					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 541604336567942,
+					"sid": 772377369405525,
 					"parameters": {
 						"variable": "KeysFound",
 						"value": "1"
 					}
 				},
 				{
-					"id": "subtract-from-eventvar",
+					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 187758909417986,
+					"sid": 109764196890737,
 					"parameters": {
 						"variable": "EndGoal",
 						"value": "1"
@@ -4132,11 +4132,11 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 690871291102670,
+							"sid": 924109011768542,
 							"parameters": {
 								"variable": "EndGoal",
 								"comparison": 0,
-								"value": "0"
+								"value": "5"
 							}
 						}
 					],
@@ -5634,6 +5634,14 @@
 									"id": "destroy",
 									"objectClass": "Key_SecurityRoom",
 									"sid": 423589087399643
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "TPtoHallwayThird",
+									"sid": 974253026572108,
+									"parameters": {
+										"collisions": "enabled"
+									}
 								}
 							],
 							"sid": 925633065644463
@@ -6351,6 +6359,14 @@
 									"id": "destroy",
 									"objectClass": "Key_BathRoom",
 									"sid": 221232810085306
+								},
+								{
+									"id": "set-collisions-enabled",
+									"objectClass": "TPtoHallwaySecond_v2",
+									"sid": 648002649472620,
+									"parameters": {
+										"collisions": "enabled"
+									}
 								}
 							],
 							"sid": 587976714192626
@@ -10979,6 +10995,14 @@
 							"id": "destroy",
 							"objectClass": "Key_Kitchen",
 							"sid": 613811767597919
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "TPtoHallwaySecond",
+							"sid": 810698695391120,
+							"parameters": {
+								"collisions": "enabled"
+							}
 						}
 					],
 					"sid": 444074571136030
@@ -12230,6 +12254,14 @@
 							"id": "destroy",
 							"objectClass": "Key_CommonRoom",
 							"sid": 209505714039663
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "TPtoThirdHallwayCommonRoom",
+							"sid": 894130990203356,
+							"parameters": {
+								"collisions": "enabled"
+							}
 						}
 					],
 					"sid": 193678122956056
