@@ -330,6 +330,15 @@
 						"layer": "\"DialougeBox\"",
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 215439737156919,
+					"parameters": {
+						"layer": "\"Press_E_Text\"",
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 587706496754236
@@ -3121,6 +3130,15 @@
 							}
 						},
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 970424759171122,
+							"parameters": {
+								"layer": "7",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "set-font-face",
 							"objectClass": "UIText",
 							"sid": 505040265180824,
@@ -3884,6 +3902,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 546765172581690,
+							"parameters": {
+								"layer": "7",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 614465916212242,
@@ -3984,6 +4011,15 @@
 					],
 					"actions": [
 						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 987605742367128,
+							"parameters": {
+								"layer": "7",
+								"visibility": "visible"
+							}
+						},
+						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
 							"sid": 470847336443967,
@@ -4083,6 +4119,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 962653177239625,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
@@ -5320,6 +5365,15 @@
 								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
+									"sid": 198704728029385,
+									"parameters": {
+										"layer": "6",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
 									"sid": 309292211831986,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
@@ -5411,6 +5465,15 @@
 								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
+									"sid": 437336788509005,
+									"parameters": {
+										"layer": "6",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
 									"sid": 475363563151081,
 									"parameters": {
 										"layer": "\"DialougeBox\"",
@@ -5499,6 +5562,15 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 244600385785018,
+									"parameters": {
+										"layer": "6",
+										"visibility": "visible"
+									}
+								},
 								{
 									"id": "set-layer-visible",
 									"objectClass": "System",
@@ -6117,6 +6189,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 770732512499308,
+									"parameters": {
+										"layer": "6",
+										"visibility": "visible"
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "BathRoom_Joe_Player",
 									"sid": 369140048998336,
@@ -6490,6 +6571,15 @@
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
+											"sid": 450462875128870,
+											"parameters": {
+												"layer": "6",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
 											"sid": 242003972716035,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
@@ -6599,6 +6689,15 @@
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
+											"sid": 667009205439846,
+											"parameters": {
+												"layer": "6",
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
 											"sid": 498511329557866,
 											"parameters": {
 												"layer": "\"DialougeBox\"",
@@ -6705,6 +6804,15 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 162074082512638,
+											"parameters": {
+												"layer": "6",
+												"visibility": "visible"
+											}
+										},
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
@@ -6866,6 +6974,15 @@
 										}
 									],
 									"actions": [
+										{
+											"id": "set-layer-visible",
+											"objectClass": "System",
+											"sid": 319784573514552,
+											"parameters": {
+												"layer": "6",
+												"visibility": "visible"
+											}
+										},
 										{
 											"id": "set-layer-visible",
 											"objectClass": "System",
@@ -10823,6 +10940,15 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
+							"sid": 348175743401814,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
 							"sid": 226749550093739,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
@@ -10952,6 +11078,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 437224326705430,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -12173,6 +12308,15 @@
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
+							"sid": 399369545325794,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
 							"sid": 467639932605990,
 							"parameters": {
 								"layer": "\"DialougeBox\"",
@@ -12297,6 +12441,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 620970097039596,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",
@@ -12540,6 +12693,15 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 873010121217160,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
 						{
 							"id": "set-layer-visible",
 							"objectClass": "System",

@@ -88,6 +88,15 @@
 					"parameters": {
 						"layout": "RoomOne"
 					}
+				},
+				{
+					"id": "set-volume",
+					"objectClass": "Audio",
+					"sid": 259976957209084,
+					"parameters": {
+						"tag": "\"Groovy\"",
+						"db": "-35"
+					}
 				}
 			],
 			"sid": 772288664652932

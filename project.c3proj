@@ -393,7 +393,8 @@
 			"Solid_Block_Bathroom",
 			"TPtoThirdHallwayCommonRoom",
 			"Psst_HitBox",
-			"Cell_Joe_Player3"
+			"Cell_Joe_Player3",
+			"Press_E_Text"
 		],
 		"subfolders": [
 			{
