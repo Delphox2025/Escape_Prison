@@ -14,6 +14,12 @@
 	"effectTypes": [],
 	"members": [
 		"Kitchen_Hitbox_Cheff",
-		"Kitchen_Pan_HitBox"
+		"Kitchen_Pan_HitBox",
+		"Kitchen_Pan_HitBox2",
+		"Kitchen_Pan_HitBox3",
+		"Kitchen_Pan_HitBox4",
+		"Kitchen_Pan_HitBox5",
+		"Kitchen_Pan_HitBox6",
+		"Kitchen_Pan_HitBox7"
 	]
 }

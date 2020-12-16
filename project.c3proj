@@ -396,7 +396,19 @@
 			"Cell_Joe_Player3",
 			"Press_E_Text",
 			"PressETEXT_Instructions",
-			"GrabKeysTEXT_Instructions2"
+			"GrabKeysTEXT_Instructions2",
+			"Kitchen_Pan_HitBox2",
+			"Kitchen_Pan_HitBox3",
+			"Kitchen_Pan_HitBox4",
+			"Kitchen_Pan_HitBox5",
+			"Kitchen_Pan_HitBox6",
+			"Kitchen_Pan_HitBox7",
+			"KitchenPan4",
+			"KitchenPan7",
+			"KitchenPan6",
+			"KitchenPan5",
+			"KitchenPan3",
+			"KitchenPan2"
 		],
 		"subfolders": [
 			{

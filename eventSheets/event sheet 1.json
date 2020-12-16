@@ -3270,11 +3270,27 @@
 							}
 						},
 						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Cell_HitBox",
+							"sid": 731950379241733,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 533017310835098,
 							"parameters": {
 								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "Cell_HitBox",
+							"sid": 181475385733683,
+							"parameters": {
+								"collisions": "enabled"
 							}
 						},
 						{
@@ -4095,17 +4111,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox",
+							"sid": 509648451795978
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 296351272325271,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Hallway_WhatsHappening_HitBox",
-							"sid": 587335487685613
 						},
 						{
 							"id": "set-max-speed",
@@ -4204,17 +4220,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Hallway_WhatsHappening_HitBox2",
+							"sid": 863888588760546
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 874129344997088,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Hallway_WhatsHappening_HitBox2",
-							"sid": 414048124054460
 						},
 						{
 							"id": "set-max-speed",
@@ -4314,17 +4330,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "FinalDoor_Freedom_TextHitBox",
+							"sid": 150414887960689
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 842339831896519,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "FinalDoor_Freedom_TextHitBox",
-							"sid": 922361672359243
 						},
 						{
 							"id": "set-max-speed",
@@ -5558,17 +5574,17 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_Dialouge_HitBox",
+									"sid": 313984940194106
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 953758149630138,
 									"parameters": {
 										"seconds": "1.5"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "SecurityRoom_Dialouge_HitBox",
-									"sid": 595436429046201
 								},
 								{
 									"id": "set-max-speed",
@@ -5658,17 +5674,17 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_MS_HitBox",
+									"sid": 278415695766452
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 699511407561959,
 									"parameters": {
 										"seconds": "1.5"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "SecurityRoom_MS_HitBox",
-									"sid": 464045081961326
 								},
 								{
 									"id": "set-max-speed",
@@ -5758,17 +5774,17 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "SecurityRoom_OfficeDesk_HitBox",
+									"sid": 754167318928453
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 443844462697174,
 									"parameters": {
 										"seconds": "1.5"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "SecurityRoom_OfficeDesk_HitBox",
-									"sid": 400829213889719
 								},
 								{
 									"id": "set-max-speed",
@@ -6403,17 +6419,17 @@
 									}
 								},
 								{
+									"id": "destroy",
+									"objectClass": "Bathroom_HitBox",
+									"sid": 729983243695256
+								},
+								{
 									"id": "wait",
 									"objectClass": "System",
 									"sid": 193216493167483,
 									"parameters": {
 										"seconds": "1.5"
 									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Bathroom_HitBox",
-									"sid": 883819668686288
 								},
 								{
 									"id": "set-max-speed",
@@ -6602,9 +6618,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 350603695444206,
+									"sid": 973095133161594,
 									"parameters": {
-										"seconds": "6"
+										"seconds": "7"
 									}
 								},
 								{
@@ -6773,17 +6789,17 @@
 											}
 										},
 										{
+											"id": "destroy",
+											"objectClass": "BathroomSink_Hitbox_",
+											"sid": 249375915307097
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 198920714979655,
 											"parameters": {
 												"seconds": "1.5"
 											}
-										},
-										{
-											"id": "destroy",
-											"objectClass": "BathroomSink_Hitbox_",
-											"sid": 409231445785017
 										},
 										{
 											"id": "set-max-speed",
@@ -6891,17 +6907,17 @@
 											}
 										},
 										{
+											"id": "destroy",
+											"objectClass": "BathroomSink_Hitbox_2",
+											"sid": 302629077821279
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 675223795210219,
 											"parameters": {
 												"seconds": "1.5"
 											}
-										},
-										{
-											"id": "destroy",
-											"objectClass": "BathroomSink_Hitbox_2",
-											"sid": 850384176075689
 										},
 										{
 											"id": "set-max-speed",
@@ -7009,17 +7025,17 @@
 											}
 										},
 										{
+											"id": "destroy",
+											"objectClass": "BathroomSink_Hitbox_3",
+											"sid": 455031101471962
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 385299483828072,
 											"parameters": {
 												"seconds": "1.5"
 											}
-										},
-										{
-											"id": "destroy",
-											"objectClass": "BathroomSink_Hitbox_3",
-											"sid": 735623015495373
 										},
 										{
 											"id": "set-max-speed",
@@ -7179,17 +7195,17 @@
 											}
 										},
 										{
+											"id": "destroy",
+											"objectClass": "BathroomSink_Hitbox_4",
+											"sid": 920179488342425
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 170455937705178,
 											"parameters": {
 												"seconds": "1.5"
 											}
-										},
-										{
-											"id": "destroy",
-											"objectClass": "BathroomSink_Hitbox_4",
-											"sid": 429184815493611
 										},
 										{
 											"id": "set-max-speed",
@@ -11142,17 +11158,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Hitbox_Cheff",
+							"sid": 872840083233688
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 128831618901420,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Kitchen_Hitbox_Cheff",
-							"sid": 581067429697402
 						},
 						{
 							"id": "set-max-speed",
@@ -11212,6 +11228,66 @@
 								"layer": "3",
 								"image-point": "1"
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "KitchenPan2",
+							"sid": 194839930743867,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox2",
+								"layer": "3",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "KitchenPan3",
+							"sid": 150073999674506,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox3",
+								"layer": "3",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "KitchenPan4",
+							"sid": 214172306796114,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox4",
+								"layer": "3",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "KitchenPan5",
+							"sid": 409930164910595,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox5",
+								"layer": "3",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "KitchenPan6",
+							"sid": 216579107901661,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox6",
+								"layer": "3",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "KitchenPan7",
+							"sid": 658592559953637,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox7",
+								"layer": "3",
+								"image-point": "1"
+							}
 						}
 					],
 					"sid": 950689183691693
@@ -11259,9 +11335,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "UIText",
-							"sid": 438536580492565,
+							"sid": 717608767477778,
 							"parameters": {
-								"text": "Kitchen_HitBoxes.Text"
+								"text": "Kitchen_Pan_HitBox.Text"
 							}
 						},
 						{
@@ -11273,6 +11349,7 @@
 							"id": "set-visible",
 							"objectClass": "Key_Kitchen",
 							"sid": 469352174624871,
+							"disabled": true,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -11287,17 +11364,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox",
+							"sid": 584745742492326
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 968097512127257,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Kitchen_Pan_HitBox",
-							"sid": 276085515077305
 						},
 						{
 							"id": "set-max-speed",
@@ -11328,6 +11405,689 @@
 						}
 					],
 					"sid": 753897617931826
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 160163175677768,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 698090159131070,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 570988313011060,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 599932165121540,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 400444907421831,
+							"parameters": {
+								"text": "Kitchen_Pan_HitBox2.Text"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "KitchenPan2",
+							"sid": 588291944155303
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 671213195003726,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 996829726939876,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox2",
+							"sid": 594077574571844
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 299103717416883,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 550922677072418,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 796073823126941,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 184949653162721,
+							"disabled": true,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 296059432235941
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 180770499698481,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 545034904894227,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 845421734639018,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 847332268511674,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 211106067849173,
+							"parameters": {
+								"text": "Kitchen_Pan_HitBox3.Text"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "KitchenPan3",
+							"sid": 669961198914334
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 565766349877058,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 446444701966715,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox3",
+							"sid": 215192289885297
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 781763628047026,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 804047191014191,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 985696381754911,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 338006119517191,
+							"disabled": true,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 913033350904074
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 476201657439082,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 731054267675351,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 947075680136055,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 490770944493779,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 665469157201545,
+							"parameters": {
+								"text": "Kitchen_Pan_HitBox4.Text"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "KitchenPan4",
+							"sid": 996189151335059
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 672093468222392,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 448578631065944,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox4",
+							"sid": 513722824130101
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 536355007946243,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 985595093205533,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 967586453469690,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 240371884825340,
+							"disabled": true,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 762252592270798
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 902360534590932,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 918322591092399,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 993262329115318,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 292995109741749,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 207092101634290,
+							"parameters": {
+								"text": "Kitchen_Pan_HitBox5.Text"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "KitchenPan5",
+							"sid": 357592133463657
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 904864137812961,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 936754617517110,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox5",
+							"sid": 829785684498589
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 970421607228453,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 247751118415733,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 585398358924463,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 869478257121666,
+							"disabled": true,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 474634270095114
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 516961033759689,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 598276075502184,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 110394628957258,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 638061072654910,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 403938724346854,
+							"parameters": {
+								"text": "Kitchen_Pan_HitBox6.Text"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "KitchenPan6",
+							"sid": 258302548984168
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 709222097596902,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 649246300370672,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox6",
+							"sid": 295784509058371
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 812547053351387,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 435117660194284,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 890369154523451,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 412812150672264,
+							"disabled": true,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 337437635004687
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 948829962203318,
+							"parameters": {
+								"object": "Kitchen_Pan_HitBox7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 907178712717054,
+							"parameters": {
+								"layer": "6",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 954114939715770,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-font-face",
+							"objectClass": "UIText",
+							"sid": 877796192637278,
+							"parameters": {
+								"font-face": "\"Arial\"",
+								"style": "bold"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "UIText",
+							"sid": 599639223388782,
+							"parameters": {
+								"text": "Kitchen_Pan_HitBox7.Text"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "KitchenPan7",
+							"sid": 810187499706431
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Key_Kitchen",
+							"sid": 224845434084192,
+							"disabled": true,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 658167350778116,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "0"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Kitchen_Pan_HitBox7",
+							"sid": 914188112600103
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 325122466690045,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "set-max-speed",
+							"objectClass": "Kitchen_Joe_Player",
+							"sid": 868133586889114,
+							"behaviorType": "8Direction",
+							"parameters": {
+								"max-speed": "250"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 258854619498201,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 884398356487905,
+							"disabled": true,
+							"parameters": {
+								"layer": "\"DialougeBox\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 736083076452035
 				},
 				{
 					"eventType": "block",
@@ -12667,17 +13427,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "CommonRoom_HitBox",
+							"sid": 311054268842006
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 641285211444487,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "CommonRoom_HitBox",
-							"sid": 605725626499288
 						},
 						{
 							"id": "set-max-speed",
@@ -12803,17 +13563,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "CommonRoom_HitBox",
+							"sid": 221203854872894
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 901437119833949,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "CommonRoom_HitBox",
-							"sid": 888005225174088
 						},
 						{
 							"id": "set-max-speed",
@@ -13055,17 +13815,17 @@
 							}
 						},
 						{
+							"id": "destroy",
+							"objectClass": "Psst_HitBox",
+							"sid": 475019056274822
+						},
+						{
 							"id": "wait",
 							"objectClass": "System",
 							"sid": 568649486537008,
 							"parameters": {
 								"seconds": "1.5"
 							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "Psst_HitBox",
-							"sid": 812282101257732
 						},
 						{
 							"id": "set-max-speed",

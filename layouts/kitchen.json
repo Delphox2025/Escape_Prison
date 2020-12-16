@@ -449,35 +449,6 @@
 					}
 				},
 				{
-					"type": "Key_Kitchen",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 317,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 665.5502156382994,
-						"y": 489.8810172028885,
-						"width": 88.99706506385084,
-						"height": 35.44102157572602,
-						"originX": 0.4657534246575342,
-						"originY": 0.5714285714285714,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 3.141592653589793,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "kitchen_counter_with_plates",
 					"properties": {
 						"initially-visible": true,
@@ -546,35 +517,6 @@
 							1
 						],
 						"angle": 4.71238898038469,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "KitchenPan",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 282,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 666.5276753240172,
-						"y": 488.63331576983154,
-						"width": 136.48474312677948,
-						"height": 100.23098323372868,
-						"originX": 0.5,
-						"originY": 0.46808510638297873,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				},
@@ -1033,6 +975,238 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Key_Kitchen",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 317,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1139.0872702907334,
+						"y": 620.9127297092666,
+						"width": 99.35452110780933,
+						"height": 39.565638751137435,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 5.497787143782138,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 291,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 664,
+						"y": 477,
+						"width": 136.48474312677948,
+						"height": 100.23098323372868,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 461,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 310,
+						"y": 119,
+						"width": 92.44842903867904,
+						"height": 67.89181507527992,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.569970716155938,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 462,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 512,
+						"y": 585,
+						"width": 136.484743,
+						"height": 100.23098299999998,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.569970716155938,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan5",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 463,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1126,
+						"y": 635,
+						"width": 109.7408939354446,
+						"height": 80.59096887077223,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 2.260330152510487,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan7",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 464,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1484,
+						"y": 114,
+						"width": 84.58187764490866,
+						"height": 62.11481630833211,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 465,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1609,
+						"y": 327,
+						"width": 120.31317660613998,
+						"height": 88.35498894617115,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.141592653589793,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "KitchenPan6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 466,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1119,
+						"y": 403,
+						"width": 110.11976280046818,
+						"height": 80.59096887077223,
+						"originX": 0.5,
+						"originY": 0.46808510638297873,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 3.129302711451816,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 148045180170222,
@@ -1197,20 +1371,206 @@
 				{
 					"type": "Kitchen_Pan_HitBox",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 291,
+					"uid": 454,
+					"instanceVariables": {
+						"Text": "Wait a sec... it's almost like you thought it would be there.. Have you been here before? Strange ..?  "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 868,
+						"y": -113,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kitchen_Pan_HitBox2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 455,
 					"instanceVariables": {
 						"Text": "Wow I haven't Seen FilthyFrank in forever!! Wonder why he keep's keys under pan's?"
 					},
 					"behaviors": {},
 					"world": {
-						"x": 738,
-						"y": -116,
+						"x": 971,
+						"y": -114,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kitchen_Pan_HitBox3",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 456,
+					"instanceVariables": {
+						"Text": "It's time to stop! It's time to stop, okay?"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1081,
+						"y": -126,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kitchen_Pan_HitBox4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 457,
+					"instanceVariables": {
+						"Text": "Now look at this pan it's legit coverd in GOLD! NO WAY IM GONNA PUT A KEY UNDER THERE!  "
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1205,
+						"y": -102,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kitchen_Pan_HitBox5",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 458,
+					"instanceVariables": {
+						"Text": "Wow the KEY! This man sure keeps a lot of pans... im a little concerned.."
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1318,
+						"y": -132,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kitchen_Pan_HitBox6",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 459,
+					"instanceVariables": {
+						"Text": "There really was a cake...   — GLaDOS"
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1430,
+						"y": -104,
+						"width": 81.38010096989419,
+						"height": 81.38010096989419,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							0.5
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Kitchen_Pan_HitBox7",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 460,
+					"instanceVariables": {
+						"Text": "Did you think, It would be that easy to get a key out of me Joe..."
+					},
+					"behaviors": {},
+					"world": {
+						"x": 1578,
+						"y": -172,
 						"width": 81.38010096989419,
 						"height": 81.38010096989419,
 						"originX": 0.5,
