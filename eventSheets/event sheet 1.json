@@ -4251,9 +4251,9 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 924109011768542,
+							"sid": 362618132769468,
 							"parameters": {
-								"variable": "EndGoal",
+								"variable": "KeysFound",
 								"comparison": 0,
 								"value": "5"
 							}
@@ -4280,6 +4280,16 @@
 							"sid": 833980033158193,
 							"parameters": {
 								"object": "EndGoalDoor"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 796383346742967,
+							"parameters": {
+								"variable": "KeysFound",
+								"comparison": 5,
+								"value": "5"
 							}
 						}
 					],
