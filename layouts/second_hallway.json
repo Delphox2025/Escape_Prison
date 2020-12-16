@@ -284,8 +284,8 @@
 						}
 					},
 					"world": {
-						"x": 132,
-						"y": 446,
+						"x": 136,
+						"y": 443,
 						"width": 72.26397033308855,
 						"height": 123.1248521026624,
 						"originX": 0.425531914893617,
@@ -313,8 +313,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1457,
-						"y": 415,
+						"x": 1334,
+						"y": 506,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -342,8 +342,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1459,
-						"y": 487,
+						"x": 1567,
+						"y": 464,
 						"width": 74.41773982055622,
 						"height": 74.41773982055622,
 						"originX": 0.5,
@@ -511,7 +511,10 @@
 					"uid": 245,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 1559,
+						"GoToY": 832,
+						"RoomName": "Bathroom"
 					},
 					"behaviors": {},
 					"world": {
@@ -543,7 +546,10 @@
 					"uid": 257,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 113,
+						"GoToY": 822,
+						"RoomName": "Kitchen"
 					},
 					"behaviors": {},
 					"world": {
@@ -702,7 +708,11 @@
 						"live-preview": false
 					},
 					"uid": 371,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"GoToX": 2801,
+						"GoToY": 1741,
+						"RoomName": "CourtYard"
+					},
 					"behaviors": {},
 					"world": {
 						"x": -89,
@@ -802,7 +812,11 @@
 						"live-preview": false
 					},
 					"uid": 361,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"GoToX": 147,
+						"GoToY": 458,
+						"RoomName": "Third_Hallway"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 1796,
@@ -862,7 +876,36 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 422419534369862,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Press_E",
+			"overriden": 0,
+			"instances": [
 				{
 					"type": "E_ClickOut",
 					"properties": {
@@ -893,34 +936,6 @@
 					}
 				}
 			],
-			"sid": 422419534369862,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0,
-			"parallaxY": 0,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Press_E",
-			"overriden": 0,
-			"instances": [],
 			"sid": 521282010017369,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -994,7 +1009,7 @@
 			],
 			"sid": 709608871443065,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

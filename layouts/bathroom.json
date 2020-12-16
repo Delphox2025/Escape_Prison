@@ -1975,7 +1975,10 @@
 					"uid": 418,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 864,
+						"GoToY": 378,
+						"RoomName": "Second_HallWay"
 					},
 					"behaviors": {},
 					"world": {
@@ -2582,7 +2585,7 @@
 			],
 			"sid": 851057790661393,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

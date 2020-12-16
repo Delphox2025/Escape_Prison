@@ -224,7 +224,10 @@
 					"uid": 322,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 152.804057,
+						"GoToY": 195.123617,
+						"RoomName": "CourtYard"
 					},
 					"behaviors": {},
 					"world": {
@@ -256,7 +259,10 @@
 					"uid": 323,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 810.560875,
+						"GoToY": 425.805943,
+						"RoomName": "RoomOne"
 					},
 					"behaviors": {},
 					"world": {
@@ -313,8 +319,8 @@
 						}
 					},
 					"world": {
-						"x": 531,
-						"y": 384,
+						"x": 529,
+						"y": 402,
 						"width": 69.68421798145098,
 						"height": 132.686612760328,
 						"originX": 0.425531914893617,
@@ -880,7 +886,7 @@
 			],
 			"sid": 865946606663713,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

@@ -568,7 +568,10 @@
 					"uid": 248,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 1428,
+						"GoToY": 394,
+						"RoomName": "Third_Hallway"
 					},
 					"behaviors": {},
 					"world": {
@@ -621,7 +624,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 2
 					}
 				}
 			],
@@ -1312,7 +1315,36 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 398179050100492,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Press_E",
+			"overriden": 0,
+			"instances": [
 				{
 					"type": "E_ClickOut",
 					"properties": {
@@ -1343,34 +1375,6 @@
 					}
 				}
 			],
-			"sid": 398179050100492,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Press_E",
-			"overriden": 0,
-			"instances": [],
 			"sid": 797663446165519,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -1444,7 +1448,7 @@
 			],
 			"sid": 505827307965575,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

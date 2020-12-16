@@ -878,7 +878,10 @@
 					"uid": 309,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 1334,
+						"GoToY": 506,
+						"RoomName": "Second_HallWay"
 					},
 					"behaviors": {},
 					"world": {
@@ -1334,7 +1337,36 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 698005632197899,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Press_E",
+			"overriden": 0,
+			"instances": [
 				{
 					"type": "E_ClickOut",
 					"properties": {
@@ -1365,34 +1397,6 @@
 					}
 				}
 			],
-			"sid": 698005632197899,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				1,
-				1,
-				1,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"global": false
-		},
-		{
-			"name": "Press_E",
-			"overriden": 0,
-			"instances": [],
 			"sid": 279507471182231,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -1466,7 +1470,7 @@
 			],
 			"sid": 674529137584776,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

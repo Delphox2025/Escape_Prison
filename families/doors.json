@@ -1,0 +1,45 @@
+{
+	"name": "Doors",
+	"plugin-id": "Sprite",
+	"sid": 537045445719535,
+	"instanceVariables": [
+		{
+			"name": "GoToX",
+			"type": "number",
+			"desc": "",
+			"sid": 444962657719440
+		},
+		{
+			"name": "GoToY",
+			"type": "number",
+			"desc": "",
+			"sid": 990923331813412
+		},
+		{
+			"name": "RoomName",
+			"type": "string",
+			"desc": "",
+			"sid": 741546855485899
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"TPtoBathRoom",
+		"TPtoCommonRoom",
+		"TPtoCourtyard",
+		"TPtoHallwaySecond",
+		"TPtoHallwaySecond_v2",
+		"TPtoMainCell",
+		"TPtoKitchen",
+		"TPtoHallwayThird",
+		"TPtoSecurityRoom",
+		"TPtoThirdHallwayCommonRoom",
+		"NxtlvlHallwaySecond",
+		"BackTo_Courtyard",
+		"BackTo_HallwayFirst",
+		"BackTo_HallwaySecond",
+		"GoTo_ThirdHAllway",
+		"NextLevel5"
+	]
+}

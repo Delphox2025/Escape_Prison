@@ -204,7 +204,11 @@
 						"live-preview": false
 					},
 					"uid": 180,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"GoToX": 529,
+						"GoToY": 402,
+						"RoomName": "First_Hallway"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 849,
@@ -2478,8 +2482,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 839,
-						"y": -74,
+						"x": 773,
+						"y": 472,
 						"width": 2226,
 						"height": 1343,
 						"originX": 0.5,

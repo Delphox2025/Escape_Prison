@@ -1864,7 +1864,11 @@
 						"live-preview": false
 					},
 					"uid": 194,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"GoToX": 136,
+						"GoToY": 443,
+						"RoomName": "Second_HallWay"
+					},
 					"behaviors": {},
 					"world": {
 						"x": 3001.1459543120836,
@@ -2331,7 +2335,11 @@
 						"live-preview": false
 					},
 					"uid": 369,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"GoToX": 1559,
+						"GoToY": 832,
+						"RoomName": "Bathroom"
+					},
 					"behaviors": {},
 					"world": {
 						"x": -116,

@@ -1253,7 +1253,10 @@
 					"uid": 311,
 					"instanceVariables": {
 						"Text": "",
-						"LayoutName": ""
+						"LayoutName": "",
+						"GoToX": 960.327479,
+						"GoToY": 530.070256,
+						"RoomName": "Third_Hallway"
 					},
 					"behaviors": {},
 					"world": {
@@ -1802,7 +1805,7 @@
 			],
 			"sid": 524574510910606,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,

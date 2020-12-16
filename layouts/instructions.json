@@ -35,33 +35,32 @@
 					}
 				},
 				{
-					"type": "BackToTitle",
+					"type": "Key2",
 					"properties": {
-						"type": "button",
-						"text": "Back To Title",
-						"tooltip": "",
 						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": ""
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 428,
+					"uid": 453,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 116,
-						"y": 819,
-						"width": 214.24285285628548,
-						"height": 71.4142842854285,
-						"originX": 0,
-						"originY": 0,
+						"x": 1485,
+						"y": 268,
+						"width": 133.61779180077139,
+						"height": 51.25065986878902,
+						"originX": 0.4657534246575342,
+						"originY": 0.5714285714285714,
 						"color": [
 							1,
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 4.71238898038469,
+						"zElevation": 0
 					}
 				}
 			],
@@ -90,9 +89,153 @@
 			"global": false
 		},
 		{
+			"name": "Text",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "PressETEXT_Instructions",
+					"properties": {
+						"text": "Press E To Close Text",
+						"enable-bbcode": true,
+						"font": "Consolas",
+						"size": 30,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 451,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 191,
+						"y": 260,
+						"width": 484,
+						"height": 91,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "GrabKeysTEXT_Instructions2",
+					"properties": {
+						"text": "Grab KEYS To Escape!",
+						"enable-bbcode": true,
+						"font": "Consolas",
+						"size": 30,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 452,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1012,
+						"y": 256,
+						"width": 484,
+						"height": 91,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 129709110752527,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
 			"name": "UI",
 			"overriden": 0,
-			"instances": [],
+			"instances": [
+				{
+					"type": "BackToTitle",
+					"properties": {
+						"type": "button",
+						"text": "Back To Title",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 428,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 732,
+						"y": 427,
+						"width": 214.24285285628548,
+						"height": 71.4142842854285,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				}
+			],
 			"sid": 977699769748831,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

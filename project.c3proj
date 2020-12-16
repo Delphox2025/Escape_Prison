@@ -394,7 +394,9 @@
 			"TPtoThirdHallwayCommonRoom",
 			"Psst_HitBox",
 			"Cell_Joe_Player3",
-			"Press_E_Text"
+			"Press_E_Text",
+			"PressETEXT_Instructions",
+			"GrabKeysTEXT_Instructions2"
 		],
 		"subfolders": [
 			{
@@ -498,7 +500,8 @@
 			"CommonRoom_Assets",
 			"Kitchen_HitBoxes",
 			"NPCs",
-			"SolitaryRoom_HitBoxes"
+			"SolitaryRoom_HitBoxes",
+			"Doors"
 		],
 		"subfolders": []
 	},

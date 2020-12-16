@@ -162,6 +162,26 @@
 			"sid": 819247202141644
 		},
 		{
+			"eventType": "variable",
+			"name": "TeleportX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 583559672962091
+		},
+		{
+			"eventType": "variable",
+			"name": "TeleportY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 307919372393068
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -181,6 +201,45 @@
 				}
 			],
 			"sid": 843273568565334
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 805198700663239
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 793778864674379,
+					"parameters": {
+						"variable": "TeleportX",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Player",
+					"sid": 181425088749903,
+					"parameters": {
+						"x": "TeleportX"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Player",
+					"sid": 831463443926175,
+					"parameters": {
+						"y": "TeleportY"
+					}
+				}
+			],
+			"sid": 320681613479079
 		},
 		{
 			"eventType": "block",
@@ -3589,13 +3648,56 @@
 									}
 								}
 							],
-							"sid": 125480797134972
+							"sid": 125480797134972,
+							"disabled": true
 						}
 					]
 				},
 				{
 					"eventType": "comment",
-					"text": "Changes For Hallway and Security Room "
+					"text": "Changes For Hallways"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 340873844996793,
+							"parameters": {
+								"object": "Doors"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 539355563014892,
+							"parameters": {
+								"variable": "TeleportX",
+								"value": "Doors.GoToX"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 771004558658013,
+							"parameters": {
+								"variable": "TeleportY",
+								"value": "Doors.GoToY"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 822378950160483,
+							"parameters": {
+								"layout": "Doors.RoomName"
+							}
+						}
+					],
+					"sid": 338273975885527
 				},
 				{
 					"eventType": "block",
@@ -3619,7 +3721,8 @@
 							}
 						}
 					],
-					"sid": 821432985924775
+					"sid": 821432985924775,
+					"disabled": true
 				},
 				{
 					"eventType": "comment",
@@ -3647,7 +3750,8 @@
 							}
 						}
 					],
-					"sid": 957661218748350
+					"sid": 957661218748350,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3679,27 +3783,10 @@
 								"variable": "PreviousRoom",
 								"value": "\"Second_Hallway\""
 							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 192703729334857,
-							"parameters": {
-								"variable": "Test_X",
-								"value": "1454"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 392743509788601,
-							"parameters": {
-								"variable": "Test_Y",
-								"value": "369"
-							}
 						}
 					],
-					"sid": 619883263920022
+					"sid": 619883263920022,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3723,7 +3810,8 @@
 							}
 						}
 					],
-					"sid": 676804661181880
+					"sid": 676804661181880,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3747,7 +3835,8 @@
 							}
 						}
 					],
-					"sid": 437591366683452
+					"sid": 437591366683452,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3771,7 +3860,8 @@
 							}
 						}
 					],
-					"sid": 245075708475408
+					"sid": 245075708475408,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3804,7 +3894,8 @@
 							}
 						}
 					],
-					"sid": 400593055602575
+					"sid": 400593055602575,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3875,7 +3966,8 @@
 							}
 						}
 					],
-					"sid": 301995845727542
+					"sid": 301995845727542,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3908,7 +4000,8 @@
 							}
 						}
 					],
-					"sid": 406586633621387
+					"sid": 406586633621387,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -3932,7 +4025,8 @@
 							}
 						}
 					],
-					"sid": 115219163867429
+					"sid": 115219163867429,
+					"disabled": true
 				},
 				{
 					"eventType": "block",
@@ -4280,6 +4374,7 @@
 							"id": "set-collisions-enabled",
 							"objectClass": "TPtoMainCell",
 							"sid": 658891732612871,
+							"disabled": true,
 							"parameters": {
 								"collisions": "disabled"
 							}
@@ -6507,9 +6602,9 @@
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 197062321710847,
+									"sid": 350603695444206,
 									"parameters": {
-										"seconds": "3"
+										"seconds": "6"
 									}
 								},
 								{
