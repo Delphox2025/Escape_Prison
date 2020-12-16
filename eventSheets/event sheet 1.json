@@ -1693,19 +1693,37 @@
 									}
 								},
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 375058222146157,
-									"disabled": true
-								},
-								{
 									"id": "set-position",
 									"objectClass": "Courtyard_Joe_Player",
-									"sid": 200102536490929,
+									"sid": 496365234892079,
 									"parameters": {
 										"x": "153",
 										"y": "202"
 									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 585442888778956,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "550"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_TestRoom_3",
+									"sid": 182355943324051,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 375058222146157,
+									"disabled": true
 								}
 							],
 							"sid": 356495819345345
@@ -1780,9 +1798,37 @@
 									}
 								},
 								{
+									"id": "set-position",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 467809730254607,
+									"parameters": {
+										"x": "153",
+										"y": "202"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 906858546280591,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "550"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_TestRoom_3",
+									"sid": 660749998326330,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 786507645873530
+									"sid": 786507645873530,
+									"disabled": true
 								}
 							],
 							"sid": 497707020732070
@@ -2178,6 +2224,15 @@
 									}
 								},
 								{
+									"id": "set-position",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 377464172893256,
+									"parameters": {
+										"x": "153",
+										"y": "202"
+									}
+								},
+								{
 									"id": "set-enabled",
 									"objectClass": "Courtyard_Joe_Player",
 									"sid": 244379402273646,
@@ -2202,15 +2257,6 @@
 									"parameters": {
 										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Courtyard_Joe_Player",
-									"sid": 165716709249115,
-									"parameters": {
-										"x": "153",
-										"y": "202"
 									}
 								},
 								{
@@ -2301,6 +2347,15 @@
 									}
 								},
 								{
+									"id": "set-position",
+									"objectClass": "Courtyard_Joe_Player",
+									"sid": 153571602506338,
+									"parameters": {
+										"x": "153",
+										"y": "202"
+									}
+								},
+								{
 									"id": "set-max-speed",
 									"objectClass": "Courtyard_Joe_Player",
 									"sid": 131153097084179,
@@ -2325,15 +2380,6 @@
 									"parameters": {
 										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Courtyard_Joe_Player",
-									"sid": 594836885491070,
-									"parameters": {
-										"x": "153",
-										"y": "202"
 									}
 								},
 								{
@@ -8111,18 +8157,18 @@
 									}
 								},
 								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 547835133573860,
-									"behaviorType": "Sine",
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 752069903356835,
 									"parameters": {
-										"state": "active"
+										"x": "1559",
+										"y": "832"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_BathRoomGuard_View",
-									"sid": 264111701071301,
+									"sid": 899103629786995,
 									"parameters": {
 										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
@@ -8131,19 +8177,19 @@
 								{
 									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 614242111261466,
+									"sid": 752707071905039,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"max-speed": "250"
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 887375310093796,
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 547835133573860,
+									"behaviorType": "Sine",
 									"parameters": {
-										"x": "1559",
-										"y": "832"
+										"state": "active"
 									}
 								},
 								{
@@ -8223,39 +8269,39 @@
 									}
 								},
 								{
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 858481508407267,
+									"parameters": {
+										"x": "1559",
+										"y": "832"
+									}
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "Enemy_BathRoomGuard_View",
-									"sid": 373817830747422,
+									"sid": 704689727996668,
 									"parameters": {
 										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
 									}
 								},
 								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard",
-									"sid": 483536630954654,
-									"behaviorType": "Sine",
-									"parameters": {
-										"state": "active"
-									}
-								},
-								{
 									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 698244838891682,
+									"sid": 895711783060324,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"max-speed": "250"
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 937863483371336,
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard",
+									"sid": 939721169023123,
+									"behaviorType": "Sine",
 									"parameters": {
-										"x": "1559",
-										"y": "832"
+										"state": "active"
 									}
 								},
 								{
@@ -8518,18 +8564,18 @@
 									}
 								},
 								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard2",
-									"sid": 834000717877946,
-									"behaviorType": "Sine",
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 308290292611743,
 									"parameters": {
-										"state": "active"
+										"x": "1559",
+										"y": "832"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_BathRoomGuard_View3",
-									"sid": 989381541682932,
+									"sid": 711723551853172,
 									"parameters": {
 										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
@@ -8538,19 +8584,19 @@
 								{
 									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 177130704923682,
+									"sid": 303813497599633,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"max-speed": "250"
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 305325038476808,
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 834000717877946,
+									"behaviorType": "Sine",
 									"parameters": {
-										"x": "1559",
-										"y": "832"
+										"state": "active"
 									}
 								},
 								{
@@ -8630,18 +8676,18 @@
 									}
 								},
 								{
-									"id": "set-active",
-									"objectClass": "Enemy_Bathroom_Guard2",
-									"sid": 197750575359870,
-									"behaviorType": "Sine",
+									"id": "set-position",
+									"objectClass": "BathRoom_Joe_Player",
+									"sid": 656546928719407,
 									"parameters": {
-										"state": "active"
+										"x": "1559",
+										"y": "832"
 									}
 								},
 								{
 									"id": "set-animation",
 									"objectClass": "Enemy_BathRoomGuard_View3",
-									"sid": 154578357267055,
+									"sid": 428944270622402,
 									"parameters": {
 										"animation": "\"Not_Alerted\"",
 										"from": "beginning"
@@ -8650,19 +8696,19 @@
 								{
 									"id": "set-max-speed",
 									"objectClass": "BathRoom_Joe_Player",
-									"sid": 524483915811527,
+									"sid": 482892547741160,
 									"behaviorType": "8Direction",
 									"parameters": {
 										"max-speed": "250"
 									}
 								},
 								{
-									"id": "set-position",
-									"objectClass": "BathRoom_Joe_Player",
-									"sid": 955766990623651,
+									"id": "set-active",
+									"objectClass": "Enemy_Bathroom_Guard2",
+									"sid": 197750575359870,
+									"behaviorType": "Sine",
 									"parameters": {
-										"x": "1559",
-										"y": "832"
+										"state": "active"
 									}
 								},
 								{
@@ -10299,6 +10345,24 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_Kitchen_moving_view",
+									"sid": 661345105311575,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 292893326901641,
+									"parameters": {
+										"x": "113",
+										"y": "822"
+									}
+								},
+								{
 									"id": "set-enabled",
 									"objectClass": "Kitchen_Joe_Player",
 									"sid": 487177965999781,
@@ -10314,24 +10378,6 @@
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "active"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Enemy_Kitchen_moving_view",
-									"sid": 668179266014318,
-									"parameters": {
-										"animation": "\"Not_Alerted\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Kitchen_Joe_Player",
-									"sid": 310185318488973,
-									"parameters": {
-										"x": "113",
-										"y": "822"
 									}
 								},
 								{
@@ -10436,6 +10482,24 @@
 									}
 								},
 								{
+									"id": "set-position",
+									"objectClass": "Kitchen_Joe_Player",
+									"sid": 501984305564864,
+									"parameters": {
+										"x": "113",
+										"y": "822"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Enemy_Kitchen_moving_view",
+									"sid": 435154446555033,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-max-speed",
 									"objectClass": "Kitchen_Joe_Player",
 									"sid": 812807579005549,
@@ -10451,24 +10515,6 @@
 									"behaviorType": "Sine",
 									"parameters": {
 										"state": "active"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Enemy_Kitchen_moving_view",
-									"sid": 536321460471451,
-									"parameters": {
-										"animation": "\"Not_Alerted\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-position",
-									"objectClass": "Kitchen_Joe_Player",
-									"sid": 726481463071462,
-									"parameters": {
-										"x": "113",
-										"y": "822"
 									}
 								},
 								{
@@ -11659,9 +11705,46 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 557876335664174,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 733834687691640,
+									"parameters": {
+										"x": "1568",
+										"y": "832"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 136755073909096,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "300"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 412627480140519,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 684516201081293
+									"sid": 684516201081293,
+									"disabled": true
 								}
 							],
 							"sid": 299968316692694
@@ -11734,9 +11817,46 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View4",
+									"sid": 735802683348657,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 475885533719651,
+									"parameters": {
+										"x": "1568",
+										"y": "832"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 365131705323620,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "300"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_",
+									"sid": 321548091844652,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 482404493859868
+									"sid": 482404493859868,
+									"disabled": true
 								}
 							],
 							"sid": 562289420921372
@@ -12027,9 +12147,46 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 897106949234687,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 343052198984897,
+									"parameters": {
+										"x": "1568",
+										"y": "832"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 385936763091634,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "300"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 459495044131257,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 779855389117893
+									"sid": 779855389117893,
+									"disabled": true
 								}
 							],
 							"sid": 686408293236213
@@ -12102,9 +12259,46 @@
 									}
 								},
 								{
+									"id": "set-animation",
+									"objectClass": "Enemy_CommonRoomGuard_View5",
+									"sid": 882350293689014,
+									"parameters": {
+										"animation": "\"Not_Alerted\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 969168662438681,
+									"parameters": {
+										"x": "1568",
+										"y": "832"
+									}
+								},
+								{
+									"id": "set-max-speed",
+									"objectClass": "CommonRoom_Joe_Player",
+									"sid": 161237487511141,
+									"behaviorType": "8Direction",
+									"parameters": {
+										"max-speed": "300"
+									}
+								},
+								{
+									"id": "set-active",
+									"objectClass": "Enemy_CommonRoom_2",
+									"sid": 889594165966342,
+									"behaviorType": "Sine",
+									"parameters": {
+										"state": "active"
+									}
+								},
+								{
 									"id": "restart-layout",
 									"objectClass": "System",
-									"sid": 831079768666220
+									"sid": 831079768666220,
+									"disabled": true
 								}
 							],
 							"sid": 679253705376314
